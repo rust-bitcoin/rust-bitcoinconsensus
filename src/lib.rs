@@ -124,6 +124,9 @@ pub fn version () -> u32 {
 /// `
 /// should return OK(())
 ///
+/// **Note** that spent amount will only be checked for Segwit transactions. Above example is not segwit, therefore verify will succeed with any amount.
+
+///
 pub fn verify (spent_output: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize) -> Result<(), Error> {
     verify_with_flags (spent_output, amount, spending_transaction, input_index, VERIFY_ALL)
 }

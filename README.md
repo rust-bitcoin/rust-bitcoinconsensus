@@ -8,7 +8,7 @@ This project simplifies Rust developer's life by creating the libbitcoinconsensu
 
 ## Build
 
-This project has a submodule, you have to clone it using:
+This project has a submodule (the Bitcoin Core sources), you have to clone it using:
 
 `
 git clone --recurse-submodules git@github.com:tamasblummer/rust-bitcoinconsensus.git
@@ -24,16 +24,16 @@ I verified the build for Linux and OSX. PRs are welcome to extend support for ot
 
 
 ## API
-The API is very basic, exposing Bitcoin's as is. This is intentional to keep this project minimal footprint and no further runtime dependencies. You will need another Rust library to serialize Bitcoin transactions and transaction outputs.
+The API is very basic, exposing Bitcoin's as is. This is intentional to keep this project minimal footprint and no further runtime dependencies. You will need another Rust library to serialize Bitcoin transactions and scripts.
 
-Verify a single spend (input) of a Bitcoin transaction.
+Verify a single spend (input) of a Bitcoin transaction:
 
 `
 verify (spent_output_script: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize) -> Result<(), Error>
 `
 
 ### Arguments
- * spend_output_script: a Bitcoin transaction output script to be spent, serialized in Bitcoin's on wire format
+ * spend_output_script: a Bitcoin transaction output script to be spent
  * amount: The spent output amount in satoshis
  * spending_transaction: spending Bitcoin transaction, serialized in Bitcoin's on wire format
  * input_index: index of the input within spending_transaction
@@ -62,4 +62,4 @@ verify(spent, 630482530, spending, 0)
 
 should return OK(())
 
-_Note_ that spent amount can only be checked for Segwit transactions.
+**Note** that spent amount will only be checked for Segwit transactions. Above example is not segwit therefore verify will succeed with any amount.
