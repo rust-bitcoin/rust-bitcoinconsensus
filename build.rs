@@ -38,5 +38,5 @@ fn main() {
         .file("bitcoin/src/script/interpreter.cpp")
         .file("bitcoin/src/script/script.cpp")
         .file("bitcoin/src/script/script_error.cpp")
-        .compile("libbitcoinconsenus.a");
+        .compile("libbitcoinconsensus.a");
 }

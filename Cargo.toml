@@ -1,12 +1,12 @@
 [package]
-name = "rust-bitcoinconsenus"
+name = "rust-bitcoinconsensus"
 version = "0.1.0"
 authors = ["Tamas Blummer <tamas.blummer@gmail.com>"]
 license = "Apache-2.0"
-homepage = "https://github.com/tamasblummer/rust-bitcoinconsenus/"
-repository = "https://github.com/tamasblummer/rust-bitcoinconsenus/"
-description = "Bitcoin's libbitcoinconsenus.a with Rust binding."
-keywords = [ "bitcoin", "bitcoinconsenus", "libbitcoinconsenus", "consenus" ]
+homepage = "https://github.com/tamasblummer/rust-bitcoinconsensus/"
+repository = "https://github.com/tamasblummer/rust-bitcoinconsensus/"
+description = "Bitcoin's libbitcoinconsensus.a with Rust binding."
+keywords = [ "bitcoin", "bitcoinconsensus", "libbitcoinconsensus", "consensus" ]
 readme = "README.md"
 
 [lib]
