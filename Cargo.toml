@@ -1,0 +1,23 @@
+[package]
+name = "rust-bitcoinconsenus"
+version = "0.1.0"
+authors = ["Tamas Blummer <tamas.blummer@gmail.com>"]
+license = "Apache-2.0"
+homepage = "https://github.com/tamasblummer/rust-bitcoinconsenus/"
+repository = "https://github.com/tamasblummer/rust-bitcoinconsenus/"
+description = "Bitcoin's libbitcoinconsenus.a with Rust binding."
+keywords = [ "bitcoin", "bitcoinconsenus", "libbitcoinconsenus", "consenus" ]
+readme = "README.md"
+
+[lib]
+name = "bitcoinconsensus"
+path = "src/lib.rs"
+
+[dependencies]
+libc="0.2"
+
+[build-dependencies]
+gcc = "0.3"
+
+[dev-dependencies]
+rustc-serialize = "0.3"
