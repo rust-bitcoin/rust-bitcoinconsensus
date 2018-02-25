@@ -10,5 +10,5 @@ This project simplifies Rust developer's life by creating the libconsensus libra
 The API is very basic, exposing Bitcoin's as is. This is intentional to keep this project minimal footprint and no further runtime dependencies. You will need another Rust library to serialize Bitcoin transactions and transaction outputs.
 
 `
-pub fn verify_spend (spent_output: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize, flag: u32) -> Result<(), Error>
+pub fn verify (spent_output: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize) -> Result<(), Error>
 `

@@ -68,8 +68,8 @@ extern "C" {
         err: *mut Error) -> c_int;
 }
 
-/// soft fork activation heights on the Bitcoin network
-pub fn height_to_flag (height: u32) -> u32 {
+/// Compute flags for soft fork activation heights on the Bitcoin network
+pub fn height_to_flags(height: u32) -> u32 {
 
     let mut flag = VERIFY_NONE;
     if height > 170059 {
@@ -90,7 +90,23 @@ pub fn height_to_flag (height: u32) -> u32 {
     flag as u32
 }
 
-pub fn verify_spend (spent_output: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize, flag: u32) -> Result<(), Error> {
+/// Return libbitcoinconsenus version
+pub fn version () -> u32 {
+    unsafe { bitcoinconsensus_version() as u32 }
+}
+
+/// Verify a single spend (input) of a Bitcoin transaction.
+/// # Arguments
+///  * spend_output: a Bitcoin transaction output to be spent, serialized in Bitcoin's on wire format
+///  * amount: The spent output amount in satoshis
+///  * spending_transaction: spending Bitcoin transaction, serialized in Bitcoin's on wire format
+///  * input_index: index of the input within spending_transaction
+pub fn verify (spent_output: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize) -> Result<(), Error> {
+    verify_with_flags (spent_output, amount, spending_transaction, input_index, height_to_flags(481825))
+}
+
+/// Same as verify but with flags that turn past soft fork features on or off
+pub fn verify_with_flags (spent_output: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize, flags: u32) -> Result<(), Error> {
     unsafe {
         let mut error = Error::ERR_OK;
 
@@ -100,7 +116,7 @@ pub fn verify_spend (spent_output: &[u8], amount: u64, spending_transaction: &[u
             spending_transaction.as_ptr(),
             spending_transaction.len() as c_uint,
             input_index as c_uint,
-            flag as c_uint,
+            flags as c_uint,
             &mut error
         );
         if ret != 1 {
