@@ -18,7 +18,7 @@ extern crate libc;
 use libc::{c_int,c_uchar, c_uint, uint64_t};
 
 #[allow(non_camel_case_types)]
-#[derive(Clone, Debug,PartialEq)]
+#[derive(Debug,PartialEq)]
 #[repr(C)]
 pub enum Error {
     ERR_OK = 0,
@@ -32,29 +32,21 @@ pub enum Error {
     ERR_AMOUNT_REQUIRED
 }
 
-#[allow(non_upper_case_globals)]
 #[allow(dead_code)]
 pub const VERIFY_NONE : c_uint = 0;
-#[allow(non_upper_case_globals)]
 // evaluate P2SH (BIP16) subscripts
 pub const VERIFY_P2SH : c_uint = (1 << 0);
-#[allow(non_upper_case_globals)]
 // enforce strict DER (BIP66) compliance
 pub const VERIFY_DERSIG : c_uint = (1 << 2);
-#[allow(non_upper_case_globals)]
 // enforce NULLDUMMY (BIP147)
 pub const VERIFY_NULLDUMMY : c_uint = (1 << 4);
-#[allow(non_upper_case_globals)]
 // enable CHECKLOCKTIMEVERIFY (BIP65)
 pub const VERIFY_CHECKLOCKTIMEVERIFY : c_uint = (1 << 9);
-#[allow(non_upper_case_globals)]
 // enable CHECKSEQUENCEVERIFY (BIP112)
 pub const VERIFY_CHECKSEQUENCEVERIFY : c_uint = (1 << 10);
-#[allow(non_upper_case_globals)]
 // enable WITNESS (BIP141)
 pub const VERIFY_WITNESS : c_uint = (1 << 11);
 
-#[allow(non_upper_case_globals)]
 pub const VERIFY_ALL : c_uint = VERIFY_P2SH | VERIFY_DERSIG | VERIFY_NULLDUMMY |
     VERIFY_CHECKLOCKTIMEVERIFY | VERIFY_CHECKSEQUENCEVERIFY | VERIFY_WITNESS;
 
