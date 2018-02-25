@@ -51,7 +51,7 @@ spending = 02000000013f7cebd65c27431a90bba7f796914fe8cc2ddfc3f2cbd6f7e5f2fc85453
 The script of the first output of the spent transaction is:
 
 `
-spent = 1976a9144bfbaf6afb76cc5771bc6404810d1cc041a6933988ac
+spent = 76a9144bfbaf6afb76cc5771bc6404810d1cc041a6933988ac
 `
 
 The (pseudo code) call:
