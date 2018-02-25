@@ -90,7 +90,7 @@ pub fn height_to_flag (height: u32) -> u32 {
     flag as u32
 }
 
-pub fn verify_spend (spent_output: &[u8], amount: u64, spending_transaction: &[u8], output_index: usize, flag: u32) -> Result<(), Error> {
+pub fn verify_spend (spent_output: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize, flag: u32) -> Result<(), Error> {
     unsafe {
         let mut error = Error::ERR_OK;
 
@@ -99,7 +99,7 @@ pub fn verify_spend (spent_output: &[u8], amount: u64, spending_transaction: &[u
             amount as uint64_t,
             spending_transaction.as_ptr(),
             spending_transaction.len() as c_uint,
-            output_index as c_uint,
+            input_index as c_uint,
             flag as c_uint,
             &mut error
         );
