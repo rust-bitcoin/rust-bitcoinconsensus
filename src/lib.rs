@@ -54,6 +54,10 @@ pub const VERIFY_CHECKSEQUENCEVERIFY : c_uint = (1 << 10);
 // enable WITNESS (BIP141)
 pub const VERIFY_WITNESS : c_uint = (1 << 11);
 
+#[allow(non_upper_case_globals)]
+pub const VERIFY_ALL : c_uint = VERIFY_P2SH | VERIFY_DERSIG | VERIFY_NULLDUMMY |
+    VERIFY_CHECKLOCKTIMEVERIFY | VERIFY_CHECKSEQUENCEVERIFY | VERIFY_WITNESS;
+
 extern "C" {
     pub fn bitcoinconsensus_version() -> c_int;
 
@@ -102,7 +106,7 @@ pub fn version () -> u32 {
 ///  * spending_transaction: spending Bitcoin transaction, serialized in Bitcoin's on wire format
 ///  * input_index: index of the input within spending_transaction
 pub fn verify (spent_output: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize) -> Result<(), Error> {
-    verify_with_flags (spent_output, amount, spending_transaction, input_index, height_to_flags(481825))
+    verify_with_flags (spent_output, amount, spending_transaction, input_index, VERIFY_ALL)
 }
 
 /// Same as verify but with flags that turn past soft fork features on or off
