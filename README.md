@@ -1,10 +1,20 @@
 # Bitcoin's libbitcoinconsensus with Rust binding
 
-This project offers Rust binding to a library built from Bitcoin's C++ sources using cargo.
+This project builds libbitcoinconsensus library from Bitcoin's C++ sources using cargo and offers Rust binding to its API.
 
-Bitcoin's own build creates a library called libbitcoinconsenus, that allows transaction verification using Bitcoins unique script engine. Bitcoin enabled applications SHOULD use libbitcoinconsensus library to avoid accepting transactions that the Bitcoin network nodes would not.
+Libbitcoinconsenus allows transaction verification using Bitcoins unique script engine. 
+Bitcoin enabled applications SHOULD use libbitcoinconsensus library to avoid accepting transactions that the Bitcoin network nodes would not.
 
-This project simplifies Rust developer's life by creating the libbitcoinconsensus library with cargo. No need to deal with the archaic C++ toolchain directly.  This also simplifies cross-compiling the consenus library e.g. for mobile application.
+This project simplifies Rust developer's life by creating the libbitcoinconsensus library with cargo. 
+No need to deal with the archaic C++ toolchain directly.  
+This also simplifies cross-compiling the consenus library e.g. for a mobile application.
+
+Libbitcoinconsenus refers to code from another library [secp256k1](https://github.com/bitcoin-core/secp256k1). 
+A snapshot of that library is also included into Bitcoin sources, therefore it could be backed into libbitcoinconsenus. 
+A typical Bitcoin enabled application will however want to access further secp256k1 functions. 
+The project [rustc-secp256k1](https://github.com/apoelstra/rust-secp256k1) offers a cargo build and Rust bindings, 
+therefore decided to depend on that instead of compiling the Bitcoin embedded sources into libbitcoinconsensus. 
+This introduces a risk, since a difference between the two secp256k1 sources could break consensus with Bitcoin.
 
 ## Build
 
