@@ -12,7 +12,7 @@ This also simplifies cross-compiling the consenus library e.g. for a mobile appl
 Libbitcoinconsenus refers to code from another library [secp256k1](https://github.com/bitcoin-core/secp256k1). 
 A snapshot of that library is also included into Bitcoin sources, therefore it could be backed into libbitcoinconsenus. 
 A typical Bitcoin enabled application will however want to access further secp256k1 functions. 
-The project [rustc-secp256k1](https://github.com/apoelstra/rust-secp256k1) offers a cargo build and Rust bindings, 
+The project [rustc-secp256k1](https://github.com/rust-bitcoin/rust-secp256k1) offers a cargo build and Rust bindings, 
 therefore decided to depend on that instead of compiling the Bitcoin embedded sources into libbitcoinconsensus. 
 This introduces a risk, since a difference between the two secp256k1 sources could break consensus with Bitcoin.
 
@@ -21,7 +21,7 @@ This introduces a risk, since a difference between the two secp256k1 sources cou
 This project has a submodule (the Bitcoin Core sources), you have to clone it using:
 
 `
-git clone --recurse-submodules git@github.com:tamasblummer/rust-bitcoinconsensus.git
+git clone --recurse-submodules git@github.com:rust-bitcoin/rust-bitcoinconsensus.git
 `
 
 then build it simple with:
