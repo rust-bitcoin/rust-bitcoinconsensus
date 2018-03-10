@@ -18,7 +18,7 @@ extern crate libc;
 use libc::{c_int,c_uchar, c_uint, uint64_t};
 
 #[allow(non_camel_case_types)]
-#[derive(Debug,PartialEq)]
+#[derive(PartialEq, Eq, Debug, Clone)]
 #[repr(C)]
 pub enum Error {
     ERR_SCRIPT = 0,
