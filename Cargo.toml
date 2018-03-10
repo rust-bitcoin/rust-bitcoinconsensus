@@ -1,6 +1,6 @@
 [package]
 name = "bitcoinconsensus"
-version = "0.16.0"
+version = "0.16.1"
 authors = ["Tamas Blummer <tamas.blummer@gmail.com>"]
 license = "Apache-2.0"
 homepage = "https://github.com/tamasblummer/rust-bitcoinconsensus/"
@@ -8,6 +8,7 @@ repository = "https://github.com/tamasblummer/rust-bitcoinconsensus/"
 description = "Bitcoin's libbitcoinconsensus with Rust binding."
 keywords = [ "bitcoin", "bitcoinconsensus", "libbitcoinconsensus" ]
 readme = "README.md"
+exclude = ["/bitcoin/.github/**", "/bitcoin/.tx/**", "/bitcoin/build-aux/**", "/bitcoin/contrib/**", "/bitcoin/depends/**", "/bitcoin/doc/**", "/bitcoin/share/**", "/bitcoin/test/**"]
 
 [lib]
 name = "bitcoinconsensus"
