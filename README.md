@@ -1,3 +1,5 @@
+[![Status](https://travis-ci.org/rust-bitcoin/rust-bitcoinconsensuns.png?branch=master)](https://travis-ci.org/rust-bitcoin/rust-bitcoinconsensus)
+
 # Bitcoin's libbitcoinconsensus with Rust binding
 
 This project builds libbitcoinconsensus library from Bitcoin's C++ sources using cargo and offers Rust binding to its API.
@@ -32,6 +34,9 @@ cargo build
 
 I verified the build for Linux and OSX. PRs are welcome to extend support for other platforms.
 
+## Version
+
+The cargo version is suffixed with -0.16.0, which indicates the version of bitcoind that the underlying sources are taken from.
 
 ## API
 The API is very basic, exposing Bitcoin's as is. This is intentional to keep this project minimal footprint and no further runtime dependencies. You will need another Rust library to serialize Bitcoin transactions and scripts.
