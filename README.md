@@ -34,10 +34,6 @@ cargo build
 
 I verified the build for Linux and OSX. PRs are welcome to extend support for other platforms.
 
-## Version
-
-The cargo version is suffixed with -0.16.0, which indicates the version of bitcoind that the underlying sources are taken from.
-
 ## API
 The API is very basic, exposing Bitcoin's as is. This is intentional to keep this project minimal footprint and no further runtime dependencies. You will need another Rust library to serialize Bitcoin transactions and scripts.
 
