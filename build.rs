@@ -11,14 +11,13 @@ fn main() {
         .include("bitcoin/src/secp256k1/include")
         .opt_level(2)
         .debug(true)
-        .extra_warnings(true)
         .define("__STDC_FORMAT_MACROS", None);
 
     let tool = base_config.get_compiler();
     if tool.is_like_msvc() {
-        base_config.flag("/std:c++14");
+        base_config.flag("/std:c++14").flag("/wd4100");
     } else if tool.is_like_clang() || tool.is_like_gnu() {
-        base_config.flag("-std=c++11");
+        base_config.flag("-std=c++11").flag("-Wno-unused-parameter");
     }
 
     if target == "x86_64-unknown-linux-gnu" {
