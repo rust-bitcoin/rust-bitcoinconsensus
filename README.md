@@ -32,7 +32,7 @@ then build it simple with:
 cargo build
 `
 
-I verified the build for Linux and OSX. PRs are welcome to extend support for other platforms.
+I verified the build for Linux and OSX. Aleksey Sidorov contributed the windows build. PRs are welcome to extend support for other platforms.
 
 ## API
 The API is very basic, exposing Bitcoin's as is. This is intentional to keep this project minimal footprint and no further runtime dependencies. You will need another Rust library to serialize Bitcoin transactions and scripts.
