@@ -1,0 +1,47 @@
+os: Visual Studio 2015
+
+## Build Matrix ##
+
+environment:
+  matrix:
+    - channel: 1.14.0
+      target: x86_64-pc-windows-msvc
+    - channel: 1.14.0
+      target: i686-pc-windows-msvc
+      
+    - channel: stable
+      target: x86_64-pc-windows-msvc
+    - channel: stable
+      target: i686-pc-windows-msvc
+
+    - channel: beta
+      target: x86_64-pc-windows-msvc
+    - channel: beta
+      target: i686-pc-windows-msvc
+
+    - channel: nightly
+      target: x86_64-pc-windows-msvc
+    - channel: nightly
+      target: i686-pc-windows-msvc
+
+matrix:
+  allow_failures:
+    - channel: nightly
+
+install:
+- git submodule update --init --recursive
+- curl -sSf -o rustup-init.exe https://win.rustup.rs/
+- rustup-init.exe -y --default-host %TARGET% --default-toolchain %CHANNEL%
+- set PATH=%PATH%;C:\Users\appveyor\.cargo\bin
+- rustc -Vv
+- cargo -V
+
+## Build Script ##
+
+# 'cargo test' takes care of building for us, so disable Appveyor's build stage. This prevents
+# the "directory does not contain a project or solution file" error.
+
+build: false
+
+test_script:
+  - cargo test
