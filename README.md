@@ -1,4 +1,4 @@
-[![Status](https://travis-ci.org/rust-bitcoin/rust-bitcoinconsensuns.png?branch=master)](https://travis-ci.org/rust-bitcoin/rust-bitcoinconsensus)
+[![Status](https://travis-ci.org/rust-bitcoin/rust-bitcoinconsensus.png?branch=master)](https://travis-ci.org/rust-bitcoin/rust-bitcoinconsensus)
 
 # Bitcoin's libbitcoinconsensus with Rust binding
 
