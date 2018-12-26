@@ -19,7 +19,7 @@ path = "src/lib.rs"
 libc="0.2"
 
 [build-dependencies]
-cc = "=1.0.26"
+cc = "=1.0.25"
 
 [dev-dependencies]
 rustc-serialize = "0.3"
