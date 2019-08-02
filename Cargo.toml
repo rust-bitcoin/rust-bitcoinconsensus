@@ -1,6 +1,6 @@
 [package]
 name = "bitcoinconsensus"
-version = "0.17.0"
+version = "0.17.1"
 authors = ["Tamas Blummer <tamas.blummer@gmail.com>"]
 license = "Apache-2.0"
 homepage = "https://github.com/rust-bitcoin/rust-bitcoinconsensus/"
@@ -17,10 +17,10 @@ path = "src/lib.rs"
 
 [dependencies]
 libc="0.2"
+secp256k1 = { version = "0.15", features = ["recovery"] }
 
 [build-dependencies]
 cc = ">= 1.0.36"
 
 [dev-dependencies]
 rustc-serialize = "0.3"
-secp256k1 = { version = "0.15", features = ["recovery"] }
