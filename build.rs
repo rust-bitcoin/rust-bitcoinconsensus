@@ -1,7 +1,5 @@
 extern crate cc;
 
-use std::env;
-
 fn main() {
     let mut base_config = cc::Build::new();
     base_config
@@ -20,8 +18,7 @@ fn main() {
     }
     #[cfg(target_os = "windows")]
     {
-        base_config
-            .define("WIN32", Some("1"));
+        base_config.define("WIN32", Some("1"));
     }
     base_config
         .file("bitcoin/src/utilstrencodings.cpp")
