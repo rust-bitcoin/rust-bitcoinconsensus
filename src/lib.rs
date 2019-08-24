@@ -138,6 +138,9 @@ pub fn verify(spent_output: &[u8], amount: u64, spending_transaction: &[u8], inp
 /// Same as verify but with flags that turn past soft fork features on or off
 pub fn verify_with_flags(spent_output_script: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize, flags: u32,) -> Result<(), Error> {
     let mut error = Error::ERR_SCRIPT;
+    if spent_output_script.is_empty() || spending_transaction.is_empty() {
+        return Err(error);
+    }
     let ret = unsafe {
         bitcoinconsensus_verify_script_with_amount(
             spent_output_script.as_ptr(),
