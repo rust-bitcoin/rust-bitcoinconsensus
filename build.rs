@@ -22,7 +22,7 @@ fn main() {
             .define("WIN32", Some("1"));
     }
     base_config
-        .file("bitcoin/src/util/strencodings.cpp")
+        .file("bitcoin/src/utilstrencodings.cpp")
         .file("bitcoin/src/uint256.cpp")
         .file("bitcoin/src/pubkey.cpp")
         .file("bitcoin/src/hash.cpp")
