@@ -1,7 +1,5 @@
 extern crate cc;
 
-use std::env;
-
 fn main() {
     let mut base_config = cc::Build::new();
     base_config
@@ -24,7 +22,7 @@ fn main() {
             .define("WIN32", Some("1"));
     }
     base_config
-        .file("bitcoin/src/utilstrencodings.cpp")
+        .file("bitcoin/src/util/strencodings.cpp")
         .file("bitcoin/src/uint256.cpp")
         .file("bitcoin/src/pubkey.cpp")
         .file("bitcoin/src/hash.cpp")
