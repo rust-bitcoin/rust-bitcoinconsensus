@@ -15,7 +15,7 @@
 //
 extern crate libc;
 
-use libc::{c_int,c_uchar, c_uint, uint64_t};
+use libc::{c_int,c_uchar, c_uint};
 
 #[allow(non_camel_case_types)]
 #[derive(PartialEq, Eq, Debug, Clone)]
@@ -56,7 +56,7 @@ extern "C" {
     pub fn bitcoinconsensus_verify_script_with_amount(
         script_pubkey:  *const c_uchar,
         script_pubkeylen: c_uint,
-        amount: uint64_t,
+        amount: u64,
         tx_to: *const c_uchar,
         tx_tolen: c_uint,
         n_in: c_uint,
@@ -139,7 +139,7 @@ pub fn verify_with_flags (spent_output_script: &[u8], amount: u64, spending_tran
         let ret = bitcoinconsensus_verify_script_with_amount(
             spent_output_script.as_ptr(),
             spent_output_script.len() as c_uint,
-            amount as uint64_t,
+            amount as u64,
             spending_transaction.as_ptr(),
             spending_transaction.len() as c_uint,
             input_index as c_uint,
