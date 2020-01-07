@@ -68,7 +68,7 @@ fn main() {
         base_config.define("WIN32", "1");
     }
     base_config
-        .file("depend/bitcoin/src/utilstrencodings.cpp")
+        .file("depend/bitcoin/src/util/strencodings.cpp")
         .file("depend/bitcoin/src/uint256.cpp")
         .file("depend/bitcoin/src/pubkey.cpp")
         .file("depend/bitcoin/src/hash.cpp")
