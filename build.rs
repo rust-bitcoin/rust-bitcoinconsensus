@@ -6,10 +6,8 @@ fn main() {
     let mut base_config = cc::Build::new();
     base_config
         .cpp(true)
-        .include("bitcoin/src")
-        .include("bitcoin/src/secp256k1/include")
-        .opt_level(2)
-        .debug(true)
+        .include("depend/bitcoin/src")
+        .include("depend/bitcoin/src/secp256k1/include")
         .define("__STDC_FORMAT_MACROS", None);
 
     let tool = base_config.get_compiler();
@@ -24,19 +22,19 @@ fn main() {
             .define("WIN32", Some("1"));
     }
     base_config
-        .file("bitcoin/src/utilstrencodings.cpp")
-        .file("bitcoin/src/uint256.cpp")
-        .file("bitcoin/src/pubkey.cpp")
-        .file("bitcoin/src/hash.cpp")
-        .file("bitcoin/src/primitives/transaction.cpp")
-        .file("bitcoin/src/crypto/ripemd160.cpp")
-        .file("bitcoin/src/crypto/sha1.cpp")
-        .file("bitcoin/src/crypto/sha256.cpp")
-        .file("bitcoin/src/crypto/sha512.cpp")
-        .file("bitcoin/src/crypto/hmac_sha512.cpp")
-        .file("bitcoin/src/script/bitcoinconsensus.cpp")
-        .file("bitcoin/src/script/interpreter.cpp")
-        .file("bitcoin/src/script/script.cpp")
-        .file("bitcoin/src/script/script_error.cpp")
+        .file("depend/bitcoin/src/utilstrencodings.cpp")
+        .file("depend/bitcoin/src/uint256.cpp")
+        .file("depend/bitcoin/src/pubkey.cpp")
+        .file("depend/bitcoin/src/hash.cpp")
+        .file("depend/bitcoin/src/primitives/transaction.cpp")
+        .file("depend/bitcoin/src/crypto/ripemd160.cpp")
+        .file("depend/bitcoin/src/crypto/sha1.cpp")
+        .file("depend/bitcoin/src/crypto/sha256.cpp")
+        .file("depend/bitcoin/src/crypto/sha512.cpp")
+        .file("depend/bitcoin/src/crypto/hmac_sha512.cpp")
+        .file("depend/bitcoin/src/script/bitcoinconsensus.cpp")
+        .file("depend/bitcoin/src/script/interpreter.cpp")
+        .file("depend/bitcoin/src/script/script.cpp")
+        .file("depend/bitcoin/src/script/script_error.cpp")
         .compile("libbitcoinconsensus.a");
 }
