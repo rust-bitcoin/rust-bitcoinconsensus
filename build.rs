@@ -18,32 +18,43 @@ fn main() {
         false
     };
     let target = env::var("TARGET").expect("TARGET was not set");
+    let is_big_endian = env::var("CARGO_CFG_TARGET_ENDIAN").expect("No endian is set") == "big";
     let mut base_config = cc::Build::new();
     base_config
         .cpp(true)
         .include("depend/bitcoin/src")
         .include("depend/bitcoin/src/secp256k1/include")
-        .define("__STDC_FORMAT_MACROS", None)
-        // **Secp256k1**
-        .include("depend/bitcoin/src/secp256k1")
-        .flag_if_supported("-Wno-unused-function") // some ecmult stuff is defined but not used upstream
-        .define("SECP256K1_BUILD", "1")
-        // Bitcoin core defines libsecp to *not* use libgmp.
-        .define("USE_NUM_NONE", "1")
-        .define("USE_FIELD_INV_BUILTIN", "1")
-        .define("USE_SCALAR_INV_BUILTIN", "1")
-        // Technically libconsensus doesn't require the recovery feautre, but `pubkey.cpp` does.
-        .define("ENABLE_MODULE_RECOVERY", "1");
+        .define("__STDC_FORMAT_MACROS", None);
 
-    if use_64bit_compilation {
+    // **Secp256k1**
+    if !cfg!(feature = "external-secp") {
         base_config
-            .define("USE_FIELD_5X52", "1")
-            .define("USE_SCALAR_4X64", "1")
-            .define("HAVE___INT128", "1");
-    } else {
-        base_config
-            .define("USE_FIELD_10X26", "1")
-            .define("USE_SCALAR_8X32", "1");
+            .include("depend/bitcoin/src/secp256k1")
+            .flag_if_supported("-Wno-unused-function") // some ecmult stuff is defined but not used upstream
+            .define("SECP256K1_BUILD", "1")
+            // Bitcoin core defines libsecp to *not* use libgmp.
+            .define("USE_NUM_NONE", "1")
+            .define("USE_FIELD_INV_BUILTIN", "1")
+            .define("USE_SCALAR_INV_BUILTIN", "1")
+            // Technically libconsensus doesn't require the recovery feautre, but `pubkey.cpp` does.
+            .define("ENABLE_MODULE_RECOVERY", "1")
+            // The actual libsecp256k1 C code.
+            .file("depend/bitcoin/src/secp256k1/src/secp256k1.c");
+
+        if is_big_endian {
+            base_config.define("WORDS_BIGENDIAN", "1");
+        }
+
+        if use_64bit_compilation {
+            base_config
+                .define("USE_FIELD_5X52", "1")
+                .define("USE_SCALAR_4X64", "1")
+                .define("HAVE___INT128", "1");
+        } else {
+            base_config
+                .define("USE_FIELD_10X26", "1")
+                .define("USE_SCALAR_8X32", "1");
+        }
     }
 
     let tool = base_config.get_compiler();
@@ -71,6 +82,5 @@ fn main() {
         .file("depend/bitcoin/src/script/interpreter.cpp")
         .file("depend/bitcoin/src/script/script.cpp")
         .file("depend/bitcoin/src/script/script_error.cpp")
-        .file("depend/bitcoin/src/secp256k1/src/secp256k1.c")
         .compile("libbitcoinconsensus.a");
 }

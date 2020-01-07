@@ -15,6 +15,9 @@ build = "build.rs"
 name = "bitcoinconsensus"
 path = "src/lib.rs"
 
+[features]
+external-secp = []
+
 [dependencies]
 libc="0.2"
 
