@@ -17,6 +17,7 @@ fn main() {
     } else {
         false
     };
+    let target = env::var("TARGET").expect("TARGET was not set");
     let mut base_config = cc::Build::new();
     base_config
         .cpp(true)
@@ -51,9 +52,9 @@ fn main() {
     } else if tool.is_like_clang() || tool.is_like_gnu() {
         base_config.flag("-std=c++11").flag("-Wno-unused-parameter");
     }
-    #[cfg(target_os = "windows")]
-    {
-        base_config.define("WIN32", Some("1"));
+
+    if target.contains("windows") {
+        base_config.define("WIN32", "1");
     }
     base_config
         .file("depend/bitcoin/src/utilstrencodings.cpp")
