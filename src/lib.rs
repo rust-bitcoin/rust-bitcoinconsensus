@@ -157,7 +157,6 @@ pub fn verify_with_flags (spent_output_script: &[u8], amount: u64, spending_tran
 #[cfg(test)]
 mod tests {
     extern crate rustc_serialize as serialize;
-    extern crate secp256k1;
 
     use super::*;
     use self::serialize::hex::FromHex;
