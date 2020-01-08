@@ -1,5 +1,7 @@
 extern crate cc;
 
+using std::env;
+
 fn main() {
     // Check whether we can use 64-bit compilation
     let use_64bit_compilation = if env::var("CARGO_CFG_TARGET_POINTER_WIDTH").unwrap() == "64" {
