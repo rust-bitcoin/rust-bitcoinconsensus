@@ -1,6 +1,6 @@
 extern crate cc;
 
-using std::env;
+use std::env;
 
 fn main() {
     // Check whether we can use 64-bit compilation
