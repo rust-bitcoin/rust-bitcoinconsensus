@@ -46,6 +46,8 @@ pub const VERIFY_CHECKLOCKTIMEVERIFY : c_uint = (1 << 9);
 pub const VERIFY_CHECKSEQUENCEVERIFY : c_uint = (1 << 10);
 // enable WITNESS (BIP141)
 pub const VERIFY_WITNESS : c_uint = (1 << 11);
+// enable MINIMALIF (Core standard)
+pub const VERIFY_MINIMALIF : c_uint = (1 << 13);
 
 pub const VERIFY_ALL : c_uint = VERIFY_P2SH | VERIFY_DERSIG | VERIFY_NULLDUMMY |
     VERIFY_CHECKLOCKTIMEVERIFY | VERIFY_CHECKSEQUENCEVERIFY | VERIFY_WITNESS;
