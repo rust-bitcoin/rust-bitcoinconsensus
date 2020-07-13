@@ -1,4 +1,3 @@
-[submodule "depend/bitcoin"]
-	path = depend/bitcoin
-	url = https://github.com/bitcoin/bitcoin.git
-	branch = 0.19
+[submodule "depend/zcash"]
+	path = depend/zcash
+	url = https://github.com/zcash/zcash.git
