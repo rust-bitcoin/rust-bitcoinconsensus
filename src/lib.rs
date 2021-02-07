@@ -211,4 +211,9 @@ mod tests {
     fn verify_test (spent : &str, spending :&str, amount :u64, input: usize) -> Result<(),Error> {
         verify (spent.from_hex().unwrap().as_slice(), amount, spending.from_hex().unwrap().as_slice(), input)
     }
+
+    #[test]
+    fn invalid_flags_test() {
+        verify_with_flags(&[], 0, &[], 0, VERIFY_ALL + 1).unwrap_err();
+    }
 }
