@@ -29,7 +29,9 @@ pub enum Error {
     #[allow(dead_code)]
     ERR_TX_DESERIALIZE,
     #[allow(dead_code)]
-    ERR_AMOUNT_REQUIRED
+    ERR_AMOUNT_REQUIRED,
+    #[allow(dead_code)]
+    ERR_INVALID_FLAGS
 }
 
 #[allow(dead_code)]
