@@ -34,6 +34,20 @@ cargo build
 
 I verified the build for Linux and OSX. Aleksey Sidorov contributed the windows build. PRs are welcome to extend support for other platforms.
 
+## A note on Rust 1.29 support
+
+The build dependency `cc` might require a more recent version of the Rust compiler.
+To ensure compilation with Rust 1.29.0, pin its version in your `Cargo.lock`
+with `cargo update -p cc --precise 1.0.41`. If you're using `secp256k1` in a library,
+to make sure it compiles in CI, you'll need to generate a lockfile first.
+Example for Travis CI:
+```yml
+before_script:
+  - if [ "$TRAVIS_RUST_VERSION" == "1.29.0" ]; then
+    cargo generate-lockfile --verbose && cargo update -p cc --precise "1.0.41" --verbose;
+    fi
+```
+
 ## API
 The API is very basic, exposing Bitcoin's as is. This is intentional to keep this project minimal footprint and no further runtime dependencies. You will need another Rust library to serialize Bitcoin transactions and scripts.
 
