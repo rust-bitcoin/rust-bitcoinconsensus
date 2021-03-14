@@ -34,7 +34,9 @@ cargo build
 
 I verified the build for Linux and OSX. Aleksey Sidorov contributed the windows build. PRs are welcome to extend support for other platforms.
 
-## A note on Rust 1.29 support
+## MSRV
+
+The MSRV of this crate is 1.29.0.
 
 The build dependency `cc` might require a more recent version of the Rust compiler.
 To ensure compilation with Rust 1.29.0, pin its version in your `Cargo.lock`
