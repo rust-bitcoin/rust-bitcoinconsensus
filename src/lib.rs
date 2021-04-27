@@ -37,17 +37,17 @@ pub enum Error {
 #[allow(dead_code)]
 pub const VERIFY_NONE : c_uint = 0;
 // evaluate P2SH (BIP16) subscripts
-pub const VERIFY_P2SH : c_uint = (1 << 0);
+pub const VERIFY_P2SH : c_uint = 1 << 0;
 // enforce strict DER (BIP66) compliance
-pub const VERIFY_DERSIG : c_uint = (1 << 2);
+pub const VERIFY_DERSIG : c_uint = 1 << 2;
 // enforce NULLDUMMY (BIP147)
-pub const VERIFY_NULLDUMMY : c_uint = (1 << 4);
+pub const VERIFY_NULLDUMMY : c_uint = 1 << 4;
 // enable CHECKLOCKTIMEVERIFY (BIP65)
-pub const VERIFY_CHECKLOCKTIMEVERIFY : c_uint = (1 << 9);
+pub const VERIFY_CHECKLOCKTIMEVERIFY : c_uint = 1 << 9;
 // enable CHECKSEQUENCEVERIFY (BIP112)
-pub const VERIFY_CHECKSEQUENCEVERIFY : c_uint = (1 << 10);
+pub const VERIFY_CHECKSEQUENCEVERIFY : c_uint = 1 << 10;
 // enable WITNESS (BIP141)
-pub const VERIFY_WITNESS : c_uint = (1 << 11);
+pub const VERIFY_WITNESS : c_uint = 1 << 11;
 
 pub const VERIFY_ALL : c_uint = VERIFY_P2SH | VERIFY_DERSIG | VERIFY_NULLDUMMY |
     VERIFY_CHECKLOCKTIMEVERIFY | VERIFY_CHECKSEQUENCEVERIFY | VERIFY_WITNESS;
