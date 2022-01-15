@@ -10,7 +10,7 @@ jobs:
       fail-fast: false
       matrix:
         rust:
-          - 1.29.0
+          - 1.41.1
           - nightly
           - beta
           - stable
@@ -25,9 +25,6 @@ jobs:
           profile: minimal
           toolchain: ${{ matrix.rust }}
           override: true
-      - name: Pin cc if rust 1.29
-        if: matrix.rust == '1.29.0'
-        run: cargo generate-lockfile && cargo update -p cc --precise "1.0.41" --verbose
       - name: Running Cargo test
         run: cargo test
 
