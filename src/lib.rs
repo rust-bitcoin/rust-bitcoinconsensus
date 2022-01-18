@@ -70,8 +70,8 @@ extern "C" {
 
 /// Computes flags for soft fork activation heights on the Bitcoin network.
 pub fn height_to_flags(height: u32) -> u32 {
-
     let mut flag = VERIFY_NONE;
+
     if height > 170059 {
         flag |= VERIFY_P2SH;
     }
@@ -87,6 +87,7 @@ pub fn height_to_flags(height: u32) -> u32 {
     if height > 481824 {
         flag |= VERIFY_NULLDUMMY | VERIFY_WITNESS
     }
+
     flag as u32
 }
 
