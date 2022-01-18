@@ -1,0 +1,93 @@
+on: [push, pull_request]
+
+name: Continuous integration
+
+jobs:
+  Tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        rust:
+          - 1.29.0
+          - nightly
+          - beta
+          - stable
+    steps:
+      - name: Checkout Crate
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Checkout Toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: ${{ matrix.rust }}
+          override: true
+      - name: Pin cc if rust 1.29
+        if: matrix.rust == '1.29.0'
+        run: cargo generate-lockfile && cargo update -p cc --precise "1.0.41" --verbose
+      - name: Running Cargo test
+        run: cargo test
+
+  Arch32bit:
+    name: Tests 32-bit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Crate
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Checkout Toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+      - name: Add architecture i386
+        run: sudo dpkg --add-architecture i386
+      - name: Install i686 gcc
+        run: sudo apt update && sudo apt install gcc-multilib g++-multilib
+      - name: Install target
+        run: rustup target add i686-unknown-linux-gnu
+      - name: Run test on i686
+        run: cargo test --target i686-unknown-linux-gnu
+
+  Cross:
+    name: Cross (big-endian)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Crate
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Checkout Toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+      - name: Install target
+        run: rustup target add s390x-unknown-linux-gnu
+      - name: install cross
+        run: cargo install cross
+      - name: run cross test
+        run: cross test --target s390x-unknown-linux-gnu
+
+  Docs:
+    name: Docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Crate
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Checkout Toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+      - name: Create Doc
+        run: cargo doc
