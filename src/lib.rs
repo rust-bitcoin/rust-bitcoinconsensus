@@ -13,6 +13,10 @@
 //See the License for the specific language governing permissions and
 //limitations under the License.
 //
+//! This project builds the `libbitcoinconsensus` library from Bitcoin's C++
+//! sources using Cargo and provides Rust bindings to its API.
+//!
+
 extern crate libc;
 
 use libc::{c_int,c_uchar, c_uint};
@@ -35,26 +39,30 @@ pub enum Error {
 }
 
 #[allow(dead_code)]
+/// Do not enable any verification.
 pub const VERIFY_NONE : c_uint = 0;
-// evaluate P2SH (BIP16) subscripts
+/// Evaluate P2SH (BIP16) subscripts.
 pub const VERIFY_P2SH : c_uint = 1 << 0;
-// enforce strict DER (BIP66) compliance
+/// Enforce strict DER (BIP66) compliance.
 pub const VERIFY_DERSIG : c_uint = 1 << 2;
-// enforce NULLDUMMY (BIP147)
+/// Enforce NULLDUMMY (BIP147).
 pub const VERIFY_NULLDUMMY : c_uint = 1 << 4;
-// enable CHECKLOCKTIMEVERIFY (BIP65)
+/// Enable CHECKLOCKTIMEVERIFY (BIP65).
 pub const VERIFY_CHECKLOCKTIMEVERIFY : c_uint = 1 << 9;
-// enable CHECKSEQUENCEVERIFY (BIP112)
+/// Enable CHECKSEQUENCEVERIFY (BIP112).
 pub const VERIFY_CHECKSEQUENCEVERIFY : c_uint = 1 << 10;
-// enable WITNESS (BIP141)
+/// Enable WITNESS (BIP141).
 pub const VERIFY_WITNESS : c_uint = 1 << 11;
 
 pub const VERIFY_ALL : c_uint = VERIFY_P2SH | VERIFY_DERSIG | VERIFY_NULLDUMMY |
     VERIFY_CHECKLOCKTIMEVERIFY | VERIFY_CHECKSEQUENCEVERIFY | VERIFY_WITNESS;
 
 extern "C" {
+    /// Returns `libbitcoinconsensus` version.
     pub fn bitcoinconsensus_version() -> c_int;
 
+    /// Verifies that the transaction input correctly spends the previous
+    /// output, considering any additional constraints specified by flags.
     pub fn bitcoinconsensus_verify_script_with_amount(
         script_pubkey:  *const c_uchar,
         script_pubkeylen: c_uint,
@@ -66,7 +74,7 @@ extern "C" {
         err: *mut Error) -> c_int;
 }
 
-/// Compute flags for soft fork activation heights on the Bitcoin network
+/// Computes flags for soft fork activation heights on the Bitcoin network.
 pub fn height_to_flags(height: u32) -> u32 {
 
     let mut flag = VERIFY_NONE;
@@ -88,24 +96,28 @@ pub fn height_to_flags(height: u32) -> u32 {
     flag as u32
 }
 
-/// Return libbitcoinconsenus version
+/// Returns `libbitcoinconsensus` version.
 pub fn version () -> u32 {
     unsafe { bitcoinconsensus_version() as u32 }
 }
 
-/// Verify a single spend (input) of a Bitcoin transaction.
-/// # Arguments
-///  * spend_output_script: a Bitcoin transaction output script to be spent, serialized in Bitcoin's on wire format
-///  * amount: The spent output amount in satoshis
-///  * spending_transaction: spending Bitcoin transaction, serialized in Bitcoin's on wire format
-///  * input_index: index of the input within spending_transaction
-/// # Returns
-/// OK or Err. Note that amount will only be checked for Segwit transactions.
+/// Verifies a single spend (input) of a Bitcoin transaction.
 ///
-/// # Example
+/// Note that amount will only be checked for Segwit transactions.
+///
+/// # Arguments
+///
+///  * spend_output_script: A Bitcoin transaction output script to be spent, serialized in Bitcoin's on wire format.
+///  * amount: The spent output amount in satoshis.
+///  * spending_transaction: The spending Bitcoin transaction, serialized in Bitcoin's on wire format.
+///  * input_index: The index of the input within spending_transaction.
+///
+/// # Examples
 ///
 /// The (randomly choosen) Bitcoin transaction [aca326a724eda9a461c10a876534ecd5ae7b27f10f26c3862fb996f80ea2d45d](https://blockchain.info/tx/aca326a724eda9a461c10a876534ecd5ae7b27f10f26c3862fb996f80ea2d45d)
-/// spends one input, that is the first output of [95da344585fcf2e5f7d6cbf2c3df2dcce84f9196f7a7bb901a43275cd6eb7c3f](https://blockchain.info/tx/95da344585fcf2e5f7d6cbf2c3df2dcce84f9196f7a7bb901a43275cd6eb7c3f) with a value of 630482530 satoshis
+/// spends one input, that is the first output of
+/// [95da344585fcf2e5f7d6cbf2c3df2dcce84f9196f7a7bb901a43275cd6eb7c3f](https://blockchain.info/tx/95da344585fcf2e5f7d6cbf2c3df2dcce84f9196f7a7bb901a43275cd6eb7c3f)
+/// with a value of 630482530 satoshis.
 ///
 /// The spending transaction in wire format is:
 ///
@@ -124,16 +136,14 @@ pub fn version () -> u32 {
 /// `
 /// verify(spent, 630482530, spending, 0)
 /// `
-/// should return OK(())
+/// should return `Ok(())`.
 ///
-/// **Note** that spent amount will only be checked for Segwit transactions. Above example is not segwit, therefore verify will succeed with any amount.
-
-///
+/// **Note** since the spent amount will only be checked for Segwit transactions and the above example is not segwit, `verify` will succeed with any amount.
 pub fn verify (spent_output: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize) -> Result<(), Error> {
     verify_with_flags (spent_output, amount, spending_transaction, input_index, VERIFY_ALL)
 }
 
-/// Same as verify but with flags that turn past soft fork features on or off
+/// Same as verify but with flags that turn past soft fork features on or off.
 pub fn verify_with_flags (spent_output_script: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize, flags: u32) -> Result<(), Error> {
     unsafe {
         let mut error = Error::ERR_SCRIPT;
