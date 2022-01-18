@@ -93,11 +93,11 @@ pub const VERIFY_ALL : c_uint = VERIFY_P2SH | VERIFY_DERSIG | VERIFY_NULLDUMMY |
 
 extern "C" {
     /// Returns `libbitcoinconsensus` version.
-    pub fn bitcoinconsensus_version() -> c_int;
+    pub(crate) fn bitcoinconsensus_version() -> c_int;
 
     /// Verifies that the transaction input correctly spends the previous
     /// output, considering any additional constraints specified by flags.
-    pub fn bitcoinconsensus_verify_script_with_amount(
+    pub(crate) fn bitcoinconsensus_verify_script_with_amount(
         script_pubkey:  *const c_uchar,
         script_pubkeylen: c_uint,
         amount: u64,
