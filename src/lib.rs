@@ -26,19 +26,13 @@ use libc::{c_int,c_uchar, c_uint};
 #[repr(C)]
 pub enum Error {
     ERR_SCRIPT = 0,
-    #[allow(dead_code)]
     ERR_TX_INDEX,
-    #[allow(dead_code)]
     ERR_TX_SIZE_MISMATCH,
-    #[allow(dead_code)]
     ERR_TX_DESERIALIZE,
-    #[allow(dead_code)]
     ERR_AMOUNT_REQUIRED,
-    #[allow(dead_code)]
     ERR_INVALID_FLAGS
 }
 
-#[allow(dead_code)]
 /// Do not enable any verification.
 pub const VERIFY_NONE : c_uint = 0;
 /// Evaluate P2SH (BIP16) subscripts.
