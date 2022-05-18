@@ -1,6 +1,6 @@
 [package]
 name = "bitcoinconsensus"
-version = "0.19.0-3"
+version = "0.19.0-0.4.0"
 authors = ["Tamas Blummer <tamas.blummer@gmail.com>"]
 license = "Apache-2.0"
 homepage = "https://github.com/rust-bitcoin/rust-bitcoinconsensus/"
@@ -10,6 +10,7 @@ keywords = [ "bitcoin", "bitcoinconsensus", "libbitcoinconsensus" ]
 readme = "README.md"
 exclude = ["/depend/bitcoin/.github/**", "/depend/bitcoin/.tx/**", "/depend/bitcoin/build-aux/**", "/depend/bitcoin/contrib/**", "/depend/bitcoin/depends/**", "/depend/bitcoin/doc/**", "/depend/bitcoin/share/**", "/depend/bitcoin/test/**", "/depend/bitcoin/src/bench/**", "/depend/bitcoin/src/config/**", "/depend/bitcoin/src/consensus/**", "/depend/bitcoin/src/leveldb/**", "/depend/bitcoin/src/policy/**", "/depend/bitcoin/src/qt/**", "/depend/bitcoin/src/rpc/**", "/depend/bitcoin/src/support/**", "/depend/bitcoin/src/test/**", "/depend/bitcoin/src/univalue/**", "/depend/bitcoin/src/wallet/**", "/depend/bitcoin/src/zmq/**"]
 build = "build.rs"
+edition = "2018"
 
 [lib]
 name = "bitcoinconsensus"
