@@ -72,19 +72,19 @@ extern "C" {
 pub fn height_to_flags(height: u32) -> u32 {
     let mut flag = VERIFY_NONE;
 
-    if height > 170059 {
+    if height >= 173805 {
         flag |= VERIFY_P2SH;
     }
-    if height > 363724 {
+    if height >= 363725 {
         flag |= VERIFY_DERSIG;
     }
-    if height > 388381 {
+    if height >= 388381 {
         flag |= VERIFY_CHECKLOCKTIMEVERIFY;
     }
-    if height > 419328 {
+    if height >= 419328 {
         flag |= VERIFY_CHECKSEQUENCEVERIFY;
     }
-    if height > 481824 {
+    if height >= 481824 {
         flag |= VERIFY_NULLDUMMY | VERIFY_WITNESS
     }
 
