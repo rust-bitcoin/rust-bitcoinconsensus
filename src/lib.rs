@@ -20,17 +20,57 @@
 extern crate libc;
 
 use libc::{c_int,c_uchar, c_uint};
+use core::fmt;
 
+/// Errors returned by `libbitcoinconsensus` (see github.com/bitcoin/bitcoin/doc/shared-libraries.md).
 #[allow(non_camel_case_types)]
 #[derive(PartialEq, Eq, PartialOrd, Ord, Hash, Debug, Clone, Copy)]
 #[repr(C)]
 pub enum Error {
+    /// Default value, passed to `libbitcoinconsensus` as a return parameter.
     ERR_SCRIPT = 0,
+    /// An invalid index for `txTo`.
     ERR_TX_INDEX,
+    /// `txToLen` did not match with the size of `txTo`.
     ERR_TX_SIZE_MISMATCH,
+    /// An error deserializing `txTo`.
     ERR_TX_DESERIALIZE,
+    /// Input amount is required if WITNESS is used.
     ERR_AMOUNT_REQUIRED,
+    /// Script verification `flags` are invalid (i.e. not part of the libconsensus interface).
     ERR_INVALID_FLAGS
+}
+
+impl fmt::Display for Error {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        use self::Error::*;
+
+        let s = match *self {
+            ERR_SCRIPT => "error value was not set (value still 0)",
+            ERR_TX_INDEX => "an invalid index for txTo",
+            ERR_TX_SIZE_MISMATCH => "txToLen did not match with the size of txTo",
+            ERR_TX_DESERIALIZE => "an error deserializing txTo",
+            ERR_AMOUNT_REQUIRED => "input amount is required if WITNESS is used",
+            ERR_INVALID_FLAGS => "script verification flags are invalid",
+        };
+        f.write_str(s)
+    }
+}
+
+#[cfg(feature = "std")]
+impl std::error::Error for Error {
+    fn source(&self) -> Option<&(dyn std::error::Error + 'static)> {
+        use self::Error::*;
+
+        match *self {
+            ERR_SCRIPT
+            | ERR_TX_INDEX
+            | ERR_TX_SIZE_MISMATCH
+            | ERR_TX_DESERIALIZE
+            | ERR_AMOUNT_REQUIRED
+            | ERR_INVALID_FLAGS => None,
+        }
+    }
 }
 
 /// Do not enable any verification.

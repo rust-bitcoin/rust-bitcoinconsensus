@@ -18,6 +18,8 @@ name = "bitcoinconsensus"
 path = "src/lib.rs"
 
 [features]
+default = ["std"]
+std = []
 external-secp = []
 
 [dependencies]
