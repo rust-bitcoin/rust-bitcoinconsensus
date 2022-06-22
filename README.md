@@ -18,21 +18,17 @@ The project [rust-secp256k1](https://github.com/rust-bitcoin/rust-secp256k1) off
 This introduces a risk, since a difference between the two secp256k1 sources could break consensus with Bitcoin.
 
 
-## Build
+## Bitcoin Core subtree
 
-This project has a submodule (the Bitcoin Core sources), you have to clone it using:
+We use a git subtree to vendor the Bitcoin Core code. This can be seen from the following commit that were create using `git subtree add --prefix='bitcoin' git@github.com:bitcoin/bitcoin.git v0.19.2`.
+```
+f6027884ec Add 'depend/bitcoin/' from commit '204cc0f575e72c0a1908c71af1fd0c6cb6881470'
+```
 
-`
-git clone --recurse-submodules git@github.com:rust-bitcoin/rust-bitcoinconsensus.git
-`
-
-then build it simple with:
-
-`
-cargo build
-`
-
-I verified the build for Linux and OSX. Aleksey Sidorov contributed the windows build. PRs are welcome to extend support for other platforms.
+To use a later version of Bitcoin Core, for example, v0.20.2
+```
+git subtree pull --prefix='bitcoin' git@github.com:bitcoin/bitcoin.git v0.20.2
+```
 
 
 ## MSRV
