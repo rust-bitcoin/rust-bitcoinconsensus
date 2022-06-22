@@ -22,14 +22,14 @@ fn main() {
     let mut base_config = cc::Build::new();
     base_config
         .cpp(true)
-        .include("tmp/bitcoin/src")
-        .include("tmp/bitcoin/src/secp256k1/include")
+        .include("depend/bitcoin/src")
+        .include("depend/bitcoin/src/secp256k1/include")
         .define("__STDC_FORMAT_MACROS", None);
 
     // **Secp256k1**
     if !cfg!(feature = "external-secp") {
         base_config
-            .include("tmp/bitcoin/src/secp256k1")
+            .include("depend/bitcoin/src/secp256k1")
             .flag_if_supported("-Wno-unused-function") // some ecmult stuff is defined but not used upstream
             .define("SECP256K1_BUILD", "1")
             // Bitcoin core defines libsecp to *not* use libgmp.
@@ -39,7 +39,7 @@ fn main() {
             // Technically libconsensus doesn't require the recovery feautre, but `pubkey.cpp` does.
             .define("ENABLE_MODULE_RECOVERY", "1")
             // The actual libsecp256k1 C code.
-            .file("tmp/bitcoin/src/secp256k1/src/secp256k1.c");
+            .file("depend/bitcoin/src/secp256k1/src/secp256k1.c");
 
         if is_big_endian {
             base_config.define("WORDS_BIGENDIAN", "1");
@@ -68,19 +68,19 @@ fn main() {
         base_config.define("WIN32", "1");
     }
     base_config
-        .file("tmp/bitcoin/src/util/strencodings.cpp")
-        .file("tmp/bitcoin/src/uint256.cpp")
-        .file("tmp/bitcoin/src/pubkey.cpp")
-        .file("tmp/bitcoin/src/hash.cpp")
-        .file("tmp/bitcoin/src/primitives/transaction.cpp")
-        .file("tmp/bitcoin/src/crypto/ripemd160.cpp")
-        .file("tmp/bitcoin/src/crypto/sha1.cpp")
-        .file("tmp/bitcoin/src/crypto/sha256.cpp")
-        .file("tmp/bitcoin/src/crypto/sha512.cpp")
-        .file("tmp/bitcoin/src/crypto/hmac_sha512.cpp")
-        .file("tmp/bitcoin/src/script/bitcoinconsensus.cpp")
-        .file("tmp/bitcoin/src/script/interpreter.cpp")
-        .file("tmp/bitcoin/src/script/script.cpp")
-        .file("tmp/bitcoin/src/script/script_error.cpp")
+        .file("depend/bitcoin/src/util/strencodings.cpp")
+        .file("depend/bitcoin/src/uint256.cpp")
+        .file("depend/bitcoin/src/pubkey.cpp")
+        .file("depend/bitcoin/src/hash.cpp")
+        .file("depend/bitcoin/src/primitives/transaction.cpp")
+        .file("depend/bitcoin/src/crypto/ripemd160.cpp")
+        .file("depend/bitcoin/src/crypto/sha1.cpp")
+        .file("depend/bitcoin/src/crypto/sha256.cpp")
+        .file("depend/bitcoin/src/crypto/sha512.cpp")
+        .file("depend/bitcoin/src/crypto/hmac_sha512.cpp")
+        .file("depend/bitcoin/src/script/bitcoinconsensus.cpp")
+        .file("depend/bitcoin/src/script/interpreter.cpp")
+        .file("depend/bitcoin/src/script/script.cpp")
+        .file("depend/bitcoin/src/script/script_error.cpp")
         .compile("libbitcoinconsensus.a");
 }
