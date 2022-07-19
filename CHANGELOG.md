@@ -1,3 +1,8 @@
+## v0.19.2-0.4.1
+
+* switch to using a git subtree for the bitcoin core code
+* vendor bitcoin core v0.19.2
+
 ## v0.19.0-0.4.0
 
 The major change in this version is the Minimum Supported Rust Version (MSRV) bump, we now support
