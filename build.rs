@@ -51,9 +51,7 @@ fn main() {
                 .define("USE_SCALAR_4X64", "1")
                 .define("HAVE___INT128", "1");
         } else {
-            base_config
-                .define("USE_FIELD_10X26", "1")
-                .define("USE_SCALAR_8X32", "1");
+            base_config.define("USE_FIELD_10X26", "1").define("USE_SCALAR_8X32", "1");
         }
     }
 
