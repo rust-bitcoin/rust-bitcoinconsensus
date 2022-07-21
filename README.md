@@ -18,6 +18,14 @@ The project [rust-secp256k1](https://github.com/rust-bitcoin/rust-secp256k1) off
 This introduces a risk, since a difference between the two secp256k1 sources could break consensus with Bitcoin.
 
 
+## Version numbers
+
+We use [slightly abuse] semantic versioning. The first `Major.Minor.Patch` number tracks the vendored Bitcoin Core code (see below), the second `Major.Minor.Patch` tracks this crate. 
+For example, if we upgrade the Bitcoin Core code by a `Patch` version we also bump our `Patch` version.
+
+One side effect of this is that `crates.io` shows our release versions in yellow as if they were pre-release versions, this is due to us using a `-` which, in semantic versioning, implies a pre-release version.
+
+
 ## Bitcoin Core subtree
 
 We use a git subtree to vendor the Bitcoin Core code. This can be seen from the following commits that were created using `git subtree add --prefix='depend/bitcoin' git@github.com:bitcoin/bitcoin.git v0.19.2 --squash`.
