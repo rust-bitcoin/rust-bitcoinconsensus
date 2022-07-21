@@ -19,8 +19,9 @@
 
 extern crate libc;
 
-use libc::{c_int,c_uchar, c_uint};
 use core::fmt;
+
+use libc::{c_int, c_uchar, c_uint};
 
 /// Errors returned by `libbitcoinconsensus` (see github.com/bitcoin/bitcoin/doc/shared-libraries.md).
 #[allow(non_camel_case_types)]
@@ -38,7 +39,7 @@ pub enum Error {
     /// Input amount is required if WITNESS is used.
     ERR_AMOUNT_REQUIRED,
     /// Script verification `flags` are invalid (i.e. not part of the libconsensus interface).
-    ERR_INVALID_FLAGS
+    ERR_INVALID_FLAGS,
 }
 
 impl fmt::Display for Error {
@@ -63,33 +64,33 @@ impl std::error::Error for Error {
         use self::Error::*;
 
         match *self {
-            ERR_SCRIPT
-            | ERR_TX_INDEX
-            | ERR_TX_SIZE_MISMATCH
-            | ERR_TX_DESERIALIZE
-            | ERR_AMOUNT_REQUIRED
-            | ERR_INVALID_FLAGS => None,
+            ERR_SCRIPT | ERR_TX_INDEX | ERR_TX_SIZE_MISMATCH | ERR_TX_DESERIALIZE
+            | ERR_AMOUNT_REQUIRED | ERR_INVALID_FLAGS => None,
         }
     }
 }
 
 /// Do not enable any verification.
-pub const VERIFY_NONE : c_uint = 0;
+pub const VERIFY_NONE: c_uint = 0;
 /// Evaluate P2SH (BIP16) subscripts.
-pub const VERIFY_P2SH : c_uint = 1 << 0;
+pub const VERIFY_P2SH: c_uint = 1 << 0;
 /// Enforce strict DER (BIP66) compliance.
-pub const VERIFY_DERSIG : c_uint = 1 << 2;
+pub const VERIFY_DERSIG: c_uint = 1 << 2;
 /// Enforce NULLDUMMY (BIP147).
-pub const VERIFY_NULLDUMMY : c_uint = 1 << 4;
+pub const VERIFY_NULLDUMMY: c_uint = 1 << 4;
 /// Enable CHECKLOCKTIMEVERIFY (BIP65).
-pub const VERIFY_CHECKLOCKTIMEVERIFY : c_uint = 1 << 9;
+pub const VERIFY_CHECKLOCKTIMEVERIFY: c_uint = 1 << 9;
 /// Enable CHECKSEQUENCEVERIFY (BIP112).
-pub const VERIFY_CHECKSEQUENCEVERIFY : c_uint = 1 << 10;
+pub const VERIFY_CHECKSEQUENCEVERIFY: c_uint = 1 << 10;
 /// Enable WITNESS (BIP141).
-pub const VERIFY_WITNESS : c_uint = 1 << 11;
+pub const VERIFY_WITNESS: c_uint = 1 << 11;
 
-pub const VERIFY_ALL : c_uint = VERIFY_P2SH | VERIFY_DERSIG | VERIFY_NULLDUMMY |
-    VERIFY_CHECKLOCKTIMEVERIFY | VERIFY_CHECKSEQUENCEVERIFY | VERIFY_WITNESS;
+pub const VERIFY_ALL: c_uint = VERIFY_P2SH
+    | VERIFY_DERSIG
+    | VERIFY_NULLDUMMY
+    | VERIFY_CHECKLOCKTIMEVERIFY
+    | VERIFY_CHECKSEQUENCEVERIFY
+    | VERIFY_WITNESS;
 
 extern "C" {
     /// Returns `libbitcoinconsensus` version.
@@ -98,14 +99,15 @@ extern "C" {
     /// Verifies that the transaction input correctly spends the previous
     /// output, considering any additional constraints specified by flags.
     pub fn bitcoinconsensus_verify_script_with_amount(
-        script_pubkey:  *const c_uchar,
+        script_pubkey: *const c_uchar,
         script_pubkeylen: c_uint,
         amount: u64,
         tx_to: *const c_uchar,
         tx_tolen: c_uint,
         n_in: c_uint,
         flags: c_uint,
-        err: *mut Error) -> c_int;
+        err: *mut Error,
+    ) -> c_int;
 }
 
 /// Computes flags for soft fork activation heights on the Bitcoin network.
@@ -132,9 +134,7 @@ pub fn height_to_flags(height: u32) -> u32 {
 }
 
 /// Returns `libbitcoinconsensus` version.
-pub fn version () -> u32 {
-    unsafe { bitcoinconsensus_version() as u32 }
-}
+pub fn version() -> u32 { unsafe { bitcoinconsensus_version() as u32 } }
 
 /// Verifies a single spend (input) of a Bitcoin transaction.
 ///
@@ -174,12 +174,23 @@ pub fn version () -> u32 {
 /// should return `Ok(())`.
 ///
 /// **Note** since the spent amount will only be checked for Segwit transactions and the above example is not segwit, `verify` will succeed with any amount.
-pub fn verify (spent_output: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize) -> Result<(), Error> {
-    verify_with_flags (spent_output, amount, spending_transaction, input_index, VERIFY_ALL)
+pub fn verify(
+    spent_output: &[u8],
+    amount: u64,
+    spending_transaction: &[u8],
+    input_index: usize,
+) -> Result<(), Error> {
+    verify_with_flags(spent_output, amount, spending_transaction, input_index, VERIFY_ALL)
 }
 
 /// Same as verify but with flags that turn past soft fork features on or off.
-pub fn verify_with_flags (spent_output_script: &[u8], amount: u64, spending_transaction: &[u8], input_index: usize, flags: u32) -> Result<(), Error> {
+pub fn verify_with_flags(
+    spent_output_script: &[u8],
+    amount: u64,
+    spending_transaction: &[u8],
+    input_index: usize,
+    flags: u32,
+) -> Result<(), Error> {
     unsafe {
         let mut error = Error::ERR_SCRIPT;
 
@@ -191,7 +202,7 @@ pub fn verify_with_flags (spent_output_script: &[u8], amount: u64, spending_tran
             spending_transaction.len() as c_uint,
             input_index as c_uint,
             flags as c_uint,
-            &mut error
+            &mut error,
         );
         if ret != 1 {
             Err(error)
@@ -205,8 +216,8 @@ pub fn verify_with_flags (spent_output_script: &[u8], amount: u64, spending_tran
 mod tests {
     extern crate rustc_serialize as serialize;
 
-    use super::*;
     use self::serialize::hex::FromHex;
+    use super::*;
 
     #[test]
     fn bitcoinconsensus_test() {
@@ -250,15 +261,17 @@ mod tests {
             "010000000001011f97548fbbe7a0db7588a66e18d803d0089315aa7d4cc28360b6ec50ef36718a0100000000ffffffff02df1776000000000017a9146c002a686959067f4866b8fb493ad7970290ab728757d29f0000000000220020701a8d401c84fb13e6baf169d59684e17abd9fa216c8cc5b9fc63d622ff8c58d04004730440220565d170eed95ff95027a69b313758450ba84a01224e1f7f130dda46e94d13f8602207bdd20e307f062594022f12ed5017bbf4a055a06aea91c10110a0e3bb23117fc014730440220647d2dc5b15f60bc37dc42618a370b2a1490293f9e5c8464f53ec4fe1dfe067302203598773895b4b16d37485cbe21b337f4e4b650739880098c592553add7dd4355016952210375e00eb72e29da82b89367947f29ef34afb75e8654f6ea368e0acdfd92976b7c2103a1b26313f430c4b15bb1fdce663207659d8cac749a0e53d70eff01874496feff2103c96d495bfdd5ba4145e3e046fee45e84a8a48ad05bd8dbb395c011a32cf9f88053ae00000000",
             18393430 , 0
         ).is_err());
-
     }
 
-    fn verify_test (spent : &str, spending :&str, amount :u64, input: usize) -> Result<(),Error> {
-        verify (spent.from_hex().unwrap().as_slice(), amount, spending.from_hex().unwrap().as_slice(), input)
+    fn verify_test(spent: &str, spending: &str, amount: u64, input: usize) -> Result<(), Error> {
+        verify(
+            spent.from_hex().unwrap().as_slice(),
+            amount,
+            spending.from_hex().unwrap().as_slice(),
+            input,
+        )
     }
 
     #[test]
-    fn invalid_flags_test() {
-        verify_with_flags(&[], 0, &[], 0, VERIFY_ALL + 1).unwrap_err();
-    }
+    fn invalid_flags_test() { verify_with_flags(&[], 0, &[], 0, VERIFY_ALL + 1).unwrap_err(); }
 }
