@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Click-dreapta pentru a edita adresa sau eticheta</translation>
+        <translation>Click dreapta pentru a modifica adresa sau eticheta</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Copiază adresa selectată în clipboard</translation>
+        <translation>Copiați adresa selectată curent în clipboard-ul sistemului</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -27,7 +27,7 @@
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Şterge adresa selectată din listă</translation>
+        <translation>Şterge adresa selectată curent din listă</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
@@ -68,6 +68,10 @@
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Acestea sunt adresele tale Bitcoin pentru efectuarea platilor. Intotdeauna verifica atent suma de plata si adresa beneficiarului inainte de a trimite monede.</translation>
+    </message>
+    <message>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
+        <translation>Acestea sunt adresele dvs. Bitcoin pentru primirea plăților. Utilizați butonul „Creați o nouă adresă de primire” din secțiunea primire pentru a crea adrese noi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -174,6 +178,19 @@
     <message>
         <source>Wallet encrypted</source>
         <translation>Portofel criptat</translation>
+    </message>
+    <message>
+        <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Introduceti o parola noua pentru portofel. &lt;br/&gt;Va rugam sa folositi o parola de &lt;b&gt; zece sau mai multe caractere&lt;/b&gt;, sau &lt;b&gt;mai mult de opt cuvinte&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source>Enter the old passphrase and new passphrase for the wallet.</source>
+        <translation>Introduceţi vechea şi noua parolă pentru portofel.
+ </translation>
+    </message>
+    <message>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation>Reţineti: criptarea portofelului dvs. nu vă poate proteja în totalitate bitcoin-urile împotriva furtului de malware care vă infectează computerul.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -358,14 +375,6 @@
         <translation>Schimbă fraza de acces folosită pentru criptarea portofelului</translation>
     </message>
     <message>
-        <source>&amp;Debug window</source>
-        <translation>Fereastra de &amp;depanare</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Deschide consola de depanare şi diagnosticare</translation>
-    </message>
-    <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Verifică mesaj...</translation>
     </message>
@@ -426,10 +435,6 @@
         <translation>Arată lista de adrese pentru primire şi etichetele</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Deschidere bitcoin: o adresa URI sau o cerere de plată</translation>
-    </message>
-    <message>
         <source>&amp;Command-line options</source>
         <translation>Opţiuni linie de &amp;comandă</translation>
     </message>
@@ -478,12 +483,24 @@
         <translation>Actualizat</translation>
     </message>
     <message>
+        <source>Node window</source>
+        <translation>Fereastra nodului</translation>
+    </message>
+    <message>
+        <source>Open node debugging and diagnostic console</source>
+        <translation>Deschide consola pentru depanare şi diagnosticare a nodului</translation>
+    </message>
+    <message>
         <source>&amp;Sending addresses</source>
         <translation>&amp;Adresele de destinatie</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses</source>
         <translation>&amp;Adresele de primire</translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI</source>
+        <translation>Deschidere bitcoin: o adresa URI sau o cerere de plată</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -772,6 +789,10 @@
 <context>
     <name>CreateWalletActivity</name>
     <message>
+        <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;...</source>
+        <translation>Creare Portofel &lt;b&gt;%1&lt;/b&gt;...</translation>
+    </message>
+    <message>
         <source>Create wallet failed</source>
         <translation>Crearea portofelului a eşuat</translation>
     </message>
@@ -805,6 +826,14 @@
     <message>
         <source>Disable Private Keys</source>
         <translation>Dezactivează cheile private</translation>
+    </message>
+    <message>
+        <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported, or an HD seed can be set, at a later time.</source>
+        <translation>Faceți un portofel gol. Portofelele goale nu au inițial chei sau scripturi private. Cheile și adresele private pot fi importate sau poate fi setat un semnal HD, ulterior.</translation>
+    </message>
+    <message>
+        <source>Make Blank Wallet</source>
+        <translation>Faceți Portofel gol</translation>
     </message>
     <message>
         <source>Create</source>
@@ -894,10 +923,6 @@
     <message>
         <source>version</source>
         <translation>versiunea</translation>
-    </message>
-    <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
     </message>
     <message>
         <source>About %1</source>
@@ -1029,28 +1054,20 @@
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>Deschide URI</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>Deschideţi cerere de plată prin intermediul adresei URI sau a fişierului</translation>
-    </message>
-    <message>
         <source>URI:</source>
         <translation>URI:</translation>
-    </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation>Selectaţi fişierul cerere de plată</translation>
-    </message>
-    <message>
-        <source>Select payment request file to open</source>
-        <translation>Selectati care fisier de cerere de plata va fi deschis</translation>
     </message>
 </context>
 <context>
     <name>OpenWalletActivity</name>
+    <message>
+        <source>Open wallet failed</source>
+        <translation>Deschiderea portofelului a eșuat</translation>
+    </message>
+    <message>
+        <source>Open wallet warning</source>
+        <translation>Atenționare la deschiderea portofelului</translation>
+    </message>
     <message>
         <source>default wallet</source>
         <translation>portofel implicit</translation>
@@ -1417,10 +1434,6 @@
         <translation>'bitcoin://' nu este un URI valid. Folositi 'bitcoin:' in loc.</translation>
     </message>
     <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation>URL-ul cererii de plată preluat nu este valid: %1</translation>
-    </message>
-    <message>
         <source>Invalid payment address %1</source>
         <translation>Adresă pentru plată invalidă %1</translation>
     </message>
@@ -1431,66 +1444,6 @@
     <message>
         <source>Payment request file handling</source>
         <translation>Manipulare fişier cerere de plată</translation>
-    </message>
-    <message>
-        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Fişierul cerere de plată nu poate fi citit! Cauza poate fi un fişier cerere de plată nevalid.</translation>
-    </message>
-    <message>
-        <source>Payment request rejected</source>
-        <translation>Cerere de plată refuzată</translation>
-    </message>
-    <message>
-        <source>Payment request network doesn't match client network.</source>
-        <translation>Cererea de plată din reţea nu se potriveşte cu clientul din reţea</translation>
-    </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation>Cerere de plată expirata</translation>
-    </message>
-    <message>
-        <source>Payment request is not initialized.</source>
-        <translation>Cererea de plată nu este iniţializată.</translation>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>Cererile nesecurizate către scripturi personalizate de plăți nu sunt suportate</translation>
-    </message>
-    <message>
-        <source>Invalid payment request.</source>
-        <translation>Cerere de plată invalidă.</translation>
-    </message>
-    <message>
-        <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Suma cerută de plată de %1 este prea mică (considerată praf).</translation>
-    </message>
-    <message>
-        <source>Refund from %1</source>
-        <translation>Rambursare de la %1</translation>
-    </message>
-    <message>
-        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>Cererea de plată %1 este prea mare (%2 octeţi, permis %3 octeţi).</translation>
-    </message>
-    <message>
-        <source>Error communicating with %1: %2</source>
-        <translation>Eroare la comunicarea cu %1: %2</translation>
-    </message>
-    <message>
-        <source>Payment request cannot be parsed!</source>
-        <translation>Cererea de plată nu poate fi analizată!</translation>
-    </message>
-    <message>
-        <source>Bad response from server %1</source>
-        <translation>Răspuns greşit de la server %1</translation>
-    </message>
-    <message>
-        <source>Network request error</source>
-        <translation>Eroare în cererea de reţea</translation>
-    </message>
-    <message>
-        <source>Payment acknowledged</source>
-        <translation>Plată acceptată</translation>
     </message>
 </context>
 <context>
@@ -1665,10 +1618,6 @@
         <translation>&amp;Informaţii</translation>
     </message>
     <message>
-        <source>Debug window</source>
-        <translation>Fereastra de depanare</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>General</translation>
     </message>
@@ -1775,6 +1724,10 @@
     <message>
         <source>User Agent</source>
         <translation>Agent utilizator</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation>Fereastra nodului</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
@@ -2193,10 +2146,6 @@
         <translation>Avertisment: Estimarea comisionului nu s-a putut efectua.</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>inchide setarile de taxare</translation>
-    </message>
-    <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
 Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
@@ -2365,10 +2314,6 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
         <translation>Creare tranzacţie nereuşită!</translation>
     </message>
     <message>
-        <source>The transaction was rejected with the following reason: %1</source>
-        <translation>Tranzactia a fost refuzata pentru urmatorul motiv: %1</translation>
-    </message>
-    <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
         <translation>O taxă mai mare de %1 este considerată o taxă absurd de mare</translation>
     </message>
@@ -2418,10 +2363,6 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
     <message>
         <source>Choose previously used address</source>
         <translation>Alegeţi adrese folosite anterior</translation>
-    </message>
-    <message>
-        <source>This is a normal payment.</source>
-        <translation>Aceasta este o tranzacţie normală.</translation>
     </message>
     <message>
         <source>The Bitcoin address to send the payment to</source>
@@ -2482,17 +2423,6 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
     <message>
         <source>Memo:</source>
         <translation>Memo:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Introduceţi o etichetă pentru această adresă pentru a fi adăugată în lista dvs. de adrese</translation>
-    </message>
-</context>
-<context>
-    <name>SendConfirmationDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation>Da</translation>
     </message>
 </context>
 <context>
@@ -3222,10 +3152,6 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
         <translation>Reductie: ultima sincronizare merge dincolo de datele reductiei. Trebuie sa faceti -reindex (sa descarcati din nou intregul blockchain in cazul unui nod redus)</translation>
     </message>
     <message>
-        <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation>Rescanarile nu sunt posibile in modul redus. Va trebui sa folositi -reindex, ceea ce va descarca din nou intregul blockchain.</translation>
-    </message>
-    <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation>Eroare: S-a produs o eroare interna fatala, vedeti debug.log pentru detalii</translation>
     </message>
@@ -3240,6 +3166,10 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
     <message>
         <source>The %s developers</source>
         <translation>Dezvoltatorii %s</translation>
+    </message>
+    <message>
+        <source>Can't generate a change-address key. No keys in the internal keypool and can't generate any keys.</source>
+        <translation>Nu se poate genera o cheie de modificare a adresei. Nu există chei în grupul de intern chei și nu se pot genera chei.</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
@@ -3482,6 +3412,10 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
         <translation>Eroare la actualizarea bazei de date chainstate</translation>
     </message>
     <message>
+        <source>Error: Disk space is low for %s</source>
+        <translation>Eroare: Spațiul pe disc este redus pentru %s</translation>
+    </message>
+    <message>
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation>Adresa sau hostname -onion invalide: '%s'</translation>
     </message>
@@ -3520,6 +3454,12 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
     <message>
         <source>Specified -walletdir "%s" is not a directory</source>
         <translation>-walletdir "%s" specificat nu este un director</translation>
+    </message>
+    <message>
+        <source>The specified config file %s does not exist
+</source>
+        <translation>Fișierul de configurare specificat %s nu există
+</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
@@ -3564,10 +3504,6 @@ Nota: Cum taxa este calculata per byte, o taxa de "100 satoshi per kB" pentru o 
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>Aceasta este taxa de tranzactie pe care este posibil sa o platiti daca estimarile de taxe nu sunt disponibile.</translation>
-    </message>
-    <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>Acest produs include software dezvoltat de OpenSSL Project pentru a fi folosit in Toolkitul OpenSSL %s, software criptografic scris de Eric Young si software UPnP scris de Thomas Bernard.</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>

@@ -1,0 +1,194 @@
+<TS language="gd" version="2.1">
+<context>
+    <name>AddressBookPage</name>
+    <message>
+        <source>Right-click to edit address or label</source>
+        <translation>Dèan briogadh deas airson seòladh no bileag a dheasachadh</translation>
+    </message>
+    <message>
+        <source>Create a new address</source>
+        <translation>Cruthaich seòladh ùr</translation>
+    </message>
+    <message>
+        <source>Copy the currently selected address to the system clipboard</source>
+        <translation>Dèan lethbhreac den t-seòladh a chaidh a thaghadh an-dràsta gu cairt-bhòrd an t-siostaim</translation>
+    </message>
+    <message>
+        <source>Delete the currently selected address from the list</source>
+        <translation>Thoir às an seòladh a chaidh a thaghadh an-dràsta bhon liosta</translation>
+    </message>
+    <message>
+        <source>Choose the address to send coins to</source>
+        <translation>Tagh an seòladh airson buinn a chuir thuige</translation>
+    </message>
+    <message>
+        <source>Sending addresses</source>
+        <translation>A ’cur sheòlaidhean</translation>
+    </message>
+    </context>
+<context>
+    <name>AddressTableModel</name>
+    <message>
+        <source>Address</source>
+        <translation>Seòladh</translation>
+    </message>
+    </context>
+<context>
+    <name>AskPassphraseDialog</name>
+    </context>
+<context>
+    <name>BanTableModel</name>
+    </context>
+<context>
+    <name>BitcoinGUI</name>
+    <message>
+        <source>Error</source>
+        <translation>Mearachd</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Rabhadh</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Fiosrachadh</translation>
+    </message>
+    </context>
+<context>
+    <name>CoinControlDialog</name>
+    </context>
+<context>
+    <name>CreateWalletActivity</name>
+    </context>
+<context>
+    <name>CreateWalletDialog</name>
+    <message>
+        <source>Wallet Name</source>
+        <translation>Ainm Wallet</translation>
+    </message>
+    </context>
+<context>
+    <name>EditAddressDialog</name>
+    </context>
+<context>
+    <name>FreespaceChecker</name>
+    <message>
+        <source>name</source>
+        <translation>ainm</translation>
+    </message>
+    </context>
+<context>
+    <name>HelpMessageDialog</name>
+    </context>
+<context>
+    <name>Intro</name>
+    <message>
+        <source>Error</source>
+        <translation>Mearachd</translation>
+    </message>
+    </context>
+<context>
+    <name>ModalOverlay</name>
+    <message>
+        <source>Form</source>
+        <translation>Fhoirm</translation>
+    </message>
+    </context>
+<context>
+    <name>OpenURIDialog</name>
+    </context>
+<context>
+    <name>OpenWalletActivity</name>
+    </context>
+<context>
+    <name>OptionsDialog</name>
+    <message>
+        <source>Error</source>
+        <translation>Mearachd</translation>
+    </message>
+    </context>
+<context>
+    <name>OverviewPage</name>
+    <message>
+        <source>Form</source>
+        <translation>Fhoirm</translation>
+    </message>
+    </context>
+<context>
+    <name>PaymentServer</name>
+    </context>
+<context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>QObject</name>
+    </context>
+<context>
+    <name>QRImageWidget</name>
+    </context>
+<context>
+    <name>RPCConsole</name>
+    </context>
+<context>
+    <name>ReceiveCoinsDialog</name>
+    </context>
+<context>
+    <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Address</source>
+        <translation>Seòladh</translation>
+    </message>
+    </context>
+<context>
+    <name>RecentRequestsTableModel</name>
+    </context>
+<context>
+    <name>SendCoinsDialog</name>
+    </context>
+<context>
+    <name>SendCoinsEntry</name>
+    </context>
+<context>
+    <name>ShutdownWindow</name>
+    </context>
+<context>
+    <name>SignVerifyMessageDialog</name>
+    </context>
+<context>
+    <name>TrafficGraphWidget</name>
+    </context>
+<context>
+    <name>TransactionDesc</name>
+    </context>
+<context>
+    <name>TransactionDescDialog</name>
+    </context>
+<context>
+    <name>TransactionTableModel</name>
+    </context>
+<context>
+    <name>TransactionView</name>
+    <message>
+        <source>Address</source>
+        <translation>Seòladh</translation>
+    </message>
+    </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletController</name>
+    </context>
+<context>
+    <name>WalletFrame</name>
+    </context>
+<context>
+    <name>WalletModel</name>
+    </context>
+<context>
+    <name>WalletView</name>
+    </context>
+<context>
+    <name>bitcoin-core</name>
+    </context>
+</TS>

@@ -71,7 +71,7 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>Αυτές είναι οι Bitcoin διευθύνσεις για την λήψη πληρωμών. Χρησιμοποιήσε το κουμπί  'Δημιουργία νέας διεύθυνσης λήψεων' στο παράθυρο λήψεων για την δημιουργία νέας διεύθυνσης  </translation>
+        <translation>Αυτές είναι οι Bitcoin διευθύνσεις για την λήψη πληρωμών. Χρησιμοποίησε το κουμπί  'Δημιουργία νέας διεύθυνσης λήψεων' στο παράθυρο λήψεων για την δημιουργία νέας διεύθυνσης  </translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -374,14 +374,6 @@
         <translation>Αλλαγή του κωδικού κρυπτογράφησης του πορτοφολιού</translation>
     </message>
     <message>
-        <source>&amp;Debug window</source>
-        <translation>&amp;Παράθυρο αποσφαλμάτωσης</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Άνοιγμα κονσόλας αποσφαλμάτωσης και διαγνωστικών</translation>
-    </message>
-    <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Επιβεβαίωση μηνύματος</translation>
     </message>
@@ -442,10 +434,6 @@
         <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών λήψεως</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Άνοιγμα bitcoin: URI αίτησης πληρωμής</translation>
-    </message>
-    <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Επιλογές γραμμής εντολών</translation>
     </message>
@@ -463,7 +451,7 @@
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform> Επεξεργασμένα %n κομμάτια ιστορικού συναλλαγών.</numerusform><numerusform>Επεξεργασμένα %n μπλοκ ιστορικού συναλλαγών.</numerusform></translation>
+        <translation><numerusform>Επεξεργασμένα %n μπλοκ ιστορικού συναλλαγών.</numerusform><numerusform>Επεξεργασμένα %n μπλοκ ιστορικού συναλλαγών.</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -494,12 +482,24 @@
         <translation>Ενημερωμένο</translation>
     </message>
     <message>
+        <source>Node window</source>
+        <translation>Κόμβος παράθυρο</translation>
+    </message>
+    <message>
+        <source>Open node debugging and diagnostic console</source>
+        <translation>Ανοίξτε τον κόμβο εντοπισμού σφαλμάτων και τη διαγνωστική κονσόλα</translation>
+    </message>
+    <message>
         <source>&amp;Sending addresses</source>
-        <translation>&amp;Αποστολή διευθύνσεων</translation>
+        <translation>&amp;Αποστολή διεύθυνσης</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses</source>
         <translation>&amp;Λήψη διευθύνσεων</translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI</source>
+        <translation>Ανοίξτε ένα bitcoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -511,7 +511,7 @@
     </message>
     <message>
         <source>Close Wallet...</source>
-        <translation>Κλείσιμο Πορτοφολιού...</translation>
+        <translation>Κλείσιμο Πορτοφολιού</translation>
     </message>
     <message>
         <source>Close wallet</source>
@@ -924,10 +924,6 @@
         <translation>έκδοση</translation>
     </message>
     <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
-    </message>
-    <message>
         <source>About %1</source>
         <translation>Σχετικά %1</translation>
     </message>
@@ -945,6 +941,10 @@
     <message>
         <source>Welcome to %1.</source>
         <translation>Καλωσήρθες στο %1.</translation>
+    </message>
+    <message>
+        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
+        <translation>Όταν κάνετε κλικ στο OK, το %1 θα ξεκινήσει τη λήψη και την επεξεργασία της πλήρους αλυσίδας μπλοκ% 4 (%2GB) αρχίζοντας από τις πρώτες συναλλαγές στο %3 όταν αρχικά ξεκίνησε το %4.</translation>
     </message>
     <message>
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
@@ -1002,7 +1002,11 @@
         <source>(of %n GB needed)</source>
         <translation><numerusform>(από το %n GB που απαιτείται)</numerusform><numerusform>(από τα %n GB που απαιτούνται)</numerusform></translation>
     </message>
-    </context>
+    <message numerus="yes">
+        <source>(%n GB needed for full chain)</source>
+        <translation><numerusform>(%n GB απαιτούνται για την πλήρη αλυσίδα)</numerusform><numerusform>(%n GB απαιτούνται για την πλήρη αλυσίδα)</numerusform></translation>
+    </message>
+</context>
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -1050,6 +1054,14 @@
         <translation>Απόκρυψη</translation>
     </message>
     <message>
+        <source>Esc</source>
+        <translation>Πλήκτρο Esc</translation>
+    </message>
+    <message>
+        <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
+        <translation>Το %1 συγχρονίζεται αυτήν τη στιγμή. Θα κατεβάσει κεφαλίδες και μπλοκ από τους συντρόφους και θα τους επικυρώσει μέχρι να φτάσουν στην άκρη της αλυσίδας μπλοκ.</translation>
+    </message>
+    <message>
         <source>Unknown. Syncing Headers (%1, %2%)...</source>
         <translation>Αγνωστος. Συγχρονισμός κεφαλίδων (%1, %2%)...</translation>
     </message>
@@ -1057,22 +1069,14 @@
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>Άνοιγμα &amp;URI</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>Ανοιχτό αίτημα πληρωμής από URI ή από αρχείο</translation>
+        <source>Open bitcoin URI</source>
+        <translation>Ανοίξτε το bitcoin URI</translation>
     </message>
     <message>
         <source>URI:</source>
         <translation>URI:</translation>
     </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation>Επιλέξτε πληρωμή αρχείου αίτησης</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>OpenWalletActivity</name>
     <message>
@@ -1458,6 +1462,10 @@
         <translation>'bitcoin: //' δεν είναι έγκυρο URI. Χρησιμοποιήστε το "bitcoin:" αντ 'αυτού.</translation>
     </message>
     <message>
+        <source>Cannot process payment request because BIP70 is not supported.</source>
+        <translation>Δεν είναι δυνατή η επεξεργασία της αίτησης πληρωμής, επειδή δεν υποστηρίζεται το BIP70.</translation>
+    </message>
+    <message>
         <source>Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.</source>
         <translation>Λόγω εκτεταμένων αδυναμιών ασφαλείας στο BIP70 συνιστάται ανεπιφύλακτα να αγνοούνται οι οδηγίες του εμπόρου για την αλλαγή πορτοφολιών.</translation>
     </message>
@@ -1477,30 +1485,6 @@
         <source>Payment request file handling</source>
         <translation>Επεξεργασία αρχείου αίτησης πληρωμής</translation>
     </message>
-    <message>
-        <source>Payment request rejected</source>
-        <translation>Η αίτηση πληρωμής απορρίφθηκε</translation>
-    </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation>Η αίτηση πληρωμής έληξε.</translation>
-    </message>
-    <message>
-        <source>Invalid payment request.</source>
-        <translation>Μη έγκυρο αίτημα πληρωμής.</translation>
-    </message>
-    <message>
-        <source>Payment request cannot be parsed!</source>
-        <translation>Δεν είναι δυνατή η ανάλυση της αίτησης πληρωμής!</translation>
-    </message>
-    <message>
-        <source>Network request error</source>
-        <translation>Σφάλμα αίτησης δικτύου</translation>
-    </message>
-    <message>
-        <source>Payment acknowledged</source>
-        <translation>Η πληρωμή αναγνωρίστηκε</translation>
-    </message>
 </context>
 <context>
     <name>PeerTableModel</name>
@@ -1514,7 +1498,7 @@
     </message>
     <message>
         <source>NodeId</source>
-        <translation>Node ID</translation>
+        <translation>Ταυτότητα Κόμβου</translation>
     </message>
     <message>
         <source>Ping</source>
@@ -1567,9 +1551,33 @@
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
+    <message numerus="yes">
+        <source>%n second(s)</source>
+        <translation><numerusform>%n δευτερόλεπτα</numerusform><numerusform>%n δευτερόλεπτα</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n minute(s)</source>
+        <translation><numerusform>%n λεπτά</numerusform><numerusform>%n λεπτά</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation><numerusform>%n ώρες</numerusform><numerusform>%n ώρες</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation><numerusform>%n ημέρες</numerusform><numerusform>%n ημέρες</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation><numerusform>%n εβδομάδες</numerusform><numerusform>%n εβδομάδες</numerusform></translation>
+    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 και %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>%n χρόνια</numerusform><numerusform>%n χρόνια</numerusform></translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -1654,10 +1662,6 @@
         <translation>&amp;Πληροφορία</translation>
     </message>
     <message>
-        <source>Debug window</source>
-        <translation>Παράθυρο αποσφαλμάτωσης</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>Γενικά</translation>
     </message>
@@ -1739,7 +1743,7 @@
     </message>
     <message>
         <source>Banned peers</source>
-        <translation>Αποκλεισμένοι συνομήλικοι</translation>
+        <translation>Αποκλεισμένοι σύντροφοι</translation>
     </message>
     <message>
         <source>Select a peer to view detailed information.</source>
@@ -1770,8 +1774,20 @@
         <translation>Συγχρονισμένα Μπλοκς</translation>
     </message>
     <message>
+        <source>The mapped Autonomous System used for diversifying peer selection.</source>
+        <translation>Το χαρτογραφημένο Αυτόνομο Σύστημα που χρησιμοποιείται για τη διαφοροποίηση της επιλογής ομοτίμων.</translation>
+    </message>
+    <message>
+        <source>Mapped AS</source>
+        <translation>Χαρτογραφημένο ως</translation>
+    </message>
+    <message>
         <source>User Agent</source>
         <translation>Agent χρήστη</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation>Κόμβος παράθυρο</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
@@ -1979,12 +1995,19 @@
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation> 
-Χρησιμοποιήστε αυτήν τη φόρμα για να ζητήσετε πληρωμές. Όλα τα πεδία είναι &lt;b&gt;προαιρετικά&lt;/b&gt;.</translation>
+        <translation>Χρησιμοποιήστε αυτήν τη φόρμα για να ζητήσετε πληρωμές. Όλα τα πεδία είναι &lt;b&gt;προαιρετικά&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>Ένα προαιρετικό ποσό για να ζητήσετε. Αφήστε αυτό το κενό ή το μηδέν για να μην ζητήσετε ένα συγκεκριμένο ποσό.</translation>
+    </message>
+    <message>
+        <source>An optional label to associate with the new receiving address (used by you to identify an invoice).  It is also attached to the payment request.</source>
+        <translation>Μια προαιρετική ετικέτα για σύνδεση με τη νέα διεύθυνση λήψης (που χρησιμοποιείται από εσάς για την αναγνώριση τιμολογίου). Επισυνάπτεται επίσης στην αίτηση πληρωμής.</translation>
+    </message>
+    <message>
+        <source>An optional message that is attached to the payment request and may be displayed to the sender.</source>
+        <translation>Ένα προαιρετικό μήνυμα που επισυνάπτεται στην αίτηση πληρωμής και μπορεί να εμφανιστεί στον αποστολέα.</translation>
     </message>
     <message>
         <source>&amp;Create new receiving address</source>
@@ -2063,7 +2086,7 @@
     </message>
     <message>
         <source>Request payment to %1</source>
-        <translation> Αίτημα πληρωμής στο %1</translation>
+        <translation>Αίτημα πληρωμής στο %1</translation>
     </message>
     <message>
         <source>Payment information</source>
@@ -2111,6 +2134,10 @@
     <message>
         <source>(no label)</source>
         <translation>(χωρίς ετικέτα)</translation>
+    </message>
+    <message>
+        <source>(no message)</source>
+        <translation>(κανένα μήνυμα)</translation>
     </message>
     <message>
         <source>(no amount requested)</source>
@@ -2237,6 +2264,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Σκόνη:</translation>
     </message>
     <message>
+        <source>Hide transaction fee settings</source>
+        <translation>Απόκρυψη ρυθμίσεων αμοιβής συναλλαγής</translation>
+    </message>
+    <message>
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
         <translation>Όταν υπάρχει λιγότερος όγκος συναλλαγών από το χώρο στα μπλοκ, οι ανθρακωρύχοι καθώς και οι κόμβοι αναμετάδοσης μπορούν να επιβάλουν ένα ελάχιστο τέλος. Η πληρωμή μόνο αυτού του ελάχιστου τέλους είναι μια χαρά, αλλά γνωρίζετε ότι αυτό μπορεί να οδηγήσει σε μια συναλλαγή που δεν επιβεβαιώνει ποτέ τη στιγμή που υπάρχει μεγαλύτερη ζήτηση για συναλλαγές bitcoin από ό, τι μπορεί να επεξεργαστεί το δίκτυο.</translation>
     </message>
@@ -2250,7 +2281,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Enable Replace-By-Fee</source>
-        <translation>Ενεργοποίηση Αντικατάστασης-Aπό-Έξοδα:</translation>
+        <translation>Ενεργοποίηση Αντικατάστασης-Aπό-Έξοδα</translation>
     </message>
     <message>
         <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
@@ -2305,6 +2336,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>%1 (%2 μπλοκς)</translation>
     </message>
     <message>
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Δη&amp;μιουργία Ανυπόγραφου</translation>
+    </message>
+    <message>
         <source> from wallet '%1'</source>
         <translation>από πορτοφόλι '%1'</translation>
     </message>
@@ -2317,9 +2352,16 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>%1 προς το %2</translation>
     </message>
     <message>
+        <source>Do you want to draft this transaction?</source>
+        <translation>Θέλετε να σχεδιάσετε αυτήν τη συναλλαγή;</translation>
+    </message>
+    <message>
         <source>Are you sure you want to send?</source>
-        <translation> 
-Είστε βέβαιοι ότι θέλετε να στείλετε;</translation>
+        <translation>Είστε βέβαιοι ότι θέλετε να στείλετε;</translation>
+    </message>
+    <message>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation>Παρακαλώ ελέγξτε την πρόταση συναλλαγής. Αυτό θα παράγει μια συναλλαγή Bitcoin με μερική υπογραφή (PSBT), την οποία μπορείτε να αντιγράψετε και στη συνέχεια να υπογράψετε με π.χ. ένα πορτοφόλι %1 εκτός σύνδεσης ή ένα πορτοφόλι υλικού συμβατό με το PSBT.</translation>
     </message>
     <message>
         <source>or</source>
@@ -2348,16 +2390,35 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>To review recipient list click "Show Details..."</source>
-        <translation>Για να ελέγξετε τη λίστα παραληπτών, κάντε κλικ στην επιλογή "Εμφάνιση λεπτομερειών..."</translation>
+        <translation>Για να ελέγξετε τη λίστα παραληπτών, κάντε κλικ στην επιλογή "Εμφάνιση Λεπτομερειών..."</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
         <translation> Επιβεβαιώστε την αποστολή νομισμάτων</translation>
     </message>
     <message>
+        <source>Confirm transaction proposal</source>
+        <translation> Επιβεβαιώστε την πρόταση συναλλαγής</translation>
+    </message>
+    <message>
+        <source>Copy PSBT to clipboard</source>
+        <translation>Αντιγράψτε το PSBT στο πρόχειρο</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Αποστολή</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT αντιγράφηκε</translation>
+    </message>
+    <message>
+        <source>Watch-only balance:</source>
+        <translation>Παρακολούθηση μόνο ισορροπίας:</translation>
+    </message>
+    <message>
         <source>The recipient address is not valid. Please recheck.</source>
-        <translation> 
-Η διεύθυνση παραλήπτη δεν είναι έγκυρη. Ελέγξτε ξανά.</translation>
+        <translation>Η διεύθυση παραλήπτη δεν είναι έγκυρη. Ελέγξτε ξανά.</translation>
     </message>
     <message>
         <source>The amount to pay must be larger than 0.</source>
@@ -2386,6 +2447,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Payment request expired.</source>
         <translation>Η αίτηση πληρωμής έληξε.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Estimated to begin confirmation within %n block(s).</source>
+        <translation><numerusform>Εκτιμάται η έναρξη επιβεβαίωσης εντός %n μπλοκ.</numerusform><numerusform>Εκτιμάται η έναρξη επιβεβαίωσης εντός %n μπλοκ.</numerusform></translation>
     </message>
     <message>
         <source>Warning: Invalid Bitcoin address</source>
@@ -2427,10 +2492,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Επιλογή διεύθυνσης που έχει ήδη χρησιμοποιηθεί</translation>
     </message>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>Αυτή είναι μια απλή πληρωμή.</translation>
-    </message>
-    <message>
         <source>The Bitcoin address to send the payment to</source>
         <translation>Η διεύθυνση Bitcoin που θα σταλεί η πληρωμή</translation>
     </message>
@@ -2449,6 +2510,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Remove this entry</source>
         <translation>Αφαίρεση αυτής της καταχώρησης</translation>
+    </message>
+    <message>
+        <source>The amount to send in the selected unit</source>
+        <translation>Το ποσό που θα αποσταλεί στην επιλεγμένη μονάδα</translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
@@ -2485,13 +2550,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Memo:</source>
         <translation>Σημείωση:</translation>
-    </message>
-    </context>
-<context>
-    <name>SendConfirmationDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation>Ναι</translation>
     </message>
 </context>
 <context>
@@ -2580,6 +2638,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Διεύθυνση Bitcoin με την οποία έχει υπογραφεί το μήνυμα</translation>
     </message>
     <message>
+        <source>The signed message to verify</source>
+        <translation>The signed message to verify</translation>
+    </message>
+    <message>
+        <source>The signature given when the message was signed</source>
+        <translation>Η υπογραφή που δόθηκε όταν υπογράφηκε το μήνυμα</translation>
+    </message>
+    <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>Επαληθεύστε το μήνυμα για να αποδείξετε πως υπογράφθηκε από τη συγκεκριμένη διεύθυνση Bitcoin</translation>
     </message>
@@ -2612,6 +2678,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Το ξεκλείδωμα του Πορτοφολιού ακυρώθηκε.</translation>
     </message>
     <message>
+        <source>No error</source>
+        <translation>Κανένα σφάλμα</translation>
+    </message>
+    <message>
         <source>Private key for the entered address is not available.</source>
         <translation>Το ιδιωτικό κλειδί για την καταχωρημένη διεύθυνση δεν είναι διαθέσιμο.</translation>
     </message>
@@ -2629,7 +2699,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Please check the signature and try again.</source>
-        <translation>Please check the signature and try again.</translation>
+        <translation>Ελέγξτε την υπογραφή και δοκιμάστε ξανά.</translation>
     </message>
     <message>
         <source>The signature did not match the message digest.</source>
@@ -2653,6 +2723,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
 </context>
 <context>
     <name>TransactionDesc</name>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Ανοίξτε για %n περισσότερα μπλοκ</numerusform><numerusform>Ανοίξτε για %n περισσότερα μπλοκ</numerusform></translation>
+    </message>
     <message>
         <source>Open until %1</source>
         <translation>Ανοιχτό μέχρι %1</translation>
@@ -2675,7 +2749,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>abandoned</source>
-        <translation>εγκαταλειμμένος</translation>
+        <translation>εγκαταλελειμμένος</translation>
     </message>
     <message>
         <source>%1/unconfirmed</source>
@@ -2728,6 +2802,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Credit</source>
         <translation>Πίστωση</translation>
+    </message>
+    <message numerus="yes">
+        <source>matures in %n more block(s)</source>
+        <translation><numerusform>ωριμάζει σε %n περισσότερα μπλοκ</numerusform><numerusform>ωριμάζει σε %n περισσότερα κομμάτια</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -2838,6 +2916,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Label</source>
         <translation>Ετικέτα</translation>
+    </message>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Ανοίξτε για %n περισσότερα μπλοκ</numerusform><numerusform>Ανοίξτε για %n περισσότερα μπλοκ</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -2964,7 +3046,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Sent to</source>
-        <translation>Αποστέλλονται</translation>
+        <translation>Αποστέλλονται προς</translation>
     </message>
     <message>
         <source>To yourself</source>
@@ -3135,6 +3217,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Θέλετε να αυξήσετε το τέλος;</translation>
     </message>
     <message>
+        <source>Do you want to draft a transaction with fee increase?</source>
+        <translation>Θέλετε να σχεδιάσετε μια συναλλαγή με αύξηση των τελών;</translation>
+    </message>
+    <message>
         <source>Current fee:</source>
         <translation>Τρέχουσα χρέωση:</translation>
     </message>
@@ -3149,6 +3235,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Confirm fee bump</source>
         <translation>Επιβεβαίωση χρέωσης εξόδων</translation>
+    </message>
+    <message>
+        <source>Can't draft transaction.</source>
+        <translation>Δεν είναι δυνατή η σύνταξη συναλλαγής.</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT αντιγράφηκε</translation>
     </message>
     <message>
         <source>Can't sign transaction.</source>
@@ -3242,7 +3336,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Cannot provide specific connections and have addrman find outgoing connections at the same.</source>
-        <translation>Cannot provide specific connections and have addrman find outgoing connections at the same.</translation>
+        <translation>Δεν είναι δυνατή η παροχή συγκεκριμένων συνδέσεων και η προσπέλαση των εξερχόμενων συνδέσεων στο ίδιο σημείο.</translation>
     </message>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
@@ -3317,6 +3411,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Εντοπίσθηκε διεφθαρμένη βάση δεδομένων των μπλοκ</translation>
     </message>
     <message>
+        <source>Could not find asmap file %s</source>
+        <translation>Δεν ήταν δυνατή η εύρεση του αρχείου asmap %s</translation>
+    </message>
+    <message>
+        <source>Could not parse asmap file %s</source>
+        <translation>Δεν ήταν δυνατή η ανάλυση του αρχείου asmap %s</translation>
+    </message>
+    <message>
         <source>Do you want to rebuild the block database now?</source>
         <translation>Θέλετε να δημιουργηθεί τώρα η βάση δεδομένων των μπλοκ;</translation>
     </message>
@@ -3386,7 +3488,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Specified blocks directory "%s" does not exist.</source>
-        <translation> Δεν υπάρχει κατάλογος καθορισμένων μπλοκ "%s".</translation>
+        <translation>Δεν υπάρχει κατάλογος καθορισμένων μπλοκ "%s".</translation>
     </message>
     <message>
         <source>Unknown address type '%s'</source>
@@ -3474,8 +3576,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
-        <translation> 
-The transaction amount is too small to send after the fee has been deducted</translation>
+        <translation>Το ποσό της συναλλαγής είναι πολύ μικρό για να στείλει μετά την αφαίρεση του τέλους</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
@@ -3544,7 +3645,8 @@ The transaction amount is too small to send after the fee has been deducted</tra
     <message>
         <source>The specified config file %s does not exist
 </source>
-        <translation>Το καθορισμένο αρχείο ρυθμίσεων %s δεν υπάρχει</translation>
+        <translation>Το καθορισμένο αρχείο ρυθμίσεων %s δεν υπάρχει
+</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>

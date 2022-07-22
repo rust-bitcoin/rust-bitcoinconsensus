@@ -354,14 +354,6 @@
         <translation>Ŝanĝi la pasfrazon por ĉifri la monujon</translation>
     </message>
     <message>
-        <source>&amp;Debug window</source>
-        <translation>Sen&amp;cimiga fenestro</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Malfermi konzolon de sencimigo kaj diagnozo</translation>
-    </message>
-    <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Kontroli mesaĝon...</translation>
     </message>
@@ -420,10 +412,6 @@
     <message>
         <source>Show the list of used receiving addresses and labels</source>
         <translation>Vidigi la liston de uzitaj ricevaj adresoj kaj etikedoj</translation>
-    </message>
-    <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Malfermi bitcoin:-URI-on aŭ pagpeton</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -552,7 +540,11 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Monujo estas &lt;b&gt;ĉifrita&lt;/b&gt; kaj aktuale &lt;b&gt;ŝlosita&lt;/b&gt;</translation>
     </message>
-    </context>
+    <message>
+        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
+        <translation>Okazis neriparebla eraro. Bitmono ne plu povas sekure daŭri, do ĝi sekure ĉesos.</translation>
+    </message>
+</context>
 <context>
     <name>CoinControlDialog</name>
     <message>
@@ -640,6 +632,14 @@
         <translation>Kopii transakcian ID-on</translation>
     </message>
     <message>
+        <source>Lock unspent</source>
+        <translation>Ŝlosi la neelspezitajn</translation>
+    </message>
+    <message>
+        <source>Unlock unspent</source>
+        <translation>Malŝlosi la neelspezitajn</translation>
+    </message>
+    <message>
         <source>Copy quantity</source>
         <translation>Kopii kvanton</translation>
     </message>
@@ -664,10 +664,30 @@
         <translation>Kopii restmonon</translation>
     </message>
     <message>
+        <source>(%1 locked)</source>
+        <translation>(%1 ŝlosita)</translation>
+    </message>
+    <message>
+        <source>yes</source>
+        <translation>jes</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>ne</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(neniu etikedo)</translation>
     </message>
-    </context>
+    <message>
+        <source>change from %1 (%2)</source>
+        <translation>restmono de %1 (%2)</translation>
+    </message>
+    <message>
+        <source>(change)</source>
+        <translation>(restmono)</translation>
+    </message>
+</context>
 <context>
     <name>CreateWalletActivity</name>
     <message>
@@ -729,7 +749,31 @@
         <source>&amp;Address</source>
         <translation>&amp;Adreso</translation>
     </message>
-    </context>
+    <message>
+        <source>New sending address</source>
+        <translation>Nova adreso por sendi</translation>
+    </message>
+    <message>
+        <source>Edit receiving address</source>
+        <translation>Redakti adreson por ricevi</translation>
+    </message>
+    <message>
+        <source>Edit sending address</source>
+        <translation>Redakti adreson por sendi</translation>
+    </message>
+    <message>
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation>La adreso enigita "%1" ne estas valida Bitmon-adreso.</translation>
+    </message>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Ne eblis malŝlosi monujon.</translation>
+    </message>
+    <message>
+        <source>New key generation failed.</source>
+        <translation>Fiaskis kreo de nova ŝlosilo.</translation>
+    </message>
+</context>
 <context>
     <name>FreespaceChecker</name>
     <message>
@@ -829,26 +873,26 @@
         <source>Hide</source>
         <translation>Kaŝi</translation>
     </message>
+    <message>
+        <source>Esc</source>
+        <translation>Esk</translation>
+    </message>
+    <message>
+        <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
+        <translation>%1 sinkronigadas. Ĝi elŝutos kapaĵojn kaj blokojn de samtavolanoj, kaj validigos ilin, ĝis ĝi atingas la pinton de la blokĉeno.</translation>
+    </message>
     </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>Malfermi URI-on</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>Malfermi pagpeton el URI aŭ dosiero</translation>
+        <source>Open bitcoin URI</source>
+        <translation>Malfermi na la URI de bitmono</translation>
     </message>
     <message>
         <source>URI:</source>
         <translation>URI:</translation>
     </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation>Elektu la dosieron de la pagpeto</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>OpenWalletActivity</name>
     <message>
@@ -1064,6 +1108,22 @@
     </context>
 <context>
     <name>PaymentServer</name>
+    <message>
+        <source>Payment request error</source>
+        <translation>Eraro dum pagopeto</translation>
+    </message>
+    <message>
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation>Ne eblas lanĉi la ilon 'klaki-por-pagi'</translation>
+    </message>
+    <message>
+        <source>URI handling</source>
+        <translation>Traktado de URI-oj</translation>
+    </message>
+    <message>
+        <source>Invalid payment address %1</source>
+        <translation>Nevalida pagadreso %1</translation>
+    </message>
     </context>
 <context>
     <name>PeerTableModel</name>
@@ -1142,6 +1202,10 @@
         <translation>&amp;Konservi Bildon...</translation>
     </message>
     <message>
+        <source>&amp;Copy Image</source>
+        <translation>&amp;Kopii Bildon</translation>
+    </message>
+    <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
         <translation>La rezultanta URI estas tro longa. Provu malplilongigi la tekston de la etikedo / mesaĝo.</translation>
     </message>
@@ -1149,7 +1213,15 @@
         <source>Error encoding URI into QR Code.</source>
         <translation>Eraro de kodigo de URI en la QR-kodon.</translation>
     </message>
-    </context>
+    <message>
+        <source>Save QR Code</source>
+        <translation>Konservi QR-kodon</translation>
+    </message>
+    <message>
+        <source>PNG Image (*.png)</source>
+        <translation>PNG-bildo (*.png)</translation>
+    </message>
+</context>
 <context>
     <name>RPCConsole</name>
     <message>
@@ -1163,10 +1235,6 @@
     <message>
         <source>&amp;Information</source>
         <translation>&amp;Informoj</translation>
-    </message>
-    <message>
-        <source>Debug window</source>
-        <translation>Sencimiga fenestro</translation>
     </message>
     <message>
         <source>General</source>
@@ -1545,6 +1613,10 @@
         <translation>Konfirmi sendon de bitmono</translation>
     </message>
     <message>
+        <source>Send</source>
+        <translation>Sendi</translation>
+    </message>
+    <message>
         <source>The amount to pay must be larger than 0.</source>
         <translation>La pagenda sumo devas esti pli ol 0.</translation>
     </message>
@@ -1588,10 +1660,6 @@
         <translation>Elektu la jam uzitan adreson</translation>
     </message>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>Tio estas normala pago.</translation>
-    </message>
-    <message>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
@@ -1623,14 +1691,7 @@
         <source>Memo:</source>
         <translation>Memorando:</translation>
     </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Tajpu etikedon por tiu ĉi adreso kaj aldonu ĝin al via adresaro</translation>
-    </message>
 </context>
-<context>
-    <name>SendConfirmationDialog</name>
-    </context>
 <context>
     <name>ShutdownWindow</name>
     <message>

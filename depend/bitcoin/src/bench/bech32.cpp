@@ -1,4 +1,4 @@
-// Copyright (c) 2018 The Bitcoin Core developers
+// Copyright (c) 2018-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -18,7 +18,7 @@ static void Bech32Encode(benchmark::State& state)
     tmp.reserve(1 + 32 * 8 / 5);
     ConvertBits<8, 5, true>([&](unsigned char c) { tmp.push_back(c); }, v.begin(), v.end());
     while (state.KeepRunning()) {
-        bech32::Encode("bc", tmp);
+        bech32::Encode(bech32::Encoding::BECH32, "bc", tmp);
     }
 }
 

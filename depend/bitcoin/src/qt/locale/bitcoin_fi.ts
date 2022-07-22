@@ -181,7 +181,7 @@
     </message>
     <message>
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Syötä uusi salasanalause lompakolle &lt;br/&gt;Ole hyvä ja käytä salasanalausetta, jossa on &lt;b&gt;kymmenen tai enemmän sattumanvaraisia merkkjä tai &lt;b&gt;kahdeksan tai enemmän sanoja&lt;/b&gt; .</translation>
+        <translation>Syötä uusi salasanalause lompakolle. &lt;br/&gt;Käytäthän salasanalausetta, jossa on &lt;b&gt;vähintään kymmenen sattumanvaraista merkkiä tai &lt;b&gt;ainakin kahdeksan sanaa&lt;/b&gt; .</translation>
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase for the wallet.</source>
@@ -339,11 +339,11 @@
     </message>
     <message>
         <source>Click to disable network activity.</source>
-        <translation>Paina poistaaksesi verkkoyhteysilmaisin käytöstä.</translation>
+        <translation>Paina poistaaksesi verkkoyhteys käytöstä.</translation>
     </message>
     <message>
         <source>Network activity disabled.</source>
-        <translation>Verkkoyhteysmittari pois käytöstä</translation>
+        <translation>Verkkoyhteydet pois käytöstä</translation>
     </message>
     <message>
         <source>Click to enable network activity again.</source>
@@ -372,14 +372,6 @@
     <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Vaihda lompakon salaukseen käytettävä tunnuslause</translation>
-    </message>
-    <message>
-        <source>&amp;Debug window</source>
-        <translation>&amp;Testausikkuna</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Avaa debuggaus- ja diagnostiikkakonsoli</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -442,10 +434,6 @@
         <translation>Näytä vastaanottamiseen käytettyjen osoitteiden ja nimien lista</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Avaa bitcoin: URI tai maksupyyntö</translation>
-    </message>
-    <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komentorivin valinnat</translation>
     </message>
@@ -471,7 +459,7 @@
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Viimeisin vastaanotettu lohko tuotettu %1.</translation>
+        <translation>Viimeisin vastaanotettu lohko tuotettu %1 sitten.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
@@ -494,12 +482,24 @@
         <translation>Rahansiirtohistoria on ajan tasalla</translation>
     </message>
     <message>
+        <source>Node window</source>
+        <translation>Solmu ikkuna</translation>
+    </message>
+    <message>
+        <source>Open node debugging and diagnostic console</source>
+        <translation>Avaa solmun diagnostiikka- ja vianmäärityskonsoli </translation>
+    </message>
+    <message>
         <source>&amp;Sending addresses</source>
         <translation>&amp;Lähetysosoitteet</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses</source>
         <translation>&amp;Vastaanotto-osoitteet</translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI</source>
+        <translation>Avaa bitcoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -615,7 +615,7 @@
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>HD avaimen generointi on &lt;/b&gt;pois päältä&lt;/b&gt;</translation>
+        <translation>HD-avaimen luonti on &lt;/b&gt;pois päältä&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
@@ -924,10 +924,6 @@
         <translation>versio</translation>
     </message>
     <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
-    </message>
-    <message>
         <source>About %1</source>
         <translation>Tietoja %1</translation>
     </message>
@@ -1066,6 +1062,14 @@
         <translation>Piilota</translation>
     </message>
     <message>
+        <source>Esc</source>
+        <translation>Poistu</translation>
+    </message>
+    <message>
+        <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
+        <translation>%1 synkronoidaan parhaillaan. Se lataa tunnisteet ja lohkot vertaisilta ja vahvistaa ne, kunnes ne saavuttavat lohkon ketjun kärjen.</translation>
+    </message>
+    <message>
         <source>Unknown. Syncing Headers (%1, %2%)...</source>
         <translation>Tuntematon. Synkronoidaan tunnisteita (%1, %2%)...</translation>
     </message>
@@ -1073,24 +1077,12 @@
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>Avaa URI</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>Avaa maksupyyntö URI:sta tai tiedostosta</translation>
+        <source>Open bitcoin URI</source>
+        <translation>Avaa bitcoin URI</translation>
     </message>
     <message>
         <source>URI:</source>
         <translation>URI:</translation>
-    </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation>Valitse maksupyynnön tiedosto</translation>
-    </message>
-    <message>
-        <source>Select payment request file to open</source>
-        <translation>Valitse maksypyynnön tiedosto avattavaksi</translation>
     </message>
 </context>
 <context>
@@ -1140,7 +1132,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>IP osoite proxille (esim. IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+        <translation>Välityspalvelimen IP-osoite (esim. IPv4: 127.0.0.1 tai IPv6: ::1)</translation>
     </message>
     <message>
         <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
@@ -1172,7 +1164,7 @@
     </message>
     <message>
         <source>Open Configuration File</source>
-        <translation>Avaa asetustiedosto.</translation>
+        <translation>Avaa asetustiedosto</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -1256,7 +1248,7 @@
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
-        <translation>Proxyn &amp;IP:</translation>
+        <translation>Välityspalvelimen &amp;IP:</translation>
     </message>
     <message>
         <source>&amp;Port:</source>
@@ -1264,7 +1256,7 @@
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Proxyn Portti (esim. 9050)</translation>
+        <translation>Välityspalvelimen Portti (esim. 9050)</translation>
     </message>
     <message>
         <source>Used for reaching peers via:</source>
@@ -1384,7 +1376,7 @@
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Antamasi proxy-osoite on virheellinen.</translation>
+        <translation>Antamasi välityspalvelimen osoite on virheellinen.</translation>
     </message>
 </context>
 <context>
@@ -1481,16 +1473,8 @@
         <translation>'bitcoin://' ei ole kelvollinen URI. Käytä 'bitcoin:' sen sijaan.</translation>
     </message>
     <message>
-        <source>You are using a BIP70 URL which will be unsupported in the future.</source>
-        <translation>Käytät BIP70 -URL:ia, jonka tuki päättyy lähitulevaisuudessa.</translation>
-    </message>
-    <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation>Maksupyynnön haku URL on virheellinen: %1</translation>
-    </message>
-    <message>
-        <source>Cannot process payment request because BIP70 support was not compiled in.</source>
-        <translation>Maksupyyntöä ei voida käsitellä, sillä BIP70-tukea ei ole käännetty ohjelmaan.</translation>
+        <source>Cannot process payment request because BIP70 is not supported.</source>
+        <translation>Maksupyyntöä ei voida käsitellä, koska BIP70:tä ei tueta.</translation>
     </message>
     <message>
         <source>Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.</source>
@@ -1511,66 +1495,6 @@
     <message>
         <source>Payment request file handling</source>
         <translation>Maksupyynnön tiedoston käsittely</translation>
-    </message>
-    <message>
-        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Maksupyyntötiedostoa ei voi lukea! Tämä saattaa johtua epäkelvosta maksupyyntötiedostosta.</translation>
-    </message>
-    <message>
-        <source>Payment request rejected</source>
-        <translation>Maksupyyntö hylätty</translation>
-    </message>
-    <message>
-        <source>Payment request network doesn't match client network.</source>
-        <translation>Maksupyyntoverkko ei täsmää asiakasohjelman verkon kanssa.</translation>
-    </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation>Maksupyyntö vanhentui.</translation>
-    </message>
-    <message>
-        <source>Payment request is not initialized.</source>
-        <translation>Maksupyyntöä ei ole alustettu.</translation>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>Varmistamattomia maksupyyntöjä kustomoituun maksupalveluun ei tueta.</translation>
-    </message>
-    <message>
-        <source>Invalid payment request.</source>
-        <translation>Virheellinen maksupyyntö.</translation>
-    </message>
-    <message>
-        <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Maksupyyntö %1 on liian pieni (kohdellaan tomuna).</translation>
-    </message>
-    <message>
-        <source>Refund from %1</source>
-        <translation>Maksupalautus %1:sta</translation>
-    </message>
-    <message>
-        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>Maksupyyntö %1 on liian suuri (%2 tavua, sallittu %3 tavua).</translation>
-    </message>
-    <message>
-        <source>Error communicating with %1: %2</source>
-        <translation>Virhe kommunikoidessa %1n kanssa: %2</translation>
-    </message>
-    <message>
-        <source>Payment request cannot be parsed!</source>
-        <translation>Maksupyyntöä ei voida jäsentää!</translation>
-    </message>
-    <message>
-        <source>Bad response from server %1</source>
-        <translation>Virheellinen vastaus palvelimelta %1</translation>
-    </message>
-    <message>
-        <source>Network request error</source>
-        <translation>Tietoverkon pyyntövirhe</translation>
-    </message>
-    <message>
-        <source>Payment acknowledged</source>
-        <translation>Rahansiirto tunnistettu</translation>
     </message>
 </context>
 <context>
@@ -1749,10 +1673,6 @@
         <translation>T&amp;ietoa</translation>
     </message>
     <message>
-        <source>Debug window</source>
-        <translation>&amp;Debug-ikkuna</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>Yleinen</translation>
     </message>
@@ -1869,8 +1789,20 @@
         <translation>Synkronoidut lohkot</translation>
     </message>
     <message>
+        <source>The mapped Autonomous System used for diversifying peer selection.</source>
+        <translation>Kartoitettu autonominen järjestelmä, jota käytetään monipuolistamaan solmuvalikoimaa</translation>
+    </message>
+    <message>
+        <source>Mapped AS</source>
+        <translation>Kartoitettu AS</translation>
+    </message>
+    <message>
         <source>User Agent</source>
         <translation>Käyttöliittymä</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation>Solmun näkymä</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
@@ -2084,8 +2016,16 @@
         <translation>Valinnainen pyyntömäärä. Jätä tyhjäksi tai nollaksi jos et pyydä tiettyä määrää.</translation>
     </message>
     <message>
+        <source>An optional label to associate with the new receiving address (used by you to identify an invoice).  It is also attached to the payment request.</source>
+        <translation>Valinnainen tarra, joka liitetään uuteen vastaanotto-osoitteeseen (jonka käytät laskun tunnistamiseen). Se liitetään myös maksupyyntöön.</translation>
+    </message>
+    <message>
+        <source>An optional message that is attached to the payment request and may be displayed to the sender.</source>
+        <translation>Valinnainen viesti, joka on liitetty maksupyyntöön ja joka voidaan näyttää lähettäjälle.</translation>
+    </message>
+    <message>
         <source>&amp;Create new receiving address</source>
-        <translation> &amp;Luo uusi vastaanottoosoite</translation>
+        <translation> &amp;Luo uusi vastaanotto-osoite</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
@@ -2293,10 +2233,6 @@
         <translation>Varoitus: Kulujen arviointi ei ole juuri nyt mahdollista.</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>pudota kulujen asetukset</translation>
-    </message>
-    <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
 Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
@@ -2326,7 +2262,7 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
-        <translation>Lähetä usealla vastaanottajalle samanaikaisesti</translation>
+        <translation>Lähetä usealle vastaanottajalle kerralla</translation>
     </message>
     <message>
         <source>Add &amp;Recipient</source>
@@ -2339,6 +2275,10 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     <message>
         <source>Dust:</source>
         <translation>Tomu:</translation>
+    </message>
+    <message>
+        <source>Hide transaction fee settings</source>
+        <translation> Piilota siirtomaksuasetukset</translation>
     </message>
     <message>
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
@@ -2409,6 +2349,14 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
         <translation>%1 (%2 lohkoa)</translation>
     </message>
     <message>
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>L&amp;uo allekirjoittamaton</translation>
+    </message>
+    <message>
+        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation>Luo osittain allekirjoitetun bitcoin-siirtotapahtuman (PSBT) käytettäväksi mm. offline %1 lompakko tai PSBT-yhteensopiva hardware-lompakko.</translation>
+    </message>
+    <message>
         <source> from wallet '%1'</source>
         <translation> lompakosta '%1'</translation>
     </message>
@@ -2417,8 +2365,16 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
         <translation>%1 to %2</translation>
     </message>
     <message>
+        <source>Do you want to draft this transaction?</source>
+        <translation>Haluatko laatia tämän siirron?</translation>
+    </message>
+    <message>
         <source>Are you sure you want to send?</source>
         <translation>Oletko varma, että haluat lähettää?</translation>
+    </message>
+    <message>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation>Ole hyvä ja katso siirtotapahtuma ehdotuksesi. Tämä tuottaa osittain allekirjoitetun bitcoin-siirtotapahtuman (PSBT), jonka voit kopioida ja sitten allekirjoittaa esimerkiksi offline %1 lompakko tai PSBT-yhteensopiva hardware-lompakko.</translation>
     </message>
     <message>
         <source>or</source>
@@ -2438,7 +2394,7 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     </message>
     <message>
         <source>Not signalling Replace-By-Fee, BIP-125.</source>
-        <translation>Ei signalointia Korvattavissa-korkeammalla-kululla, BIP-125.</translation>
+        <translation>Ei signalointia Korvattavissa korkeammalla kululla, BIP-125.</translation>
     </message>
     <message>
         <source>Total Amount</source>
@@ -2451,6 +2407,26 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     <message>
         <source>Confirm send coins</source>
         <translation>Vahvista kolikoiden lähetys</translation>
+    </message>
+    <message>
+        <source>Confirm transaction proposal</source>
+        <translation>Vahvista siirtoehdotus</translation>
+    </message>
+    <message>
+        <source>Copy PSBT to clipboard</source>
+        <translation>Kopioi PSBT leikepöydälle</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Lähetä</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT kopioitu</translation>
+    </message>
+    <message>
+        <source>Watch-only balance:</source>
+        <translation>Katselulompakon saldo:</translation>
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
@@ -2475,10 +2451,6 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     <message>
         <source>Transaction creation failed!</source>
         <translation>Rahansiirron luonti epäonnistui!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected with the following reason: %1</source>
-        <translation>Siirto hylättiin seuraavasta syystä: %1</translation>
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
@@ -2532,10 +2504,6 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
         <translation>Valitse aikaisemmin käytetty osoite</translation>
     </message>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>Tämä on normaali maksu.</translation>
-    </message>
-    <message>
         <source>The Bitcoin address to send the payment to</source>
         <translation>Bitcoin-osoite johon maksu lähetetään</translation>
     </message>
@@ -2554,6 +2522,10 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     <message>
         <source>Remove this entry</source>
         <translation>Poista tämä alkio</translation>
+    </message>
+    <message>
+        <source>The amount to send in the selected unit</source>
+        <translation>Lähetettävä summa valitussa yksikössä</translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
@@ -2594,17 +2566,6 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     <message>
         <source>Memo:</source>
         <translation>Muistio:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Syötä tälle osoitteelle nimi lisätäksesi sen osoitekirjaan</translation>
-    </message>
-</context>
-<context>
-    <name>SendConfirmationDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation>Kyllä</translation>
     </message>
 </context>
 <context>
@@ -2693,6 +2654,14 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
         <translation>Bitcoin-osoite jolla viesti on allekirjoitettu</translation>
     </message>
     <message>
+        <source>The signed message to verify</source>
+        <translation>Allekirjoitettu viesti vahvistettavaksi</translation>
+    </message>
+    <message>
+        <source>The signature given when the message was signed</source>
+        <translation>Viestin allekirjoittamisen yhteydessä annettu allekirjoitus</translation>
+    </message>
+    <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä Bitcoin-osoitteella</translation>
     </message>
@@ -2723,6 +2692,10 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>Lompakon avaaminen peruttiin.</translation>
+    </message>
+    <message>
+        <source>No error</source>
+        <translation>Ei virhettä</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -2900,7 +2873,7 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     </message>
     <message>
         <source> (Certificate was not verified)</source>
-        <translation> (Varmennetta ei vahvistettu)</translation>
+        <translation> (Sertifikaattia ei vahvistettu)</translation>
     </message>
     <message>
         <source>Merchant</source>
@@ -3256,6 +3229,10 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
         <translation>Haluatko nostaa siirtomaksua?</translation>
     </message>
     <message>
+        <source>Do you want to draft a transaction with fee increase?</source>
+        <translation>Haluatko nostaa siirtomaksua siirtoon?</translation>
+    </message>
+    <message>
         <source>Current fee:</source>
         <translation>Nykyinen palkkio:</translation>
     </message>
@@ -3270,6 +3247,14 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     <message>
         <source>Confirm fee bump</source>
         <translation>Vahvista palkkion korotus</translation>
+    </message>
+    <message>
+        <source>Can't draft transaction.</source>
+        <translation> Siirtoa ei voida laatia.</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT kopioitu</translation>
     </message>
     <message>
         <source>Can't sign transaction.</source>
@@ -3336,10 +3321,6 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Karsinta: viime lompakon synkronisointi menee karsitun datan taakse. Sinun tarvitsee ajaa -reindex (lataa koko lohkoketju uudelleen tapauksessa jossa karsiva noodi)</translation>
-    </message>
-    <message>
-        <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation>Uudelleenskannaukset eivät ole mahdollisia karsivassa tilassa. Sinun täytyy käyttää -reindex joka lataa koko lohkoketjun uudelleen.</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
@@ -3440,6 +3421,14 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     <message>
         <source>Corrupted block database detected</source>
         <translation>Vioittunut lohkotietokanta havaittu</translation>
+    </message>
+    <message>
+        <source>Could not find asmap file %s</source>
+        <translation>Asmap-tiedostoa %s ei löytynyt</translation>
+    </message>
+    <message>
+        <source>Could not parse asmap file %s</source>
+        <translation>Asmap-tiedostoa %s ei voitu jäsentää</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -3724,10 +3713,6 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
         <translation>Tämän siirtomaksun maksat, kun siirtomaksun arviointi ei ole käytettävissä.</translation>
     </message>
     <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>Tämä tuote sisältää OpenSSL Projektin kehittämän ohjelmiston käytettäväksi OpenSSL Toolkit %s:ssä ja Eric Youngin kirjoittaman salausohjelmiston ja Thomas Bernardin kirjoittaman UPnP-ohjelmiston.</translation>
-    </message>
-    <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
         <translation>Verkon versiokenttä (%i) ylittää sallitun pituuden (%i). Vähennä uacomments:in arvoa tai kokoa.</translation>
     </message>
@@ -3757,7 +3742,7 @@ Huom: Koska siirtomaksu lasketaan tavujen mukaan, niin määrittelemällä 500 t
     </message>
     <message>
         <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Tämä on lähetyksestä maksettava maksu jonka maksat</translation>
+        <translation>Tämä on se siirtomaksu, jonka maksat, mikäli lähetät siirron.</translation>
     </message>
     <message>
         <source>Transaction amounts must not be negative</source>
