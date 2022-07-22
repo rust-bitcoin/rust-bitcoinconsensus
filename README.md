@@ -45,6 +45,18 @@ git subtree pull --prefix='depend/bitcoin' git@github.com:bitcoin/bitcoin.git v0
 The MSRV of this crate is **1.41.1**.
 
 
+## Githooks
+
+To assist devs in catching errors _before_ running CI we provide some githooks. If you do not
+already have locally configured githooks you can use the ones in this repository by running, in the
+root directory of the repository:
+```
+git config --local core.hooksPath githooks/
+```
+
+Alternatively add symlinks in your `.git/hooks` directory to any of the githooks we provide.
+
+
 ## API
 
 The API is very basic, exposing Bitcoin's API as is.
