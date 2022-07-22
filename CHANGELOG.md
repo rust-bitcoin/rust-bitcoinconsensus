@@ -1,3 +1,7 @@
+## v0.20.2-0.5.0
+
+* Upgrade Bitcoin Core subtree to v0.20.2
+
 ## v0.19.2-0.4.1
 
 * switch to using a git subtree for the bitcoin core code
