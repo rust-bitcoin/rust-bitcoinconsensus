@@ -1,3 +1,7 @@
+## v0.21.2-0.6.0
+
+* Upgrade Bitcoin Core subtree to v0.21.2
+
 ## v0.20.2-0.5.0
 
 * Upgrade Bitcoin Core subtree to v0.20.2
