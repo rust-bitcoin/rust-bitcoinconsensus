@@ -219,7 +219,7 @@
     <name>BitcoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
-        <translation>ජාලය සමග සමමුහුර්ත ව‌ෙමින්...</translation>
+        <translation>ජාලය සමග සමමුහුර්ත වෙමින්...</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
@@ -316,7 +316,7 @@
         <source>URI:</source>
         <translation>URI:</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>OpenWalletActivity</name>
     </context>
@@ -415,9 +415,6 @@
 </context>
 <context>
     <name>SendCoinsEntry</name>
-    </context>
-<context>
-    <name>SendConfirmationDialog</name>
     </context>
 <context>
     <name>ShutdownWindow</name>

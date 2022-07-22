@@ -141,7 +141,7 @@
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation>הצפנת הארנק</translation>
+        <translation>הצפן ארנק</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
@@ -181,12 +181,12 @@
     </message>
     <message>
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>הקש את הסיסמא בשביל הארנק.
-השתמש בסיסמא הכוללת עשר או יותר תווים אקראים, או שמונה או יותר מילים.</translation>
+        <translation>הקש סיסמה חדשה לארנק.
+השתמש בסיסמה הכוללת עשרה או יותר תווים אקראים, או שמונה או יותר מילים.</translation>
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase for the wallet.</source>
-        <translation>הקש את הסיסמא הישנה והחדשה בשביל הארנק.</translation>
+        <translation>הקש את הסיסמא הישנה והחדשה לארנק.</translation>
     </message>
     <message>
         <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
@@ -194,15 +194,15 @@
     </message>
     <message>
         <source>Wallet to be encrypted</source>
-        <translation>הארנק עוד מעט יהיה מוצפן.</translation>
+        <translation>הארנק המיועד להצפנה</translation>
     </message>
     <message>
         <source>Your wallet is about to be encrypted. </source>
-        <translation>הארנק שלך עומד להיות מוצפן.</translation>
+        <translation>הארנק שלך עומד להיות מוצפן/</translation>
     </message>
     <message>
         <source>Your wallet is now encrypted. </source>
-        <translation>הארנק שלך מוצפן כעת.</translation>
+        <translation>הארנק שלך מוצפן כעת/</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -375,14 +375,6 @@
         <translation>שנה את הסיסמא המשמשת להצפנת הארנק</translation>
     </message>
     <message>
-        <source>&amp;Debug window</source>
-        <translation>חלון &amp;ניפוי</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>פתיחת לוח הבקרה לאבחון ולניפוי</translation>
-    </message>
-    <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;אימות הודעה…</translation>
     </message>
@@ -443,10 +435,6 @@
         <translation>הצגת רשימת הכתובות והתוויות הנמצאות בשימוש</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>פתיחת ביטקוין: כתובת משאב או בקשת תשלום</translation>
-    </message>
-    <message>
         <source>&amp;Command-line options</source>
         <translation>אפשרויות &amp;שורת הפקודה</translation>
     </message>
@@ -476,7 +464,7 @@
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>ההעברות שבוצעו לאחר העברה זו לא יופיעו.</translation>
+        <translation>עסקאות שבוצעו לאחר העברה זו לא יופיעו.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -495,12 +483,24 @@
         <translation>עדכני</translation>
     </message>
     <message>
+        <source>Node window</source>
+        <translation>חלון צומת</translation>
+    </message>
+    <message>
+        <source>Open node debugging and diagnostic console</source>
+        <translation>פתיחת ניפוי באגים בצומת וגם מסוף בקרה לאבחון</translation>
+    </message>
+    <message>
         <source>&amp;Sending addresses</source>
         <translation>&amp;כתובות למשלוח</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses</source>
         <translation>&amp;כתובות לקבלה</translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI</source>
+        <translation>פתיחת ביטקוין: כתובת משאב</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -715,7 +715,7 @@
     </message>
     <message>
         <source>Copy transaction ID</source>
-        <translation>העתקת מזהה ההעברה</translation>
+        <translation>העתקת מזהה העסקה</translation>
     </message>
     <message>
         <source>Lock unspent</source>
@@ -801,7 +801,7 @@
     </message>
     <message>
         <source>Wallet Name</source>
-        <translation>שם ארנק</translation>
+        <translation>שם הארנק</translation>
     </message>
     <message>
         <source>Encrypt the wallet. The wallet will be encrypted with a passphrase of your choice.</source>
@@ -809,7 +809,7 @@
     </message>
     <message>
         <source>Encrypt Wallet</source>
-        <translation>הצפן ארנק</translation>
+        <translation>הצפנת ארנק</translation>
     </message>
     <message>
         <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
@@ -917,10 +917,6 @@
         <translation>גרסה</translation>
     </message>
     <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-סיביות)</translation>
-    </message>
-    <message>
         <source>About %1</source>
         <translation>אודות %1</translation>
     </message>
@@ -945,7 +941,7 @@
     </message>
     <message>
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation>בעת לחיצה על אישור, %1 יחל בהורדה ועיבוד מלאים של שרשרת המקטעים %4 (%2 ג״ב) החל מההעברות הראשונות ב־%3 עם ההשקה הראשונית של %4.</translation>
+        <translation>בעת לחיצה על אישור, %1 יחל בהורדה ועיבוד מלאים של שרשרת המקטעים %4 (%2 ג׳יגה-בייט) החל מההעברות הראשונות ב־%3 עם ההשקה הראשונית של %4.</translation>
     </message>
     <message>
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
@@ -973,7 +969,7 @@
     </message>
     <message>
         <source>Discard blocks after verification, except most recent %1 GB (prune)</source>
-        <translation>התעלם בלוקים לאחר ווריפיקציה, למעט %1 GB המאוחרים ביותר (המקוצצים)</translation>
+        <translation>התעלם בלוקים לאחר ווריפיקציה, למעט %1 ג׳יגה-בייט המאוחרים ביותר (המקוצצים)</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -1001,13 +997,17 @@
     </message>
     <message numerus="yes">
         <source>%n GB of free space available</source>
-        <translation><numerusform>ג״ב של מקום פנוי זמין</numerusform><numerusform>%n ג״ב של מקום פנוי זמינים</numerusform><numerusform>%n ג״ב של מקום פנוי זמינים</numerusform><numerusform>%n ג״ב של מקום פנוי זמינים</numerusform></translation>
+        <translation><numerusform>ג״ב של מקום פנוי זמין</numerusform><numerusform>%n ג״ב של מקום פנוי זמינים</numerusform><numerusform>%n ג״ב של מקום פנוי זמינים</numerusform><numerusform>%n ג׳יגה-בייט של מקום פנוי זמינים</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>(of %n GB needed)</source>
-        <translation><numerusform>(מתוך %n ג״ב נדרשים)</numerusform><numerusform>(מתוך %n ג״ב נדרשים)</numerusform><numerusform>(מתוך %n ג״ב נדרשים)</numerusform><numerusform>(מתוך %n ג״ב נדרשים)</numerusform></translation>
+        <translation><numerusform>(מתוך %n ג׳יגה-בייט נדרשים)</numerusform><numerusform>(מתוך %n ג׳יגה-בייט נדרשים)</numerusform><numerusform>(מתוך %n ג׳יגה-בייט נדרשים)</numerusform><numerusform>(מתוך %n ג׳יגה-בייט נדרשים)</numerusform></translation>
     </message>
-    </context>
+    <message numerus="yes">
+        <source>(%n GB needed for full chain)</source>
+        <translation><numerusform>(ג׳יגה-בייט %n נדרש לשרשרת המלאה)</numerusform><numerusform>(%n ג׳יגה-בייט נדרשים לשרשרת המלאה)</numerusform><numerusform>(%n ג׳יגה-בייט נדרשים לשרשרת המלאה)</numerusform><numerusform>(%n ג׳יגה-בייט נדרשים לשרשרת המלאה)</numerusform></translation>
+    </message>
+</context>
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -1055,6 +1055,14 @@
         <translation>הסתר</translation>
     </message>
     <message>
+        <source>Esc</source>
+        <translation>Esc</translation>
+    </message>
+    <message>
+        <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
+        <translation>%1 מסתנכנים כרגע.  תתבצע הורדת כותרות ובלוקים מעמיתים תוך אימותם עד הגעה לראש שרשרת הבלוקים .</translation>
+    </message>
+    <message>
         <source>Unknown. Syncing Headers (%1, %2%)...</source>
         <translation>לא ידוע. סינכרון כותרות (%1, %2%)...</translation>
     </message>
@@ -1062,24 +1070,12 @@
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>פתיחת כתובת משאב</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>פתיחת בקשת תשלום מכתובת משאב או מקובץ</translation>
+        <source>Open bitcoin URI</source>
+        <translation>פתיחת כתובת משאב ביטקוין</translation>
     </message>
     <message>
         <source>URI:</source>
         <translation>כתובת משאב:</translation>
-    </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation>בחירת קובץ בקשת תשלום</translation>
-    </message>
-    <message>
-        <source>Select payment request file to open</source>
-        <translation>בחירת קובץ בקשת תשלום לפתיחה</translation>
     </message>
 </context>
 <context>
@@ -1129,7 +1125,7 @@
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>כתובת ה־IP של המתווך (לדוגמה IPv4: 127.0.0.1‏ / IPv6: ::1)</translation>
+        <translation>כתובת ה־IP של הפרוקסי (לדוגמה IPv4: 127.0.0.1‏ / IPv6: ::1)</translation>
     </message>
     <message>
         <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
@@ -1185,7 +1181,7 @@
     </message>
     <message>
         <source>GB</source>
-        <translation>ג״ב</translation>
+        <translation>ג'יגה בייט</translation>
     </message>
     <message>
         <source>Reverting this setting requires re-downloading the entire blockchain.</source>
@@ -1470,16 +1466,8 @@
         <translation>'//:bitcoin' אינה כתובת URI תקינה. השתמשו במקום ב ':bitcoin'.</translation>
     </message>
     <message>
-        <source>You are using a BIP70 URL which will be unsupported in the future.</source>
-        <translation>אתם משתמשים בכתובת אינטרנט BIP70 אשר לא תתמך בעתיד</translation>
-    </message>
-    <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation>כתובת ה URL של בקשת התשלום אינה תקינה : %1</translation>
-    </message>
-    <message>
-        <source>Cannot process payment request because BIP70 support was not compiled in.</source>
-        <translation>אין אפשרות לבצע עיבוד בקשת תשלום כיון שהתמיכה ב BIP70 אינה כלולה בקוד.</translation>
+        <source>Cannot process payment request because BIP70 is not supported.</source>
+        <translation>אין אפשרות לעבד את בקשת התשלום כיון ש BIP70 אינו נתמך.</translation>
     </message>
     <message>
         <source>Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.</source>
@@ -1500,66 +1488,6 @@
     <message>
         <source>Payment request file handling</source>
         <translation>טיפול בקבצי בקשות תשלום</translation>
-    </message>
-    <message>
-        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>לא ניתן לקרוא את קובץ בקשת התשלום! מצב כזה יכול לקרות בעקבות קובץ בקשת תשלום פגום.</translation>
-    </message>
-    <message>
-        <source>Payment request rejected</source>
-        <translation>בקשת התשלום נדחתה</translation>
-    </message>
-    <message>
-        <source>Payment request network doesn't match client network.</source>
-        <translation>רשת בקשת התשלום אינה תואמת לרשת הלקוח.</translation>
-    </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation>בקשת התשלום פגה.</translation>
-    </message>
-    <message>
-        <source>Payment request is not initialized.</source>
-        <translation>בקשת התשלום לא הופעלה.</translation>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>בקשות תשלום לתסריטי תשלום מותאמים אישית שלא עברו וידוא אינן נתמכות.</translation>
-    </message>
-    <message>
-        <source>Invalid payment request.</source>
-        <translation>בקשת תשלום שגויה.</translation>
-    </message>
-    <message>
-        <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>הסכום על סך %1 הנדרש לתשלום קטן מדי (נחשב לאבק)</translation>
-    </message>
-    <message>
-        <source>Refund from %1</source>
-        <translation>זיכוי מאת %1</translation>
-    </message>
-    <message>
-        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>בקשת התשלום %1 גדולה מדי (%2 בתים, מורשה %3 בתים).</translation>
-    </message>
-    <message>
-        <source>Error communicating with %1: %2</source>
-        <translation>שגיאה בעת יצירת קשר עם %1:‏ %2</translation>
-    </message>
-    <message>
-        <source>Payment request cannot be parsed!</source>
-        <translation>לא ניתן לפענח את בקשת התשלום!</translation>
-    </message>
-    <message>
-        <source>Bad response from server %1</source>
-        <translation>תגובה שגויה מהשרת %1</translation>
-    </message>
-    <message>
-        <source>Network request error</source>
-        <translation>שגיאת בקשת רשת</translation>
-    </message>
-    <message>
-        <source>Payment acknowledged</source>
-        <translation>התשלום אושר</translation>
     </message>
 </context>
 <context>
@@ -1669,7 +1597,7 @@
     </message>
     <message>
         <source>%1 GB</source>
-        <translation>%1 ג״ב</translation>
+        <translation>%1 ג'יגה בייט</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -1736,10 +1664,6 @@
     <message>
         <source>&amp;Information</source>
         <translation>מי&amp;דע</translation>
-    </message>
-    <message>
-        <source>Debug window</source>
-        <translation>חלון ניפוי</translation>
     </message>
     <message>
         <source>General</source>
@@ -1858,8 +1782,20 @@
         <translation>בלוקים מסונכרנים</translation>
     </message>
     <message>
+        <source>The mapped Autonomous System used for diversifying peer selection.</source>
+        <translation>המערכת האוטונומית הממופה משמשת לגיוון בחירת עמיתים.</translation>
+    </message>
+    <message>
+        <source>Mapped AS</source>
+        <translation>מופה בתור</translation>
+    </message>
+    <message>
         <source>User Agent</source>
         <translation>סוכן משתמש</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation>חלון צומת</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
@@ -2011,7 +1947,7 @@
     </message>
     <message>
         <source>(node id: %1)</source>
-        <translation>(node id: %1)</translation>
+        <translation>(מזהה צומת: %1)</translation>
     </message>
     <message>
         <source>via %1</source>
@@ -2071,6 +2007,14 @@
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>סכום כרשות לבקשה. ניתן להשאיר זאת ריק כדי לא לבקש סכום מסוים.</translation>
+    </message>
+    <message>
+        <source>An optional label to associate with the new receiving address (used by you to identify an invoice).  It is also attached to the payment request.</source>
+        <translation>תווית אופצינלית לצירוף לכתובת קבלה חדשה (לשימושך לזיהוי חשבונות). היא גם מצורפת לבקשת התשלום.</translation>
+    </message>
+    <message>
+        <source>An optional message that is attached to the payment request and may be displayed to the sender.</source>
+        <translation>הודעה אוצפציונלית מצורפת לבקשת התשלום אשר ניתן להציגה לשולח.</translation>
     </message>
     <message>
         <source>&amp;Create new receiving address</source>
@@ -2282,10 +2226,6 @@
         <translation>אזהרה</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>צמצום הגדרות עמלה</translation>
-    </message>
-    <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
 Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
@@ -2328,6 +2268,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Dust:</source>
         <translation>אבק:</translation>
+    </message>
+    <message>
+        <source>Hide transaction fee settings</source>
+        <translation>הסתרת הגדרות עמלת עסקה</translation>
     </message>
     <message>
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
@@ -2398,6 +2342,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>%1 (%2 בלוקים)</translation>
     </message>
     <message>
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>יצ&amp;ירת לא חתום</translation>
+    </message>
+    <message>
+        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation>יוצר עסקת ביטקוין חתומה חלקית (PSBT) לשימוש עם ארנק %1 לא מחובר למשל, או עם PSBT ארנק חומרה תואם.</translation>
+    </message>
+    <message>
         <source> from wallet '%1'</source>
         <translation>מתוך ארנק '%1'</translation>
     </message>
@@ -2410,8 +2362,16 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>%1 ל %2</translation>
     </message>
     <message>
+        <source>Do you want to draft this transaction?</source>
+        <translation>האם ברצונך לשמור עסקה זו כטיוטה?</translation>
+    </message>
+    <message>
         <source>Are you sure you want to send?</source>
         <translation>לשלוח?</translation>
+    </message>
+    <message>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation>נא לסקור את העיסקה המוצעת. הדבר יצור עיסקת ביטקוין חתומה חלקית (PSBT) אותה ניתן להעתיק ואז לחתום עם למשל ארנק לא מקוון %1, או עם ארנק חומרה תואם-PSBT.</translation>
     </message>
     <message>
         <source>or</source>
@@ -2446,6 +2406,26 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>אימות שליחת מטבעות</translation>
     </message>
     <message>
+        <source>Confirm transaction proposal</source>
+        <translation>אישור הצעת עיסקה</translation>
+    </message>
+    <message>
+        <source>Copy PSBT to clipboard</source>
+        <translation>העתקת PSBT אל לוח הגזירים</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>שלח</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT הועתקה</translation>
+    </message>
+    <message>
+        <source>Watch-only balance:</source>
+        <translation>יתרת צפייה-בלבד</translation>
+    </message>
+    <message>
         <source>The recipient address is not valid. Please recheck.</source>
         <translation>כתובת הנמען שגויה. נא לבדוק שוב.</translation>
     </message>
@@ -2468,10 +2448,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Transaction creation failed!</source>
         <translation>יצירת ההעברה נכשלה!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected with the following reason: %1</source>
-        <translation>ההעברה נדחתה מהסיבות הבאות: %1</translation>
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
@@ -2525,10 +2501,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>בחירת כתובת שהייתה בשימוש</translation>
     </message>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>זהו תשלום רגיל.</translation>
-    </message>
-    <message>
         <source>The Bitcoin address to send the payment to</source>
         <translation>כתובת הביטקוין של המוטב</translation>
     </message>
@@ -2547,6 +2519,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Remove this entry</source>
         <translation>הסרת רשומה זו</translation>
+    </message>
+    <message>
+        <source>The amount to send in the selected unit</source>
+        <translation>הסכום לשליחה במטבע הנבחר</translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
@@ -2587,17 +2563,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Memo:</source>
         <translation>תזכורת:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>נא להזין תווית לכתובת זו כדי להוסיף אותה לספר הכתובות שלך</translation>
-    </message>
-</context>
-<context>
-    <name>SendConfirmationDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation>כן</translation>
     </message>
 </context>
 <context>
@@ -2686,6 +2651,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>כתובת הביטקוין שאתה נחתמה ההודעה</translation>
     </message>
     <message>
+        <source>The signed message to verify</source>
+        <translation>ההודעה החתומה לאימות</translation>
+    </message>
+    <message>
+        <source>The signature given when the message was signed</source>
+        <translation>החתימה שניתנת כאשר ההודעה נחתמה</translation>
+    </message>
+    <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>ניתן לאמת את ההודעה כדי להבטיח שהיא נחתמה עם כתובת הביטקוין הנתונה</translation>
     </message>
@@ -2716,6 +2689,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>שחרור הארנק בוטל.</translation>
+    </message>
+    <message>
+        <source>No error</source>
+        <translation>אין שגיאה</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -2901,7 +2878,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>מטבעות מופקים חייבים להבשיל במשך %1 בלוקים לפני שניתן לבזבזם. כשהפקתם בלוק זה, הבלוק שודר לרשת לצורך הוספה לבלוקצ'יין. אם הבלוק לא יתווסף לבלוקצ'יין, מצב הבלוק ישונה ל "לא התקבל" ולא יהיה ניתן לבזבזו. מצב זה עלול לקרות כאשר שרת ביטקוין אחר מפיק בלוק בהפרש של כמה שניות משלכם.</translation>
+        <translation>מטבעות מופקים חייבים להבשיל במשך %1 בלוקים לפני שניתן לבזבזם. כשהפקתם בלוק זה, הבלוק שודר לרשת לצורך הוספה לבלוקצ'יין. אם הבלוק לא יתווסף לבלוקצ'יין, מצב הבלוק ישונה ל"לא התקבל" ולא יהיה ניתן לבזבזו. מצב זה עלול לקרות כאשר צומת אחרת מפיקה בלוק בהפרש של כמה שניות משלכם.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3220,7 +3197,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Are you sure you wish to close the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
-        <translation>האם את/ה בטוח/ה שברצונך לסגור את ארנק &lt;i&gt;%1&lt;/i&gt;?</translation>
+        <translation>האם את/ה בטוח/ה שברצונך לסגור את הארנק &lt;i&gt;%1&lt;/i&gt;?</translation>
     </message>
     <message>
         <source>Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled.</source>
@@ -3250,7 +3227,11 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Do you want to increase the fee?</source>
-        <translation>להגדיל את העמלה?</translation>
+        <translation>האם ברצונך להגדיל את העמלה?</translation>
+    </message>
+    <message>
+        <source>Do you want to draft a transaction with fee increase?</source>
+        <translation>האם ברצונך להכין עסיקה עם עמלה מוגברת?</translation>
     </message>
     <message>
         <source>Current fee:</source>
@@ -3267,6 +3248,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Confirm fee bump</source>
         <translation>אישור הקפצת עמלה</translation>
+    </message>
+    <message>
+        <source>Can't draft transaction.</source>
+        <translation>לא ניתן לשמור את העסקה כטיוטה.</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT הועתקה</translation>
     </message>
     <message>
         <source>Can't sign transaction.</source>
@@ -3333,10 +3322,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>גיזום: הסינכרון האחרון של הארנק עובר את היקף הנתונים שנגזמו. יש לבצע חידוש אידקסציה (נא להוריד את כל שרשרת הבלוקים שוב במקרה של צומת מקוצצת)</translation>
-    </message>
-    <message>
-        <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation>סריקה מחודשת אינה אפשרית בצומת מקוצצת. יש להשתמש באינדקסציה מחודשת reindex- אשר תוריד את כל שרשרת הבלוקים מחדש.</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
@@ -3437,6 +3422,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Corrupted block database detected</source>
         <translation>התגלה מסד נתוני מקטעים לא תקין</translation>
+    </message>
+    <message>
+        <source>Could not find asmap file %s</source>
+        <translation>  קובץ asmap %s לא נמצא</translation>
+    </message>
+    <message>
+        <source>Could not parse asmap file %s</source>
+        <translation> קובץ asmap %s לא נפרס</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -3728,10 +3721,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>זוהי עמלת העסקה שתוכל לשלם כאשר אמדן גובה העמלה אינו זמין.</translation>
-    </message>
-    <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>מוצר זה כולל תוכנה שפותחה בפרויקט OpenSSL לטובת השימוש ב OpenSSL Toolkit %s ותוכנת קריפטוגרפיה שנכתבה ע"י   Eric Young ותוכנת UPnP שנכתבה ע"יי Thomas Bernard.</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>

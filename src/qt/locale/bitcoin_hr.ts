@@ -374,14 +374,6 @@
         <translation>Promijenite lozinku za šifriranje novčanika</translation>
     </message>
     <message>
-        <source>&amp;Debug window</source>
-        <translation>Konzola za dijagnostiku</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Otvorite konzolu za dijagnostiku</translation>
-    </message>
-    <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Potvrdite poruku...</translation>
     </message>
@@ -442,10 +434,6 @@
         <translation>Prikažite popis korištenih adresa i oznaka za primanje novca</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Otvorite bitcoin: URI adresu ili zahtjev za uplatu</translation>
-    </message>
-    <message>
         <source>&amp;Command-line options</source>
         <translation>Opcije &amp;naredbene linije</translation>
     </message>
@@ -494,12 +482,24 @@
         <translation>Ažurno</translation>
     </message>
     <message>
+        <source>Node window</source>
+        <translation>Konzola za čvor</translation>
+    </message>
+    <message>
+        <source>Open node debugging and diagnostic console</source>
+        <translation>Otvori konzolu za dijagnostiku i otklanjanje pogrešaka čvora.</translation>
+    </message>
+    <message>
         <source>&amp;Sending addresses</source>
         <translation>Adrese za &amp;slanje</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses</source>
         <translation>Adrese za &amp;primanje</translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI</source>
+        <translation>Otvori bitcoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -923,10 +923,6 @@
         <translation>verzija</translation>
     </message>
     <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
-    </message>
-    <message>
         <source>About %1</source>
         <translation>O programu %1</translation>
     </message>
@@ -1065,6 +1061,10 @@
         <translation>Sakrijte</translation>
     </message>
     <message>
+        <source>Esc</source>
+        <translation>Esc</translation>
+    </message>
+    <message>
         <source>Unknown. Syncing Headers (%1, %2%)...</source>
         <translation>Nepoznato. Sinkroniziranje zaglavlja (%1, %2%)...</translation>
     </message>
@@ -1072,24 +1072,12 @@
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>Otvori URI adresu</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>Otvori zahtjev za plaćanje iz URI adrese ili datoteke</translation>
+        <source>Open bitcoin URI</source>
+        <translation>Otvori bitcoin: URI</translation>
     </message>
     <message>
         <source>URI:</source>
         <translation>URI:</translation>
-    </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation>Izaberi datoteku zahtjeva za plaćanje</translation>
-    </message>
-    <message>
-        <source>Select payment request file to open</source>
-        <translation>Izaberi datoteku zahtjeva za plaćanje</translation>
     </message>
 </context>
 <context>
@@ -1480,16 +1468,8 @@
         <translation>'bitcoin://' nije ispravan URI. Koristite 'bitcoin:' umjesto toga.</translation>
     </message>
     <message>
-        <source>You are using a BIP70 URL which will be unsupported in the future.</source>
-        <translation>Koristite BIP70 URL koji će ubuduće biti nepodržan.</translation>
-    </message>
-    <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation>URL za dohvatu zahtjeva za plaćanje neispravan: %1</translation>
-    </message>
-    <message>
-        <source>Cannot process payment request because BIP70 support was not compiled in.</source>
-        <translation>Ne može se obraditi zahtjev uplate jer podrška za BIP70 nije bila uključena tijekom prevođenja.</translation>
+        <source>Cannot process payment request because BIP70 is not supported.</source>
+        <translation>Zahtjev za plaćanje nije izvršen jer BIP70 nije podržan</translation>
     </message>
     <message>
         <source>Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.</source>
@@ -1510,66 +1490,6 @@
     <message>
         <source>Payment request file handling</source>
         <translation>Rukovanje datotekom zahtjeva za plaćanje</translation>
-    </message>
-    <message>
-        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Nije moguće iščitati datoteku zahtjeva za plaćanje! Uzrok tomu može biti nevažeća datoteka zahtjeva za plaćanje.</translation>
-    </message>
-    <message>
-        <source>Payment request rejected</source>
-        <translation>Zahtjev za plaćanje odbijen</translation>
-    </message>
-    <message>
-        <source>Payment request network doesn't match client network.</source>
-        <translation>Mreža zahtjeva za plaćanje ne poklapa se s mrežom klijenta.</translation>
-    </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation>Zahtjev za plaćanje istekao.</translation>
-    </message>
-    <message>
-        <source>Payment request is not initialized.</source>
-        <translation>Zahtjev za plaćanje nije inicijaliziran.</translation>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>Neprovjereni zahtjevi za plaćanje prilagođenim skriptima za plaćanje su nepodržani.</translation>
-    </message>
-    <message>
-        <source>Invalid payment request.</source>
-        <translation>Nevažeći zahtjev za plaćanje.</translation>
-    </message>
-    <message>
-        <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Traženi iznos plaćanja %1 je premalen (smatra se "prašinom", sićušnim iznosom).</translation>
-    </message>
-    <message>
-        <source>Refund from %1</source>
-        <translation>Povrat iz %1</translation>
-    </message>
-    <message>
-        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>Zahtjev za plaćanje %1 je prevelik (%2 bajt(ov)a, dozvoljeno %3 bajt(ov)a).</translation>
-    </message>
-    <message>
-        <source>Error communicating with %1: %2</source>
-        <translation>Greška kod komuniciranja s %1: %2</translation>
-    </message>
-    <message>
-        <source>Payment request cannot be parsed!</source>
-        <translation>Zahtjev za plaćanje ne može se parsirati!</translation>
-    </message>
-    <message>
-        <source>Bad response from server %1</source>
-        <translation>Neispravan odgovor sa strane servera %1</translation>
-    </message>
-    <message>
-        <source>Network request error</source>
-        <translation>Greška kod mrežnog zahtjeva</translation>
-    </message>
-    <message>
-        <source>Payment acknowledged</source>
-        <translation>Plaćanje priznato</translation>
     </message>
 </context>
 <context>
@@ -1748,10 +1668,6 @@
         <translation>&amp;Informacije</translation>
     </message>
     <message>
-        <source>Debug window</source>
-        <translation>Konzola za dijagnostiku</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>Općenito</translation>
     </message>
@@ -1868,8 +1784,16 @@
         <translation>Broj sinkronizranih blokova</translation>
     </message>
     <message>
+        <source>Mapped AS</source>
+        <translation>Mapirano kao</translation>
+    </message>
+    <message>
         <source>User Agent</source>
         <translation>Korisnički agent</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation>Konzola za čvor</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
@@ -2083,6 +2007,10 @@
         <translation>Opcionalan iznos koji možete zahtijevati. Ostavite ovo prazno ili unesite nulu ako ne želite zahtijevati specifičan iznos.</translation>
     </message>
     <message>
+        <source>An optional message that is attached to the payment request and may be displayed to the sender.</source>
+        <translation>Opcionalna poruka je priložena zahtjevu za plaćanje i može se prikazati pošiljatelju.</translation>
+    </message>
+    <message>
         <source>&amp;Create new receiving address</source>
         <translation>&amp;Stvorite novu primateljsku adresu</translation>
     </message>
@@ -2292,10 +2220,6 @@
         <translation>Upozorenje: Procjena naknada trenutno nije moguća.</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>Sažimajte opcije naknade</translation>
-    </message>
-    <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
 Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
@@ -2338,6 +2262,10 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     <message>
         <source>Dust:</source>
         <translation>Prah:</translation>
+    </message>
+    <message>
+        <source>Hide transaction fee settings</source>
+        <translation>Sakrijte postavke za transakcijske provizije</translation>
     </message>
     <message>
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
@@ -2408,6 +2336,10 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
         <translation>%1 (%2 blokova)</translation>
     </message>
     <message>
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Cr&amp;eate nije potpisan</translation>
+    </message>
+    <message>
         <source> from wallet '%1'</source>
         <translation>iz novčanika '%1'</translation>
     </message>
@@ -2418,6 +2350,10 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     <message>
         <source>%1 to %2</source>
         <translation>%1 na %2</translation>
+    </message>
+    <message>
+        <source>Do you want to draft this transaction?</source>
+        <translation>Želite li kreirati nacrt transakcije?</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2456,6 +2392,26 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
         <translation>Potvrdi slanje novca</translation>
     </message>
     <message>
+        <source>Confirm transaction proposal</source>
+        <translation>Potvrdi predloženu transakciju </translation>
+    </message>
+    <message>
+        <source>Copy PSBT to clipboard</source>
+        <translation>Kopiraj PSBT u međuspremnik</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Pošalji</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT kopiran</translation>
+    </message>
+    <message>
+        <source>Watch-only balance:</source>
+        <translation>Saldo samo za gledanje:</translation>
+    </message>
+    <message>
         <source>The recipient address is not valid. Please recheck.</source>
         <translation>Adresa primatelja je nevažeća. Provjerite ponovno, molim vas.</translation>
     </message>
@@ -2478,10 +2434,6 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     <message>
         <source>Transaction creation failed!</source>
         <translation>Neuspješno stvorenje transakcije!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected with the following reason: %1</source>
-        <translation>Transakcija je bila odbijena zbog sljedećeg razloga: %1</translation>
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
@@ -2535,10 +2487,6 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
         <translation>Odaberite prethodno korištenu adresu</translation>
     </message>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>Ovo je normalna uplata.</translation>
-    </message>
-    <message>
         <source>The Bitcoin address to send the payment to</source>
         <translation>Bitcoin adresa na koju ćete poslati uplatu</translation>
     </message>
@@ -2557,6 +2505,10 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     <message>
         <source>Remove this entry</source>
         <translation>Obrišite ovaj zapis</translation>
+    </message>
+    <message>
+        <source>The amount to send in the selected unit</source>
+        <translation>Iznos za slanje u odabranoj valuti </translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
@@ -2597,17 +2549,6 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     <message>
         <source>Memo:</source>
         <translation>Zapis:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Unesite oznaku za ovu adresu kako bi ju dodali u vaš adresar</translation>
-    </message>
-</context>
-<context>
-    <name>SendConfirmationDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation>Da</translation>
     </message>
 </context>
 <context>
@@ -2696,6 +2637,14 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
         <translation>Bitcoin adresa kojom je poruka potpisana</translation>
     </message>
     <message>
+        <source>The signed message to verify</source>
+        <translation>Potpisana poruka za provjeriti</translation>
+    </message>
+    <message>
+        <source>The signature given when the message was signed</source>
+        <translation>Potpis predan kad je poruka bila potpisana</translation>
+    </message>
+    <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>Provjerite poruku da budete sigurni da je potpisana zadanom Bitcoin adresom</translation>
     </message>
@@ -2726,6 +2675,10 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>Otključavanje novčanika je otkazano.</translation>
+    </message>
+    <message>
+        <source>No error</source>
+        <translation>Bez greške</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -3279,6 +3232,14 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
         <translation>Potvrdite povećanje naknade</translation>
     </message>
     <message>
+        <source>Can't draft transaction.</source>
+        <translation>Nije moguće pripremiti nacrt transakcije</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT kopiran</translation>
+    </message>
+    <message>
         <source>Can't sign transaction.</source>
         <translation>Transakcija ne može biti potpisana.</translation>
     </message>
@@ -3343,10 +3304,6 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Obrezivanje: zadnja sinkronizacija novčanika ide dalje od obrezivanih podataka. Morate koristiti -reindex (ponovo preuzeti cijeli lanac blokova u slučaju obrezivanog čvora)</translation>
-    </message>
-    <message>
-        <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation>Ponovno skeniranje nije moguće u obrezanim načinu (pruned mode). Morat ćete koristiti -reindex, što će ponovno preuzeti cijeli lanac blokova.</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
@@ -3447,6 +3404,14 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     <message>
         <source>Corrupted block database detected</source>
         <translation>Pokvarena baza blokova otkrivena</translation>
+    </message>
+    <message>
+        <source>Could not find asmap file %s</source>
+        <translation>Nije pronađena asmap datoteka %s</translation>
+    </message>
+    <message>
+        <source>Could not parse asmap file %s</source>
+        <translation>Nije moguće pročitati asmap datoteku %s</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -3737,10 +3702,6 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>Ovo je transakcijska naknada koju ćete možda platiti kada su nedostupne procjene naknada.</translation>
-    </message>
-    <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>Ovaj proizvod sadrži softver razvijen sa strane OpenSSL Projecta za upotrebu u OpenSSL Toolkitu %s, kriptografski softver koji je napisao Eric Young te UPnP softver koji je napisao Thomas Bernard.</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>

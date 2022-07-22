@@ -153,7 +153,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Lai veiktu šo darbību, nepieciešama jūsu maciņa slepenā frāze maciņa dekriptēšanai.</translation>
+        <translation>Lai veiktu šo darbību, nepieciešama jūsu maciņa slepenā frāze maciņa atšifrēšanai.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -168,12 +168,24 @@
         <translation>Apstiprināt maciņa šifrēšanu</translation>
     </message>
     <message>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+        <translation>Brīdinājums: Šifrējot Jūsu maciņu, gadījumā ja aizmirsīsiet savu paroli, Jūs NEATGRIEZENISKI ZAUDĒSIET VISUS SAVUS "BITKOINUS"!</translation>
+    </message>
+    <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Vai tu tiešām vēlies šifrēt savu maciņu?</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
         <translation>Maciņš šifrēts</translation>
+    </message>
+    <message>
+        <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Ievadiet savu paroli Jūsu maciņam, lūdzu lietojiet vismaz desmit simbolus, astoņus vai vairāk vārdus.</translation>
+    </message>
+    <message>
+        <source>Enter the old passphrase and new passphrase for the wallet.</source>
+        <translation>Ievadiet veco un jauno paroli Jūsu maciņam</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -186,6 +198,14 @@
     <message>
         <source>Wallet encryption failed</source>
         <translation>Maciņa šifrēšana neizdevās</translation>
+    </message>
+    <message>
+        <source>Wallet unlock failed</source>
+        <translation>Maciņa atslēgšana neizdevās</translation>
+    </message>
+    <message>
+        <source>Wallet decryption failed</source>
+        <translation>Maciņa atšifrēšana neizdevās</translation>
     </message>
     </context>
 <context>
@@ -224,6 +244,10 @@
     <message>
         <source>Quit application</source>
         <translation>Aizvērt programmu</translation>
+    </message>
+    <message>
+        <source>&amp;About %1</source>
+        <translation>&amp;Par %1</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -272,14 +296,6 @@
     <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Mainīt maciņa šifrēšanas paroli</translation>
-    </message>
-    <message>
-        <source>&amp;Debug window</source>
-        <translation>&amp;Atkļūdošanas logs</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Atvērt atkļūdošanas un diagnostikas konsoli</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -332,10 +348,6 @@
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
         <translation>Pieprasīt maksājumus (izveido QR kodu un bitcoin: URIs)</translation>
-    </message>
-    <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Atvērt bitcoin URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -496,10 +508,6 @@
         <translation>versija</translation>
     </message>
     <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-biti)</translation>
-    </message>
-    <message>
         <source>Command-line options</source>
         <translation>Komandrindas iespējas</translation>
     </message>
@@ -541,22 +549,10 @@
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>Atvērt URI</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>Atvērt maksājuma pieprasījumu no URI vai datnes</translation>
-    </message>
-    <message>
         <source>URI:</source>
         <translation>URI:</translation>
     </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation>Izvēlies maksājuma pieprasījuma datni</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>OpenWalletActivity</name>
     </context>
@@ -807,10 +803,6 @@
     <message>
         <source>&amp;Information</source>
         <translation>&amp;Informācija</translation>
-    </message>
-    <message>
-        <source>Debug window</source>
-        <translation>Atkļūdošanas logs</translation>
     </message>
     <message>
         <source>General</source>
@@ -1080,10 +1072,6 @@
         <translation>Izvēlies iepriekš izmantoto adresi</translation>
     </message>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>Šis ir parasts maksājums.</translation>
-    </message>
-    <message>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
@@ -1111,10 +1099,7 @@
         <source>Memo:</source>
         <translation>Memo:</translation>
     </message>
-    </context>
-<context>
-    <name>SendConfirmationDialog</name>
-    </context>
+</context>
 <context>
     <name>ShutdownWindow</name>
     <message>
