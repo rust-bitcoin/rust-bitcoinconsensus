@@ -99,7 +99,7 @@
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>%1으로 주소 리스트를 저장하는 동안 오류가 발생했습니다. 다시 시도해주세요.</translation>
+        <translation>%1 으로 주소 리스트를 저장하는 동안 오류가 발생했습니다. 다시 시도해 주십시오.</translation>
     </message>
 </context>
 <context>
@@ -197,11 +197,11 @@
     </message>
     <message>
         <source>Your wallet is about to be encrypted. </source>
-        <translation>지갑이 암호화 됩니다</translation>
+        <translation>지갑이 바로 암호화 됩니다.</translation>
     </message>
     <message>
         <source>Your wallet is now encrypted. </source>
-        <translation>지갑이 암호화 되었습니다</translation>
+        <translation>지갑이 암호화 되었습니다.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -374,14 +374,6 @@
         <translation>지갑 암호화에 사용되는 암호를 변경합니다</translation>
     </message>
     <message>
-        <source>&amp;Debug window</source>
-        <translation>디버그 창(&amp;D)</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>디버깅 및 진단 콘솔을 엽니다</translation>
-    </message>
-    <message>
         <source>&amp;Verify message...</source>
         <translation>메시지 검증(&amp;V)...</translation>
     </message>
@@ -442,10 +434,6 @@
         <translation>한번 이상 사용된 받는 주소와 라벨의 목록을 보여줍니다</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>bitcoin: URI 또는 지불요청 열기</translation>
-    </message>
-    <message>
         <source>&amp;Command-line options</source>
         <translation>명령줄 옵션(&amp;C)</translation>
     </message>
@@ -494,12 +482,24 @@
         <translation>최신의</translation>
     </message>
     <message>
+        <source>Node window</source>
+        <translation>노드 창</translation>
+    </message>
+    <message>
+        <source>Open node debugging and diagnostic console</source>
+        <translation>노드 디버깅 및 진단 콘솔 열기 </translation>
+    </message>
+    <message>
         <source>&amp;Sending addresses</source>
         <translation>보내는 주소(&amp;S)</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses</source>
         <translation>받는 주소(&amp;R)</translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI</source>
+        <translation>bitcoin: URI 열기</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -563,7 +563,7 @@
     </message>
     <message>
         <source>Warning: %1</source>
-        <translation>주의: %1</translation>
+        <translation>경고: %1</translation>
     </message>
     <message>
         <source>Date: %1
@@ -924,10 +924,6 @@
         <translation>버전</translation>
     </message>
     <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-비트)</translation>
-    </message>
-    <message>
         <source>About %1</source>
         <translation>%1 정보</translation>
     </message>
@@ -1062,6 +1058,10 @@
         <translation>숨기기</translation>
     </message>
     <message>
+        <source>Esc</source>
+        <translation>Esc</translation>
+    </message>
+    <message>
         <source>Unknown. Syncing Headers (%1, %2%)...</source>
         <translation>알 수 없음. 헤더 동기화 중(%1,%2%)...</translation>
     </message>
@@ -1069,24 +1069,12 @@
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>URI 열기</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>지불 요청 URI 또는 파일 열기</translation>
+        <source>Open bitcoin URI</source>
+        <translation>비트코인 URI 열기</translation>
     </message>
     <message>
         <source>URI:</source>
         <translation>URI:</translation>
-    </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation>지불 요청 파일을 선택하세요</translation>
-    </message>
-    <message>
-        <source>Select payment request file to open</source>
-        <translation>지불 요청 파일을 열기 위해서 선택하세요</translation>
     </message>
 </context>
 <context>
@@ -1477,16 +1465,8 @@
         <translation>'bitcoin://"은 잘못된 URI입니다. 'bitcoin:'을 사용하십시오.</translation>
     </message>
     <message>
-        <source>You are using a BIP70 URL which will be unsupported in the future.</source>
-        <translation>지금 사용하고 있는 BIP70 URL은 나중에 지원되지 않을 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation>지불 요청의 URL이 올바르지 않습니다: %1</translation>
-    </message>
-    <message>
-        <source>Cannot process payment request because BIP70 support was not compiled in.</source>
-        <translation>BIP70 기능이 포함되지 않아서 지불 요청을 처리할 수 없습니다.</translation>
+        <source>Cannot process payment request because BIP70 is not supported.</source>
+        <translation>BIP70을 지원하지 않아서 지불 요청을 처리할 수 없습니다.</translation>
     </message>
     <message>
         <source>Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.</source>
@@ -1494,7 +1474,7 @@
     </message>
     <message>
         <source>If you are receiving this error you should request the merchant provide a BIP21 compatible URI.</source>
-        <translation>만약 이 오류 메시지가 보인다면, 상점에 BIP21이 호환되는 URI를 제공해달라고 요청해주세요.</translation>
+        <translation>만약 이 오류 메시지가 보인다면, 판매자에게 BIP21이 호환되는 URI를 제공해달라고 요청해주세요.</translation>
     </message>
     <message>
         <source>Invalid payment address %1</source>
@@ -1507,66 +1487,6 @@
     <message>
         <source>Payment request file handling</source>
         <translation>지불 요청 파일 처리중</translation>
-    </message>
-    <message>
-        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>지불 요청 파일을 읽을 수 없습니다. 이것은 잘못된 지불 요청 파일에 의해 발생하는 오류일 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Payment request rejected</source>
-        <translation>지불 요청이 거부됨</translation>
-    </message>
-    <message>
-        <source>Payment request network doesn't match client network.</source>
-        <translation>지불 요청 네트워크가 클라이언트 네트워크와 일치하지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation>지불 요청이 만료되었습니다.</translation>
-    </message>
-    <message>
-        <source>Payment request is not initialized.</source>
-        <translation>지불 요청이 초기화 되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>임의로 변경한 결제 스크립트 기반의 지불 요청 양식은 검증되기 전까지는 지원되지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Invalid payment request.</source>
-        <translation>잘못된 지불 요청입니다.</translation>
-    </message>
-    <message>
-        <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>요청한 금액 %1의 양이 너무 적습니다. (더스트로 간주)</translation>
-    </message>
-    <message>
-        <source>Refund from %1</source>
-        <translation>%1 으로부터의 환불</translation>
-    </message>
-    <message>
-        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>지불 요청 %1은 너무 큽니다 (%2 바이트, %3 바이트까지 허용됩니다).</translation>
-    </message>
-    <message>
-        <source>Error communicating with %1: %2</source>
-        <translation>%1과의 통신 오류: %2</translation>
-    </message>
-    <message>
-        <source>Payment request cannot be parsed!</source>
-        <translation>지불요청을 파싱할 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Bad response from server %1</source>
-        <translation>서버 %1로 부터 잘못된 반응</translation>
-    </message>
-    <message>
-        <source>Network request error</source>
-        <translation>네트워크 요청 오류</translation>
-    </message>
-    <message>
-        <source>Payment acknowledged</source>
-        <translation>지불이 승인됨</translation>
     </message>
 </context>
 <context>
@@ -1745,10 +1665,6 @@
         <translation>정보(&amp;I)</translation>
     </message>
     <message>
-        <source>Debug window</source>
-        <translation>디버그 창</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>일반</translation>
     </message>
@@ -1865,8 +1781,20 @@
         <translation>동기화된 블록</translation>
     </message>
     <message>
+        <source>The mapped Autonomous System used for diversifying peer selection.</source>
+        <translation>피어 선택을 다양 화하는 데 사용되는 매핑 된 자율 시스템입니다.</translation>
+    </message>
+    <message>
+        <source>Mapped AS</source>
+        <translation>매핑된 AS</translation>
+    </message>
+    <message>
         <source>User Agent</source>
         <translation>유저 에이전트</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation>노드 창</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
@@ -2080,6 +2008,14 @@
         <translation>요청할 금액 입력칸으로 선택 사항입니다. 빈 칸으로 두거나 특정 금액이 필요하지 않는 경우 0을 입력하세요.</translation>
     </message>
     <message>
+        <source>An optional label to associate with the new receiving address (used by you to identify an invoice).  It is also attached to the payment request.</source>
+        <translation>새 수신 주소와 연결할 선택적 레이블 (사용자가 송장을 식별하는 데 사용함). 지불 요청에도 첨부됩니다.</translation>
+    </message>
+    <message>
+        <source>An optional message that is attached to the payment request and may be displayed to the sender.</source>
+        <translation>지불 요청에 첨부되고 발신자에게 표시 될 수있는 선택적 메시지입니다.</translation>
+    </message>
+    <message>
         <source>&amp;Create new receiving address</source>
         <translation>&amp;새 받을 주소 생성하기</translation>
     </message>
@@ -2289,10 +2225,6 @@
         <translation>경고: 지금은 수수료 예측이 불가능합니다.</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>수수료 설정 접기</translation>
-    </message>
-    <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
 Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
@@ -2335,6 +2267,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Dust:</source>
         <translation>더스트:</translation>
+    </message>
+    <message>
+        <source>Hide transaction fee settings</source>
+        <translation>거래 수수료 설정 숨기기</translation>
     </message>
     <message>
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
@@ -2405,6 +2341,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>%1(%2 블록)</translation>
     </message>
     <message>
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>사인되지 않은 것을 생성</translation>
+    </message>
+    <message>
         <source> from wallet '%1'</source>
         <translation>%1 지갑에서</translation>
     </message>
@@ -2415,6 +2355,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>%1 to %2</source>
         <translation>%1을(를) %2(으)로</translation>
+    </message>
+    <message>
+        <source>Do you want to draft this transaction?</source>
+        <translation>이 거래 초안을 작성 하시겠습니까?</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2453,6 +2397,26 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>코인 전송을 확인</translation>
     </message>
     <message>
+        <source>Confirm transaction proposal</source>
+        <translation>거래 제안 확인</translation>
+    </message>
+    <message>
+        <source>Copy PSBT to clipboard</source>
+        <translation>PSBT를 클립보드에 복사</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>보내기</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT 복사됨</translation>
+    </message>
+    <message>
+        <source>Watch-only balance:</source>
+        <translation>조회전용 잔액:</translation>
+    </message>
+    <message>
         <source>The recipient address is not valid. Please recheck.</source>
         <translation>수령인 주소가 정확하지 않습니다. 재확인 바랍니다</translation>
     </message>
@@ -2475,10 +2439,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Transaction creation failed!</source>
         <translation>거래 생성에 실패했습니다!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected with the following reason: %1</source>
-        <translation>거래가 다음과 같은 이유로 거부되었습니다: %1</translation>
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
@@ -2532,10 +2492,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>이전에 사용한 주소를 선택하기</translation>
     </message>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>이것은 정상적인 지불입니다.</translation>
-    </message>
-    <message>
         <source>The Bitcoin address to send the payment to</source>
         <translation>이 비트코인 주소로 송금됩니다</translation>
     </message>
@@ -2554,6 +2510,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Remove this entry</source>
         <translation>입력된 항목 삭제</translation>
+    </message>
+    <message>
+        <source>The amount to send in the selected unit</source>
+        <translation>선택한 단위로 보낼 수량</translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
@@ -2594,17 +2554,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Memo:</source>
         <translation>메모:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>주소록에 추가하려면 라벨을 입력하세요</translation>
-    </message>
-</context>
-<context>
-    <name>SendConfirmationDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation>예</translation>
     </message>
 </context>
 <context>
@@ -2693,6 +2642,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>메세지의 서명에 사용된 비트코인 주소</translation>
     </message>
     <message>
+        <source>The signed message to verify</source>
+        <translation>검증할 서명된 메세지</translation>
+    </message>
+    <message>
+        <source>The signature given when the message was signed</source>
+        <translation>메세지의 서명되었을 때의 시그니처</translation>
+    </message>
+    <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>입력된 비트코인 주소로 메시지가 서명되었는지 검증합니다</translation>
     </message>
@@ -2723,6 +2680,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>지갑 잠금 해제를 취소했습니다.</translation>
+    </message>
+    <message>
+        <source>No error</source>
+        <translation>오류 없음</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -3193,7 +3154,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>%1으로 거래 기록을 저장하는데 에러가 있었습니다.</translation>
+        <translation>거래 기록을 %1 에 저장하는 동안 오류가 발생하였습니다.</translation>
     </message>
     <message>
         <source>Exporting Successful</source>
@@ -3260,6 +3221,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>수수료를 올리시겠습니까?</translation>
     </message>
     <message>
+        <source>Do you want to draft a transaction with fee increase?</source>
+        <translation>수수료가 인상 된 거래를 작성 하시겠습니까?</translation>
+    </message>
+    <message>
         <source>Current fee:</source>
         <translation>현재 수수료:</translation>
     </message>
@@ -3274,6 +3239,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Confirm fee bump</source>
         <translation>수수료 상향 승인</translation>
+    </message>
+    <message>
+        <source>Can't draft transaction.</source>
+        <translation>거래 초안을 작성할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT 복사됨</translation>
     </message>
     <message>
         <source>Can't sign transaction.</source>
@@ -3340,10 +3313,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>블록 축소: 마지막 지갑 동기화 지점이 축소된 데이터보다 과거의 것 입니다. -reindex가 필요합니다 (축소된 노드의 경우 모든 블록체인을 재다운로드합니다)</translation>
-    </message>
-    <message>
-        <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation>블록 축소 모드에서는 재검색이 불가능 합니다. -reindex 명령을 사용해서 모든 블록체인을 다시 다운로드 해야 합니다.</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
@@ -3444,6 +3413,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Corrupted block database detected</source>
         <translation>손상된 블록 데이터베이스가 감지되었습니다</translation>
+    </message>
+    <message>
+        <source>Could not find asmap file %s</source>
+        <translation>asmap file %s 을/를 찾을 수 없습니다</translation>
+    </message>
+    <message>
+        <source>Could not parse asmap file %s</source>
+        <translation>asmap file %s 을/를 파싱할 수 없습니다</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -3730,10 +3707,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>이것은 수수료 추정을 이용할 수 없을 때 사용되는 거래 수수료입니다.</translation>
-    </message>
-    <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>이 제품에는 OpenSSL 프로젝트에서 OpenSSL Toolkit %s으로 사용하기 위해 개발 한 소프트웨어와 에릭 영이 작성한 암호화 소프트웨어 및 토머스 버나드가 작성한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>

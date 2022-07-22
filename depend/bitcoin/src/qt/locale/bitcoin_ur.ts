@@ -3,15 +3,15 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>پتہ یا لیبل کی تصیح کیلیئے داہنا کلک</translation>
+        <translation>پتہ یا لیبل میں ترمیم کرنے کیلئے دائیں کلک کریں</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>نیا پتہ تخلیق کریں</translation>
+        <translation>نیا پتہ تخلیق کریں </translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>&amp;نیا</translation>
+        <translation>&amp;نیا </translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -67,7 +67,7 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>یہ آپ کے ادائیگی بھیجنے کے لئے بٹ کوائن ایڈریس ہیں.سکے بھیجنے سے پہلے ہمیشہ رقم اور وصول کنندہ پتہ چیک کریں۔</translation>
+        <translation>یہ آپ کے ادائیگی بھیجنے کے لئے بٹ کوئن ایڈریس ہیں۔ سکے بھیجنے سے پہلے ہمیشہ رقم اور وصول کنندہ پتہ چیک کریں۔</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -117,7 +117,7 @@
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>پاسفریج ڈائیلاگ</translation>
+        <translation>پاسفریز ڈائیلاگ</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
@@ -141,7 +141,7 @@
     </message>
     <message>
         <source>Unlock wallet</source>
-        <translation>بستہ کھولیں</translation>
+        <translation>بٹوا کھولیں</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -153,7 +153,7 @@
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>پرس کی خفیہ کاری کی تصدیق کریں</translation>
+        <translation>پرس کی خفیہ کاری کی تصدیق کریں </translation>
     </message>
     </context>
 <context>
@@ -309,19 +309,12 @@
         <translation>رقم:</translation>
     </message>
     <message>
-        <source>Balance:</source>
-        <translation>بیلنس:</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation>(کوئی لیبل نہیں)</translation>
     </message>
 </context>
 <context>
     <name>SendCoinsEntry</name>
-    </context>
-<context>
-    <name>SendConfirmationDialog</name>
     </context>
 <context>
     <name>ShutdownWindow</name>
@@ -363,10 +356,6 @@
     </context>
 <context>
     <name>TransactionView</name>
-    <message>
-        <source>Other</source>
-        <translation>Other</translation>
-    </message>
     <message>
         <source>Comma separated file (*.csv)</source>
         <translation>کاما سے جدا فائلیں (*.csv)</translation>

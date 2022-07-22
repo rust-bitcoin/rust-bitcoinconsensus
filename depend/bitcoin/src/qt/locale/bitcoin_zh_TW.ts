@@ -331,7 +331,7 @@
     </message>
     <message>
         <source>Create a new wallet</source>
-        <translation>新增一個新錢包</translation>
+        <translation>創建一個新錢包</translation>
     </message>
     <message>
         <source>Wallet:</source>
@@ -374,14 +374,6 @@
         <translation>改變錢包加密用的密碼</translation>
     </message>
     <message>
-        <source>&amp;Debug window</source>
-        <translation>除錯視窗(&amp;D)</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>開啓除錯和診斷主控台</translation>
-    </message>
-    <message>
         <source>&amp;Verify message...</source>
         <translation>驗證訊息(&amp;V)...</translation>
     </message>
@@ -403,7 +395,7 @@
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>把錢包中的密鑰加密</translation>
+        <translation>將錢包中之密鑰加密</translation>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
@@ -440,10 +432,6 @@
     <message>
         <source>Show the list of used receiving addresses and labels</source>
         <translation>顯示已使用過的收款位址和標記的清單</translation>
-    </message>
-    <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>開啓 bitcoin 協議的資源識別碼(URI)或付款要求</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -494,12 +482,24 @@
         <translation>最新狀態</translation>
     </message>
     <message>
+        <source>Node window</source>
+        <translation>節點視窗</translation>
+    </message>
+    <message>
+        <source>Open node debugging and diagnostic console</source>
+        <translation>開啟節點調試和診斷控制台</translation>
+    </message>
+    <message>
         <source>&amp;Sending addresses</source>
         <translation>付款位址(&amp;S)</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses</source>
         <translation>收款位址(&amp;R)</translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI</source>
+        <translation>打開一個比特幣：URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -920,10 +920,6 @@
         <translation>版本</translation>
     </message>
     <message>
-        <source>(%1-bit)</source>
-        <translation>(%1 位元)</translation>
-    </message>
-    <message>
         <source>About %1</source>
         <translation>關於 %1</translation>
     </message>
@@ -1006,7 +1002,11 @@
         <source>(of %n GB needed)</source>
         <translation><numerusform>(需要 %n GB)</numerusform></translation>
     </message>
-    </context>
+    <message numerus="yes">
+        <source>(%n GB needed for full chain)</source>
+        <translation><numerusform>（完整區塊鏈需要％n GB）</numerusform></translation>
+    </message>
+</context>
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -1054,6 +1054,10 @@
         <translation>隱藏</translation>
     </message>
     <message>
+        <source>Esc</source>
+        <translation>離開鍵</translation>
+    </message>
+    <message>
         <source>Unknown. Syncing Headers (%1, %2%)...</source>
         <translation>不明。正在同步前導資料中(%1, %2%)...</translation>
     </message>
@@ -1061,24 +1065,12 @@
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>開啓 URI</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>從 URI 或檔案開啟付款要求</translation>
+        <source>Open bitcoin URI</source>
+        <translation>打開比特幣 URI</translation>
     </message>
     <message>
         <source>URI:</source>
         <translation>URI:</translation>
-    </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation>選擇付款要求資料檔</translation>
-    </message>
-    <message>
-        <source>Select payment request file to open</source>
-        <translation>選擇要開啟的付款要求資料檔</translation>
     </message>
 </context>
 <context>
@@ -1469,16 +1461,8 @@
         <translation>字首為 bitcoin:// 不是有效的 URI，請改用 bitcoin: 開頭。</translation>
     </message>
     <message>
-        <source>You are using a BIP70 URL which will be unsupported in the future.</source>
-        <translation>你正在使用BIP70 URL，它在未来会被终止支持。</translation>
-    </message>
-    <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation>取得付款要求的 URL 無效: %1</translation>
-    </message>
-    <message>
-        <source>Cannot process payment request because BIP70 support was not compiled in.</source>
-        <translation>无法处理支付请求，因为编译时没有启用BIP70支持。</translation>
+        <source>Cannot process payment request because BIP70 is not supported.</source>
+        <translation>由於不支援BIP70，因此無法處理付款請求。</translation>
     </message>
     <message>
         <source>Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.</source>
@@ -1499,66 +1483,6 @@
     <message>
         <source>Payment request file handling</source>
         <translation>處理付款要求檔案</translation>
-    </message>
-    <message>
-        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>沒辦法讀取付款要求檔案！可能是無效的檔案造成的。</translation>
-    </message>
-    <message>
-        <source>Payment request rejected</source>
-        <translation>付款的要求被拒絕了</translation>
-    </message>
-    <message>
-        <source>Payment request network doesn't match client network.</source>
-        <translation>付款要求的網路類型跟客戶端不符。</translation>
-    </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation>付款的要求過期了。</translation>
-    </message>
-    <message>
-        <source>Payment request is not initialized.</source>
-        <translation>付款的要求沒有完成初始化。</translation>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>不支援含有自訂付款指令碼，且沒驗證過的付款要求。</translation>
-    </message>
-    <message>
-        <source>Invalid payment request.</source>
-        <translation>付款的要求無效。</translation>
-    </message>
-    <message>
-        <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>要求付款的金額 %1 太少(會被網路認為是沒必要的零散錢)。</translation>
-    </message>
-    <message>
-        <source>Refund from %1</source>
-        <translation>來自 %1 的退款</translation>
-    </message>
-    <message>
-        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>付款要求 %1 過大 (%2 位元組, 上限 %3 位元組).</translation>
-    </message>
-    <message>
-        <source>Error communicating with %1: %2</source>
-        <translation>跟 %1 通訊時發生錯誤: %2</translation>
-    </message>
-    <message>
-        <source>Payment request cannot be parsed!</source>
-        <translation>沒辦法解析付款要求內容！</translation>
-    </message>
-    <message>
-        <source>Bad response from server %1</source>
-        <translation>伺服器 %1 的回應有誤</translation>
-    </message>
-    <message>
-        <source>Network request error</source>
-        <translation>發出要求時發生網路錯誤</translation>
-    </message>
-    <message>
-        <source>Payment acknowledged</source>
-        <translation>付款已確認</translation>
     </message>
 </context>
 <context>
@@ -1737,10 +1661,6 @@
         <translation>資訊(&amp;I)</translation>
     </message>
     <message>
-        <source>Debug window</source>
-        <translation>除錯視窗</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>普通</translation>
     </message>
@@ -1857,8 +1777,20 @@
         <translation>已同步區塊</translation>
     </message>
     <message>
+        <source>The mapped Autonomous System used for diversifying peer selection.</source>
+        <translation>映射的自治系統，用於使peer選取多樣化。</translation>
+    </message>
+    <message>
+        <source>Mapped AS</source>
+        <translation>對應 AS</translation>
+    </message>
+    <message>
         <source>User Agent</source>
         <translation>使用者代理</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation>節點視窗</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
@@ -2072,6 +2004,14 @@
         <translation>要求付款的金額，可以不填。不確定金額時可以留白或是填零。</translation>
     </message>
     <message>
+        <source>An optional label to associate with the new receiving address (used by you to identify an invoice).  It is also attached to the payment request.</source>
+        <translation>與新的接收地址相關聯的可選標籤（您用於標識收據）。它也附在支付支付請求上。</translation>
+    </message>
+    <message>
+        <source>An optional message that is attached to the payment request and may be displayed to the sender.</source>
+        <translation>附加在支付請求上的可選的訊息，可以顯示給發送者。</translation>
+    </message>
+    <message>
         <source>&amp;Create new receiving address</source>
         <translation>&amp;生成新的接收位址</translation>
     </message>
@@ -2281,10 +2221,6 @@
         <translation>警告：目前無法計算預估手續費。</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>展開手續費設定</translation>
-    </message>
-    <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
 Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
@@ -2327,6 +2263,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Dust:</source>
         <translation>零散錢:</translation>
+    </message>
+    <message>
+        <source>Hide transaction fee settings</source>
+        <translation>隱藏交易費用設定</translation>
     </message>
     <message>
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
@@ -2397,6 +2337,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>%1 (%2 個區塊)</translation>
     </message>
     <message>
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Cr＆eate未簽名</translation>
+    </message>
+    <message>
         <source> from wallet '%1'</source>
         <translation>從錢包 %1</translation>
     </message>
@@ -2407,6 +2351,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>%1 to %2</source>
         <translation>%1 給 %2</translation>
+    </message>
+    <message>
+        <source>Do you want to draft this transaction?</source>
+        <translation>您要草擬此交易嗎？</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2445,6 +2393,26 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>確認付款金額</translation>
     </message>
     <message>
+        <source>Confirm transaction proposal</source>
+        <translation>確認交易建議</translation>
+    </message>
+    <message>
+        <source>Copy PSBT to clipboard</source>
+        <translation>將PSBT複製到剪貼簿</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>發</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT已復制</translation>
+    </message>
+    <message>
+        <source>Watch-only balance:</source>
+        <translation>只能看餘額:</translation>
+    </message>
+    <message>
         <source>The recipient address is not valid. Please recheck.</source>
         <translation>收款位址無效。請再檢查看看。</translation>
     </message>
@@ -2467,10 +2435,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Transaction creation failed!</source>
         <translation>製造交易失敗了！</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected with the following reason: %1</source>
-        <translation>交易因為以下原因被拒絕了: %1</translation>
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
@@ -2524,10 +2488,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>選擇先前使用過的位址</translation>
     </message>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>這是一筆正常的付款。</translation>
-    </message>
-    <message>
         <source>The Bitcoin address to send the payment to</source>
         <translation>接收付款的 Bitcoin 位址</translation>
     </message>
@@ -2546,6 +2506,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Remove this entry</source>
         <translation>刪掉這個項目</translation>
+    </message>
+    <message>
+        <source>The amount to send in the selected unit</source>
+        <translation>以所選單位發送的金額</translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
@@ -2586,17 +2550,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Memo:</source>
         <translation>備註:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>請輸入這個位址的標記來把它加進位址簿中</translation>
-    </message>
-</context>
-<context>
-    <name>SendConfirmationDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation>是</translation>
     </message>
 </context>
 <context>
@@ -2685,6 +2638,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>簽署這個訊息的 Bitcoin 位址</translation>
     </message>
     <message>
+        <source>The signed message to verify</source>
+        <translation>簽名訊息進行驗證</translation>
+    </message>
+    <message>
+        <source>The signature given when the message was signed</source>
+        <translation>簽名訊息時給出的簽名</translation>
+    </message>
+    <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>驗證這個訊息來確定是用指定的 Bitcoin 位址簽署的</translation>
     </message>
@@ -2715,6 +2676,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>錢包解鎖已取消。</translation>
+    </message>
+    <message>
+        <source>No error</source>
+        <translation>沒有錯誤</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -3248,6 +3213,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>想要提高手續費嗎？</translation>
     </message>
     <message>
+        <source>Do you want to draft a transaction with fee increase?</source>
+        <translation>您想通過增加手續費起草交易嗎？</translation>
+    </message>
+    <message>
         <source>Current fee:</source>
         <translation>目前費用：</translation>
     </message>
@@ -3262,6 +3231,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Confirm fee bump</source>
         <translation>確認手續費提升</translation>
+    </message>
+    <message>
+        <source>Can't draft transaction.</source>
+        <translation>無法草擬交易。</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT已復制</translation>
     </message>
     <message>
         <source>Can't sign transaction.</source>
@@ -3328,10 +3305,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>修剪模式：錢包的最後同步狀態是在被修剪掉的區塊資料中。你需要用 -reindex 參數執行(會重新下載整個區塊鏈)</translation>
-    </message>
-    <message>
-        <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation>在修剪模式下沒辦法重新掃描區塊鏈。你需要配合使用 -reindex 參數來重新下載整個區塊鏈。</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
@@ -3693,7 +3666,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Unable to create the PID file '%s': %s</source>
-        <translation>无法创建PID文件'%s': %s</translation>
+        <translation>無法創建PID文件'%s': %s</translation>
     </message>
     <message>
         <source>Unable to generate initial keys</source>
@@ -3722,10 +3695,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>這是當預估手續費還沒計算出來時，付款交易預設會付的手續費。</translation>
-    </message>
-    <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>此產品包含了由 OpenSSL Project 所開發的 OpenSSL Toolkit 軟體 %s, 由 Eric Young 撰寫的加解密軟體，以及由 Thomas Bernard 所撰寫的 UPnP 軟體。</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
@@ -3769,7 +3738,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Transaction must have at least one recipient</source>
-        <translation>交易必須至少要有一個收款人</translation>
+        <translation>交易必須至少有一個收款人</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>

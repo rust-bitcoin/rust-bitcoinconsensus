@@ -374,14 +374,6 @@
         <translation>பணப்பை குறியாக்கத்திற்காக பயன்படுத்தப்படும் கடவுச்சொற்றொடரை மாற்றவும்</translation>
     </message>
     <message>
-        <source>&amp;Debug window</source>
-        <translation>&amp; பிழைத்திருத்த சாளரம்</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>பிழைத்திருத்த மற்றும் கண்டறிதல் பணியகம் திறக்க</translation>
-    </message>
-    <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
@@ -442,10 +434,6 @@
         <translation>பயன்படுத்திய முகவரிகள் மற்றும் லேபிள்களின் பட்டியலைக் காட்டு</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>ஒரு Bitcoin திறக்க: URI அல்லது பணம் கோரிக்கை</translation>
-    </message>
-    <message>
         <source>&amp;Command-line options</source>
         <translation>&amp; கட்டளை வரி விருப்பங்கள்</translation>
     </message>
@@ -494,12 +482,24 @@
         <translation>தேதி வரை</translation>
     </message>
     <message>
+        <source>Node window</source>
+        <translation>நோட் விண்டோ</translation>
+    </message>
+    <message>
+        <source>Open node debugging and diagnostic console</source>
+        <translation>திற நோட் பிழைத்திருத்தம் மற்றும் கண்டறியும் பணியகம்</translation>
+    </message>
+    <message>
         <source>&amp;Sending addresses</source>
         <translation>முகவரிகள் அனுப்புகிறது</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses</source>
         <translation>முகவரிகள் பெறுதல்</translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI</source>
+        <translation>திற பிட்காயின்: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -924,10 +924,6 @@
         <translation>பதிப்பு</translation>
     </message>
     <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-பிட்)</translation>
-    </message>
-    <message>
         <source>About %1</source>
         <translation>%1 பற்றி</translation>
     </message>
@@ -1069,24 +1065,8 @@
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>URI-ஐ திற</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>URI அல்லது கோப்பிலிருந்து பணம் செலுத்துவதற்கான கோரிக்கையைத் திறக்கவும்</translation>
-    </message>
-    <message>
         <source>URI:</source>
         <translation>URI:</translation>
-    </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation>பணம் கோரிக்கை கோப்பைத் தேர்ந்தெடுக்கவும்</translation>
-    </message>
-    <message>
-        <source>Select payment request file to open</source>
-        <translation>திறக்க கட்டணம் கோரிக்கை கோப்பைத் தேர்ந்தெடுக்கவும்</translation>
     </message>
 </context>
 <context>
@@ -1477,16 +1457,8 @@
         <translation>'bitcoin: //' சரியான URI அல்ல. அதற்கு பதிலாக 'பிட்கின்:' பயன்படுத்தவும்.</translation>
     </message>
     <message>
-        <source>You are using a BIP70 URL which will be unsupported in the future.</source>
-        <translation>நீங்கள் எதிர்காலத்தில் ஆதரிக்கப்படாத BIP70 URL ஐப் பயன்படுத்துகிறீர்கள்.</translation>
-    </message>
-    <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation>பணம் செலுத்தும் கோரிக்கை URL ஐ பெறுகிறது: %1</translation>
-    </message>
-    <message>
-        <source>Cannot process payment request because BIP70 support was not compiled in.</source>
-        <translation>கட்டண கோரிக்கையை செயல்படுத்த முடியவில்லை, ஏனெனில் BIP70 ஆதரவு தொகுக்கப்படவில்லை.</translation>
+        <source>Cannot process payment request because BIP70 is not supported.</source>
+        <translation>பரிவர்த்தனை வேண்டுதலை ஏற்க இயலாது ஏனென்றால் BIP70  ஆதரவு தரவில்லை</translation>
     </message>
     <message>
         <source>Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.</source>
@@ -1507,66 +1479,6 @@
     <message>
         <source>Payment request file handling</source>
         <translation>பணம் கோரிக்கை கோப்பு கையாளுதல்</translation>
-    </message>
-    <message>
-        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>கட்டண கோரிக்கை கோப்பு படிக்க முடியாது! இது தவறான கட்டண கோரிக்கை கோப்பால் ஏற்படலாம்.</translation>
-    </message>
-    <message>
-        <source>Payment request rejected</source>
-        <translation>கட்டணம் கோரிக்கை நிராகரிக்கப்பட்டது</translation>
-    </message>
-    <message>
-        <source>Payment request network doesn't match client network.</source>
-        <translation>வாடிக்கையாளர் நெட்வொர்க்குடன் கட்டண கோரிக்கை பிணையம் பொருந்தவில்லை.</translation>
-    </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation>கட்டணம் கோரிக்கை காலாவதியானது.</translation>
-    </message>
-    <message>
-        <source>Payment request is not initialized.</source>
-        <translation>கட்டணம் கோரிக்கை ஆரம்பிக்கப்படவில்லை.</translation>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>தனிப்பயன் கட்டண ஸ்கிரிப்டுகளுக்கான சரிபார்க்கப்படாத கட்டண கோரிக்கைகள் ஆதரிக்கப்படவில்லை.</translation>
-    </message>
-    <message>
-        <source>Invalid payment request.</source>
-        <translation>தவறான கட்டண கோரிக்கை.</translation>
-    </message>
-    <message>
-        <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>%1 இன் கோரப்பட்ட கட்டணம் அளவு மிகவும் குறைவாக உள்ளது (தூசி கருதப்படுகிறது).</translation>
-    </message>
-    <message>
-        <source>Refund from %1</source>
-        <translation>%1 இலிருந்து திரும்பப்பெறவும்</translation>
-    </message>
-    <message>
-        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>கட்டணம் கோரிக்கை %1 மிக அதிகமாக உள்ளது (%2 பைட்டுகள், அனுமதிக்கப்பட்ட %3 பைட்டுகள்).</translation>
-    </message>
-    <message>
-        <source>Error communicating with %1: %2</source>
-        <translation>%1: %2 உடன் தொடர்புகொள்வதில் பிழை</translation>
-    </message>
-    <message>
-        <source>Payment request cannot be parsed!</source>
-        <translation>கட்டண கோரிக்கையை பாகுபடுத்த முடியாது!</translation>
-    </message>
-    <message>
-        <source>Bad response from server %1</source>
-        <translation>%1 சேவையகத்திலிருந்து தவறான பதில்</translation>
-    </message>
-    <message>
-        <source>Network request error</source>
-        <translation>நெட்வொர்க் கோரிக்கை பிழை</translation>
-    </message>
-    <message>
-        <source>Payment acknowledged</source>
-        <translation>கட்டணம் ஒப்புக் கொண்டது</translation>
     </message>
 </context>
 <context>
@@ -1721,10 +1633,6 @@
         <translation>&amp;தகவல்</translation>
     </message>
     <message>
-        <source>Debug window</source>
-        <translation>பிழைத்திருத்த சாளரம்</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>பொது</translation>
     </message>
@@ -1843,6 +1751,10 @@
     <message>
         <source>User Agent</source>
         <translation>பயனர் முகவர்</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation>நோட் விண்டோ</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
@@ -2265,10 +2177,6 @@
         <translation>எச்சரிக்கை: கட்டணம் மதிப்பீடு தற்போது சாத்தியமில்லை.</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>கட்டண சரிவுகளை சரி செய்ய வேண்டும்</translation>
-    </message>
-    <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
 Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
@@ -2429,6 +2337,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>அனுப்பும் பிட்காயின்களை உறுதிப்படுத்தவும்</translation>
     </message>
     <message>
+        <source>Confirm transaction proposal</source>
+        <translation>பரிவர்த்தனை வரைவு உறுதி செய்</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>அனுப்புவும்</translation>
+    </message>
+    <message>
         <source>The recipient address is not valid. Please recheck.</source>
         <translation>பெறுநரின் முகவரி தவறானது. மீண்டும் சரிபார்க்கவும்.</translation>
     </message>
@@ -2447,10 +2363,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Transaction creation failed!</source>
         <translation>பரிவர்த்தனை உருவாக்கம் தோல்வியடைந்தது!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected with the following reason: %1</source>
-        <translation>பரிவர்த்தனை பின்வரும் காரணத்தால் நிராகரிக்கப்பட்டது: %1</translation>
     </message>
     <message>
         <source>Payment request expired.</source>
@@ -2498,10 +2410,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Choose previously used address</source>
         <translation>முன்பு பயன்படுத்திய முகவரியைத் தேர்வுசெய்</translation>
-    </message>
-    <message>
-        <source>This is a normal payment.</source>
-        <translation>இது சாதாரண கட்டணம்.</translation>
     </message>
     <message>
         <source>The Bitcoin address to send the payment to</source>
@@ -2562,17 +2470,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Memo:</source>
         <translation>குறிப்பாணை:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>இந்த முகவரியை உங்கள் முகவரி புத்தகத்தில் சேர்க்க ஒரு லேபிளை உள்ளிடவும்</translation>
-    </message>
-</context>
-<context>
-    <name>SendConfirmationDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation>ஆம்</translation>
     </message>
 </context>
 <context>
@@ -2687,6 +2584,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>வாலட் திறத்தல் ரத்து செய்யப்பட்டது.</translation>
+    </message>
+    <message>
+        <source>No error</source>
+        <translation>தவறு எதுவுமில்லை</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -3216,6 +3117,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>கட்டண ஏற்றத்தை உறுதிப்படுத்தவும்</translation>
     </message>
     <message>
+        <source>Can't draft transaction.</source>
+        <translation>பரிவர்த்தனை செய்ய இயலாது</translation>
+    </message>
+    <message>
         <source>Can't sign transaction.</source>
         <translation>பரிவர்த்தனையில் கையொப்பமிட முடியவில்லை.</translation>
     </message>
@@ -3280,10 +3185,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>ப்ரூன்: கடைசி வாலட் ஒத்திசைவு ப்ரூன் தரவுக்கு அப்பாற்பட்டது. நீங்கள் -reindex செய்ய வேண்டும் (ப்ரூன் நோட் உபயோகித்தால் முழு பிளாக்செயினையும் மீண்டும் டவுன்லோட் செய்யவும்)</translation>
-    </message>
-    <message>
-        <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation>ப்ரூனிங் பயன்முறையில் ரீஸ்கேன்கள் சாத்தியமில்லை. நீங்கள் -reindex ஐப் பயன்படுத்த வேண்டும், இது முழு பிளாக்செயினையும் மீண்டும் டவுன்லோட் செய்யும்.</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>

@@ -1,4 +1,4 @@
-// Copyright (c) 2009-2018 The Bitcoin Core developers
+// Copyright (c) 2009-2019 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,6 +7,14 @@
 #include <util/error.h>
 #include <util/system.h>
 #include <util/translation.h>
+
+const std::vector<std::string> NET_PERMISSIONS_DOC{
+    "bloomfilter (allow requesting BIP37 filtered blocks and transactions)",
+    "noban (do not ban for misbehavior)",
+    "forcerelay (relay transactions that are already in the mempool; implies relay)",
+    "relay (relay even in -blocksonly mode)",
+    "mempool (allow requesting BIP35 mempool contents)",
+};
 
 // The parse the following format "perm1,perm2@xxxxxx"
 bool TryParsePermissionFlags(const std::string str, NetPermissionFlags& output, size_t& readen, std::string& error)
@@ -71,7 +79,7 @@ bool NetWhitebindPermissions::TryParse(const std::string str, NetWhitebindPermis
 
     const std::string strBind = str.substr(offset);
     CService addrBind;
-    if (!Lookup(strBind.c_str(), addrBind, 0, false)) {
+    if (!Lookup(strBind, addrBind, 0, false)) {
         error = ResolveErrMsg("whitebind", strBind);
         return false;
     }
@@ -94,7 +102,7 @@ bool NetWhitelistPermissions::TryParse(const std::string str, NetWhitelistPermis
 
     const std::string net = str.substr(offset);
     CSubNet subnet;
-    LookupSubNet(net.c_str(), subnet);
+    LookupSubNet(net, subnet);
     if (!subnet.IsValid()) {
         error = strprintf(_("Invalid netmask specified in -whitelist: '%s'").translated, net);
         return false;

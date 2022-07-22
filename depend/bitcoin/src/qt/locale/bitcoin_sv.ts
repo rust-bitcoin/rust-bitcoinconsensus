@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Högerklicka för att redigera adressen eller etiketten.</translation>
+        <translation>Högerklicka för att redigera adress eller etikett.</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -71,7 +71,7 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>Detta är dina Bitcoinadresser för att ta emot betalningar. Använd knappen 'Skapa ny mottagaradress' på fliken ta emot för att skapa nya adresser.</translation>
+        <translation>Detta är dina Bitcoinadresser för att ta emot betalningar. Använd knappen 'Skapa ny mottagaradress' på fliken ta emot för att skapa nya adresser .</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -375,14 +375,6 @@ Försök igen.</translation>
         <translation>Byt lösenfras för kryptering av plånbok</translation>
     </message>
     <message>
-        <source>&amp;Debug window</source>
-        <translation>&amp;Felsökningsfönster</translation>
-    </message>
-    <message>
-        <source>Open debugging and diagnostic console</source>
-        <translation>Öppna felsöknings- och diagnostikkonsolen</translation>
-    </message>
-    <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Verifiera meddelande...</translation>
     </message>
@@ -443,10 +435,6 @@ Försök igen.</translation>
         <translation>Visa listan med använda mottagaradresser och etiketter</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Öppna en bitcoin: URI eller betalningsbegäran</translation>
-    </message>
-    <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Kommandoradsalternativ</translation>
     </message>
@@ -495,12 +483,24 @@ Försök igen.</translation>
         <translation>Uppdaterad</translation>
     </message>
     <message>
+        <source>Node window</source>
+        <translation>Nod-fönster</translation>
+    </message>
+    <message>
+        <source>Open node debugging and diagnostic console</source>
+        <translation>Öppna nodens konsol för felsökning och diagnostik</translation>
+    </message>
+    <message>
         <source>&amp;Sending addresses</source>
         <translation>Av&amp;sändaradresser</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses</source>
         <translation>Mottaga&amp;radresser</translation>
+    </message>
+    <message>
+        <source>Open a bitcoin: URI</source>
+        <translation>Öppna en bitcoin:-URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -925,10 +925,6 @@ Försök igen.</translation>
         <translation>version</translation>
     </message>
     <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-bit)</translation>
-    </message>
-    <message>
         <source>About %1</source>
         <translation>Om %1</translation>
     </message>
@@ -1067,6 +1063,10 @@ Försök igen.</translation>
         <translation>Dölj</translation>
     </message>
     <message>
+        <source>Esc</source>
+        <translation>Esc</translation>
+    </message>
+    <message>
         <source>Unknown. Syncing Headers (%1, %2%)...</source>
         <translation>Okänd. Synkar huvuden (%1, %2%)...</translation>
     </message>
@@ -1074,24 +1074,12 @@ Försök igen.</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>Öppna URI</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>Öppna betalningsbegäran från URI eller fil</translation>
+        <source>Open bitcoin URI</source>
+        <translation>Öppna bitcoin-URI</translation>
     </message>
     <message>
         <source>URI:</source>
         <translation>URI:</translation>
-    </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation>Välj betalningsbegäransfil</translation>
-    </message>
-    <message>
-        <source>Select payment request file to open</source>
-        <translation>Välj betalningsbegäransfil som ska öppnas</translation>
     </message>
 </context>
 <context>
@@ -1482,18 +1470,6 @@ Försök igen.</translation>
         <translation>'bitcoin://' är inte en accepterad URI. Använd 'bitcoin:' istället.</translation>
     </message>
     <message>
-        <source>You are using a BIP70 URL which will be unsupported in the future.</source>
-        <translation>Du använder en URL enligt BIP70, vilket inte kommer att stödjas i framtiden.</translation>
-    </message>
-    <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation>Hämtningsadressen för betalningsbegäran är ogiltig: %1</translation>
-    </message>
-    <message>
-        <source>Cannot process payment request because BIP70 support was not compiled in.</source>
-        <translation>Det går inte att behandla betalningsbegäran eftersom stöd för BIP70 inte var aktiverat vid kompilering.</translation>
-    </message>
-    <message>
         <source>Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.</source>
         <translation>Som följd av utbredda säkerhetshål i BIP70, rekommenderas det starkt att en säljares instruktion för dig att byta plånbok ignoreras.</translation>
     </message>
@@ -1512,66 +1488,6 @@ Försök igen.</translation>
     <message>
         <source>Payment request file handling</source>
         <translation>Hantering av betalningsbegäransfil</translation>
-    </message>
-    <message>
-        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Betalningsbegäransfilen kan inte läsas! Detta kan orsakas av en ogiltig betalningsbegäransfil.</translation>
-    </message>
-    <message>
-        <source>Payment request rejected</source>
-        <translation>Betalningsbegäran avslogs</translation>
-    </message>
-    <message>
-        <source>Payment request network doesn't match client network.</source>
-        <translation>Betalningsbegärans nätverk matchar inte klientens nätverk.</translation>
-    </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation>Betalningsbegäran löpte ut.</translation>
-    </message>
-    <message>
-        <source>Payment request is not initialized.</source>
-        <translation>Betalningsbegäran är inte initierad.</translation>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>Overifierade betalningsbegäranden till anpassade betalningsskript stöds inte.</translation>
-    </message>
-    <message>
-        <source>Invalid payment request.</source>
-        <translation>Ogiltig betalningsbegäran.</translation>
-    </message>
-    <message>
-        <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Begärt belopp på %1 är för litet (betraktas som damm).</translation>
-    </message>
-    <message>
-        <source>Refund from %1</source>
-        <translation>Återbetalning från %1</translation>
-    </message>
-    <message>
-        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>Betalningsbegäran %1 är för stor (%2 byte, tillåts %3 byte).</translation>
-    </message>
-    <message>
-        <source>Error communicating with %1: %2</source>
-        <translation>Kommunikationsfel med %1: %2</translation>
-    </message>
-    <message>
-        <source>Payment request cannot be parsed!</source>
-        <translation>Betalningsbegäran kan inte parsas!</translation>
-    </message>
-    <message>
-        <source>Bad response from server %1</source>
-        <translation>Felaktigt svar från server %1</translation>
-    </message>
-    <message>
-        <source>Network request error</source>
-        <translation>Fel vid nätverksbegäran</translation>
-    </message>
-    <message>
-        <source>Payment acknowledged</source>
-        <translation>Betalningen bekräftad</translation>
     </message>
 </context>
 <context>
@@ -1724,7 +1640,7 @@ Försök igen.</translation>
     </message>
     <message>
         <source>QR code support not available.</source>
-        <translation>Stöd för QR-kod ej tillgängligt.</translation>
+        <translation>Stöd för QR-kod är inte längre tillgängligt.</translation>
     </message>
     <message>
         <source>Save QR Code</source>
@@ -1748,10 +1664,6 @@ Försök igen.</translation>
     <message>
         <source>&amp;Information</source>
         <translation>&amp;Information</translation>
-    </message>
-    <message>
-        <source>Debug window</source>
-        <translation>Felsökningsfönster</translation>
     </message>
     <message>
         <source>General</source>
@@ -1872,6 +1784,10 @@ Försök igen.</translation>
     <message>
         <source>User Agent</source>
         <translation>Användaragent</translation>
+    </message>
+    <message>
+        <source>Node window</source>
+        <translation>Nod-fönster</translation>
     </message>
     <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
@@ -2085,6 +2001,10 @@ Försök igen.</translation>
         <translation>Ett valfritt belopp att begära. Lämna tomt eller ange noll för att inte begära ett specifikt belopp.</translation>
     </message>
     <message>
+        <source>An optional label to associate with the new receiving address (used by you to identify an invoice).  It is also attached to the payment request.</source>
+        <translation>An optional label to associate with the new receiving address (used by you to identify an invoice).  It is also attached to the payment request.</translation>
+    </message>
+    <message>
         <source>&amp;Create new receiving address</source>
         <translation>S&amp;kapa ny mottagaradress</translation>
     </message>
@@ -2294,10 +2214,6 @@ Försök igen.</translation>
         <translation>Varning: Avgiftsuppskattning är för närvarande inte möjlig.</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>Fäll ihop avgiftsinställningarna</translation>
-    </message>
-    <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
 Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis per kB" for a transaction size of 500 bytes (half of 1 kB) would ultimately yield a fee of only 50 satoshis.</source>
@@ -2340,6 +2256,10 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
     <message>
         <source>Dust:</source>
         <translation>Damm:</translation>
+    </message>
+    <message>
+        <source>Hide transaction fee settings</source>
+        <translation>Dölj alternativ för transaktionsavgift</translation>
     </message>
     <message>
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
@@ -2410,6 +2330,10 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
         <translation>%1 (%2 block)</translation>
     </message>
     <message>
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Sk&amp;apa Osignerad</translation>
+    </message>
+    <message>
         <source> from wallet '%1'</source>
         <translation>från plånbok: '%1'</translation>
     </message>
@@ -2422,8 +2346,16 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
         <translation>%1 till %2</translation>
     </message>
     <message>
+        <source>Do you want to draft this transaction?</source>
+        <translation>Vill du skissa denna transaktion?</translation>
+    </message>
+    <message>
         <source>Are you sure you want to send?</source>
         <translation>Är du säker på att du vill skicka?</translation>
+    </message>
+    <message>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation>Pleasetransaktion, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</translation>
     </message>
     <message>
         <source>or</source>
@@ -2458,6 +2390,22 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
         <translation>Bekräfta att pengar ska skickas</translation>
     </message>
     <message>
+        <source>Confirm transaction proposal</source>
+        <translation>Bekräfta transaktionsförslag</translation>
+    </message>
+    <message>
+        <source>Copy PSBT to clipboard</source>
+        <translation>Kopiera PSBT till urklipp</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Skicka</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT kopierad</translation>
+    </message>
+    <message>
         <source>The recipient address is not valid. Please recheck.</source>
         <translation>Mottagarens adress är ogiltig. Kontrollera igen.</translation>
     </message>
@@ -2480,10 +2428,6 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
     <message>
         <source>Transaction creation failed!</source>
         <translation>Transaktionen gick inte att skapa!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected with the following reason: %1</source>
-        <translation>Transaktionen avvisades med följande orsak: %1</translation>
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
@@ -2537,10 +2481,6 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
         <translation>Välj tidigare använda adresser</translation>
     </message>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>Detta är en normal betalning.</translation>
-    </message>
-    <message>
         <source>The Bitcoin address to send the payment to</source>
         <translation>Bitcoin-adress att sända betalning till</translation>
     </message>
@@ -2559,6 +2499,10 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
     <message>
         <source>Remove this entry</source>
         <translation>Ta bort denna post</translation>
+    </message>
+    <message>
+        <source>The amount to send in the selected unit</source>
+        <translation>Beloppett att skicka i vald enhet</translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
@@ -2599,17 +2543,6 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
     <message>
         <source>Memo:</source>
         <translation>PM:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Ange en etikett för denna adress för att lägga till den i din adressbok</translation>
-    </message>
-</context>
-<context>
-    <name>SendConfirmationDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation>Ja</translation>
     </message>
 </context>
 <context>
@@ -2698,6 +2631,10 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
         <translation>Bitcoin-adress som meddelandet signerades med</translation>
     </message>
     <message>
+        <source>The signed message to verify</source>
+        <translation>Signerat meddelande som ska verifieras</translation>
+    </message>
+    <message>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>Verifiera meddelandet för att vara säker på att det signerades med angiven Bitcoin-adress</translation>
     </message>
@@ -2728,6 +2665,10 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
     <message>
         <source>Wallet unlock was cancelled.</source>
         <translation>Upplåsningen av plånboken avbröts.</translation>
+    </message>
+    <message>
+        <source>No error</source>
+        <translation>Inget fel</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -3146,7 +3087,7 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
     </message>
     <message>
         <source>Copy full transaction details</source>
-        <translation>Kopiera alla transaktionsdetaljerna</translation>
+        <translation>Kopiera alla transaktionsdetaljer</translation>
     </message>
     <message>
         <source>Edit label</source>
@@ -3265,6 +3206,10 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
         <translation>Vill du öka avgiften?</translation>
     </message>
     <message>
+        <source>Do you want to draft a transaction with fee increase?</source>
+        <translation>Vill du skapa en transaktion med en avgiftsökning?</translation>
+    </message>
+    <message>
         <source>Current fee:</source>
         <translation>Aktuell avgift:</translation>
     </message>
@@ -3279,6 +3224,10 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
     <message>
         <source>Confirm fee bump</source>
         <translation>Bekräfta avgiftshöjning</translation>
+    </message>
+    <message>
+        <source>PSBT copied</source>
+        <translation>PSBT kopierad</translation>
     </message>
     <message>
         <source>Can't sign transaction.</source>
@@ -3345,10 +3294,6 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>Gallring: senaste plånbokssynkroniseringen ligger utanför gallrade data. Du måste använda -reindex (ladda ner hela blockkedjan igen om noden gallrats)</translation>
-    </message>
-    <message>
-        <source>Rescans are not possible in pruned mode. You will need to use -reindex which will download the whole blockchain again.</source>
-        <translation>Omskanningar kan inte göras i gallrat läge. Du måste använda -reindex vilket kommer ladda ner hela blockkedjan igen.</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occurred, see debug.log for details</source>
@@ -3584,7 +3529,7 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
     </message>
     <message>
         <source>Unable to generate keys</source>
-        <translation>Lyckas inte generera nycklar</translation>
+        <translation>Det gick inte att skapa nycklar</translation>
     </message>
     <message>
         <source>Unsupported logging category %s=%s.</source>
@@ -3739,10 +3684,6 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>Detta är transaktionsavgiften du kan komma att betala om avgiftsuppskattning inte är tillgänglig.</translation>
-    </message>
-    <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>Denna produkt innehåller mjukvara utvecklad av OpenSSL Project för användning i OpenSSL Toolkit %s och kryptografisk mjukvara utvecklad av Eric Young samt UPnP-mjukvara skriven av Thomas Bernard.</translation>
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
