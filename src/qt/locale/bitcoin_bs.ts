@@ -70,6 +70,11 @@
         <translation>Ovo su vaše Bitcoin adrese za slanje novca. Uvijek provjerite iznos i adresu primaoca prije slanja novca.</translation>
     </message>
     <message>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>Ovo su vaše Bitcoin adrese za primanje uplata. Upotrijebite dugme 'Stvori novu adresu prijema' na kartici primanja da biste kreirali nove adrese. Potpisivanje je moguće samo s adresama tipa 'legacy'.</translation>
+    </message>
+    <message>
         <source>&amp;Copy Address</source>
         <translation>&amp;Kopirajte adresu</translation>
     </message>
@@ -148,6 +153,14 @@
         <translation>Otključajte novčanik</translation>
     </message>
     <message>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <translation>Ova radnja treba lozinku vašeg novčanika da dešifrira novčanik.</translation>
+    </message>
+    <message>
+        <source>Decrypt wallet</source>
+        <translation>Dešifrirati novčanik</translation>
+    </message>
+    <message>
         <source>Change passphrase</source>
         <translation>Promijenite lozinku</translation>
     </message>
@@ -214,6 +227,10 @@
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
         <translation>Lozinka unesena za dešifriranje novčanika nije ispravna.</translation>
+    </message>
+    <message>
+        <source>Wallet decryption failed</source>
+        <translation>Dešifriranje novčanika neuspješno</translation>
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
@@ -454,6 +471,22 @@
         <translation>U toku</translation>
     </message>
     <message>
+        <source>&amp;Load PSBT from file...</source>
+        <translation>&amp;Učitaj PSBT iz datoteke...</translation>
+    </message>
+    <message>
+        <source>Load Partially Signed Bitcoin Transaction</source>
+        <translation>Učitajte Djelomično Potpisanu Bitcoin Transakciju</translation>
+    </message>
+    <message>
+        <source>Load PSBT from clipboard...</source>
+        <translation>Učitaj PSBT iz međuspremnika...</translation>
+    </message>
+    <message>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <translation>Učitajte djelomično potpisanu bitcoin transakciju iz međuspremnika</translation>
+    </message>
+    <message>
         <source>Node window</source>
         <translation>Prozor čvora</translation>
     </message>
@@ -490,8 +523,24 @@
         <translation>Zatvori novčanik</translation>
     </message>
     <message>
+        <source>Close All Wallets...</source>
+        <translation>Zatvori sve novčanike...</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Zatvori sve novčanike</translation>
+    </message>
+    <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
         <translation>Pokažite %1 poruku za pomoć da biste dobili listu s mogućim opcijama Bitcoin naredbenog retka</translation>
+    </message>
+    <message>
+        <source>&amp;Mask values</source>
+        <translation>&amp;Vrijednosti maske</translation>
+    </message>
+    <message>
+        <source>Mask the values in the Overview tab</source>
+        <translation>Maskirajte vrijednosti na kartici Pregled</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -596,7 +645,15 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Novčanik je &lt;b&gt;šifriran&lt;/b&gt; i trenutno je &lt;b&gt;zaključan&lt;/b&gt;</translation>
     </message>
-    </context>
+    <message>
+        <source>Original message:</source>
+        <translation>Orginalna poruka:</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
+        <translation>Dogodila se fatalna greška. %1 više ne može sigurno nastaviti i prestat će raditi.</translation>
+    </message>
+</context>
 <context>
     <name>CoinControlDialog</name>
     <message>
@@ -766,6 +823,10 @@
         <translation>Kreirajte Novčanik</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Novčanik</translation>
+    </message>
+    <message>
         <source>Wallet Name</source>
         <translation>Ime Novčanika</translation>
     </message>
@@ -776,6 +837,10 @@
     <message>
         <source>Encrypt Wallet</source>
         <translation>Šifrirajte Novčanik</translation>
+    </message>
+    <message>
+        <source>Advanced Options</source>
+        <translation>Napredne Opcije</translation>
     </message>
     <message>
         <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
@@ -794,8 +859,20 @@
         <translation>Napravi Prazan Novčanik</translation>
     </message>
     <message>
+        <source>Use descriptors for scriptPubKey management</source>
+        <translation>Koristite deskriptore za upravljanje scriptPubKey</translation>
+    </message>
+    <message>
+        <source>Descriptor Wallet</source>
+        <translation>Deskriptor Novčanik</translation>
+    </message>
+    <message>
         <source>Create</source>
         <translation>Napravi</translation>
+    </message>
+    <message>
+        <source>Compiled without sqlite support (required for descriptor wallets)</source>
+        <translation>Sastavljeno bez podrške za sqlite (potrebno za deskriptorske novčanike)</translation>
     </message>
 </context>
 <context>
@@ -912,10 +989,6 @@
     <message>
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
         <translation>Vraćanje ove postavke zahtijeva ponovno preuzimanje cijelog lanca blokova. Brže je prvo preuzeti čitav lanac i kasnije ga obrezati. Onemogućava neke napredne funkcije.</translation>
-    </message>
-    <message>
-        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</translation>
     </message>
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
@@ -1098,6 +1171,10 @@
         <translation>&amp;Mreža</translation>
     </message>
     <message>
+        <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
+        <translation>Onemogućuje neke napredne stavke ali svi blokovi će i dalje biti u potpunosti validni(provjereni). Opoziv ove postavke zahtijeva ponovno skidanje čitavog blockchaina. Stvarna iskorištenost diska može da bude nešto veća.</translation>
+    </message>
+    <message>
         <source>GB</source>
         <translation>GB</translation>
     </message>
@@ -1177,6 +1254,10 @@
         <source>Error</source>
         <translation>Greška</translation>
     </message>
+    <message>
+        <source>The configuration file could not be opened.</source>
+        <translation>Konfiguracijski falj nije bilo moguce otvoriti.</translation>
+    </message>
     </context>
 <context>
     <name>OverviewPage</name>
@@ -1184,6 +1265,17 @@
         <source>Form</source>
         <translation>Obrazac</translation>
     </message>
+    <message>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Moguće je da su prikazane informacije zastarjele.Vaš novčanik se automatski sinhronizira sa Bitcoin mrežom nakon što je konekcija uspostavljena, ali proces nije još uvijek dovršen.</translation>
+    </message>
+    <message>
+        <source>Recent transactions</source>
+        <translation>Nedavne transakcije</translation>
+    </message>
+    </context>
+<context>
+    <name>PSBTOperationsDialog</name>
     </context>
 <context>
     <name>PaymentServer</name>
@@ -1242,26 +1334,22 @@
         <source>Copy amount</source>
         <translation>Kopiraj iznos</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Nije moguće otključati novčanik.</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>Address</source>
-        <translation>Adresa</translation>
+        <source>Amount:</source>
+        <translation>Iznos:</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Iznos</translation>
+        <source>Wallet:</source>
+        <translation>Novčanik:</translation>
     </message>
-    <message>
-        <source>Label</source>
-        <translation>Oznaka</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Novčanik</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -1489,10 +1577,18 @@
         <source>Close wallet</source>
         <translation>Zatvori novčanik</translation>
     </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Zatvori sve novčanike</translation>
+    </message>
     </context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>Kreirajte novi novčanik</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -1509,6 +1605,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Izvezite podatke trenutne kartice u datoteku</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Greška</translation>
     </message>
     </context>
 <context>

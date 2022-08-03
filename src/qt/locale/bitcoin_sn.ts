@@ -142,6 +142,10 @@
     </context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>Chikwama</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -173,6 +177,9 @@
     </context>
 <context>
     <name>OverviewPage</name>
+    </context>
+<context>
+    <name>PSBTOperationsDialog</name>
     </context>
 <context>
     <name>PaymentServer</name>
@@ -230,23 +237,7 @@
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
-    <message>
-        <source>Address</source>
-        <translation>Kero</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Marii</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Zita</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Chikwama</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>

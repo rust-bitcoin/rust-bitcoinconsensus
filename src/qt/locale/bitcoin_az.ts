@@ -3,31 +3,31 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>sağ basın ve cüzdan ünvanınızı veya etiketinizi deyişdirin.</translation>
+        <translation>Ünvana və ya etiketə düzəliş etmək üçün sağ düyməsi ilə klikləyin</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>teze ünvan yaradın.</translation>
+        <translation>Yeni bir ünvan yaradın</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>&amp;teze</translation>
+        <translation>&amp;Yeni</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>hal-hazırda seçilmiş ünvanı sistem ekranına kopyalayın</translation>
+        <translation>Hazırki seçilmiş ünvanı sistem lövhəsinə kopyalayın</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation>&amp;kopyala</translation>
+        <translation>&amp;Kopyala</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>&amp;bağla</translation>
+        <translation>Bağla</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Hazırki seçilmiş ünvanı siyahıdan sil</translation>
+        <translation>Hazırki seçilmiş ünvanı siyahıdan silin</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
@@ -67,7 +67,13 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödənişləri göndərmək üçün Bitcoin ünvanlarınızdır. pul göndərməzdən əvvəl həmişə miqdarı və göndəriləcək ünvanı yoxlayın.</translation>
+        <translation>Bunlar ödənişləri göndərmək üçün Bitcoin ünvanlarınızdır. Pul göndərməkdən əvvəl həmişə miqdarı və göndəriləcək ünvanı yoxlayın.</translation>
+    </message>
+    <message>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>Bunlar ödəniş almaq üçün Bitcoin ünvanlarınızdır. Yeni ünvan yaratmaq üçün alacaqlar vərəqində 'Yeni alacaq ünvan yarat' düyməsini istifadə edin.
+Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -137,23 +143,23 @@
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation>Şifrəli pulqabı</translation>
+        <translation>Cüzdanı şifrələyin</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>Bu əməliyyatın pulqabı kilidini açılması üçün pul qabınızın şifrə ifadəsinə ehtiyacı var.</translation>
+        <translation>Bu əməliyyat, cüzdanın kilidini açmaq üçün cüzdan şifrə ifadəsinə ehtiyac duyur.</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
-        <translation>Pulqabı kilidini aç</translation>
+        <translation>Cüzdanın kilidini açın</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Bu əməliyyatın pulqabını şifrələmək üçün pul qabınızın şifrə ifadəsinə ehtiyacı var.</translation>
+        <translation>Bu əməliyyat, cüzdanın şifrəsini açmaq üçün cüzdan şifrə ifadəsinə ehtiyac duyur.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
-        <translation>Pulqabı şifrələ</translation>
+        <translation>Cüzdanın şifrəsini açın</translation>
     </message>
     <message>
         <source>Change passphrase</source>
@@ -161,7 +167,23 @@
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>Pulqabı şifrələməsini təsdiqlə</translation>
+        <translation>Cüzdan şifrələməsini təsdiqləyin</translation>
+    </message>
+    <message>
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation>Unutmayın ki, cüzdanınızın şifrələməsi bitcoinlərinizi kompüterinizə zərərli proqram tərəfindən oğurlanmaqdan tamamilə qoruya bilməz.</translation>
+    </message>
+    <message>
+        <source>Wallet to be encrypted</source>
+        <translation>Cüzdan şifrələnəcək</translation>
+    </message>
+    <message>
+        <source>Your wallet is about to be encrypted. </source>
+        <translation>Cüzdanınız şifrələnmək üzrədir.</translation>
+    </message>
+    <message>
+        <source>Your wallet is now encrypted. </source>
+        <translation>Cüzdanınız artıq şifrələnib.</translation>
     </message>
     </context>
 <context>
@@ -192,6 +214,14 @@
     </context>
 <context>
     <name>CoinControlDialog</name>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Miqdarı kopyalayın</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Dəyişikliyi kopyalayın</translation>
+    </message>
     <message>
         <source>(no label)</source>
         <translation>(etiket yoxdur)</translation>
@@ -243,6 +273,10 @@
         <translation>Bu tənzimləməni geri almaq bütün blok zəncirinin yenidən endirilməsini tələb edəcək. </translation>
     </message>
     <message>
+        <source>Map port using &amp;UPnP</source>
+        <translation>&amp;UPnP istifadə edən xəritə portu</translation>
+    </message>
+    <message>
         <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
         <translation>İstifadəçi interfeys dili burada tənzimlənə bilər. Bu tənzimləmə %1 yenidən başladıldıqdan sonra təsirli olacaq.</translation>
     </message>
@@ -253,6 +287,9 @@
     </context>
 <context>
     <name>OverviewPage</name>
+    </context>
+<context>
+    <name>PSBTOperationsDialog</name>
     </context>
 <context>
     <name>PaymentServer</name>
@@ -268,20 +305,16 @@
     </context>
 <context>
     <name>RPCConsole</name>
+    <message>
+        <source>&amp;Reset</source>
+        <translation>&amp;Sıfırla</translation>
+    </message>
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
-    <message>
-        <source>Address</source>
-        <translation>Ünvan</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Etiket</translation>
-    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -296,6 +329,14 @@
     </context>
 <context>
     <name>SendCoinsDialog</name>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Miqdarı kopyalayın</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Dəyişikliyi kopyalayın</translation>
+    </message>
     <message>
         <source>(no label)</source>
         <translation>(etiket yoxdur)</translation>
@@ -332,6 +373,10 @@
     </context>
 <context>
     <name>TransactionView</name>
+    <message>
+        <source>Other</source>
+        <translation>Başqa</translation>
+    </message>
     <message>
         <source>Comma separated file (*.csv)</source>
         <translation>Vergüllə ayrılmış fayl (*.csv)</translation>
@@ -371,9 +416,21 @@
         <source>Export the data in the current tab to a file</source>
         <translation>Hazırki vərəqdəki verilənləri fayla ixrac edin</translation>
     </message>
+    <message>
+        <source>Error</source>
+        <translation>Xəta</translation>
+    </message>
     </context>
 <context>
     <name>bitcoin-core</name>
+    <message>
+        <source>Replaying blocks...</source>
+        <translation>Bloklar yenidən səsləndirilir...</translation>
+    </message>
+    <message>
+        <source>The source code is available from %s.</source>
+        <translation>Mənbə kodu %s-dən əldə edilə bilər.</translation>
+    </message>
     <message>
         <source>Insufficient funds</source>
         <translation>Yetərsiz balans</translation>

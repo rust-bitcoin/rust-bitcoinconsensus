@@ -82,6 +82,10 @@
     </context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>Капчык</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -163,6 +167,9 @@
     <name>OverviewPage</name>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -215,18 +222,10 @@
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>Address</source>
-        <translation>Дарек</translation>
+        <source>Message:</source>
+        <translation>Билдирүү:</translation>
     </message>
-    <message>
-        <source>Message</source>
-        <translation>Билдирүү</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Капчык</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -335,6 +334,10 @@
     </context>
 <context>
     <name>WalletView</name>
+    <message>
+        <source>Error</source>
+        <translation>Ката</translation>
+    </message>
     </context>
 <context>
     <name>bitcoin-core</name>

@@ -132,6 +132,10 @@
         <translation>Паўтарыце новую кодавую фразу</translation>
     </message>
     <message>
+        <source>Show passphrase</source>
+        <translation>Паказаць кодавую фразу</translation>
+    </message>
+    <message>
         <source>Encrypt wallet</source>
         <translation>Зашыфраваць гаманец.</translation>
     </message>
@@ -149,7 +153,7 @@
     </message>
     <message>
         <source>Decrypt wallet</source>
-        <translation>Раcшыфраваць гаманец</translation>
+        <translation>Рачшыфраваць гаманец</translation>
     </message>
     <message>
         <source>Change passphrase</source>
@@ -552,6 +556,10 @@
     </context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>Гаманец</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -661,6 +669,9 @@
     </message>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -709,34 +720,26 @@
         <source>Copy amount</source>
         <translation>Капіяваць колькасць</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Немагчыма разблакаваць гаманец</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>Колькасць:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>Паведамленне:</translation>
+    </message>
     <message>
         <source>Copy &amp;Address</source>
         <translation>Капіяваць адрас</translation>
     </message>
-    <message>
-        <source>Address</source>
-        <translation>Адрас</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Колькасць</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Метка</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Паведамленне</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Гаманец</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -1156,6 +1159,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Экспартаваць гэтыя звесткі у файл</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Памылка</translation>
     </message>
     </context>
 <context>

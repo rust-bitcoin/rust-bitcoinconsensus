@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Copy the currently selected address to the system clipboard</translation>
+        <translation>کۆپیکردنی ناونیشانی هەڵبژێردراوی ئێستا بۆ کلیپ بۆردی سیستەم</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -63,15 +63,17 @@
     </message>
     <message>
         <source>Receiving addresses</source>
-        <translation>ناونیشانی وەرگرتنی</translation>
+        <translation>وەرگرتنی ناونیشانەکان</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>ئەمانە ناونیشانی بیتکۆبیتەکانی تۆنە بۆ ناردنی پارەدانەکان. هەمیشە بڕی و ناونیشانی وەرگرەکان بپشکنە پێش ناردنی دراوەکان.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>ئەمانە ناونیشانەکانی بیتکۆینی تۆن بۆ وەرگرتنی پارەکان. دوگمەی 'دروستکردنی ناونیشانی وەرگرتنی نوێ' لە تابی وەرگرتندا بۆ دروستکردنی ناونیشانی نوێ بەکاربهێنە.</translation>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>ئەمانە ناونیشانی بیتکۆبیتەکانی تۆنە بۆ وەرگرتنی پارەدانەکان. دوگمەی 'دروستکردنیناونیشانی وەرگرتنی نوێ' لە تابی وەرگرتندا بۆ دروستکردنی ناونیشانی نوێ بەکاربێنە.
+واژووکردن تەنها دەکرێت لەگەڵ ناونیشانەکانی جۆری 'میرات'.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -79,7 +81,7 @@
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation>Copy &amp;Label</translation>
+        <translation>کۆپی &amp;ناونیشان</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
@@ -91,7 +93,7 @@
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation> (*.csv) فایلی جیاکراوە بە کۆما</translation>
+        <translation>فایلی جیاکراوە بە کۆما (*.csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
@@ -114,7 +116,9 @@
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(بێ ناونیشان)</translation>
+        <translation>(بێ ناونیشان)
+
+</translation>
     </message>
 </context>
 <context>
@@ -218,7 +222,7 @@
     </message>
     <message>
         <source>Copy amount</source>
-        <translation>کۆپیکردنی بڕ</translation>
+        <translation>Copy amount</translation>
     </message>
     <message>
         <source>Copy transaction ID</source>
@@ -322,7 +326,7 @@
     </message>
     <message>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 will download and store a copy of the Bitcoin block chain.</translation>
+        <translation>%1 کۆپیەکی زنجیرەی بلۆکی بیتکۆپ دائەبەزێنێت و خەزنی دەکات.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -350,7 +354,7 @@
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>URLەکانی لایەنی سێیەم (بۆ وێنە گەڕاڵی بلۆک) کە لە تابی مامەڵەکان وەک بڕگەکانی پێرستی دەق دەردەکەوێت. %s لە URL دا جێگەی دەگۆڕدرێتەوە بە هاش.. چەندین URL جیاکراونەتەوە بە شریتی ستوونی |.</translation>
+        <translation>یو ئێڕ ئێڵەکانی لایەنی سێیەم. (بۆ وێنە گەڕاڵی بلۆک) کە لە تابی مامەڵەکان وەک بڕگەکان پێرستی دەق دەردەکەوێت. %s لە URL دا جێگەی دەگۆڕدرێتەوە بە هاش.. چەندین URL جیاکراونەتەوە بە شریتی ستوونی |.</translation>
     </message>
     <message>
         <source>Disables some advanced features but all blocks will still be fully validated. Reverting this setting requires re-downloading the entire blockchain. Actual disk usage may be somewhat higher.</source>
@@ -383,12 +387,27 @@
         <source>Total:</source>
         <translation>گشتی</translation>
     </message>
+    <message>
+        <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
+        <translation>دۆخی تایبەتمەندی چالاک کرا بۆ تابی گشتی. بۆ کردنەوەی بەهاکان، بەهاکان ڕێکخستنەکان&gt;ماسک.</translation>
+    </message>
+</context>
+<context>
+    <name>PSBTOperationsDialog</name>
+    <message>
+        <source>Copy to Clipboard</source>
+        <translation>Copy to Clipboard</translation>
+    </message>
+    <message>
+        <source>or</source>
+        <translation>یان</translation>
+    </message>
     </context>
 <context>
     <name>PaymentServer</name>
     <message>
         <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>ناتوانێت دەست بکات بە :bitcoin کرتە بکە بۆ-پارەدانی کار</translation>
+        <translation>ناتوانێت دەست بکات بە bitcoin: کرتە بکە بۆ-پارەدانی کار</translation>
     </message>
     </context>
 <context>
@@ -404,6 +423,10 @@
         <source>Amount</source>
         <translation>سەرجەم</translation>
     </message>
+    <message>
+        <source>Error initializing settings: %1</source>
+        <translation>هەڵە لە دەستپێکردنی ڕێکخستنەکان: %1</translation>
+    </message>
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -413,7 +436,7 @@
     </message>
     <message>
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>ئەنجامی URI زۆر درێژە، هەوڵ بدە دەقەکە کەم بکەوە بۆ پلیت / نامە.</translation>
+        <translation>ئەنجامی URL زۆر درێژە، هەوڵ بدە دەقەکە کەم بکەیتەوە بۆ پێناسە / نامە.</translation>
     </message>
     </context>
 <context>
@@ -482,14 +505,6 @@
         <source>never</source>
         <translation>هەرگیز</translation>
     </message>
-    <message>
-        <source>Yes</source>
-        <translation>بەڵێ</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>نەخێر</translation>
-    </message>
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
@@ -533,9 +548,17 @@
         <source>Copy amount</source>
         <translation>Copy amount</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>کۆ:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>پەیام:</translation>
+    </message>
     <message>
         <source>Copy &amp;URI</source>
         <translation>Copy &amp;URI</translation>
@@ -543,22 +566,6 @@
     <message>
         <source>Copy &amp;Address</source>
         <translation>Copy &amp;Address</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>ناوونیشان</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>سەرجەم</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>پێناسەکردن</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>پەیام</translation>
     </message>
     </context>
 <context>
@@ -633,6 +640,10 @@
         <translation>یان</translation>
     </message>
     <message>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation>تکایە، پێداچوونەوە بکە بە پێشنیارەکانی مامەڵەکەت. ئەمە مامەڵەیەکی بیتکۆپەکی کەبەشیونکراو (PSBT) بەرهەمدەهێنێت کە دەتوانیت پاشەکەوتی بکەیت یان کۆپی بکەیت و پاشان واژووی بکەیت لەگەڵ بۆ ئەوەی بە دەرهێڵی %1 جزدانێک، یان جزدانێکی رەقەواڵەی گونجاو بە PSBT.</translation>
+    </message>
+    <message>
         <source>Please, review your transaction.</source>
         <translation>تکایە، چاو بە مامەڵەکەتدا بخشێنەوە.</translation>
     </message>
@@ -669,7 +680,7 @@
     </message>
     <message>
         <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
-        <translation>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</translation>
+        <translation>ناونیشانی وەرگرەکە بنووسە، نامە (دڵنیابە لەوەی کە جیاکەرەوەکانی هێڵ، مەوداکان، تابەکان، و هتد بە تەواوی کۆپی بکە) و لە خوارەوە واژووی بکە بۆ سەلماندنی نامەکە. وریابە لەوەی کە زیاتر نەیخوێنیتەوە بۆ ناو واژووەکە لەوەی کە لە خودی پەیامە واژووەکەدایە، بۆ ئەوەی خۆت بەدوور بگریت لە فێڵکردن لە هێرشی پیاوان لە ناوەنددا. سەرنج بدە کە ئەمە تەنیا لایەنی واژووکردن بە ناونیشانەکە وەربگرە، ناتوانێت نێرەری هیچ مامەڵەیەک بسەلمێنێت!</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
@@ -843,6 +854,10 @@
         <source>Export the data in the current tab to a file</source>
         <translation>ناردنی داتا لە خشتەبەندی ئێستا بۆ فایلێک</translation>
     </message>
+    <message>
+        <source>Error</source>
+        <translation>هەڵە</translation>
+    </message>
     </context>
 <context>
     <name>bitcoin-core</name>
@@ -872,15 +887,31 @@
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>
-        <translation>Copyright (C) %i-%i</translation>
+        <translation>مافی چاپ (C) %i-%i</translation>
     </message>
     <message>
         <source>Could not find asmap file %s</source>
-        <translation>نەتوانرا فایلی asmap %s بدۆزرێتەوە</translation>
+        <translation>ئاسماپ بدۆزرێتەوە %s نەتوانرا فایلی</translation>
+    </message>
+    <message>
+        <source>Cannot upgrade a non HD split wallet without upgrading to support pre split keypool. Please use version 169900 or no version specified.</source>
+        <translation>ناتوانێت جزدانی دابەشکردنی نا ئێج دی بەرزبکرێتەوە بەبێ بەرزکردنەوەی بۆ پشتگیری پێشوەخت دابەشکردنی کلیلەکە. تکایە وەشانی 169900 بەکاربێنە یان هیچ وەشانێکی دیاری کراو.</translation>
+    </message>
+    <message>
+        <source>This error could occur if this wallet was not shutdown cleanly and was last loaded using a build with a newer version of Berkeley DB. If so, please use the software that last loaded this wallet</source>
+        <translation>ئەم هەڵەیە لەوانەیە ڕووبدات ئەگەر ئەم جزدانە بە خاوێنی دانەبەزێنرابێت و دواجار بارکرا بێت بە بەکارهێنانی بنیاتێک بە وەشانێکی نوێتری بێرکلی DB. ئەگەر وایە، تکایە ئەو سۆفتوێرە بەکاربهێنە کە دواجار ئەم جزدانە بارکرا بوو</translation>
+    </message>
+    <message>
+        <source>Transaction needs a change address, but we can't generate it. Please call keypoolrefill first.</source>
+        <translation>مامەڵە پێویستی بە ناونیشانی گۆڕینە، بەڵام ناتوانین دروستی بکەین. تکایە سەرەتا پەیوەندی بکە بە پڕکردنەوەی کلیلەکە.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>پێویستە بنکەی زانیارییەکان دروست بکەیتەوە بە بەکارهێنانی -دووبارە ئیندێکس بۆ گەڕانەوە بۆ دۆخی نەپڕاو.  ئەمە هەموو بەربەستەکە دائەبەزێنێت</translation>
+    </message>
+    <message>
+        <source>Error: Keypool ran out, please call keypoolrefill first</source>
+        <translation>هەڵە: کلیلی پوول ڕایکرد، تکایە سەرەتا پەیوەندی بکە بە پڕکردنەوەی کلیل</translation>
     </message>
     </context>
 </TS>

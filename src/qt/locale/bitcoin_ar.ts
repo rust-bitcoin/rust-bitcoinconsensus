@@ -3,11 +3,11 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>أنقر بزر الفأر الأيمن لتحرير العنوان أو التسمية</translation>
+        <translation>أنقر بزر الماوس الأيمن لتحرير العنوان أو التصنيف</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>أنشئ عنوانًا جديدًا</translation>
+        <translation>إنشاء عنوان جديد</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>انسخ العنوان المحدد حاليًا إلى الحافظة</translation>
+        <translation>نسخ العنوان المحدد حاليًا إلى حافظة النظام</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -70,8 +70,10 @@
         <translation>هذه هي عناوين البيتكوين لإرسال المدفوعات. دائما تحقق من المبلغ وعنوان المستلم قبل الإرسال.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</translation>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>هذه هي عناوين بتكوين الخاصة بك لتلقي المدفوعات. استخدم الزر "إنشاء عنوان استلام جديد" في علامة تبويب الاستلام لإنشاء عناوين جديدة.
+التوقيع ممكن فقط مع عناوين من النوع "قديم".</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -87,7 +89,7 @@
     </message>
     <message>
         <source>Export Address List</source>
-        <translation>تصدير قائمة العناوين</translation>
+        <translation>صدّر قائمة العناوين</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
@@ -133,7 +135,7 @@
     </message>
     <message>
         <source>Show passphrase</source>
-        <translation>إظهار كلمة المرور</translation>
+        <translation>أظهر كلمة المرور</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -197,7 +199,7 @@
     </message>
     <message>
         <source>Your wallet is now encrypted. </source>
-        <translation>تم تشفير محفظتك.</translation>
+        <translation>محفظتك ألان مشفرة</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -205,7 +207,7 @@
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation>Wallet encryption failed</translation>
+        <translation>خطأ في تشفير المحفظة</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
@@ -433,10 +435,6 @@
         <source>&amp;Command-line options</source>
         <translation>&amp;خيارات سطر الأوامر</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n active connections to Bitcoin network</numerusform><numerusform>%n active connection to Bitcoin network</numerusform><numerusform>%n active connections to Bitcoin network</numerusform><numerusform>%n active connections to Bitcoin network</numerusform><numerusform>%n active connections to Bitcoin network</numerusform><numerusform>%n active connections to Bitcoin network</numerusform></translation>
-    </message>
     <message>
         <source>Indexing blocks on disk...</source>
         <translation>ترتيب فهرسة الكتل على القرص...</translation>
@@ -444,10 +442,6 @@
     <message>
         <source>Processing blocks on disk...</source>
         <translation>معالجة الكتل على القرص...</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>تم معالجة %n كتلة من سجل المعاملات.</numerusform><numerusform>تم معالجة %n كتلة من سجل المعاملات.</numerusform><numerusform>تم معالجة %n كتلة من سجل المعاملات.</numerusform><numerusform>تم معالجة %n كتلة من سجل المعاملات.</numerusform><numerusform>تم معالجة %n كتلة من سجل المعاملات.</numerusform><numerusform>تم معالجة %n كتلة من سجل المعاملات.</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -478,6 +472,22 @@
         <translation>محدث</translation>
     </message>
     <message>
+        <source>&amp;Load PSBT from file...</source>
+        <translation>&amp; تحميل PSBT من ملف ...</translation>
+    </message>
+    <message>
+        <source>Load Partially Signed Bitcoin Transaction</source>
+        <translation>تحميل معاملة بتكوين الموقعة جزئيًا</translation>
+    </message>
+    <message>
+        <source>Load PSBT from clipboard...</source>
+        <translation>تحميل PSBT من الحافظة ...</translation>
+    </message>
+    <message>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <translation>تحميل معاملة بتكوين الموقعة جزئيًا من الحافظة</translation>
+    </message>
+    <message>
         <source>Node window</source>
         <translation>نافذة Node </translation>
     </message>
@@ -495,7 +505,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI</source>
-        <translation>فتح بتكوين: URI</translation>
+        <translation>افتح عملة بيتكوين: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -514,8 +524,24 @@
         <translation>اغلق المحفظة</translation>
     </message>
     <message>
+        <source>Close All Wallets...</source>
+        <translation>إغلاق جميع المحافظ ...</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>إغلاق جميع المحافظ ...</translation>
+    </message>
+    <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
         <translation>بين اشارة المساعدة %1 للحصول على قائمة من خيارات اوامر البت كوين المحتملة </translation>
+    </message>
+    <message>
+        <source>&amp;Mask values</source>
+        <translation>&amp; إخفاء القيم</translation>
+    </message>
+    <message>
+        <source>Mask the values in the Overview tab</source>
+        <translation>إخفاء القيم في علامة التبويب نظرة عامة</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -627,8 +653,12 @@
         <translation>المحفظة &lt;b&gt;مشفرة&lt;/b&gt; و &lt;b&gt;مقفلة&lt;/b&gt; حاليا</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>خطأ فادح حدث . لا يمكن اتمام بيتكوين بامان سيتم الخروج</translation>
+        <source>Original message:</source>
+        <translation>الرسالة الأصلية:</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
+        <translation>حدث خطأ فادح. لم يعد بإمكان %1 المتابعة بأمان وسيتم الإنهاء.</translation>
     </message>
 </context>
 <context>
@@ -786,7 +816,7 @@
     <name>CreateWalletActivity</name>
     <message>
         <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;...</source>
-        <translation>Creating Wallet &lt;b&gt;%1&lt;/b&gt;...</translation>
+        <translation>جاري إنشاء المحفظة&lt;b&gt;%1&lt;/b&gt;.......</translation>
     </message>
     <message>
         <source>Create wallet failed</source>
@@ -804,6 +834,10 @@
         <translation>إنشاء محفظة</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>محفظة</translation>
+    </message>
+    <message>
         <source>Wallet Name</source>
         <translation>إسم المحفظة</translation>
     </message>
@@ -816,8 +850,12 @@
         <translation>تشفير محفظة</translation>
     </message>
     <message>
+        <source>Advanced Options</source>
+        <translation>خيارات متقدمة</translation>
+    </message>
+    <message>
         <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
-        <translation>تعطيل المفاتيح الخاصة لهذه المحفظة. لن تحتوي المحافظ ذات المفاتيح الخاصة المعطلة على مفاتيح خاصة ولا يمكن أن تحتوي على مفتاح HD أو مفاتيح خاصة مستوردة. هذا مثالي لمحافظ watch-only فقط.</translation>
+        <translation>تعطيل المفاتيح الخاصة لهذه المحفظة. لن تحتوي المحافظ ذات المفاتيح الخاصة المعطلة على مفاتيح خاصة ولا يمكن أن تحتوي على مفتاح HD أو مفاتيح خاصة مستوردة. هذا مثالي لمحافظ مشاهدة فقط فقط.</translation>
     </message>
     <message>
         <source>Disable Private Keys</source>
@@ -832,8 +870,20 @@
         <translation>أنشئ محفظة فارغة</translation>
     </message>
     <message>
+        <source>Use descriptors for scriptPubKey management</source>
+        <translation>استخدم الواصفات لإدارة scriptPubKey</translation>
+    </message>
+    <message>
+        <source>Descriptor Wallet</source>
+        <translation>المحفظة الوصفية</translation>
+    </message>
+    <message>
         <source>Create</source>
         <translation>إنشاء</translation>
+    </message>
+    <message>
+        <source>Compiled without sqlite support (required for descriptor wallets)</source>
+        <translation>تم تجميعه بدون دعم sqlite (مطلوب لمحافظ الواصف)</translation>
     </message>
 </context>
 <context>
@@ -949,7 +999,7 @@
     </message>
     <message>
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
-        <translation>تتطلب العودة إلى هذا الإعداد إعادة تنزيل blockchain بالكامل. من الأسرع تنزيل السلسلة الكاملة أولاً وتقليمها لاحقًا. تعطيل بعض الميزات المتقدمة.</translation>
+        <translation>تتطلب العودة إلى هذا الإعداد إعادة تنزيل سلسلة الكتل بالكامل. من الأسرع تنزيل السلسلة الكاملة أولاً وتقليمها لاحقًا. تعطيل بعض الميزات المتقدمة.</translation>
     </message>
     <message>
         <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
@@ -999,19 +1049,7 @@
         <source>Error</source>
         <translation>خطأ</translation>
     </message>
-    <message numerus="yes">
-        <source>%n GB of free space available</source>
-        <translation><numerusform>%n GB مساحة متوفرة</numerusform><numerusform>%n GB مساحة متوفرة</numerusform><numerusform>%n GB مساحة متوفرة</numerusform><numerusform>%n GB مساحة متوفرة</numerusform><numerusform>%n GB مساحة متوفرة</numerusform><numerusform>%n GB مساحة متوفرة</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>(of %n GB needed)</source>
-        <translation><numerusform>(بحاجة الى %n GB)</numerusform><numerusform>(بحاجة الى %n GB)</numerusform><numerusform>(بحاجة الى %n GB)</numerusform><numerusform>(بحاجة الى %n GB)</numerusform><numerusform>(بحاجة الى %n GB)</numerusform><numerusform>(بحاجة الى %n GB)</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>(%n GB needed for full chain)</source>
-        <translation><numerusform>(بحاجة الى %n GB من أجل سلسلة كاملة)</numerusform><numerusform>(بحاجة الى %n GB من أجل سلسلة كاملة)</numerusform><numerusform>(بحاجة الى %n GB من أجل سلسلة كاملة)</numerusform><numerusform>(بحاجة الى %n GB من أجل سلسلة كاملة)</numerusform><numerusform>(بحاجة الى %n GB من أجل سلسلة كاملة)</numerusform><numerusform>(بحاجة الى %n GB من أجل سلسلة كاملة)</numerusform></translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>ModalOverlay</name>
     <message>
@@ -1082,7 +1120,7 @@
     <name>OpenWalletActivity</name>
     <message>
         <source>Open wallet failed</source>
-        <translation>فشل فتح المحفظة</translation>
+        <translation>فشل فتح محفظة</translation>
     </message>
     <message>
         <source>Open wallet warning</source>
@@ -1090,7 +1128,7 @@
     </message>
     <message>
         <source>default wallet</source>
-        <translation>محفظة إفتراضية</translation>
+        <translation>المحفظة الإفتراضية</translation>
     </message>
     <message>
         <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;...</source>
@@ -1132,10 +1170,6 @@
         <translation>إظهار ما إذا كان وكيل SOCKS5 الافتراضي الموفر تم استخدامه للوصول إلى النظراء عبر نوع الشبكة هذا.</translation>
     </message>
     <message>
-        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</source>
-        <translation>استخدام وكيل SOCKS5 منفصل للوصول إلى الأقران عبر خدمات Tor المخفية:</translation>
-    </message>
-    <message>
         <source>Hide the icon from the system tray.</source>
         <translation>إخفاء الآيقونة من صينية النظام.</translation>
     </message>
@@ -1173,7 +1207,7 @@
     </message>
     <message>
         <source>Prune &amp;block storage to</source>
-        <translation>تقليم وحظر التخزين من أجل</translation>
+        <translation>تقليم وحظر التخزين لـ</translation>
     </message>
     <message>
         <source>GB</source>
@@ -1213,7 +1247,7 @@
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>فتح منفذ خادم البتكوين تلقائيا على الموجه. هذا فقط يعمل عندما يكون الموجه الخاص بك يدعم </translation>
+        <translation>فتح منفذ خادم البتكوين تلقائيا على الموجه. هذا فقط يعمل عندما يكون الموجه الخاص بك يدعم UPnP ومفعل ايضا.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1264,10 +1298,6 @@
         <translation>تور</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>قم بالاتصال بشبكة بتكوين عبر وكيل SOCKS5 منفصل لخدمات تور المخفية.</translation>
-    </message>
-    <message>
         <source>&amp;Window</source>
         <translation>نافذه</translation>
     </message>
@@ -1306,6 +1336,14 @@
     <message>
         <source>Whether to show coin control features or not.</source>
         <translation>ما اذا أردت إظهار ميزات التحكم في العملة أم لا.</translation>
+    </message>
+    <message>
+        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>اتصل بشبكة بتكوين من خلال وكيل SOCKS5 منفصل لخدمات Tor onion.</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>استخدم بروكسي SOCKS5 منفصل للوصول إلى الأقران عبر خدمات Tor onion:</translation>
     </message>
     <message>
         <source>&amp;Third party transaction URLs</source>
@@ -1442,6 +1480,129 @@
         <source>Current total balance in watch-only addresses</source>
         <translation>الرصيد الإجمالي الحالي في العناوين المشاهدة فقط</translation>
     </message>
+    <message>
+        <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
+        <translation>تم تنشيط وضع الخصوصية لعلامة التبويب "نظرة عامة". للكشف عن القيم ، قم بإلغاء تحديد الإعدادات-&gt; إخفاء القيم.</translation>
+    </message>
+</context>
+<context>
+    <name>PSBTOperationsDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>حوار</translation>
+    </message>
+    <message>
+        <source>Sign Tx</source>
+        <translation>تسجيل Tx</translation>
+    </message>
+    <message>
+        <source>Broadcast Tx</source>
+        <translation>بث TX</translation>
+    </message>
+    <message>
+        <source>Copy to Clipboard</source>
+        <translation>نسخ إلى الحافظة</translation>
+    </message>
+    <message>
+        <source>Save...</source>
+        <translation>حفظ...</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>إغلاق</translation>
+    </message>
+    <message>
+        <source>Failed to load transaction: %1</source>
+        <translation>فشل تحميل المعاملة: %1</translation>
+    </message>
+    <message>
+        <source>Failed to sign transaction: %1</source>
+        <translation>فشل توقيع المعاملة: %1</translation>
+    </message>
+    <message>
+        <source>Could not sign any more inputs.</source>
+        <translation>تعذر توقيع المزيد من المدخلات.</translation>
+    </message>
+    <message>
+        <source>Signed %1 inputs, but more signatures are still required.</source>
+        <translation>تم توقيع %1 إدخالات، ولكن لا تزال هناك حاجة إلى المزيد من التوقيعات.</translation>
+    </message>
+    <message>
+        <source>Signed transaction successfully. Transaction is ready to broadcast.</source>
+        <translation>تم توقيع المعاملة بنجاح. المعاملة جاهزة للبث.</translation>
+    </message>
+    <message>
+        <source>Unknown error processing transaction.</source>
+        <translation>خطأ غير معروف في معالجة المعاملة.</translation>
+    </message>
+    <message>
+        <source>Transaction broadcast successfully! Transaction ID: %1</source>
+        <translation>تم بث المعاملة بنجاح! معرّف المعاملة: %1</translation>
+    </message>
+    <message>
+        <source>Transaction broadcast failed: %1</source>
+        <translation>فشل بث المعاملة: %1</translation>
+    </message>
+    <message>
+        <source>PSBT copied to clipboard.</source>
+        <translation>نسخ PSBT إلى الحافظة.</translation>
+    </message>
+    <message>
+        <source>Save Transaction Data</source>
+        <translation>حفظ بيانات المعاملات</translation>
+    </message>
+    <message>
+        <source>Partially Signed Transaction (Binary) (*.psbt)</source>
+        <translation>معاملة موقعة جزئيًا (ثنائي) (* .psbt)</translation>
+    </message>
+    <message>
+        <source>PSBT saved to disk.</source>
+        <translation>تم حفظ PSBT على القرص.</translation>
+    </message>
+    <message>
+        <source> * Sends %1 to %2</source>
+        <translation>* يرسل %1 إلى %2</translation>
+    </message>
+    <message>
+        <source>Unable to calculate transaction fee or total transaction amount.</source>
+        <translation>غير قادر على حساب رسوم المعاملة أو إجمالي مبلغ المعاملة.</translation>
+    </message>
+    <message>
+        <source>Pays transaction fee: </source>
+        <translation>دفع رسوم المعاملة:</translation>
+    </message>
+    <message>
+        <source>Total Amount</source>
+        <translation>القيمة الإجمالية</translation>
+    </message>
+    <message>
+        <source>or</source>
+        <translation>أو</translation>
+    </message>
+    <message>
+        <source>Transaction is missing some information about inputs.</source>
+        <translation>تفتقد المعاملة إلى بعض المعلومات حول المدخلات </translation>
+    </message>
+    <message>
+        <source>Transaction still needs signature(s).</source>
+        <translation>المعاملة ما زالت تحتاج التوقيع.</translation>
+    </message>
+    <message>
+        <source>(But this wallet cannot sign transactions.)</source>
+        <translation>.لكن هذه المخفضة لا يمكنها توقيع للمعاملات</translation>
+    </message>
+    <message>
+        <source>(But this wallet does not have the right keys.)</source>
+        <translation>لكن هذه المحفظة لا تحتوي على المفاتيح الصحيحة.</translation>
+    </message>
+    <message>
+        <source>Transaction is fully signed and ready for broadcast.</source>
+        <translation> الصفقة موقعة بالكامل وجاهزة للبث</translation>
+    </message>
+    <message>
+        <source>Transaction status is unknown.</source>
+        <translation>حالة المعاملة غير معروفة.</translation>
+    </message>
 </context>
 <context>
     <name>PaymentServer</name>
@@ -1463,12 +1624,11 @@
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.</source>
-        <translation>معالجة طلب الدفع لأن BIP70 غير مدعوم.
-</translation>
+        <translation>معالجة طلب الدفع لأن BIP70 غير مدعوم.</translation>
     </message>
     <message>
         <source>Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.</source>
-        <translation>بسبب الانتشار الواسع للعيوب الأمنية في BIP70 فإنه من الموصى به وبشدة تجاهل أي ارشادات من التجار لتغيير المحافظ</translation>
+        <translation>بسبب الانتشار الواسع للعيوب الأمنية في BIP70 فإنه من الموصى به وبشدة تجاهل أي ارشادات من التجار لتغيير المحافظ.</translation>
     </message>
     <message>
         <source>If you are receiving this error you should request the merchant provide a BIP21 compatible URI.</source>
@@ -1552,33 +1712,9 @@
         <source>%1 ms</source>
         <translation>%1 جزء من الثانية</translation>
     </message>
-    <message numerus="yes">
-        <source>%n second(s)</source>
-        <translation><numerusform>%n ثانية</numerusform><numerusform>%n ثانية</numerusform><numerusform>%n ثانية</numerusform><numerusform>%n ثانية</numerusform><numerusform>%n ثانية</numerusform><numerusform>%n ثانية</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n minute(s)</source>
-        <translation><numerusform>%n دقيقة</numerusform><numerusform>%n دقيقة</numerusform><numerusform>%n دقيقة</numerusform><numerusform>%n دقيقة</numerusform><numerusform>%n دقيقة</numerusform><numerusform>%n دقيقة</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n ساعة</numerusform><numerusform>%n ساعة</numerusform><numerusform>%n ساعة</numerusform><numerusform>%n ساعة</numerusform><numerusform>%n ساعة</numerusform><numerusform>%n ساعة</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n أيام</numerusform><numerusform>%n أيام</numerusform><numerusform>%n أيام</numerusform><numerusform>%n أيام</numerusform><numerusform>%n أيام</numerusform><numerusform>%n أيام</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n أسابيع</numerusform><numerusform>%n أسابيع</numerusform><numerusform>%n أسابيع</numerusform><numerusform>%n أسابيع</numerusform><numerusform>%n أسابيع</numerusform><numerusform>%n أسابيع</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 و %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n سنة</numerusform><numerusform>%n سنة</numerusform><numerusform>%n سنوات</numerusform><numerusform>%n سنوات</numerusform><numerusform>%n سنوات</numerusform><numerusform>%n سنوات</numerusform></translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -1695,10 +1831,6 @@
         <translation>سلسلة الكتل</translation>
     </message>
     <message>
-        <source>Current number of blocks</source>
-        <translation>عدد الكتل الحالي</translation>
-    </message>
-    <message>
         <source>Memory Pool</source>
         <translation>تجمع الذاكرة</translation>
     </message>
@@ -1743,10 +1875,6 @@
         <translation>حدد نظير لعرض معلومات مفصلة.</translation>
     </message>
     <message>
-        <source>Whitelisted</source>
-        <translation>اللائحة البيضاء</translation>
-    </message>
-    <message>
         <source>Direction</source>
         <translation>جهة</translation>
     </message>
@@ -1783,6 +1911,10 @@
         <translation>نافذة Node </translation>
     </message>
     <message>
+        <source>Current block height</source>
+        <translation>ارتفاع الكتلة الحالي</translation>
+    </message>
+    <message>
         <source>Decrease font size</source>
         <translation>تصغير حجم الخط</translation>
     </message>
@@ -1791,12 +1923,12 @@
         <translation>تكبير حجم الخط</translation>
     </message>
     <message>
-        <source>Services</source>
-        <translation>خدمات</translation>
+        <source>Permissions</source>
+        <translation>اذونات</translation>
     </message>
     <message>
-        <source>Ban Score</source>
-        <translation>نقاط الحظر</translation>
+        <source>Services</source>
+        <translation>خدمات</translation>
     </message>
     <message>
         <source>Connection Time</source>
@@ -1943,14 +2075,6 @@
         <translation>خارجي</translation>
     </message>
     <message>
-        <source>Yes</source>
-        <translation>نعم</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>لا</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>غير معرف</translation>
     </message>
@@ -2049,12 +2173,36 @@
         <source>Copy amount</source>
         <translation>نسخ الكمية</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation> يمكن فتح المحفظة.</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>QR Code</source>
-        <translation>رمز كيو ار</translation>
+        <source>Request payment to ...</source>
+        <translation>طلب دفع ل ...</translation>
+    </message>
+    <message>
+        <source>Address:</source>
+        <translation>العناوين:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>القيمة :</translation>
+    </message>
+    <message>
+        <source>Label:</source>
+        <translation>وسم:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>الرسائل</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>المحفظة:</translation>
     </message>
     <message>
         <source>Copy &amp;URI</source>
@@ -2075,30 +2223,6 @@
     <message>
         <source>Payment information</source>
         <translation>معلومات الدفع</translation>
-    </message>
-    <message>
-        <source>URI</source>
-        <translation> URI</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>عنوان</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>مبلغ</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>وسم</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>رسالة </translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>محفظة</translation>
     </message>
 </context>
 <context>
@@ -2329,11 +2453,27 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Do you want to draft this transaction?</source>
-        <translation>هل تريد صياغة هذه المعاملة.</translation>
+        <translation>هل تريد صياغة هذه المعاملة؟</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
         <translation>هل أنت متأكد من أنك تريد أن ترسل؟</translation>
+    </message>
+    <message>
+        <source>Create Unsigned</source>
+        <translation>إنشاء غير موقع</translation>
+    </message>
+    <message>
+        <source>Save Transaction Data</source>
+        <translation>حفظ بيانات المعاملات</translation>
+    </message>
+    <message>
+        <source>Partially Signed Transaction (Binary) (*.psbt)</source>
+        <translation>معاملة موقعة جزئيًا (ثنائي) (* .psbt)</translation>
+    </message>
+    <message>
+        <source>PSBT saved</source>
+        <translation>تم حفظ PSBT</translation>
     </message>
     <message>
         <source>or</source>
@@ -2345,7 +2485,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Please, review your transaction.</source>
-        <translation>رجاء، راجع معاملتك</translation>
+        <translation>رجاء، راجع معاملتك.</translation>
     </message>
     <message>
         <source>Transaction fee</source>
@@ -2372,16 +2512,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>أكد اقتراح المعاملة</translation>
     </message>
     <message>
-        <source>Copy PSBT to clipboard</source>
-        <translation>نسخ معاملة بتكوين موقعة جزئياً الى الحافظة</translation>
-    </message>
-    <message>
         <source>Send</source>
         <translation>إرسال</translation>
-    </message>
-    <message>
-        <source>PSBT copied</source>
-        <translation>تم نسخ PSBT</translation>
     </message>
     <message>
         <source>Watch-only balance:</source>
@@ -2433,7 +2565,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
-        <translation>العنوان الذي قمت بتحديده للتغيير ليس جزءا من هذه المحفظة. أي أو جميع المدخرات في محفظتك قد يتم إرسالها لهذا العنوان. هل أنت متأكد؟</translation>
+        <translation>العنوان الذي قمت بتحديده للتغيير ليس جزءا من هذه المحفظة. أي أو جميع الأموال في محفظتك قد يتم إرسالها لهذا العنوان. هل أنت متأكد؟</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2650,7 +2782,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>No error</source>
-        <translation>لا خطأ</translation>
+        <translation>لا  يوجد خطأ</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -3137,12 +3269,28 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <source>Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled.</source>
         <translation>اغلاق المحفظة لفترة طويلة قد يؤدي الى الاضطرار الى اعادة مزامنة السلسلة بأكملها اذا تم تمكين التلقيم.</translation>
     </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>إغلاق جميع المحافظ ...</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to close all wallets?</source>
+        <translation>هل أنت متأكد من رغبتك في اغلاق جميع المحافظ؟</translation>
+    </message>
 </context>
 <context>
     <name>WalletFrame</name>
     <message>
-        <source>No wallet has been loaded.</source>
-        <translation>لا يوجد محفظة تم تحميلها.</translation>
+        <source>No wallet has been loaded.
+Go to File &gt; Open Wallet to load a wallet.
+- OR -</source>
+        <translation>لم يتم تحميل أية محافظ.
+اذهب الى ملف &gt; افتح محفظة لتحميل محفظة.
+- أو -</translation>
+    </message>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>إنشاء محفظة جديدة</translation>
     </message>
 </context>
 <context>
@@ -3201,7 +3349,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>default wallet</source>
-        <translation>المحفظة إفتراضية</translation>
+        <translation>المحفظة الإفتراضية</translation>
     </message>
 </context>
 <context>
@@ -3213,6 +3361,30 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>استخراج البيانات في علامة التبويب الحالية إلى ملف</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>خطأ</translation>
+    </message>
+    <message>
+        <source>Unable to decode PSBT from clipboard (invalid base64)</source>
+        <translation>تعذر فك تشفير PSBT من الحافظة (base64 غير صالح)</translation>
+    </message>
+    <message>
+        <source>Load Transaction Data</source>
+        <translation>تحميل بيانات المعاملة</translation>
+    </message>
+    <message>
+        <source>Partially Signed Transaction (*.psbt)</source>
+        <translation>معاملة موقعة جزئيا (psbt.*)</translation>
+    </message>
+    <message>
+        <source>PSBT file must be smaller than 100 MiB</source>
+        <translation>ملف PSBT يجب أن يكون أصغر من 100 ميجابايت</translation>
+    </message>
+    <message>
+        <source>Unable to decode PSBT</source>
+        <translation>غير قادر على فك تشفير PSBT</translation>
     </message>
     <message>
         <source>Backup Wallet</source>
@@ -3250,10 +3422,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>تقليم: اخر مزامنة للمحفظة كانت قبل البيانات الملقمة. تحتاج الى - اعادة فهرسة (قم بتنزيل سلسلة الكتل بأكملها مرة أخرى في حال تم تقليم عقدة)</translation>
     </message>
     <message>
-        <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>خطأ: حدث خطأ داخلي فادح، راجع debug.log للحصول على التفاصيل</translation>
-    </message>
-    <message>
         <source>Pruning blockstore...</source>
         <translation>تجريد مخزن الكتل...</translation>
     </message>
@@ -3286,6 +3454,18 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>يرجى المساهمة إذا وجدت %s مفيداً. تفضل بزيارة %s لمزيد من المعلومات حول البرنامج.</translation>
     </message>
     <message>
+        <source>SQLiteDatabase: Failed to prepare the statement to fetch sqlite wallet schema version: %s</source>
+        <translation>SQLiteDatabse: فشل في تحضير التصريح لجلب محفظة sqlite اصدار المخطط: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to prepare the statement to fetch the application id: %s</source>
+        <translation>SQLiteDatabase: فشل في تحضير التصريح لجلب التطبيق id: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Unknown sqlite wallet schema version %d. Only version %d is supported</source>
+        <translation>SQLiteDatabase: اصدار مخطط لمحفظة sqlite غير معروف %d. فقط اصدار %d مدعوم.</translation>
+    </message>
+    <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
         <translation>قاعدة بيانات الكتل تحتوي على كتلة يبدو أنها من المستقبل. قد يكون هذا بسبب أن التاريخ والوقت في حاسوبك قم ضبط بشكل غير صحيح. قم بإعادة بناء قاعدة بيانات الكتل في حال كنت متأكد من أن التاريخ والوقت قد تم ضبطهما بشكل صحيح.</translation>
     </message>
@@ -3314,13 +3494,12 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>تحذير: لا يبدو أننا نتفق تمامًا مع أقراننا! قد تحتاج إلى الترقية ، أو قد تحتاج العقد الأخرى إلى الترقية.</translation>
     </message>
     <message>
-        <source>%s corrupt, salvage failed</source>
-        <translation>
-%s تالف, فشل الانقاذ.</translation>
-    </message>
-    <message>
         <source>-maxmempool must be at least %d MB</source>
         <translation>-الحد الأقصى للذاكرة على الأقل %d ميغابايت</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -%s address: '%s'</source>
+        <translation>لا يمكن الحل - %s العنوان:  '%s'</translation>
     </message>
     <message>
         <source>Change index out of range</source>
@@ -3333,10 +3512,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Corrupted block database detected</source>
         <translation>تم الكشف عن قاعدة بيانات كتل تالفة</translation>
-    </message>
-    <message>
-        <source>Could not parse asmap file %s</source>
-        <translation>Could not parse asmap file %s</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>
@@ -3383,6 +3558,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>فشل في اعادة مسح المحفظة خلال عملية التهيئة.</translation>
     </message>
     <message>
+        <source>Failed to verify database</source>
+        <translation>فشل في التحقق من قاعدة البيانات</translation>
+    </message>
+    <message>
+        <source>Ignoring duplicate -wallet %s.</source>
+        <translation> تم تجاهل تعريف مكرر -wallet %s</translation>
+    </message>
+    <message>
         <source>Importing...</source>
         <translation>إستيراد...</translation>
     </message>
@@ -3395,16 +3578,44 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>فشل بالتحقق في اختبار التعقل. تم إيقاف %s.</translation>
     </message>
     <message>
+        <source>Invalid P2P permission: '%s'</source>
+        <translation> إذن غير صالح لالند للند: '%s' </translation>
+    </message>
+    <message>
         <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
         <translation>مبلغ غير صحيح -%s=: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
-        <translation>مبلغ غير صحيح -discardfee=: '%s' </translation>
+        <translation>مبلغ غير صحيح  -discardfee=: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
         <translation>مبلغ غير صحيح -fallbackfee=: '%s'</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to execute statement to verify database: %s</source>
+        <translation>SQLiteDatabase: فشل في تحضير التصريح لجلب التطبيق id: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to fetch sqlite wallet schema version: %s</source>
+        <translation>SQLiteDatabase: Failed to fetch sqlite wallet schema version: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to fetch the application id: %s</source>
+        <translation>SQLiteDatabase: Failed to fetch the application id: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to prepare statement to verify database: %s</source>
+        <translation>SQLiteDatabase: Failed to prepare statement to verify database: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to read database verification error: %s</source>
+        <translation>SQLiteDatabase: Failed to read database verification error: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Unexpected application id. Expected %u, got %u</source>
+        <translation>SQLiteDatabase: Unexpected application id. Expected %u, got %u</translation>
     </message>
     <message>
         <source>Specified blocks directory "%s" does not exist.</source>
@@ -3425,10 +3636,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Loading P2P addresses...</source>
         <translation>تحميل عناوين P2P...</translation>
-    </message>
-    <message>
-        <source>Error: Disk space is too low!</source>
-        <translation>خطأ: مساحة القرص منخفضة جداً!</translation>
     </message>
     <message>
         <source>Loading banlist...</source>
@@ -3495,6 +3702,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Error: Listening for incoming connections failed (listen returned error %s)</translation>
     </message>
     <message>
+        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
+        <translation>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</translation>
+    </message>
+    <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation>قيمة غير صالحة لـ -maxtxfee=&lt;amount&gt;: '%s' (يجب أن تحتوي على الحد الأدنى للعمولة من %s على الأقل لتجنب المعاملات العالقة.</translation>
     </message>
@@ -3503,8 +3714,32 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>قيمة المعاملة صغيرة جدًا ولا يمكن إرسالها بعد خصم الرسوم</translation>
     </message>
     <message>
+        <source>This error could occur if this wallet was not shutdown cleanly and was last loaded using a build with a newer version of Berkeley DB. If so, please use the software that last loaded this wallet</source>
+        <translation>This error could occur if this wallet was not shutdown cleanly and was last loaded using a build with a newer version of Berkeley DB. If so, please use the software that last loaded this wallet</translation>
+    </message>
+    <message>
+        <source>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</source>
+        <translation>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</translation>
+    </message>
+    <message>
+        <source>Transaction needs a change address, but we can't generate it. Please call keypoolrefill first.</source>
+        <translation>Transaction needs a change address, but we can't generate it. Please call keypoolrefill first.</translation>
+    </message>
+    <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>تحتاج إلى إعادة إنشاء قاعدة البيانات باستخدام -reindex للعودة إلى الوضعية الغير مجردة. هذا سوف يعيد تحميل سلسلة الكتل بأكملها</translation>
+    </message>
+    <message>
+        <source>A fatal internal error occurred, see debug.log for details</source>
+        <translation>A fatal internal error occurred, see debug.log for details</translation>
+    </message>
+    <message>
+        <source>Cannot set -peerblockfilters without -blockfilterindex.</source>
+        <translation>Cannot set -peerblockfilters without -blockfilterindex.</translation>
+    </message>
+    <message>
+        <source>Disk space is too low!</source>
+        <translation>تحذير: مساحة القرص منخفضة</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3517,6 +3752,14 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Error: Disk space is low for %s</source>
         <translation>خطأ : مساحة القرص منخفضة ل %s</translation>
+    </message>
+    <message>
+        <source>Error: Keypool ran out, please call keypoolrefill first</source>
+        <translation>Error: Keypool ran out, please call keypoolrefill first</translation>
+    </message>
+    <message>
+        <source>Fee rate (%s) is lower than the minimum fee rate setting (%s)</source>
+        <translation>Fee rate (%s) is lower than the minimum fee rate setting (%s)</translation>
     </message>
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
@@ -3537,6 +3780,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Need to specify a port with -whitebind: '%s'</translation>
+    </message>
+    <message>
+        <source>No proxy server specified. Use -proxy=&lt;ip&gt; or -proxy=&lt;ip:port&gt;.</source>
+        <translation>No proxy server specified. Use -proxy=&lt;ip&gt; or -proxy=&lt;ip:port&gt;.</translation>
     </message>
     <message>
         <source>Prune mode is incompatible with -blockfilterindex.</source>
@@ -3611,14 +3858,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>التحقق من المحفظة (المحافظ)...</translation>
     </message>
     <message>
-        <source>Warning: unknown new rules activated (versionbit %i)</source>
-        <translation>تحذير: قوانين جديدة مجهولة تم تفعيلها (نسخة %i)</translation>
-    </message>
-    <message>
-        <source>Zapping all transactions from wallet...</source>
-        <translation>إزالة جميع المعاملات من المحفظة...</translation>
-    </message>
-    <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
         <translation>-maxtxfee الموضوع عالي جدا! رسوم بهذا الحجم من الممكن أن تدفع على معاملة.</translation>
     </message>
@@ -3631,16 +3870,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</translation>
     </message>
     <message>
-        <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>تحذير: ملف المحفظة فاسد ، تم انقاذ البيانات! تم حفظ %s الأصلي ك %s في %s؛ إذا كان رصيدك أو كانت معاملاتك غير صحيحة، فيجب عليك الإستعادة من نسخة احتياطية.</translation>
-    </message>
-    <message>
         <source>%s is set very high!</source>
         <translation>%s عالٍ جداً</translation>
-    </message>
-    <message>
-        <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
-        <translation>خطأ عند تنزيل المحفظة %s. تم تحديد اسم -محفظة مكرر.</translation>
     </message>
     <message>
         <source>Starting network threads...</source>
