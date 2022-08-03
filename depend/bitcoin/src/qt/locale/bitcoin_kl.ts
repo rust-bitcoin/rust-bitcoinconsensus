@@ -49,7 +49,7 @@
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation>Aningaasiviit isissutissaleruk</translation>
+        <translation>Aningaasiviit kode-leruk</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -57,7 +57,7 @@
     </message>
     <message>
         <source>Decrypt wallet</source>
-        <translation>Aningaasiviup isissutissaa peeruk</translation>
+        <translation>Aningaasivik kodea peeruk</translation>
     </message>
     <message>
         <source>Change passphrase</source>
@@ -65,7 +65,7 @@
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>Aningaasivippit isissutissaa uppernarsaruk</translation>
+        <translation>Aningaasivippit matuersaataa uppernarsaruk</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -100,7 +100,7 @@
     <message>
         <source>Amount: %1
 </source>
-        <translation>Aningaasat annertussusaa: %1
+        <translation>Bitcoin amerlassusaa: %1
 </translation>
     </message>
     </context>
@@ -108,7 +108,7 @@
     <name>CoinControlDialog</name>
     <message>
         <source>Fee:</source>
-        <translation>Akileraarut</translation>
+        <translation>Akileraarut:</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -116,7 +116,7 @@
     </message>
     <message>
         <source>Amount</source>
-        <translation>Aningaasat amerlassusaa</translation>
+        <translation>Bitcoin amerlassusaa</translation>
     </message>
     <message>
         <source>Date</source>
@@ -141,7 +141,7 @@
     <name>EditAddressDialog</name>
     <message>
         <source>&amp;Label</source>
-        <translation>&amp;Taajuutaa</translation>
+        <translation>&amp;Taajuut</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -197,6 +197,9 @@
     <name>OverviewPage</name>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -233,16 +236,16 @@
     </context>
 <context>
     <name>ReceiveCoinsDialog</name>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Aningaasivik ammarneqanngilaq</translation>
+    </message>
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>Amount</source>
-        <translation>Aningaasat amerlassusaa</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Taaguut</translation>
+        <source>Wallet:</source>
+        <translation>Aningaasivik:</translation>
     </message>
     </context>
 <context>

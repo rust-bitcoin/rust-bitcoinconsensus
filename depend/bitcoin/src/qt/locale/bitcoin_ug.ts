@@ -11,7 +11,7 @@
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>يېڭى&amp;N</translation>
+        <translation>يېڭى(&amp;N)</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -69,10 +69,40 @@
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>بۇلار سىز Bitcoin چىقىم قىلىدىغان ئادرېس. تەڭگە چىقىم قىلىشتىن ئىلگىرى، سومما ۋە تاپشۇرۇۋېلىش ئادرېسىنىڭ توغرا ئىكەنلىكىنى تەكشۈرۈشنى ئۇنۇتماڭ.</translation>
     </message>
-    </context>
+    <message>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>بۇ Bitcoin تاپشۇرۇۋېلىشقا ئىشلىتىدىغان ئادرېسىڭىز. «قوبۇللاش» بەتكۈچتىكى «يېڭى تاپشۇرۇۋېلىش ئادرېسى قۇر» توپچىنى چېكىپ يېڭى ئادرېس قۇرالايسىز.
+پەقەت «ئەنئەنىۋى(legacy)» تىپتىكى ئادرېسلا ئىمزانى قوللايدۇ.</translation>
+    </message>
+    <message>
+        <source>Export Address List</source>
+        <translation>ئادرېس تىزىمىنى چىقار</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>چىقىرالمىدى</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>ئادرېس تىزىمىنى %1 غا ساقلاشنى سىناۋاتقاندا خاتالىق كۆرۈلدى. قايتا سىناڭ.</translation>
+    </message>
+</context>
 <context>
     <name>AddressTableModel</name>
-    </context>
+    <message>
+        <source>Label</source>
+        <translation>بەلگە</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>ئادرېس</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(بەلگە يوق)</translation>
+    </message>
+</context>
 <context>
     <name>AskPassphraseDialog</name>
     </context>
@@ -84,6 +114,10 @@
     </context>
 <context>
     <name>CoinControlDialog</name>
+    <message>
+        <source>(no label)</source>
+        <translation>(بەلگە يوق)</translation>
+    </message>
     </context>
 <context>
     <name>CreateWalletActivity</name>
@@ -119,6 +153,9 @@
     <name>OverviewPage</name>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -141,10 +178,22 @@
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>بەلگە</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(بەلگە يوق)</translation>
+    </message>
     </context>
 <context>
     <name>SendCoinsDialog</name>
-    </context>
+    <message>
+        <source>(no label)</source>
+        <translation>(بەلگە يوق)</translation>
+    </message>
+</context>
 <context>
     <name>SendCoinsEntry</name>
     </context>
@@ -165,9 +214,29 @@
     </context>
 <context>
     <name>TransactionTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>بەلگە</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(بەلگە يوق)</translation>
+    </message>
     </context>
 <context>
     <name>TransactionView</name>
+    <message>
+        <source>Label</source>
+        <translation>بەلگە</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>ئادرېس</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>چىقىرالمىدى</translation>
+    </message>
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>

@@ -3,11 +3,11 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>చిరునామా లేదా లేబుల్‌ను సవరించడానికి కుడి-క్లిక్ చేయండి</translation>
+        <translation>చిరునామా లేదా లేబుల్ సవరించు -క్లిక్ చేయండి</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>క్రొత్త చిరునామా సృష్టించండి</translation>
+        <translation>క్రొత్త చిరునామా సృష్టించు</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -68,10 +68,6 @@
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>ఇవి మీరు పంపే చెల్లింపుల బిట్‌కాయిన్ చిరునామాలు. నాణేలు పంపే ముందు ప్రతిసారి అందుకునే చిరునామా మరియు చెల్లింపు మొత్తం సరిచూసుకోండి.</translation>
-    </message>
-    <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>చెల్లింపులు స్వీకరించడానికి ఇవి మీ బిట్‌కాయిన్ చిరునామాలు. క్రొత్త చిరునామాలను సృష్టించడానికి స్వీకరించు ట్యాబ్‌లోని 'క్రొత్త స్వీకరించే చిరునామాను సృష్టించండి' బటన్‌ను ఉపయోగించండి.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -201,7 +197,7 @@
     </message>
     <message>
         <source>Your wallet is now encrypted. </source>
-        <translation>mee yokka wallet encryption ayinadi</translation>
+        <translation>cheraveyu chirunama</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -311,7 +307,7 @@
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;జోలెను గుప్తీకరించండి...</translation>
+        <translation>&amp; జోలెను గుప్తీకరించండి...</translation>
     </message>
     <message>
         <source>&amp;Change Passphrase...</source>
@@ -327,7 +323,7 @@
     </message>
     <message>
         <source>Create a new wallet</source>
-        <translation>క్రొత్త వాలెట్ ని సృష్టించు</translation>
+        <translation>&lt;div&gt;&lt;/div&gt;</translation>
     </message>
     <message>
         <source>Wallet:</source>
@@ -426,6 +422,10 @@
     </context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>వాలెట్</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -467,6 +467,9 @@
     <name>OverviewPage</name>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -495,26 +498,10 @@
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>Address</source>
-        <translation>చిరునామా</translation>
+        <source>Wallet:</source>
+        <translation>ధనమును తీసుకొనిపోవు సంచి</translation>
     </message>
-    <message>
-        <source>Amount</source>
-        <translation>మొత్తం</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>ఉల్లాకు</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>సందేశం</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>వాలెట్</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -645,7 +632,11 @@
     </context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>&lt;div&gt;&lt;/div&gt;</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     </context>
@@ -658,6 +649,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>ప్రస్తుతం ఉన్న సమాచారాన్ని ఫైల్ లోనికి ఎగుమతి చేసుకోండి</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>లోపం</translation>
     </message>
     </context>
 <context>

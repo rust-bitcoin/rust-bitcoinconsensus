@@ -462,6 +462,10 @@
         <translation>Jõuan järgi...</translation>
     </message>
     <message>
+        <source>Error: %1</source>
+        <translation>Tõrge %1</translation>
+    </message>
+    <message>
         <source>Date: %1
 </source>
         <translation>Kuupäev: %1
@@ -507,11 +511,7 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Rahakott on &lt;b&gt;krüpteeritud&lt;/b&gt; ning hetkel &lt;b&gt;suletud&lt;/b&gt;</translation>
     </message>
-    <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Ilmnes kriitiline tõrge. Bitcoin suletakse turvakaalutluste tõttu.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
@@ -636,6 +636,10 @@
     </context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>Rahakott</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -865,7 +869,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
+        <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitcoin võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -886,6 +890,17 @@
     <message>
         <source>Recent transactions</source>
         <translation>Hiljutised transaktsioonid</translation>
+    </message>
+    </context>
+<context>
+    <name>PSBTOperationsDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialoog</translation>
+    </message>
+    <message>
+        <source>or</source>
+        <translation>või</translation>
     </message>
     </context>
 <context>
@@ -965,6 +980,10 @@
         <translation>%1 GB</translation>
     </message>
     <message>
+        <source>Error: %1</source>
+        <translation>Tõrge %1</translation>
+    </message>
+    <message>
         <source>unknown</source>
         <translation>tundmatu</translation>
     </message>
@@ -1033,10 +1052,6 @@
     <message>
         <source>Block chain</source>
         <translation>Blokiahel</translation>
-    </message>
-    <message>
-        <source>Current number of blocks</source>
-        <translation>Plokkide hetkearv</translation>
     </message>
     <message>
         <source>Memory usage</source>
@@ -1115,14 +1130,6 @@
         <translation>Väljuv</translation>
     </message>
     <message>
-        <source>Yes</source>
-        <translation>Jah</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>Ei</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>Teadmata</translation>
     </message>
@@ -1165,12 +1172,28 @@
         <source>Copy amount</source>
         <translation>Kopeeri kogus</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Rahakoti lahtilukustamine ebaõnnestus.</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>QR Code</source>
-        <translation>QR Kood</translation>
+        <source>Amount:</source>
+        <translation>Kogus</translation>
+    </message>
+    <message>
+        <source>Label:</source>
+        <translation>Märgis:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>Sõnum:</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Rahakott:</translation>
     </message>
     <message>
         <source>Copy &amp;Address</source>
@@ -1183,26 +1206,6 @@
     <message>
         <source>Payment information</source>
         <translation>Makse Informatsioon</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Aadress</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Kogus</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Silt</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Sõnum</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Rahakott</translation>
     </message>
 </context>
 <context>
@@ -1903,7 +1906,11 @@
     </context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>Loo uus rahakott</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -1920,6 +1927,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Ekspordi kuvatava vahelehe sisu faili</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Viga</translation>
     </message>
     <message>
         <source>Backup Wallet</source>
