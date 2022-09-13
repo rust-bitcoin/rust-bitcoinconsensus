@@ -21,6 +21,7 @@ extern crate libc;
 
 use core::fmt;
 
+use bitflags::bitflags;
 use libc::{c_int, c_uchar, c_uint};
 
 /// Errors returned by `libbitcoinconsensus` (see github.com/bitcoin/bitcoin/doc/shared-libraries.md).
@@ -70,27 +71,24 @@ impl std::error::Error for Error {
     }
 }
 
-/// Do not enable any verification.
-pub const VERIFY_NONE: c_uint = 0;
-/// Evaluate P2SH (BIP16) subscripts.
-pub const VERIFY_P2SH: c_uint = 1 << 0;
-/// Enforce strict DER (BIP66) compliance.
-pub const VERIFY_DERSIG: c_uint = 1 << 2;
-/// Enforce NULLDUMMY (BIP147).
-pub const VERIFY_NULLDUMMY: c_uint = 1 << 4;
-/// Enable CHECKLOCKTIMEVERIFY (BIP65).
-pub const VERIFY_CHECKLOCKTIMEVERIFY: c_uint = 1 << 9;
-/// Enable CHECKSEQUENCEVERIFY (BIP112).
-pub const VERIFY_CHECKSEQUENCEVERIFY: c_uint = 1 << 10;
-/// Enable WITNESS (BIP141).
-pub const VERIFY_WITNESS: c_uint = 1 << 11;
+bitflags! {
+    pub struct Flags: u32 {
+        const VERIFY_NONE = 0b_0000_0000;
+        const VERIFY_P2SH = 0b_0000_0001;
+        const VERIFY_DERSIG = 0b_0000_0100;
+        const VERIFY_NULLDUMMY = 0b0001_0000;
+        const VERIFY_CHECKLOCKTIMEVERIFY = 0b_0000_0010_0000_0000;
+        const VERIFY_CHECKSEQUENCEVERIFY = 0b_0000_0100_0000_0000;
+        const VERIFY_WITNESS = 0b0000_1000_0000_0000;
 
-pub const VERIFY_ALL: c_uint = VERIFY_P2SH
-    | VERIFY_DERSIG
-    | VERIFY_NULLDUMMY
-    | VERIFY_CHECKLOCKTIMEVERIFY
-    | VERIFY_CHECKSEQUENCEVERIFY
-    | VERIFY_WITNESS;
+        const VERIFY_ALL = Self::VERIFY_P2SH.bits
+            | Self::VERIFY_DERSIG.bits
+            | Self::VERIFY_NULLDUMMY.bits
+            | Self::VERIFY_CHECKLOCKTIMEVERIFY.bits
+            | Self::VERIFY_CHECKSEQUENCEVERIFY.bits
+            | Self::VERIFY_WITNESS.bits;
+    }
+}
 
 extern "C" {
     /// Returns `libbitcoinconsensus` version.
@@ -111,26 +109,26 @@ extern "C" {
 }
 
 /// Computes flags for soft fork activation heights on the Bitcoin network.
-pub fn height_to_flags(height: u32) -> u32 {
-    let mut flag = VERIFY_NONE;
+pub fn height_to_flags(height: u32) -> Flags {
+    let mut flag = Flags::VERIFY_NONE;
 
     if height >= 173805 {
-        flag |= VERIFY_P2SH;
+        flag |= Flags::VERIFY_P2SH;
     }
     if height >= 363725 {
-        flag |= VERIFY_DERSIG;
+        flag |= Flags::VERIFY_DERSIG;
     }
     if height >= 388381 {
-        flag |= VERIFY_CHECKLOCKTIMEVERIFY;
+        flag |= Flags::VERIFY_CHECKLOCKTIMEVERIFY;
     }
     if height >= 419328 {
-        flag |= VERIFY_CHECKSEQUENCEVERIFY;
+        flag |= Flags::VERIFY_CHECKSEQUENCEVERIFY;
     }
     if height >= 481824 {
-        flag |= VERIFY_NULLDUMMY | VERIFY_WITNESS
+        flag |= Flags::VERIFY_NULLDUMMY | Flags::VERIFY_WITNESS
     }
 
-    flag as u32
+    flag
 }
 
 /// Returns `libbitcoinconsensus` version.
@@ -180,7 +178,7 @@ pub fn verify(
     spending_transaction: &[u8],
     input_index: usize,
 ) -> Result<(), Error> {
-    verify_with_flags(spent_output, amount, spending_transaction, input_index, VERIFY_ALL)
+    verify_with_flags(spent_output, amount, spending_transaction, input_index, Flags::VERIFY_ALL)
 }
 
 /// Same as verify but with flags that turn past soft fork features on or off.
@@ -189,7 +187,7 @@ pub fn verify_with_flags(
     amount: u64,
     spending_transaction: &[u8],
     input_index: usize,
-    flags: u32,
+    flags: Flags,
 ) -> Result<(), Error> {
     unsafe {
         let mut error = Error::ERR_SCRIPT;
@@ -201,7 +199,7 @@ pub fn verify_with_flags(
             spending_transaction.as_ptr(),
             spending_transaction.len() as c_uint,
             input_index as c_uint,
-            flags as c_uint,
+            flags.bits as c_uint,
             &mut error,
         );
         if ret != 1 {
@@ -271,7 +269,4 @@ mod tests {
             input,
         )
     }
-
-    #[test]
-    fn invalid_flags_test() { verify_with_flags(&[], 0, &[], 0, VERIFY_ALL + 1).unwrap_err(); }
 }

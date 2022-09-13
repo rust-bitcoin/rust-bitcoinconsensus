@@ -23,6 +23,7 @@ std = []
 external-secp = []
 
 [dependencies]
+bitflags = "1.2.1"
 libc="0.2"
 
 [build-dependencies]
