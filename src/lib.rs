@@ -17,11 +17,11 @@
 //! sources using Cargo and provides Rust bindings to its API.
 //!
 
-extern crate libc;
+mod types;
 
 use core::fmt;
 
-use libc::{c_int, c_uchar, c_uint};
+use crate::types::*;
 
 /// Errors returned by `libbitcoinconsensus` (see github.com/bitcoin/bitcoin/doc/shared-libraries.md).
 #[allow(non_camel_case_types)]
