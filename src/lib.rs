@@ -118,7 +118,7 @@ pub fn height_to_flags(height: u32) -> u32 {
         flag |= VERIFY_NULLDUMMY | VERIFY_WITNESS
     }
 
-    flag as u32
+    flag
 }
 
 /// Returns `libbitcoinconsensus` version.
@@ -185,7 +185,7 @@ pub fn verify_with_flags(
         let ret = bitcoinconsensus_verify_script_with_amount(
             spent_output_script.as_ptr(),
             spent_output_script.len() as c_uint,
-            amount as u64,
+            amount,
             spending_transaction.as_ptr(),
             spending_transaction.len() as c_uint,
             input_index as c_uint,
