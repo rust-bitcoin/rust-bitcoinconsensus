@@ -4,6 +4,14 @@
 //! This project builds the `libbitcoinconsensus` library from Bitcoin's C++
 //! sources using Cargo and provides Rust bindings to its API.
 //!
+//! Quoting from [`bitcoin/doc/shared-libraries.md`]:
+//!
+//! > The purpose of this library is to make the verification functionality that is critical to
+//! > Bitcoin's consensus available to other applications, e.g. to language bindings.
+//!
+//! And that is exactly what this library is, the Rust bindings to `bitcoinconsensus`.
+//!
+//! [`bitcoin/doc/shared-libraries`]: <https://github.com/bitcoin/bitcoin/blob/master/doc/shared-libraries.md>
 
 mod types;
 
