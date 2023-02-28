@@ -13,10 +13,6 @@ exclude = ["/depend/bitcoin/.github/**", "/depend/bitcoin/.tx/**", "/depend/bitc
 build = "build.rs"
 edition = "2018"
 
-[lib]
-name = "bitcoinconsensus"
-path = "src/lib.rs"
-
 [features]
 default = ["std"]
 std = []
