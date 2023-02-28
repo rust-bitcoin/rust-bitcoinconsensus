@@ -4,6 +4,14 @@
 //! This project builds the `libbitcoinconsensus` library from Bitcoin's C++
 //! sources using Cargo and provides Rust bindings to its API.
 //!
+//! Quoting from [`bitcoin/doc/shared-libraries.md`]:
+//!
+//! > The purpose of this library is to make the verification functionality that is critical to
+//! > Bitcoin's consensus available to other applications, e.g. to language bindings.
+//!
+//! And that is exactly what this library is, the Rust bindings to `bitcoinconsensus`.
+//!
+//! [`bitcoin/doc/shared-libraries`]: <https://github.com/bitcoin/bitcoin/blob/master/doc/shared-libraries.md>
 
 mod types;
 
@@ -11,9 +19,13 @@ use core::fmt;
 
 use crate::types::*;
 
-/// Errors returned by `libbitcoinconsensus` (see github.com/bitcoin/bitcoin/doc/shared-libraries.md).
+/// Errors returned by [`libbitcoinconsensus`].
+///
+/// The error variant identifiers mimic those from `libbitcoinconsensus`.
+///
+/// [`libbitcoinconsensus`]: <https://github.com/bitcoin/bitcoin/blob/master/doc/shared-libraries.md#errors>
 #[allow(non_camel_case_types)]
-#[derive(PartialEq, Eq, PartialOrd, Ord, Hash, Debug, Clone, Copy)]
+#[derive(Debug)]
 #[repr(C)]
 pub enum Error {
     /// Default value, passed to `libbitcoinconsensus` as a return parameter.
@@ -118,7 +130,7 @@ pub fn height_to_flags(height: u32) -> u32 {
         flag |= VERIFY_NULLDUMMY | VERIFY_WITNESS
     }
 
-    flag as u32
+    flag
 }
 
 /// Returns `libbitcoinconsensus` version.
@@ -185,7 +197,7 @@ pub fn verify_with_flags(
         let ret = bitcoinconsensus_verify_script_with_amount(
             spent_output_script.as_ptr(),
             spent_output_script.len() as c_uint,
-            amount as u64,
+            amount,
             spending_transaction.as_ptr(),
             spending_transaction.len() as c_uint,
             input_index as c_uint,
