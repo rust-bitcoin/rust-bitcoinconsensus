@@ -11,7 +11,11 @@ use core::fmt;
 
 use crate::types::*;
 
-/// Errors returned by `libbitcoinconsensus` (see github.com/bitcoin/bitcoin/doc/shared-libraries.md).
+/// Errors returned by [`libbitcoinconsensus`].
+///
+/// The error variant identifiers mimic those from `libbitcoinconsensus`.
+///
+/// [`libbitcoinconsensus`]: <https://github.com/bitcoin/bitcoin/blob/master/doc/shared-libraries.md#errors>
 #[allow(non_camel_case_types)]
 #[derive(Debug)]
 #[repr(C)]
