@@ -13,7 +13,7 @@ use crate::types::*;
 
 /// Errors returned by `libbitcoinconsensus` (see github.com/bitcoin/bitcoin/doc/shared-libraries.md).
 #[allow(non_camel_case_types)]
-#[derive(PartialEq, Eq, PartialOrd, Ord, Hash, Debug, Clone, Copy)]
+#[derive(Debug)]
 #[repr(C)]
 pub enum Error {
     /// Default value, passed to `libbitcoinconsensus` as a return parameter.
