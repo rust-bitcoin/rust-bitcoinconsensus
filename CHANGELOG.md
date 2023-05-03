@@ -1,3 +1,7 @@
+# Unreleased
+
+* Bump MSRV to rust 1.48.0 [#64](https://github.com/rust-bitcoin/rust-bitcoinconsensus/pull/64)
+
 ## v0.20.2-0.5.0
 
 * Upgrade Bitcoin Core subtree to v0.20.2
