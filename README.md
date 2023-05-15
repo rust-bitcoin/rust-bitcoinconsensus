@@ -42,7 +42,7 @@ git subtree pull --prefix='depend/bitcoin' git@github.com:bitcoin/bitcoin.git v0
 
 ## MSRV
 
-The MSRV of this crate is **1.41.1**.
+The MSRV of this crate is **1.48.0**.
 
 
 ## Githooks
