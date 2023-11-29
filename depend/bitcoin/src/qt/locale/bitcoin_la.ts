@@ -10,8 +10,20 @@
         <translation>Crea novam inscriptionem</translation>
     </message>
     <message>
+        <source>&amp;New</source>
+        <translation>&amp;Novus</translation>
+    </message>
+    <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>An abundance of inscription are on it are a covering to the system is already in the selected</translation>
+        <translation>Copia inscriptionem iam selectam in latibulum systematis</translation>
+    </message>
+    <message>
+        <source>&amp;Copy</source>
+        <translation>&amp;Transcribe</translation>
+    </message>
+    <message>
+        <source>C&amp;lose</source>
+        <translation>C&amp;laude</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
@@ -50,6 +62,10 @@
         <translation>&amp;Muta</translation>
     </message>
     <message>
+        <source>Export Address List</source>
+        <translation>Exporta Index Inscriptionum</translation>
+    </message>
+    <message>
         <source>Comma separated file (*.csv)</source>
         <translation>Comma Separata Plica (*.csv)</translation>
     </message>
@@ -86,6 +102,10 @@
     <message>
         <source>Repeat new passphrase</source>
         <translation>Itera novam tesseram</translation>
+    </message>
+    <message>
+        <source>Show passphrase</source>
+        <translation>Ostende tesseram</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -166,7 +186,11 @@
 </context>
 <context>
     <name>BanTableModel</name>
-    </context>
+    <message>
+        <source>Banned Until</source>
+        <translation>Interdictum usque ad</translation>
+    </message>
+</context>
 <context>
     <name>BitcoinGUI</name>
     <message>
@@ -202,6 +226,10 @@
         <translation>Exi applicatione</translation>
     </message>
     <message>
+        <source>&amp;About %1</source>
+        <translation>&amp;De %1</translation>
+    </message>
+    <message>
         <source>About &amp;Qt</source>
         <translation>Informatio de &amp;Qt</translation>
     </message>
@@ -224,6 +252,18 @@
     <message>
         <source>&amp;Change Passphrase...</source>
         <translation>&amp;Muta tesseram...</translation>
+    </message>
+    <message>
+        <source>Open &amp;URI...</source>
+        <translation>Aperi &amp;URI...</translation>
+    </message>
+    <message>
+        <source>Create Wallet...</source>
+        <translation>Creare Cassidilium</translation>
+    </message>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>Creare novum cassidilium</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
@@ -345,13 +385,13 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Cassidile &lt;b&gt;cifratum&lt;/b&gt; est et iam nunc &lt;b&gt;seratum&lt;/b&gt;</translation>
     </message>
-    <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Error fatalis accidit.  Bitcoin nondum pergere tute potest, et exibit.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>CoinControlDialog</name>
+    <message>
+        <source>Bytes:</source>
+        <translation>Octecti:</translation>
+    </message>
     <message>
         <source>Amount:</source>
         <translation>Quantitas:</translation>
@@ -394,6 +434,10 @@
     </context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>Cassidile</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -599,6 +643,9 @@
     </message>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     <message>
         <source>Cannot start bitcoin: click-to-pay handler</source>
@@ -673,10 +720,6 @@
         <translation>Catena frustorum</translation>
     </message>
     <message>
-        <source>Current number of blocks</source>
-        <translation>Numerus frustorum iam nunc</translation>
-    </message>
-    <message>
         <source>Last block time</source>
         <translation>Hora postremi frusti</translation>
     </message>
@@ -719,34 +762,30 @@
         <source>Copy amount</source>
         <translation>Copia quantitatem</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Non potuisse cassidile reserare</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>Quantitas:</translation>
+    </message>
+    <message>
+        <source>Label:</source>
+        <translation>Titulus:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>Nuntius:</translation>
+    </message>
     <message>
         <source>Copy &amp;Address</source>
         <translation>&amp;Copia Inscriptionem</translation>
     </message>
-    <message>
-        <source>Address</source>
-        <translation>Inscriptio</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Quantitas</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Titulus</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Nuntius</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Cassidile</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -775,6 +814,10 @@
     <message>
         <source>Insufficient funds!</source>
         <translation>Inopia nummorum</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Octecti:</translation>
     </message>
     <message>
         <source>Amount:</source>
@@ -1305,7 +1348,11 @@
     </context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>Creare novum casidillium</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -1322,6 +1369,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exporta data in hac tabella in plicam</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Error</translation>
     </message>
     <message>
         <source>Backup Wallet</source>

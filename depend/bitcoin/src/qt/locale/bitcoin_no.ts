@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Høyreklikk for å redigere adressen eller etiketten </translation>
+        <translation>Høyreklikk for å redigere addressen eller etikketen </translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -11,7 +11,8 @@
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>&amp;Ny</translation>
+        <translation>&amp;Ny
+</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -64,10 +65,6 @@
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dette er dine Bitcoin adresser for å sende betalinger.Alltid sjekk mengden og mottaker adressen før du sender mynter.  </translation>
-    </message>
-    <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>Dette er dine Bitcoin adresser for å motta betalinger. Bruk "Lag ny adresse for mottak" knappen i mottak fanen for å lage en ny adresse. </translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -135,6 +132,9 @@
     <name>OverviewPage</name>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -154,10 +154,6 @@
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
-    <message>
-        <source>Address</source>
-        <translation>Adresse </translation>
-    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>

@@ -7,7 +7,7 @@
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>പുതിയ ഒരു വിലാസം സൃഷ്ടിക്കുക</translation>
+        <translation>ഒരു പുതിയ വിലാസം സൃഷ്ടിക്കുക</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -67,11 +67,13 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>പേയ്മെന്റുകൾ അയയ്ക്കുന്നതിനുള്ള നിങ്ങളുടെ ബിറ്റ്കോയിൻ വിലാസങ്ങളാണ് ഇവ. ബിറ്റ്കോയിൻ അയയ്ക്കുന്നതിനുമുമ്പ് എല്ലായ്പ്പോഴും തുകയും സ്വീകരിക്കുന്ന വിലാസവും പരിശോധിക്കുക.</translation>
+        <translation>പേയ്മെന്റുകൾ അയയ്ക്കുന്നതിനുള്ള നിങ്ങളുടെ ബിറ്റ്കോയിൻ വിലാസങ്ങളാണ് ഇവ. നാണയങ്ങൾ അയയ്ക്കുന്നതിനുമുമ്പ് എല്ലായ്പ്പോഴും തുകയും സ്വീകരിക്കുന്ന വിലാസവും പരിശോധിക്കുക.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>ഇവയാണ് പണം  സ്വീകരിയ്ക്കുന്നതിനായുള്ള താങ്കളുടെ വിലാസങ്ങൾ. പുതിയ വിലാസങ്ങൾ കൂട്ടിച്ചേർക്കുന്നതിനായി ' പുതിയ വിലാസം സൃഷ്ടിയ്ക്കുക ' എന്ന ബട്ടൺ അമർത്തുക.</translation>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>ഇവയാണ് പണം  സ്വീകരിയ്ക്കുന്നതിനായുള്ള താങ്കളുടെ ബിറ്റ്കോയിൻ വിലാസങ്ങൾ. പുതിയ വിലാസങ്ങൾ കൂട്ടിച്ചേർക്കുന്നതിനായി ' പുതിയ വിലാസം സൃഷ്ടിയ്ക്കുക ' എന്ന ബട്ടൺ അമർത്തുക.
+'ലെഗസി' തരത്തിന്റെ വിലാസങ്ങളിൽ മാത്രമേ സൈൻ ചെയ്യാൻ കഴിയൂ.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -169,7 +171,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>മുന്നറിയിപ്പ്: നിങ്ങളുടെ വാലറ്റ് എൻക്രിപ്റ്റ് ചെയ്ത് പാസ്ഫ്രെയ്സ് നഷ്ടപ്പെടുകയാണെങ്കിൽ,&lt;b&gt; നിങ്ങളുടെ എല്ലാ ബിറ്റ്കൊയിനുകളും നഷ്ടപ്പെടും&lt;/b&gt;!</translation>
+        <translation>മുന്നറിയിപ്പ്: നിങ്ങളുടെ വാലറ്റ് എൻക്രിപ്റ്റ് ചെയ്ത് പാസ്ഫ്രെയ്സ് നഷ്ടപ്പെടുകയാണെങ്കിൽ, നിങ്ങളുടെ എല്ലാ ബിറ്റ്കൊയിനുകളും നഷ്ടപ്പെടും!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -217,7 +219,7 @@
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
-        <translation>നൽകിയ  പാസ്‌ഫ്രെയ്‌സുകൾ പൊരുത്തപ്പെടുന്നില്ല.</translation>
+        <translation>വിതരണം ചെയ്ത പാസ്‌ഫ്രെയ്‌സുകൾ പൊരുത്തപ്പെടുന്നില്ല.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
@@ -295,7 +297,7 @@
     </message>
     <message>
         <source>About &amp;Qt</source>
-        <translation>&amp;Qt കുറിച്ചുള്ള വിവരങ്ങൾ  </translation>
+        <translation>ഏകദേശം&amp;Qt</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
@@ -443,7 +445,11 @@
     </message>
     <message>
         <source>Processing blocks on disk...</source>
-        <translation>ഡിസ്കിലെ ബ്ലോക്കുകൾ പ്രോസസ്സ് ചെയ്യുന്നു ...</translation>
+        <translation>ഡിസ്കിൽ ബ്ലോക്കുകൾ പ്രോസസ്സ് ചെയ്യുന്നു ...</translation>
+    </message>
+    <message numerus="yes">
+        <source>Processed %n block(s) of transaction history.</source>
+        <translation><numerusform>ഇടപാട് ചരിത്രത്തിന്റെ %n ബ്ലോക്കുകൾ പ്രോസസ്സ് ചെയ്തു.</numerusform><numerusform>ഇടപാട് ചരിത്രത്തിന്റെ %n ബ്ലോക്കുകൾ പ്രോസസ്സ് ചെയ്തു.</numerusform></translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -470,6 +476,22 @@
         <translation>കാലികമാണ്</translation>
     </message>
     <message>
+        <source>&amp;Load PSBT from file...</source>
+        <translation>&amp;ഫയലിൽ നിന്ന് PSBT ലോഡുചെയ്യുക ...</translation>
+    </message>
+    <message>
+        <source>Load Partially Signed Bitcoin Transaction</source>
+        <translation>ഭാഗികമായി ഒപ്പിട്ട ബിറ്റ്കോയിൻ ഇടപാട് ലോഡുചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Load PSBT from clipboard...</source>
+        <translation>ക്ലിപ്പ്ബോർഡിൽ നിന്ന് PSBT ലോഡുചെയ്യുക ...</translation>
+    </message>
+    <message>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <translation>ക്ലിപ്പ്ബോർഡിൽ നിന്ന് ഭാഗികമായി ഒപ്പിട്ട ബിറ്റ്കോയിൻ ഇടപാട് ലോഡുചെയ്യുക</translation>
+    </message>
+    <message>
         <source>Node window</source>
         <translation>നോഡ് വിൻഡോ</translation>
     </message>
@@ -487,7 +509,7 @@
     </message>
     <message>
         <source>Open a bitcoin: URI</source>
-        <translation>ഒരു ബിറ്റ്കോയിൻ : URI തുറക്കുക</translation>
+        <translation>ഒരു ബിറ്റ്കോയിൻ തുറക്കുക: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -506,8 +528,24 @@
         <translation>വാലറ്റ് പൂട്ടുക </translation>
     </message>
     <message>
+        <source>Close All Wallets...</source>
+        <translation>എല്ലാ വാലറ്റുകളും അടയ്‌ക്കുക ...</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>എല്ലാ വാലറ്റുകളും അടയ്‌ക്കുക ...</translation>
+    </message>
+    <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
         <translation>സാധ്യമായ ബിറ്റ്കോയിൻ കമാൻഡ്-ലൈൻ ഓപ്ഷനുകളുള്ള ഒരു ലിസ്റ്റ് ലഭിക്കുന്നതിന് %1 സഹായ സന്ദേശം കാണിക്കുക</translation>
+    </message>
+    <message>
+        <source>&amp;Mask values</source>
+        <translation>&amp;മാസ്ക് മൂല്യങ്ങൾ</translation>
+    </message>
+    <message>
+        <source>Mask the values in the Overview tab</source>
+        <translation>അവലോകന ടാബിൽ മൂല്യങ്ങൾ മാസ്ക് ചെയ്യുക</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -618,8 +656,12 @@
         <translation>Wallet &lt;b&gt;എൻ‌ക്രിപ്റ്റ് ചെയ്തു&lt;/b&gt;നിലവിൽ&lt;b&gt;പൂട്ടി&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>മാരാകാമായ ഒരു പിശക് സംഭവിച്ചു. ബിറ്കോയിന് സുരക്ഷിതമായി മുന്നേക് പോകാൻ സാധിക്കില്ല അതുകൊണ്ട് പ്രവർത്തനം നിര്ത്തുന്നു.</translation>
+        <source>Original message:</source>
+        <translation>യഥാർത്ഥ സന്ദേശം:</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
+        <translation>മാരകമായ ഒരു പിശക് സംഭവിച്ചു. %1 ന് മേലിൽ സുരക്ഷിതമായി തുടരാനാകില്ല, ഒപ്പം ഉപേക്ഷിക്കുകയും ചെയ്യും.</translation>
     </message>
 </context>
 <context>
@@ -646,7 +688,7 @@
     </message>
     <message>
         <source>Dust:</source>
-        <translation>പൊടി:</translation>
+        <translation>ഡസ്ട്:</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -654,7 +696,7 @@
     </message>
     <message>
         <source>Change:</source>
-        <translation>മാറ്റം</translation>
+        <translation>മാറ്റം:</translation>
     </message>
     <message>
         <source>(un)select all</source>
@@ -698,7 +740,7 @@
     </message>
     <message>
         <source>Copy label</source>
-        <translation> ലേബൽ പകർത്തുക</translation>
+        <translation>പകർത്തുക  ലേബൽ</translation>
     </message>
     <message>
         <source>Copy amount</source>
@@ -722,7 +764,7 @@
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>ഫീസ് പകർത്തു</translation>
+        <translation>പകർത്തു ഫീസ്</translation>
     </message>
     <message>
         <source>Copy after fee</source>
@@ -799,6 +841,10 @@
         <translation>വാലറ്റ് പേര്</translation>
     </message>
     <message>
+        <source>Encrypt the wallet. The wallet will be encrypted with a passphrase of your choice.</source>
+        <translation>എൻ‌ക്രിപ്റ്റ് വാലറ്റ്</translation>
+    </message>
+    <message>
         <source>Encrypt Wallet</source>
         <translation>എൻ‌ക്രിപ്റ്റ് വാലറ്റ്</translation>
     </message>
@@ -814,7 +860,7 @@
         <source>Create</source>
         <translation>സൃഷ്ടിക്കുക</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -888,7 +934,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>ബിറ്റ്‌കോയിൻ </translation>
+        <translation>ബിറ്റ്കോയിൻ</translation>
     </message>
     <message>
         <source>Error</source>
@@ -961,6 +1007,9 @@
         <source>Recent transactions</source>
         <translation>സമീപ കാല ഇടപാടുകൾ</translation>
     </message>
+    </context>
+<context>
+    <name>PSBTOperationsDialog</name>
     </context>
 <context>
     <name>PaymentServer</name>
@@ -1069,26 +1118,26 @@
     <name>ReceiveCoinsDialog</name>
     <message>
         <source>Copy label</source>
-        <translation> ലേബൽ പകർത്തുക</translation>
+        <translation>പകർത്തുക  ലേബൽ</translation>
     </message>
     <message>
         <source>Copy amount</source>
         <translation>തുക പകർത്തുക</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>വാലറ്റ് അൺലോക്കുചെയ്യാനായില്ല.</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>Address</source>
-        <translation>വിലാസം</translation>
+        <source>Amount:</source>
+        <translation>തുക:</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>തുക </translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>ലേബൽ</translation>
+        <source>Wallet:</source>
+        <translation>വാലറ്റ്:</translation>
     </message>
     </context>
 <context>
@@ -1146,7 +1195,7 @@
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>ഫീസ് പകർത്തു</translation>
+        <translation>പകർത്തു ഫീസ്</translation>
     </message>
     <message>
         <source>Copy after fee</source>
@@ -1286,10 +1335,18 @@
         <source>Close wallet</source>
         <translation>വാലറ്റ് പൂട്ടുക </translation>
     </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>എല്ലാ വാലറ്റുകളും അടയ്‌ക്കുക ...</translation>
+    </message>
     </context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>ഒരു പുതിയ വാലറ്റ് സൃഷ്ടിക്കുക</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -1306,6 +1363,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>നിലവിലെ ടാബിൽ ഒരു ഫയലിൽ ഡാറ്റ എക്സ്പോർട്ട് ചെയ്യുക</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>പിശക് </translation>
     </message>
     </context>
 <context>
@@ -1324,11 +1385,11 @@
     </message>
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>തെറ്റായ -onion അഡ്രസ് അല്ലെങ്കിൽ ഹോസ്റ്റ്നെയിം: '%s'</translation>
+        <translation>തെറ്റായ ഒണിയൻ അഡ്രസ് അല്ലെങ്കിൽ ഹോസ്റ്റ്നെയിം: '%s'</translation>
     </message>
     <message>
         <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>തെറ്റായ -proxy അഡ്രസ് അല്ലെങ്കിൽ ഹോസ്റ്റ് നെയിം : '%s'</translation>
+        <translation>തെറ്റായ -പ്രോക്സി അഡ്രസ് അല്ലെങ്കിൽ ഹോസ്റ്റ് നെയിം : '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
@@ -1415,10 +1476,6 @@
     <message>
         <source>Warning: unknown new rules activated (versionbit %i)</source>
         <translation>മുന്നറിയിപ്പ്: പുതിയ ഒരു നിയമം ആക്ടിവേറ്റ് ചെയ്തിരിക്കുന്നു (versionbit %i)</translation>
-    </message>
-    <message>
-        <source>Zapping all transactions from wallet...</source>
-        <translation>വാലെറ്റിൽ നിന്നുമുള്ള എല്ലാ ഇടപാടുകളും നശിപ്പിക്കുന്നു....</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>

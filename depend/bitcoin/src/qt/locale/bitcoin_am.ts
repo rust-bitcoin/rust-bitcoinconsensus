@@ -75,7 +75,7 @@
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation> &amp;ቀይር</translation>
+        <translation> &amp;አርም</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -327,7 +327,7 @@
     </message>
     <message>
         <source>Close Wallet...</source>
-        <translation>ዋሌት ዝጋ...</translation>
+        <translation>ዋሌት ዝጋ</translation>
     </message>
     <message>
         <source>Close wallet</source>
@@ -432,7 +432,7 @@
         <source>Create</source>
         <translation>ፍጠር</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>EditAddressDialog</name>
     </context>
@@ -513,6 +513,9 @@
     </message>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -541,20 +544,16 @@
         <source>Copy amount</source>
         <translation>መጠኑ ገልብጥ</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>Address</source>
-        <translation>አድራሻ</translation>
+        <source>Amount:</source>
+        <translation>መጠን፥</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>መጠን</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>መለያ ስም</translation>
+        <source>Wallet:</source>
+        <translation>ዋሌት</translation>
     </message>
     </context>
 <context>
@@ -664,7 +663,7 @@
     </message>
     <message>
         <source>Label</source>
-        <translation>መለያ ስም</translation>
+        <translation>መለዮ</translation>
     </message>
     <message>
         <source>Address</source>
@@ -672,7 +671,7 @@
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation>ወደ ውጪ መላክ አልተሳካም</translation>
+        <translation>መላክ አልተሳካም</translation>
     </message>
     </context>
 <context>
@@ -687,7 +686,11 @@
     </context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>አዲስ ዋሌት ፍጠር</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -704,6 +707,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>በአሁኑ ማውጫ ውስጥ ያለውን መረጃ ወደ አንድ ፋይል ላክ</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>ስህተት</translation>
     </message>
     </context>
 <context>

@@ -467,11 +467,19 @@
     </message>
     <message>
         <source>Close Wallet...</source>
-        <translation>Затвори портфейла</translation>
+        <translation>Затвори Портфейла</translation>
     </message>
     <message>
         <source>Close wallet</source>
         <translation>Затвори портфейла</translation>
+    </message>
+    <message>
+        <source>Close All Wallets...</source>
+        <translation>Затвори Всички Портфейли...</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Затвори всички портфейли</translation>
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
@@ -555,11 +563,7 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и &lt;b&gt;заключен&lt;/b&gt;</translation>
     </message>
-    <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Възникна фатална грешка. Биткойн не може да продължи безопасно и ще се изключи.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
@@ -692,7 +696,7 @@
     </message>
     <message>
         <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
-        <translation>Този етикет става червен ако някой получател получи количество, по-малко от текущия праг на остатък</translation>
+        <translation>Този етикет става червен ако някой получател получи количество, по-малко от текущия праг на прах</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -719,6 +723,10 @@
     <message>
         <source>Create Wallet</source>
         <translation>Създайте портфейл</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>портфейл</translation>
     </message>
     </context>
 <context>
@@ -1117,6 +1125,17 @@
     </message>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>or</source>
+        <translation>или</translation>
+    </message>
+    </context>
+<context>
     <name>PaymentServer</name>
     <message>
         <source>Payment request error</source>
@@ -1287,10 +1306,6 @@
         <translation>Брой връзки</translation>
     </message>
     <message>
-        <source>Current number of blocks</source>
-        <translation>Текущ брой блокове</translation>
-    </message>
-    <message>
         <source>Received</source>
         <translation>Получени</translation>
     </message>
@@ -1395,14 +1410,6 @@
         <translation>Изходящи</translation>
     </message>
     <message>
-        <source>Yes</source>
-        <translation>Да</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>Не</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>Неизвестен</translation>
     </message>
@@ -1461,12 +1468,28 @@
         <source>Copy amount</source>
         <translation>Копиране на сумата</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Не може да отключите портфейла.</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>QR Code</source>
-        <translation>QR код</translation>
+        <source>Amount:</source>
+        <translation>Количество:</translation>
+    </message>
+    <message>
+        <source>Label:</source>
+        <translation>Име:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>Съобщение:</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Портфейл</translation>
     </message>
     <message>
         <source>Copy &amp;URI</source>
@@ -1487,26 +1510,6 @@
     <message>
         <source>Payment information</source>
         <translation>Данни за плащането</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Адрес</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Количество</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Етикет</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Съобщение</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>портфейл</translation>
     </message>
 </context>
 <context>
@@ -2252,12 +2255,16 @@
         <source>Close wallet</source>
         <translation>Затвори портфейла</translation>
     </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Затвори всички портфейли</translation>
+    </message>
     </context>
 <context>
     <name>WalletFrame</name>
     <message>
-        <source>No wallet has been loaded.</source>
-        <translation>Няма зареден портфейл.</translation>
+        <source>Create a new wallet</source>
+        <translation>Създай нов портфейл</translation>
     </message>
 </context>
 <context>
@@ -2280,6 +2287,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Изнеси данните в избрания раздел към файл</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>грешка</translation>
     </message>
     <message>
         <source>Backup Wallet</source>

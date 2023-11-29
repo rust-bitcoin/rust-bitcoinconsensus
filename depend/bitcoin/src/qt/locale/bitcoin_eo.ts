@@ -70,6 +70,11 @@
         <translation>Jen viaj Bitmon-adresoj por sendi pagojn. Zorge kontrolu la sumon kaj la alsendan adreson antaŭ ol sendi.</translation>
     </message>
     <message>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>Jen viaj bitmonaj adresoj por ricevi pagojn. Estas konsilinde uzi apartan ricevan adreson por ĉiu transakcio.</translation>
+    </message>
+    <message>
         <source>&amp;Copy Address</source>
         <translation>&amp;Kopii Adreson</translation>
     </message>
@@ -236,7 +241,7 @@
     <name>BanTableModel</name>
     <message>
         <source>Banned Until</source>
-        <translation>Ekzilita ĝis</translation>
+        <translation>Ekzilita Ĝis</translation>
     </message>
 </context>
 <context>
@@ -327,7 +332,7 @@
     </message>
     <message>
         <source>Click to disable network activity.</source>
-        <translation>Alklaki por malebligi retan aktivon.</translation>
+        <translation>Alklaki por malebligi retajn agadojn.</translation>
     </message>
     <message>
         <source>Network activity disabled.</source>
@@ -462,6 +467,14 @@
         <translation>Fermi monujon</translation>
     </message>
     <message>
+        <source>Close All Wallets...</source>
+        <translation>Fermi Ĉiujn Monujojn...</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Fermi ĉiujn monujojn</translation>
+    </message>
+    <message>
         <source>default wallet</source>
         <translation>defaŭlta monujo</translation>
     </message>
@@ -487,7 +500,7 @@
     </message>
     <message>
         <source>Warning: %1</source>
-        <translation>Averta: %1</translation>
+        <translation>Averto: %1</translation>
     </message>
     <message>
         <source>Date: %1
@@ -504,7 +517,8 @@
     <message>
         <source>Wallet: %1
 </source>
-        <translation>Monujo: %1</translation>
+        <translation>Monujo: %1
+</translation>
     </message>
     <message>
         <source>Type: %1
@@ -541,8 +555,12 @@
         <translation>Monujo estas &lt;b&gt;ĉifrita&lt;/b&gt; kaj aktuale &lt;b&gt;ŝlosita&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Okazis neriparebla eraro. Bitmono ne plu povas sekure daŭri, do ĝi sekure ĉesos.</translation>
+        <source>Original message:</source>
+        <translation>Originala mesaĝo:</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
+        <translation>Neriparebla eraro okazis. %1 ne plu sekure povas daŭri kaj ĝi ĉesiĝos.</translation>
     </message>
 </context>
 <context>
@@ -706,6 +724,10 @@
         <translation>Krei Monujon</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Monujo</translation>
+    </message>
+    <message>
         <source>Wallet Name</source>
         <translation>Monujo-Nomo</translation>
     </message>
@@ -715,8 +737,7 @@
     </message>
     <message>
         <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
-        <translation>Malebligi privatajn ŝlosilojn por ĉi tiu monujo. Monujoj kun malebligitaj privataj ŝlosiloj ne havos privatajn ŝlosilojn, kaj povas havi nek HD-semon nek importatajn privatajn ŝlosilojn. Ĉi tio estas ideale por nurspektaj monujoj.
-</translation>
+        <translation>Malebligi privatajn ŝlosilojn por ĉi tiu monujo. Monujoj kun malebligitaj privataj ŝlosiloj ne havos privatajn ŝlosilojn, kaj povas havi nek HD-semon nek importatajn privatajn ŝlosilojn. Ĉi tio estas ideale por nurspektaj monujoj.</translation>
     </message>
     <message>
         <source>Disable Private Keys</source>
@@ -726,7 +747,7 @@
         <source>Create</source>
         <translation>Krei</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -1107,6 +1128,25 @@
     </message>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    <message>
+        <source>Save...</source>
+        <translation>Konservi...</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Fermi</translation>
+    </message>
+    <message>
+        <source>Total Amount</source>
+        <translation>Totala Sumo</translation>
+    </message>
+    <message>
+        <source>or</source>
+        <translation>aŭ</translation>
+    </message>
+    </context>
+<context>
     <name>PaymentServer</name>
     <message>
         <source>Payment request error</source>
@@ -1162,9 +1202,33 @@
         <source>N/A</source>
         <translation>neaplikebla</translation>
     </message>
+    <message numerus="yes">
+        <source>%n second(s)</source>
+        <translation><numerusform>%n sekundo</numerusform><numerusform>%n sekundoj</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n minute(s)</source>
+        <translation><numerusform>%n minuto</numerusform><numerusform>%n minutoj</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation><numerusform>%n horo</numerusform><numerusform>%n horoj</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation><numerusform>%n tago</numerusform><numerusform>%n tagoj</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation><numerusform>%n semajno</numerusform><numerusform>%n semajnoj</numerusform></translation>
+    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 kaj %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>%n jaro</numerusform><numerusform>%n jaroj</numerusform></translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -1259,10 +1323,6 @@
     <message>
         <source>Block chain</source>
         <translation>Blokĉeno</translation>
-    </message>
-    <message>
-        <source>Current number of blocks</source>
-        <translation>Aktuala nombro de blokoj</translation>
     </message>
     <message>
         <source>Wallet: </source>
@@ -1403,12 +1463,32 @@
         <source>Copy amount</source>
         <translation>Kopii sumon</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Ne eblis malŝlosi monujon.</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>QR Code</source>
-        <translation>QR-kodo</translation>
+        <source>Address:</source>
+        <translation>Adreso:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Sumo:</translation>
+    </message>
+    <message>
+        <source>Label:</source>
+        <translation>Etikedo:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>Mesaĝo:</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Monujo:</translation>
     </message>
     <message>
         <source>Copy &amp;URI</source>
@@ -1429,30 +1509,6 @@
     <message>
         <source>Payment information</source>
         <translation>Paginformoj</translation>
-    </message>
-    <message>
-        <source>URI</source>
-        <translation>URI</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adreso</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Sumo</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Etikedo</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Mesaĝo</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Monujo</translation>
     </message>
 </context>
 <context>
@@ -2154,10 +2210,18 @@
         <source>Close wallet</source>
         <translation>Fermi monujon</translation>
     </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Fermi ĉiujn monujojn</translation>
+    </message>
     </context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>Krei novan monujon</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -2178,6 +2242,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Eksporti la datumojn el la aktuala langeto al dosiero</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Eraro</translation>
     </message>
     <message>
         <source>Backup Wallet</source>

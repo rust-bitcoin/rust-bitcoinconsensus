@@ -70,13 +70,6 @@
         <translation>Estas son sus direcciones Bitcoin para enviar pagos. Compruebe siempre la cantidad y la dirección de recibo antes de transferir monedas.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation> 
-
- 
-Estas son sus direcciones de Bitcoin para recibir pagos. Utilice el botón 'Crear nueva dirección de recepción' en la pestaña de recepción para crear nuevas direcciones</translation>
-    </message>
-    <message>
         <source>&amp;Copy Address</source>
         <translation>Copiar dirección</translation>
     </message>
@@ -601,6 +594,10 @@ Estas son sus direcciones de Bitcoin para recibir pagos. Utilice el botón 'Crea
     </context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>Monedero</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -910,6 +907,9 @@ Estas son sus direcciones de Bitcoin para recibir pagos. Utilice el botón 'Crea
     </message>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -1004,10 +1004,6 @@ Estas son sus direcciones de Bitcoin para recibir pagos. Utilice el botón 'Crea
         <translation>Cadena de bloques</translation>
     </message>
     <message>
-        <source>Current number of blocks</source>
-        <translation>Número actual de bloques</translation>
-    </message>
-    <message>
         <source>Last block time</source>
         <translation>Hora del último bloque</translation>
     </message>
@@ -1094,12 +1090,20 @@ Estas son sus direcciones de Bitcoin para recibir pagos. Utilice el botón 'Crea
         <source>Copy amount</source>
         <translation>Copiar cantidad</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>No se pudo desbloquear la billetera.</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>QR Code</source>
-        <translation>Código QR</translation>
+        <source>Amount:</source>
+        <translation>Cuantía:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>Mensaje:</translation>
     </message>
     <message>
         <source>Copy &amp;URI</source>
@@ -1113,23 +1117,7 @@ Estas son sus direcciones de Bitcoin para recibir pagos. Utilice el botón 'Crea
         <source>&amp;Save Image...</source>
         <translation>Guardar Imagen...</translation>
     </message>
-    <message>
-        <source>Address</source>
-        <translation>Dirección</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Cantidad</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Etiqueta</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Monedero</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -1500,7 +1488,11 @@ Estas son sus direcciones de Bitcoin para recibir pagos. Utilice el botón 'Crea
     </context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>Crear una nueva billetera</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -1521,6 +1513,10 @@ Estas son sus direcciones de Bitcoin para recibir pagos. Utilice el botón 'Crea
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Exportar a un archivo los datos de esta pestaña</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Error</translation>
     </message>
     <message>
         <source>Backup Wallet</source>

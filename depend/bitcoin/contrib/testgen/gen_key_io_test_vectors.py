@@ -3,11 +3,11 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 '''
-Generate valid and invalid base58 address and private key test vectors.
+Generate valid and invalid base58/bech32(m) address and private key test vectors.
 
 Usage:
-    PYTHONPATH=../../test/functional/test_framework ./gen_key_io_test_vectors.py valid 50 > ../../src/test/data/key_io_valid.json
-    PYTHONPATH=../../test/functional/test_framework ./gen_key_io_test_vectors.py invalid 50 > ../../src/test/data/key_io_invalid.json
+    PYTHONPATH=../../test/functional/test_framework ./gen_key_io_test_vectors.py valid 70 > ../../src/test/data/key_io_valid.json
+    PYTHONPATH=../../test/functional/test_framework ./gen_key_io_test_vectors.py invalid 70 > ../../src/test/data/key_io_invalid.json
 '''
 # 2012 Wladimir J. van der Laan
 # Released under MIT License
@@ -15,8 +15,7 @@ import os
 from itertools import islice
 from base58 import b58encode_chk, b58decode_chk, b58chars
 import random
-from binascii import b2a_hex
-from segwit_addr import bech32_encode, decode, convertbits, CHARSET, Encoding
+from segwit_addr import bech32_encode, decode_segwit_address, convertbits, CHARSET, Encoding
 
 # key types
 PUBKEY_ADDRESS = 0
@@ -57,12 +56,16 @@ templates = [
   ((SCRIPT_ADDRESS,),         20, (),   (False, 'main',    None,  None), script_prefix, script_suffix),
   ((PUBKEY_ADDRESS_TEST,),    20, (),   (False, 'test',    None,  None), pubkey_prefix, pubkey_suffix),
   ((SCRIPT_ADDRESS_TEST,),    20, (),   (False, 'test',    None,  None), script_prefix, script_suffix),
+  ((PUBKEY_ADDRESS_TEST,),    20, (),   (False, 'signet',  None,  None), pubkey_prefix, pubkey_suffix),
+  ((SCRIPT_ADDRESS_TEST,),    20, (),   (False, 'signet',  None,  None), script_prefix, script_suffix),
   ((PUBKEY_ADDRESS_REGTEST,), 20, (),   (False, 'regtest', None,  None), pubkey_prefix, pubkey_suffix),
   ((SCRIPT_ADDRESS_REGTEST,), 20, (),   (False, 'regtest', None,  None), script_prefix, script_suffix),
   ((PRIVKEY,),                32, (),   (True,  'main',    False, None), (),            ()),
   ((PRIVKEY,),                32, (1,), (True,  'main',    True,  None), (),            ()),
   ((PRIVKEY_TEST,),           32, (),   (True,  'test',    False, None), (),            ()),
   ((PRIVKEY_TEST,),           32, (1,), (True,  'test',    True,  None), (),            ()),
+  ((PRIVKEY_TEST,),           32, (),   (True,  'signet',  False, None), (),            ()),
+  ((PRIVKEY_TEST,),           32, (1,), (True,  'signet',  True,  None), (),            ()),
   ((PRIVKEY_REGTEST,),        32, (),   (True,  'regtest', False, None), (),            ()),
   ((PRIVKEY_REGTEST,),        32, (1,), (True,  'regtest', True,  None), (),            ())
 ]
@@ -77,6 +80,10 @@ bech32_templates = [
   ('tb',    0, 32, (False, 'test',    None, True), Encoding.BECH32,  p2wsh_prefix),
   ('tb',    1, 32, (False, 'test',    None, True), Encoding.BECH32M, p2tr_prefix),
   ('tb',    3, 16, (False, 'test',    None, True), Encoding.BECH32M, (OP_3, 16)),
+  ('tb',    0, 20, (False, 'signet',  None, True), Encoding.BECH32,  p2wpkh_prefix),
+  ('tb',    0, 32, (False, 'signet',  None, True), Encoding.BECH32,  p2wsh_prefix),
+  ('tb',    1, 32, (False, 'signet',  None, True), Encoding.BECH32M, p2tr_prefix),
+  ('tb',    3, 32, (False, 'signet',  None, True), Encoding.BECH32M, (OP_3, 32)),
   ('bcrt',  0, 20, (False, 'regtest', None, True), Encoding.BECH32,  p2wpkh_prefix),
   ('bcrt',  0, 32, (False, 'regtest', None, True), Encoding.BECH32,  p2wsh_prefix),
   ('bcrt',  1, 32, (False, 'regtest', None, True), Encoding.BECH32M, p2tr_prefix),
@@ -121,7 +128,7 @@ def is_valid(v):
 def is_valid_bech32(v):
     '''Check vector v for bech32 validity'''
     for hrp in ['bc', 'tb', 'bcrt']:
-        if decode(hrp, v) != (None, None):
+        if decode_segwit_address(hrp, v) != (None, None):
             return True
     return False
 
@@ -154,9 +161,7 @@ def gen_valid_vectors():
             rv, payload = valid_vector_generator(template)
             assert is_valid(rv)
             metadata = {x: y for x, y in zip(metadata_keys,template[3]) if y is not None}
-            hexrepr = b2a_hex(payload)
-            if isinstance(hexrepr, bytes):
-                hexrepr = hexrepr.decode('utf8')
+            hexrepr = payload.hex()
             yield (rv, hexrepr, metadata)
 
 def gen_invalid_base58_vector(template):

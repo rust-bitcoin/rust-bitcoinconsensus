@@ -87,6 +87,9 @@
     <name>OverviewPage</name>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -106,14 +109,6 @@
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
-    <message>
-        <source>Address</source>
-        <translation>Manzil</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Yorliq</translation>
-    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>

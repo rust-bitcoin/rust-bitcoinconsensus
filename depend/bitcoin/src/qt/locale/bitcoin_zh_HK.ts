@@ -70,10 +70,6 @@
         <translation>這些是你要付款過去的 Bitcoin 位址。在付款之前，務必要檢查金額和收款位址是否正確。</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>這些是你用來收款的 Bitcoin 位址。使用在收款列表中的 新增收款位址 按鈕新增新的收款位址</translation>
-    </message>
-    <message>
         <source>&amp;Copy Address</source>
         <translation>複製地址 &amp;C</translation>
     </message>
@@ -193,7 +189,7 @@
     </message>
     <message>
         <source>Wallet to be encrypted</source>
-        <translation>將被加密的錢包</translation>
+        <translation>需要加密的錢包</translation>
     </message>
     <message>
         <source>Your wallet is about to be encrypted. </source>
@@ -327,7 +323,7 @@
     </message>
     <message>
         <source>Create Wallet...</source>
-        <translation>新增錢包...</translation>
+        <translation>建立錢包...</translation>
     </message>
     <message>
         <source>Create a new wallet</source>
@@ -458,6 +454,10 @@
     </context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>錢包</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -501,6 +501,9 @@
     </context>
 <context>
     <name>OverviewPage</name>
+    </context>
+<context>
+    <name>PSBTOperationsDialog</name>
     </context>
 <context>
     <name>PaymentServer</name>
@@ -627,18 +630,10 @@
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>Address</source>
-        <translation>地址</translation>
+        <source>Wallet:</source>
+        <translation>錢包:</translation>
     </message>
-    <message>
-        <source>Label</source>
-        <translation>標記</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>錢包</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -725,7 +720,11 @@
     </context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>新增一個錢包</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -742,6 +741,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>把目前分頁的資料匯出至檔案</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>錯誤</translation>
     </message>
     </context>
 <context>
