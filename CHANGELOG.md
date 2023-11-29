@@ -1,4 +1,4 @@
-# Unreleased
+## v0.20.2-0.6.0
 
 * Bump MSRV to rust 1.48.0 [#64](https://github.com/rust-bitcoin/rust-bitcoinconsensus/pull/64)
 
