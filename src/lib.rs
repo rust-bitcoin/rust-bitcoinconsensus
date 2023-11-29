@@ -192,6 +192,7 @@ pub fn verify_with_flags(
     flags: u32,
 ) -> Result<(), Error> {
     unsafe {
+        // On error this will have been set to one of the error variants and ret will equal 0.
         let mut error = Error::ERR_SCRIPT;
 
         let ret = bitcoinconsensus_verify_script_with_amount(
