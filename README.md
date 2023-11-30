@@ -26,18 +26,9 @@ For example, if we upgrade the Bitcoin Core code by a `Patch` version we also bu
 One side effect of this is that `crates.io` shows our release versions in yellow as if they were pre-release versions, this is due to us using a `-` which, in semantic versioning, implies a pre-release version.
 
 
-## Bitcoin Core subtree
+## Vendor Bitcoin Core
 
-We use a git subtree to vendor the Bitcoin Core code. This can be seen from the following commits that were created using `git subtree add --prefix='depend/bitcoin' git@github.com:bitcoin/bitcoin.git v0.19.2 --squash`.
-```
-f751613e62 Squashed 'depend/bitcoin/' content from commit 204cc0f575
-264282188a Merge commit 'f751613e6203770fa94143b9aba1d116512f0ce7' as 'depend/bitcoin'
-```
-
-To use a later version of Bitcoin Core, for example, v0.20.2
-```
-git subtree pull --prefix='depend/bitcoin' git@github.com:bitcoin/bitcoin.git v0.20.2 --squash
-```
+We use a script to vendor the Bitcoin Core code, `./vendor-bitcoin-core.sh v0.21.2`
 
 
 ## MSRV
