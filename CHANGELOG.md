@@ -1,3 +1,7 @@
+## 0.101.0+0.21.2
+
+* Vendor Bitcoin Core `v0.21.2`
+
 ## 0.100.0+0.20.2
 
 - Change the crate version format [#76](https://github.com/rust-bitcoin/rust-bitcoinconsensus/pull/76)
