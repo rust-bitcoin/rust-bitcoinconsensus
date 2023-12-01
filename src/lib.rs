@@ -41,24 +41,6 @@ pub const VERIFY_ALL: c_uint = VERIFY_P2SH
     | VERIFY_CHECKSEQUENCEVERIFY
     | VERIFY_WITNESS;
 
-extern "C" {
-    /// Returns `libbitcoinconsensus` version.
-    pub fn bitcoinconsensus_version() -> c_int;
-
-    /// Verifies that the transaction input correctly spends the previous
-    /// output, considering any additional constraints specified by flags.
-    pub fn bitcoinconsensus_verify_script_with_amount(
-        script_pubkey: *const c_uchar,
-        script_pubkeylen: c_uint,
-        amount: u64,
-        tx_to: *const c_uchar,
-        tx_tolen: c_uint,
-        n_in: c_uint,
-        flags: c_uint,
-        err: *mut Error,
-    ) -> c_int;
-}
-
 /// Computes flags for soft fork activation heights on the Bitcoin network.
 pub fn height_to_flags(height: u32) -> u32 {
     let mut flag = VERIFY_NONE;
@@ -154,6 +136,24 @@ pub fn verify_with_flags(
             Ok(())
         }
     }
+}
+
+extern "C" {
+    /// Returns `libbitcoinconsensus` version.
+    pub fn bitcoinconsensus_version() -> c_int;
+
+    /// Verifies that the transaction input correctly spends the previous
+    /// output, considering any additional constraints specified by flags.
+    pub fn bitcoinconsensus_verify_script_with_amount(
+        script_pubkey: *const c_uchar,
+        script_pubkeylen: c_uint,
+        amount: u64,
+        tx_to: *const c_uchar,
+        tx_tolen: c_uint,
+        n_in: c_uint,
+        flags: c_uint,
+        err: *mut Error,
+    ) -> c_int;
 }
 
 /// Errors returned by [`libbitcoinconsensus`].
