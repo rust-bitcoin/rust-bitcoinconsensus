@@ -24,7 +24,8 @@ fn main() {
         .cpp(true)
         .include("depend/bitcoin/src")
         .include("depend/bitcoin/src/secp256k1/include")
-        .define("__STDC_FORMAT_MACROS", None);
+        .define("__STDC_FORMAT_MACROS", None)
+        .flag_if_supported("-Wno-implicit-fallthrough");
 
     // **Secp256k1**
     if !cfg!(feature = "external-secp") {
