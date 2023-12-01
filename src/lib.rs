@@ -17,7 +17,7 @@ mod types;
 
 use core::fmt;
 
-use crate::types::*;
+use crate::types::{c_int, c_uchar, c_uint};
 
 /// Do not enable any verification.
 pub const VERIFY_NONE: c_uint = 0;
