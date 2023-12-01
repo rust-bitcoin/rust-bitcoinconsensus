@@ -11,7 +11,7 @@
 //!
 //! And that is exactly what this library is, the Rust bindings to `bitcoinconsensus`.
 //!
-//! [`bitcoin/doc/shared-libraries`]: <https://github.com/bitcoin/bitcoin/blob/master/doc/shared-libraries.md>
+//! [`bitcoin/doc/shared-libraries.md`]: <https://github.com/bitcoin/bitcoin/blob/master/doc/shared-libraries.md>
 
 mod types;
 
