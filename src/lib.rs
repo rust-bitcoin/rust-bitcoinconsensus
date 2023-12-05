@@ -17,7 +17,7 @@ mod types;
 
 use core::fmt;
 
-use crate::types::{c_int, c_uchar, c_uint};
+use crate::types::c_uint;
 
 /// Do not enable any verification.
 pub const VERIFY_NONE: c_uint = 0;
@@ -65,7 +65,7 @@ pub fn height_to_flags(height: u32) -> u32 {
 }
 
 /// Returns `libbitcoinconsensus` version.
-pub fn version() -> u32 { unsafe { bitcoinconsensus_version() as u32 } }
+pub fn version() -> u32 { unsafe { ffi::bitcoinconsensus_version() as u32 } }
 
 /// Verifies a single spend (input) of a Bitcoin transaction.
 ///
@@ -120,7 +120,7 @@ pub fn verify_with_flags(
     unsafe {
         let mut error = Error::ERR_SCRIPT;
 
-        let ret = bitcoinconsensus_verify_script_with_amount(
+        let ret = ffi::bitcoinconsensus_verify_script_with_amount(
             spent_output_script.as_ptr(),
             spent_output_script.len() as c_uint,
             amount,
@@ -138,22 +138,27 @@ pub fn verify_with_flags(
     }
 }
 
-extern "C" {
-    /// Returns `libbitcoinconsensus` version.
-    pub fn bitcoinconsensus_version() -> c_int;
+pub mod ffi {
+    use crate::types::{c_int, c_uchar, c_uint};
+    use crate::Error;
 
-    /// Verifies that the transaction input correctly spends the previous
-    /// output, considering any additional constraints specified by flags.
-    pub fn bitcoinconsensus_verify_script_with_amount(
-        script_pubkey: *const c_uchar,
-        script_pubkeylen: c_uint,
-        amount: u64,
-        tx_to: *const c_uchar,
-        tx_tolen: c_uint,
-        n_in: c_uint,
-        flags: c_uint,
-        err: *mut Error,
-    ) -> c_int;
+    extern "C" {
+        /// Returns `libbitcoinconsensus` version.
+        pub fn bitcoinconsensus_version() -> c_int;
+
+        /// Verifies that the transaction input correctly spends the previous
+        /// output, considering any additional constraints specified by flags.
+        pub fn bitcoinconsensus_verify_script_with_amount(
+            script_pubkey: *const c_uchar,
+            script_pubkeylen: c_uint,
+            amount: u64,
+            tx_to: *const c_uchar,
+            tx_tolen: c_uint,
+            n_in: c_uint,
+            flags: c_uint,
+            err: *mut Error,
+        ) -> c_int;
+    }
 }
 
 /// Errors returned by [`libbitcoinconsensus`].
