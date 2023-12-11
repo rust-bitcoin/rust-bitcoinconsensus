@@ -1,3 +1,7 @@
+## v0.20.2-0.6.1
+
+- Add derives on error type [#72](https://github.com/rust-bitcoin/rust-bitcoinconsensus/pull/72)
+
 ## v0.20.2-0.6.0
 
 * Bump MSRV to rust 1.48.0 [#64](https://github.com/rust-bitcoin/rust-bitcoinconsensus/pull/64)
