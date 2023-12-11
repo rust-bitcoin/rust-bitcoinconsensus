@@ -167,7 +167,7 @@ pub mod ffi {
 ///
 /// [`libbitcoinconsensus`]: <https://github.com/bitcoin/bitcoin/blob/master/doc/shared-libraries.md#errors>
 #[allow(non_camel_case_types)]
-#[derive(Debug)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq)]
 #[repr(C)]
 pub enum Error {
     /// Default value, passed to `libbitcoinconsensus` as a return parameter.
