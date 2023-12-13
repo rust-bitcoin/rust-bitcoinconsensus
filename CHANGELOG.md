@@ -1,3 +1,7 @@
+## 0.100.0+0.20.2
+
+- Change the crate version format [#75](https://github.com/rust-bitcoin/rust-bitcoinconsensus/pull/75)
+
 ## v0.20.2-0.6.1
 
 - Add derives on error type [#72](https://github.com/rust-bitcoin/rust-bitcoinconsensus/pull/72)
