@@ -4,44 +4,74 @@ name: Continuous integration
 
 jobs:
   Tests:
-    name: Tests
+    name: Test - stable toolchain
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      matrix:
-        rust:
-          - 1.48.0
-          - nightly
-          - beta
-          - stable
     steps:
       - name: Checkout Crate
-        uses: actions/checkout@v2
-        with:
-          submodules: true
+        uses: actions/checkout@v3
       - name: Checkout Toolchain
-        uses: actions-rs/toolchain@v1
-        with:
-          profile: minimal
-          toolchain: ${{ matrix.rust }}
-          override: true
-      - name: Running Cargo test
-        run: cargo test
+        # https://github.com/dtolnay/rust-toolchain
+        uses: dtolnay/rust-toolchain@stable
+      - name: Running test script
+        env:
+          DO_LINT: true
+          DO_DOCS: true
+        run: ./contrib/test.sh
+
+  Beta:
+    name: Test - beta toolchain
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - name: Checkout Crate
+        uses: actions/checkout@v3
+      - name: Checkout Toolchain
+        uses: dtolnay/rust-toolchain@beta
+      - name: Running test script
+        run: ./contrib/test.sh
+
+  Nightly:
+    name: Test - nightly toolchain
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - name: Checkout Crate
+        uses: actions/checkout@v3
+      - name: Checkout Toolchain
+        uses: dtolnay/rust-toolchain@nightly
+      - name: Install src
+        run: rustup component add rust-src
+      - name: Running test script
+        env:
+          DO_FMT: true
+          DO_DOCSRS: true
+        run: ./contrib/test.sh
+
+  MSRV:
+    name: Test - 1.48.0 toolchain
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - name: Checkout Crate
+        uses: actions/checkout@v3
+      - name: Checkout Toolchain
+        uses: dtolnay/rust-toolchain@1.48.0
+      - name: Running test script
+        run: ./contrib/test.sh
 
   Arch32bit:
-    name: Tests 32-bit
+    name: Test 32-bit version
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Crate
-        uses: actions/checkout@v2
-        with:
-          submodules: true
+        uses: actions/checkout@v3
       - name: Checkout Toolchain
-        uses: actions-rs/toolchain@v1
-        with:
-          profile: minimal
-          toolchain: stable
-          override: true
+        uses: dtolnay/rust-toolchain@stable
       - name: Add architecture i386
         run: sudo dpkg --add-architecture i386
       - name: Install i686 gcc
@@ -56,67 +86,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Crate
-        uses: actions/checkout@v2
-        with:
-          submodules: true
+        uses: actions/checkout@v3
       - name: Checkout Toolchain
-        uses: actions-rs/toolchain@v1
-        with:
-          profile: minimal
-          toolchain: stable
-          override: true
+        uses: dtolnay/rust-toolchain@stable
       - name: Install target
         run: rustup target add s390x-unknown-linux-gnu
       - name: install cross
         run: cargo install cross
       - name: run cross test
         run: cross test --target s390x-unknown-linux-gnu
-
-  Docs:
-    name: Docs
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Crate
-        uses: actions/checkout@v2
-        with:
-          submodules: true
-      - name: Checkout Toolchain
-        uses: actions-rs/toolchain@v1
-        with:
-          profile: minimal
-          toolchain: stable
-          override: true
-      - name: Create Doc
-        run: cargo doc
-
-  Clippy:
-    name: Clippy
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions-rs/toolchain@v1
-        with:
-          profile: minimal
-          toolchain: stable
-          override: true
-      - run: rustup component add clippy
-      - uses: actions-rs/cargo@v1
-        with:
-          command: clippy
-          args: --all-targets --all-features -- -D warnings
-
-  Fmt:
-    name: Fmt
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions-rs/toolchain@v1
-        with:
-          profile: minimal
-          toolchain: nightly
-          override: true
-      - run: rustup component add rustfmt
-      - uses: actions-rs/cargo@v1
-        with:
-          command: fmt
-          args: --check
