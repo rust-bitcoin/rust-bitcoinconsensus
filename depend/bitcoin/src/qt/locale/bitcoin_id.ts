@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Klik-kanan untuk mengedit alamat atau label</translation>
+        <translation>Klik-kanan untuk mengubah alamat atau label</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -27,7 +27,7 @@
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Hapus alamat yang saat ini dipilih dari daftar</translation>
+        <translation>Hapus alamat yang sementara dipilih dari daftar</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
@@ -35,7 +35,7 @@
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Salin data pada tab aktif kedalam sebuah file</translation>
+        <translation>Ekspor data dalam tab sekarang ke sebuah berkas</translation>
     </message>
     <message>
         <source>&amp;Export</source>
@@ -70,8 +70,9 @@
         <translation>Berikut ialah alamat-alamat Bitcoin Anda yang digunakan untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>Ini adalah alamat Bitcoin untuk menerima pembayaran. Gunakan tombol 'Buat alamat penerima baru' di tab terima untuk membuat alamat baru.</translation>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>Ini adalah alamat-alamat bitcoinmu untuk menerima pembayaran. Gunakan tombol 'Buat alamat penerima baru' di atas tab menerima untuk membuat alamat baru. Tanda tangan hanya bisa digunakan dengan tipe alamat 'Lama'</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -79,7 +80,7 @@
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation>Salin &amp;Label</translation>
+        <translation>Salin&amp; Label</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
@@ -185,7 +186,7 @@
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase for the wallet.</source>
-        <translation>Masukan kata sandi lama dan kata sandi baru ke dompet</translation>
+        <translation>Masukan passphrase lama dan passphrase baru ke dompet</translation>
     </message>
     <message>
         <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
@@ -482,6 +483,22 @@
         <translation>Terbaru</translation>
     </message>
     <message>
+        <source>&amp;Load PSBT from file...</source>
+        <translation>&amp;Muat PSBT dari file...</translation>
+    </message>
+    <message>
+        <source>Load Partially Signed Bitcoin Transaction</source>
+        <translation>Muat transaksi Bitcoin yang ditandatangani seperapat</translation>
+    </message>
+    <message>
+        <source>Load PSBT from clipboard...</source>
+        <translation>Muat PSBT dari clipboard...</translation>
+    </message>
+    <message>
+        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <translation>Muat transaksi Bitcoin yang ditandatangani seperapat dari clipboard</translation>
+    </message>
+    <message>
         <source>Node window</source>
         <translation>Jendela Node</translation>
     </message>
@@ -518,8 +535,24 @@
         <translation>Tutup wallet</translation>
     </message>
     <message>
+        <source>Close All Wallets...</source>
+        <translation>Tutup semua dompet...</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Tutup semua dompet</translation>
+    </message>
+    <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
         <translation>Tampilkan %1 pesan bantuan untuk mendapatkan daftar opsi baris perintah Bitcoin yang memungkinkan</translation>
+    </message>
+    <message>
+        <source>&amp;Mask values</source>
+        <translation>&amp;Nilai masker</translation>
+    </message>
+    <message>
+        <source>Mask the values in the Overview tab</source>
+        <translation>Mask nilai yang ada di tab Overview</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -630,8 +663,12 @@
         <translation>Dompet saat ini &lt;b&gt;terenkripsi&lt;/b&gt; dan &lt;b&gt;terkunci&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>Terjadi Kesalahan Fatal. Bitcoin Tidak Dapat Melanjutkan Dengan Aman Dan Akan Keluar</translation>
+        <source>Original message:</source>
+        <translation>Pesan original:</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
+        <translation>Error yang fatal telah terjadi. %1 tidak bisa berlanjut dengan selamat dan akan keluar.</translation>
     </message>
 </context>
 <context>
@@ -807,6 +844,10 @@
         <translation>Bikin dompet</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Dompet</translation>
+    </message>
+    <message>
         <source>Wallet Name</source>
         <translation>Nama Dompet</translation>
     </message>
@@ -817,6 +858,10 @@
     <message>
         <source>Encrypt Wallet</source>
         <translation>Enkripsi Dompet</translation>
+    </message>
+    <message>
+        <source>Advanced Options</source>
+        <translation>Opsi Lanjutan</translation>
     </message>
     <message>
         <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
@@ -835,8 +880,20 @@
         <translation>Buat dompet kosong</translation>
     </message>
     <message>
+        <source>Use descriptors for scriptPubKey management</source>
+        <translation>Pakai deskriptor untuk managemen scriptPubKey</translation>
+    </message>
+    <message>
+        <source>Descriptor Wallet</source>
+        <translation>Dompet Deskriptor</translation>
+    </message>
+    <message>
         <source>Create</source>
         <translation>Membuat</translation>
+    </message>
+    <message>
+        <source>Compiled without sqlite support (required for descriptor wallets)</source>
+        <translation>Dikompilasi tanpa support sqlite (dibutuhkan untuk dompet deskriptor)</translation>
     </message>
 </context>
 <context>
@@ -988,7 +1045,7 @@
     </message>
     <message>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 akan mengunduh dan menyimpan salinan Bitcoin block chain.</translation>
+        <translation>%1 akan mengunduh dan menyimpan salinan Bitcoin blockchain.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1139,10 +1196,6 @@
         <translation>Perlihatkan apabila proxy SOCKS5 default digunakan untuk berhungan dengan orang lain lewat tipe jaringan ini.</translation>
     </message>
     <message>
-        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor hidden services:</source>
-        <translation>Menggunakan proxy SOCKS5 tersendiri untuk berhubungan dengan orang lain melalui layanan Tor:</translation>
-    </message>
-    <message>
         <source>Hide the icon from the system tray.</source>
         <translation>Sembunyikan ikon dari system tray.</translation>
     </message>
@@ -1275,10 +1328,6 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Koneksi ke jaringan bitcoin melalui proxy SOCKS5 yang berbeda untuk layanan Tor tersembunyi.</translation>
-    </message>
-    <message>
         <source>&amp;Window</source>
         <translation>&amp;Jendela</translation>
     </message>
@@ -1317,6 +1366,14 @@
     <message>
         <source>Whether to show coin control features or not.</source>
         <translation>Ingin menunjukkan cara pengaturan koin atau tidak.</translation>
+    </message>
+    <message>
+        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation>Hubungkan kepada Bitcoin network menggunakan proxy SOCKS5 yang terpisah untuk servis Tor onion</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>Gunakan proxy SOCKS&amp;5 terpisah untuk mencapai peers menggunakan servis Tor onion:</translation>
     </message>
     <message>
         <source>&amp;Third party transaction URLs</source>
@@ -1452,6 +1509,129 @@
     <message>
         <source>Current total balance in watch-only addresses</source>
         <translation>Jumlah saldo di alamat hanya lihat</translation>
+    </message>
+    <message>
+        <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
+        <translation>Mode privasi diaktivasi untuk tab Overview. Untuk mengunmask nilai-nilai, hapus centang yang ada di Settings&gt;Mask values.</translation>
+    </message>
+</context>
+<context>
+    <name>PSBTOperationsDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>Sign Tx</source>
+        <translation>Tanda tangan Tx</translation>
+    </message>
+    <message>
+        <source>Broadcast Tx</source>
+        <translation>Broadcast Tx</translation>
+    </message>
+    <message>
+        <source>Copy to Clipboard</source>
+        <translation>Copy ke Clipboard</translation>
+    </message>
+    <message>
+        <source>Save...</source>
+        <translation>Simpan...</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Tutup</translation>
+    </message>
+    <message>
+        <source>Failed to load transaction: %1</source>
+        <translation>Gagal untuk memuat transaksi: %1</translation>
+    </message>
+    <message>
+        <source>Failed to sign transaction: %1</source>
+        <translation>Gagal untuk menandatangani transaksi: %1</translation>
+    </message>
+    <message>
+        <source>Could not sign any more inputs.</source>
+        <translation>Tidak bisa menandatangani lagi input apapun.</translation>
+    </message>
+    <message>
+        <source>Signed %1 inputs, but more signatures are still required.</source>
+        <translation>Menandatangankan %1 input, tetapi tanda tangan lebih banyak masih dibutuhkan.</translation>
+    </message>
+    <message>
+        <source>Signed transaction successfully. Transaction is ready to broadcast.</source>
+        <translation>Berhasil menandatangani transaksi. Transaksi sudah siap untuk di broadcast</translation>
+    </message>
+    <message>
+        <source>Unknown error processing transaction.</source>
+        <translation>Error yang tidak diketahui memproses transaksi</translation>
+    </message>
+    <message>
+        <source>Transaction broadcast successfully! Transaction ID: %1</source>
+        <translation>Transaksi berhasil di broadcast! ID Transaksi: %1</translation>
+    </message>
+    <message>
+        <source>Transaction broadcast failed: %1</source>
+        <translation>Broadcast transaksi gagal: %1</translation>
+    </message>
+    <message>
+        <source>PSBT copied to clipboard.</source>
+        <translation>PSBT disalin ke clipboard</translation>
+    </message>
+    <message>
+        <source>Save Transaction Data</source>
+        <translation>Simpan data Transaksi</translation>
+    </message>
+    <message>
+        <source>Partially Signed Transaction (Binary) (*.psbt)</source>
+        <translation>Transaksi yang ditandatangani sebagian (Binary) (*.psbt)</translation>
+    </message>
+    <message>
+        <source>PSBT saved to disk.</source>
+        <translation>PSBT disimpan ke disk.</translation>
+    </message>
+    <message>
+        <source> * Sends %1 to %2</source>
+        <translation> * Mengirim %1 ke %2</translation>
+    </message>
+    <message>
+        <source>Unable to calculate transaction fee or total transaction amount.</source>
+        <translation>Tidak dapat menghitung biaya transaksi atau jumlah total transaksi.</translation>
+    </message>
+    <message>
+        <source>Pays transaction fee: </source>
+        <translation>Membayar biaya transaksi:</translation>
+    </message>
+    <message>
+        <source>Total Amount</source>
+        <translation>Jumlah Keseluruhan</translation>
+    </message>
+    <message>
+        <source>or</source>
+        <translation>atau</translation>
+    </message>
+    <message>
+        <source>Transaction is missing some information about inputs.</source>
+        <translation>Transaksi kehilangan beberapa informasi seputar input.</translation>
+    </message>
+    <message>
+        <source>Transaction still needs signature(s).</source>
+        <translation>Transaksi masih membutuhkan tanda tangan(s).</translation>
+    </message>
+    <message>
+        <source>(But this wallet cannot sign transactions.)</source>
+        <translation>(Tetapi dompet ini tidak dapat menandatangani transaksi.)</translation>
+    </message>
+    <message>
+        <source>(But this wallet does not have the right keys.)</source>
+        <translation>(Tapi dompet ini tidak memiliki kunci yang tepat.)</translation>
+    </message>
+    <message>
+        <source>Transaction is fully signed and ready for broadcast.</source>
+        <translation>Transaksi telah ditandatangani sepenuhnya dan siap untuk broadcast.</translation>
+    </message>
+    <message>
+        <source>Transaction status is unknown.</source>
+        <translation>Status transaksi tidak diketahui.</translation>
     </message>
 </context>
 <context>
@@ -1619,6 +1799,10 @@
         <translation>Error: %1</translation>
     </message>
     <message>
+        <source>Error initializing settings: %1</source>
+        <translation>Kesalahan menginisialisasi pengaturan: %1</translation>
+    </message>
+    <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1 masih belum keluar secara aman...</translation>
     </message>
@@ -1717,10 +1901,6 @@
         <translation>Rantai blok</translation>
     </message>
     <message>
-        <source>Current number of blocks</source>
-        <translation>Jumlah blok terkini</translation>
-    </message>
-    <message>
         <source>Memory Pool</source>
         <translation>Memory Pool</translation>
     </message>
@@ -1765,10 +1945,6 @@
         <translation>Pilih satu peer untuk melihat informasi detail.</translation>
     </message>
     <message>
-        <source>Whitelisted</source>
-        <translation>Whitelist</translation>
-    </message>
-    <message>
         <source>Direction</source>
         <translation>Panduan</translation>
     </message>
@@ -1790,7 +1966,7 @@
     </message>
     <message>
         <source>The mapped Autonomous System used for diversifying peer selection.</source>
-        <translation>Autonomous System yang dipetakan digunakan untuk mendiversifikasi pilihan peer</translation>
+        <translation>Sistem Otonom yang dipetakan digunakan untuk mendiversifikasi pilihan peer</translation>
     </message>
     <message>
         <source>Mapped AS</source>
@@ -1807,6 +1983,10 @@
         <translation>Jendela Node</translation>
     </message>
     <message>
+        <source>Current block height</source>
+        <translation>Tinggi blok saat ini</translation>
+    </message>
+    <message>
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Buka file log debug %1 dari direktori data saat ini. Dapat memakan waktu beberapa detik untuk file log besar.</translation>
     </message>
@@ -1819,12 +1999,12 @@
         <translation>Menambah ukuran font</translation>
     </message>
     <message>
-        <source>Services</source>
-        <translation>Layanan</translation>
+        <source>Permissions</source>
+        <translation>Izin</translation>
     </message>
     <message>
-        <source>Ban Score</source>
-        <translation>Ban Score</translation>
+        <source>Services</source>
+        <translation>Layanan</translation>
     </message>
     <message>
         <source>Connection Time</source>
@@ -1971,14 +2151,6 @@
         <translation>keluar</translation>
     </message>
     <message>
-        <source>Yes</source>
-        <translation>Ya</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>Tidak</translation>
-    </message>
-    <message>
         <source>Unknown</source>
         <translation>Tidak diketahui</translation>
     </message>
@@ -2077,12 +2249,40 @@
         <source>Copy amount</source>
         <translation>Salin Jumlah</translation>
     </message>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Tidak dapat membuka dompet.</translation>
+    </message>
+    <message>
+        <source>Could not generate new %1 address</source>
+        <translation>Tidak dapat membuat alamat %1 baru</translation>
+    </message>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>QR Code</source>
-        <translation>Kode QR</translation>
+        <source>Request payment to ...</source>
+        <translation>Minta pembayaran ke ...</translation>
+    </message>
+    <message>
+        <source>Address:</source>
+        <translation>Alamat:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Nilai:</translation>
+    </message>
+    <message>
+        <source>Label:</source>
+        <translation>Label:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>Pesan:</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Wallet:</translation>
     </message>
     <message>
         <source>Copy &amp;URI</source>
@@ -2103,30 +2303,6 @@
     <message>
         <source>Payment information</source>
         <translation>Informasi pembayaran</translation>
-    </message>
-    <message>
-        <source>URI</source>
-        <translation>Tautan</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Alamat</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Jumlah</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Label</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Pesan</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Dompet</translation>
     </message>
 </context>
 <context>
@@ -2352,7 +2528,7 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
     </message>
     <message>
         <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation>Membuat transaksi bitcoin yang sebagian ditanda tangani (PSBT) untuk digunakan dengan contoh dompet offline %1, atau dompet yang kompatibel dengan PSBT</translation>
+        <translation>Membuat sebagian tertanda transaksi bitcoin (PSBT) untuk digunakan dengan contoh dompet offline %1, atau dompet yang kompatibel dengan PSBT</translation>
     </message>
     <message>
         <source> from wallet '%1'</source>
@@ -2373,6 +2549,22 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
     <message>
         <source>Are you sure you want to send?</source>
         <translation>Apakah anda yakin ingin mengirimkan?</translation>
+    </message>
+    <message>
+        <source>Create Unsigned</source>
+        <translation>Buat Tidak ditandai</translation>
+    </message>
+    <message>
+        <source>Save Transaction Data</source>
+        <translation>Simpan data Transaksi</translation>
+    </message>
+    <message>
+        <source>Partially Signed Transaction (Binary) (*.psbt)</source>
+        <translation>Transaksi yang ditandatangani sebagian (Binary) (*.psbt)</translation>
+    </message>
+    <message>
+        <source>PSBT saved</source>
+        <translation>PSBT disimpan</translation>
     </message>
     <message>
         <source>or</source>
@@ -2411,16 +2603,8 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
         <translation>Konfirmasi proposal transaksi</translation>
     </message>
     <message>
-        <source>Copy PSBT to clipboard</source>
-        <translation>Salin PSBT ke papan klip</translation>
-    </message>
-    <message>
         <source>Send</source>
         <translation>Kirim</translation>
-    </message>
-    <message>
-        <source>PSBT copied</source>
-        <translation>PSBT disalin</translation>
     </message>
     <message>
         <source>Watch-only balance:</source>
@@ -3188,12 +3372,28 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
         <source>Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled.</source>
         <translation>Menutup dompet terlalu lama dapat menyebabkan harus menyinkron ulang seluruh rantai jika pemangkasan diaktifkan.</translation>
     </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Tutup semua dompet</translation>
+    </message>
+    <message>
+        <source>Are you sure you wish to close all wallets?</source>
+        <translation>Apakah anda yakin ingin menutup seluruh dompet ?</translation>
+    </message>
 </context>
 <context>
     <name>WalletFrame</name>
     <message>
-        <source>No wallet has been loaded.</source>
-        <translation>Tidak ada dompent yang dimuat.</translation>
+        <source>No wallet has been loaded.
+Go to File &gt; Open Wallet to load a wallet.
+- OR -</source>
+        <translation>Tidak ada dompet yang dimuat.
+Pergi ke File &gt; Open Wallet untuk memuat dompet.
+- ATAU -</translation>
+    </message>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>Bikin dompet baru</translation>
     </message>
 </context>
 <context>
@@ -3266,6 +3466,30 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
         <translation>Ekspor data dalam tab sekarang ke sebuah berkas</translation>
     </message>
     <message>
+        <source>Error</source>
+        <translation>Kesalahan</translation>
+    </message>
+    <message>
+        <source>Unable to decode PSBT from clipboard (invalid base64)</source>
+        <translation>Tidak dapat membaca kode PSBT dari papan klip (base64 tidak valid)</translation>
+    </message>
+    <message>
+        <source>Load Transaction Data</source>
+        <translation>Memuat Data Transaksi</translation>
+    </message>
+    <message>
+        <source>Partially Signed Transaction (*.psbt)</source>
+        <translation>Transaksi yang Ditandatangani Sebagian (* .psbt)</translation>
+    </message>
+    <message>
+        <source>PSBT file must be smaller than 100 MiB</source>
+        <translation>File PSBT harus lebih kecil dari 100 MB</translation>
+    </message>
+    <message>
+        <source>Unable to decode PSBT</source>
+        <translation>Tidak dapat membaca kode PSBT</translation>
+    </message>
+    <message>
         <source>Backup Wallet</source>
         <translation>Cadangkan Dompet</translation>
     </message>
@@ -3309,10 +3533,6 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
         <translation>Pemangkasan: sinkronisasi dompet terakhir melampaui data yang sudah dipangkas. Anda perlu -reindex (unduh seluruh blockchain lagi jika terjadi node pemangkasan)</translation>
     </message>
     <message>
-        <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Error: Kesalahan internal fatal terjadi, lihat debug.log untuk detailnya</translation>
-    </message>
-    <message>
         <source>Pruning blockstore...</source>
         <translation>Memangkas blockstore...</translation>
     </message>
@@ -3323,10 +3543,6 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
     <message>
         <source>The %s developers</source>
         <translation>Pengembang %s</translation>
-    </message>
-    <message>
-        <source>Can't generate a change-address key. No keys in the internal keypool and can't generate any keys.</source>
-        <translation>Tidak bisa mengenerasi sebuah kunci ganti-alamat. Tidak ada kunci di internal keypool dan tidak bisa mengenerasi kunci apapun</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
@@ -3341,12 +3557,28 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
         <translation>Kesalahan membaca %s! Semua kunci dibaca dengan benar, tetapi data transaksi atau entri buku alamat mungkin hilang atau salah.</translation>
     </message>
     <message>
+        <source>More than one onion bind address is provided. Using %s for the automatically created Tor onion service.</source>
+        <translation>Lebih dari satu alamat Onion Bind tersedia. Menggunakan %s untuk membuat Tor onion secara otomatis.</translation>
+    </message>
+    <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
         <translation>Periksa apakah tanggal dan waktu komputer anda benar! Jika jam anda salah, %s tidak akan berfungsi dengan baik.</translation>
     </message>
     <message>
         <source>Please contribute if you find %s useful. Visit %s for further information about the software.</source>
         <translation>Silakan berkontribusi jika %s berguna. Kunjungi %s untuk informasi lebih lanjut tentang perangkat lunak.</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to prepare the statement to fetch sqlite wallet schema version: %s</source>
+        <translation>SQLiteDatabase: Gagal menyiapkan pernyataan untuk mengambil versi skema dompet sqlite: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to prepare the statement to fetch the application id: %s</source>
+        <translation>SQLiteDatabase: Gagal menyiapkan pernyataan untuk mengambil id aplikasi: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Unknown sqlite wallet schema version %d. Only version %d is supported</source>
+        <translation>SQLiteDatabase: Versi skema dompet sqlite tidak diketahui %d. Hanya versi %d yang didukung</translation>
     </message>
     <message>
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
@@ -3375,14 +3607,6 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
         <translation>Peringatan: Kami tampaknya tidak sepenuhnya setuju dengan peers kami! Anda mungkin perlu memutakhirkan, atau nodes lain mungkin perlu dimutakhirkan.</translation>
-    </message>
-    <message>
-        <source>%d of last 100 blocks have unexpected version</source>
-        <translation>%d dari 100 blocks terakhir mempunyai versi yang tak terduga</translation>
-    </message>
-    <message>
-        <source>%s corrupt, salvage failed</source>
-        <translation>%s rusak, gagal menyelamatkan</translation>
     </message>
     <message>
         <source>-maxmempool must be at least %d MB</source>
@@ -3461,6 +3685,14 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
         <translation>Gagal untuk scan ulang dompet saat inisialisasi.</translation>
     </message>
     <message>
+        <source>Failed to verify database</source>
+        <translation>Gagal memverifikasi database</translation>
+    </message>
+    <message>
+        <source>Ignoring duplicate -wallet %s.</source>
+        <translation>Mengabaikan duplikat -dompet %s.</translation>
+    </message>
+    <message>
         <source>Importing...</source>
         <translation>mengimpor...</translation>
     </message>
@@ -3477,16 +3709,36 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
         <translation>Izin P2P yang tidak sah: '%s'</translation>
     </message>
     <message>
-        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
-        <translation>Jumlah yang tidak sah untuk -%s=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
         <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
-        <translation>Jumlah yang tidak sah untuk -discardfee-&lt;amount&gt;: '%s'</translation>
+        <translation>Jumlah yang tidak benar untuk -discardfee-&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
         <translation>Jumlah yang tidak saf untuk -fallbackfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to execute statement to verify database: %s</source>
+        <translation>SQLiteDatabase: Gagal menjalankan pernyataan untuk memverifikasi database: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to fetch sqlite wallet schema version: %s</source>
+        <translation>SQLiteDatabase: Gagal mengambil versi skema dompet sqlite: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to fetch the application id: %s</source>
+        <translation>SQLiteDatabase: Gagal mengambil id aplikasi: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to prepare statement to verify database: %s</source>
+        <translation>SQLiteDatabase: Gagal menyiapkan pernyataan untuk memverifikasi database: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Failed to read database verification error: %s</source>
+        <translation>SQLiteDatabase: Gagal membaca kesalahan verifikasi database: %s</translation>
+    </message>
+    <message>
+        <source>SQLiteDatabase: Unexpected application id. Expected %u, got %u</source>
+        <translation>SQLiteDatabase: ID aplikasi tidak terduga. Diharapkan %u, dapat %u</translation>
     </message>
     <message>
         <source>Specified blocks directory "%s" does not exist.</source>
@@ -3507,10 +3759,6 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
     <message>
         <source>Loading P2P addresses...</source>
         <translation>Memuat alamat P2P....</translation>
-    </message>
-    <message>
-        <source>Error: Disk space is too low!</source>
-        <translation>Eror: Kapasitas penyimpanan penuh!</translation>
     </message>
     <message>
         <source>Loading banlist...</source>
@@ -3577,12 +3825,40 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
         <translation>Error: Mendengarkan koneksi yang masuk gagal (dengarkan kesalahan yang dikembalikan %s)</translation>
     </message>
     <message>
+        <source>Cannot upgrade a non HD split wallet without upgrading to support pre split keypool. Please use version 169900 or no version specified.</source>
+        <translation>Tidak dapat mengupgrade dompet split non HD tanpa mengupgrade untuk mendukung keypool pra-split. Harap gunakan versi 169900 atau bukan versi yang ditentukan.</translation>
+    </message>
+    <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>Jumlah transaksi terlalu kecil untuk dikirim setelah biaya dikurangi</translation>
     </message>
     <message>
+        <source>This error could occur if this wallet was not shutdown cleanly and was last loaded using a build with a newer version of Berkeley DB. If so, please use the software that last loaded this wallet</source>
+        <translation>Kesalahan ini dapat terjadi jika dompet ini tidak dimatikan dengan bersih dan terakhir dimuat menggunakan build dengan versi Berkeley DB yang lebih baru. Jika demikian, silakan gunakan perangkat lunak yang terakhir memuat dompet ini</translation>
+    </message>
+    <message>
+        <source>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</source>
+        <translation>Ini adalah biaya transaksi maksimum yang Anda bayarkan (selain biaya normal) untuk memprioritaskan penghindaran pengeluaran sebagian daripada pemilihan koin biasa.</translation>
+    </message>
+    <message>
+        <source>Transaction needs a change address, but we can't generate it. Please call keypoolrefill first.</source>
+        <translation>Transaksi membutuhkan alamat perubahan, tetapi kami tidak dapat membuatnya. Silahkan hubungi keypoolrefill terlebih dahulu.</translation>
+    </message>
+    <message>
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>Anda perlu membangun kembali basis data menggunakan -reindex untuk kembali ke mode tidak dipangkas. Ini akan mengunduh ulang seluruh blockchain</translation>
+    </message>
+    <message>
+        <source>A fatal internal error occurred, see debug.log for details</source>
+        <translation>Terjadi kesalahan internal yang fatal, lihat debug.log untuk mengetahui detailnya</translation>
+    </message>
+    <message>
+        <source>Cannot set -peerblockfilters without -blockfilterindex.</source>
+        <translation>Tidak dapat menyetel -peerblockfilters tanpa -blockfilterindex.</translation>
+    </message>
+    <message>
+        <source>Disk space is too low!</source>
+        <translation>Ruang disk terlalu sedikit!</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3595,6 +3871,14 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
     <message>
         <source>Error: Disk space is low for %s</source>
         <translation>Eror: Kapasitas penyimpanan penuh untuk %s</translation>
+    </message>
+    <message>
+        <source>Error: Keypool ran out, please call keypoolrefill first</source>
+        <translation>Error: Keypool habis, harap panggil keypoolrefill terlebih dahulu</translation>
+    </message>
+    <message>
+        <source>Fee rate (%s) is lower than the minimum fee rate setting (%s)</source>
+        <translation>Tarif biaya (%s) lebih rendah dari pengaturan tarif biaya minimum (%s)</translation>
     </message>
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
@@ -3615,6 +3899,10 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Perlu menentukan port dengan -whitebind: '%s'</translation>
+    </message>
+    <message>
+        <source>No proxy server specified. Use -proxy=&lt;ip&gt; or -proxy=&lt;ip:port&gt;.</source>
+        <translation>Tidak ada server proxy yang ditentukan. Gunakan -proxy=&lt;ip&gt; atau -proxy=&lt;ip:port&gt;.</translation>
     </message>
     <message>
         <source>Prune mode is incompatible with -blockfilterindex.</source>
@@ -3642,7 +3930,7 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
     </message>
     <message>
         <source>Specified -walletdir "%s" is not a directory</source>
-        <translation>-walletdir yang dispesifikasi "%s" bukan sebuah direktori</translation>
+        <translation>-walletdir yang dispesifikasi "%s" bukan direktori</translation>
     </message>
     <message>
         <source>The specified config file %s does not exist
@@ -3691,10 +3979,6 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
         <translation>Peringatan: Aturan baru yang tidak diketahui diaktifkan (versionbit %i)</translation>
     </message>
     <message>
-        <source>Zapping all transactions from wallet...</source>
-        <translation>Setiap transaksi dalam dompet sedang di-'Zap'...</translation>
-    </message>
-    <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
         <translation>-maxtxfee disetel sangat tinggi! Biaya sebesar ini bisa dibayar dengan 1 transaksi.</translation>
     </message>
@@ -3707,16 +3991,8 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
         <translation>Panjang total dari versi string jaringan (%i) melewati panjang maximum (%i). Kurangi nomornya atau besar dari uacomments</translation>
     </message>
     <message>
-        <source>Warning: Wallet file corrupt, data salvaged! Original %s saved as %s in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Peringatan: Berkas dompet rusak, data diselamatkan! Original %s disimpan sebagai %s didalam %s; kalau saldo atau transaksi salah, kamu harus memulihkan dari backup.</translation>
-    </message>
-    <message>
         <source>%s is set very high!</source>
         <translation>%s diset sangat tinggi!</translation>
-    </message>
-    <message>
-        <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
-        <translation>Terjadi kesalahan saat memuat dompet %s duplikat -wallet  nama file yang diterapkan</translation>
     </message>
     <message>
         <source>Starting network threads...</source>
@@ -3753,10 +4029,6 @@ Catatan: Karena biaya dihitung berdasarkan per byte, biaya "100 satoshi per kB" 
     <message>
         <source>Insufficient funds</source>
         <translation>Saldo tidak mencukupi</translation>
-    </message>
-    <message>
-        <source>Cannot upgrade a non HD split wallet without upgrading to support pre split keypool. Please use -upgradewallet=169900 or -upgradewallet with no version specified.</source>
-        <translation>Tidak dapat mempebaharui sebuah dompet non HD split tanpa memperbaharui ke suport pre split keypool. Harap menggunakan -upgradewallet=169900 atau -upgradewallet tanpa memspesifikasi versi</translation>
     </message>
     <message>
         <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>

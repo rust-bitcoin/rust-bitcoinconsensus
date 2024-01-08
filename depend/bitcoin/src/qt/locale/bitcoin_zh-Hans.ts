@@ -70,6 +70,12 @@
         <translation>这是你的比特币发币地址。发送前请确认发送数量和接收地址</translation>
     </message>
     <message>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>这是你的比特币接收地址。点击接收选项卡中“创建新的接收地址”按钮来创建新的地址。
+签名只能使用“传统”类型的地址。</translation>
+    </message>
+    <message>
         <source>&amp;Copy Address</source>
         <translation>复制地址</translation>
     </message>
@@ -117,7 +123,7 @@
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>密码输入框</translation>
+        <translation>密码对话框</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
@@ -199,6 +205,9 @@
     <name>OverviewPage</name>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -218,14 +227,6 @@
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
-    <message>
-        <source>Address</source>
-        <translation>地址</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>标签</translation>
-    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>

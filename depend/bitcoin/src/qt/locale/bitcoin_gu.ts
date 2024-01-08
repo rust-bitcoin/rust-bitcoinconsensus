@@ -3,7 +3,7 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Right-click to edit address or label</translation>
+        <translation>સરનામું અથવા લેબલ બદલવા માટે જમણું-ક્લિક કરો</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -19,7 +19,7 @@
     </message>
     <message>
         <source>&amp;Copy</source>
-        <translation>નકલ કરો</translation>
+        <translation>&amp; નકલ કરો</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
@@ -59,7 +59,7 @@
     </message>
     <message>
         <source>Sending addresses</source>
-        <translation>સરનામા મોકલવા માં અવિરહીયા છે..</translation>
+        <translation>મોકલવા માટે ના સરનામાં</translation>
     </message>
     <message>
         <source>Receiving addresses</source>
@@ -70,8 +70,10 @@
         <translation>આ તમારા ચુકવણી કરવા માટે ના સરનામાં છે, હંમેશા કિંમત અને મોકલવાના ના સરનામાં ચકાસી લેવા સિક્કા આપતા પહેલા.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>આ બધા બીટકોઈન ચુકવણી ના સરનામા છે. </translation>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>આ તમારુ ચૂકવણું લેવા માટે નું સરનામા છે. નવું સરનામું બનાવા માટે "મેળવવા" માટે ની ટેબ માં "ચૂકવણું લેવા માટે નવું સરનામુ બનાવો" બટન વાપરો.
+ડિજિટલી સહી કરવા માટે 'legacy એટલેકે જુના પ્રકાર નુ' પ્રકાર નું સરનામું હોવું જરૂરી છે.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -91,7 +93,7 @@
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>અલ્પવિરામ થી જુદી પડલી માહિતી ની યાદી (.સીએસવી)</translation>
+        <translation>અલ્પવિરામ થી જુદા પડલી માહિતી ની યાદી (*.csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
@@ -110,7 +112,7 @@
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(લેબલ નથી)</translation>
+        <translation>લેબલ નથી</translation>
     </message>
 </context>
 <context>
@@ -165,7 +167,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>ચેતવણી: જો તમે તમારું પાકીટ એન્ક્રિપ્ટ કરો છો અને તમારો ગુપ્ત શબ્દ ખોવાઈ જાય છે, તો તમે તમારા બધા બિટકોઇન્સ ગુમાવશો!</translation>
+        <translation>ચેતવણી: જો તમે તમારું વletલેટ એન્ક્રિપ્ટ કરો છો અને તમારો પાસફ્રેઝ ખોવાઈ જાય છે, તો તમે તમારા બધા બિટકોઇન્સ ગુમાવશો!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -223,6 +225,9 @@
     <name>OverviewPage</name>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -242,14 +247,6 @@
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
-    <message>
-        <source>Address</source>
-        <translation>સરનામુ</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>ચિઠ્ઠી</translation>
-    </message>
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -302,7 +299,7 @@
     <name>TransactionView</name>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>અલ્પવિરામ થી જુદા પડલી માહિતી ની યાદી</translation>
+        <translation>અલ્પવિરામ થી જુદા પડલી માહિતી ની યાદી (*.csv)</translation>
     </message>
     <message>
         <source>Label</source>

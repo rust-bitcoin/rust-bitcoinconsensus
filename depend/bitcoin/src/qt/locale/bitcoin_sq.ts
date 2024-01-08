@@ -70,8 +70,9 @@
         <translation>Këto janë Bitcoin adresat e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>Këto janë adresat tuaja Bitcoin për të marrë pagesa. Përdorni butonin 'Krijo adresë të re marrëse' në skedën e marrjes për të krijuar adresa të reja.</translation>
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>Këto janë adresat tuaja të Bitcoin për të marrë pagesa. Përdorni butonin 'Krijo adresë të re marrëse' në skedën e marrjes për të krijuar adresa të reja. Nënshkrimi është i mundur vetëm me adresa të tipit 'trashëgimi'.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -189,7 +190,7 @@
     </message>
     <message>
         <source>Your wallet is about to be encrypted. </source>
-        <translation>Portofoli juaj do të enkriptohet.</translation>
+        <translation>Portofoli juaj do të enkriptohet</translation>
     </message>
     <message>
         <source>Your wallet is now encrypted. </source>
@@ -366,6 +367,10 @@
     </context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>Portofol</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -467,6 +472,9 @@
     </message>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -523,30 +531,22 @@
         <source>Clear</source>
         <translation>Pastro</translation>
     </message>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Nuk mund të ç'kyçet portofoli.</translation>
+    </message>
     </context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
+        <source>Amount:</source>
+        <translation>Shuma:</translation>
+    </message>
+    <message>
         <source>Copy &amp;Address</source>
         <translation>&amp;Kopjo adresen</translation>
     </message>
-    <message>
-        <source>Address</source>
-        <translation>Adresë</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Sasia</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Etiketë</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Portofol</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -810,6 +810,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Eksporto të dhënat e skedës korrente në një skedar</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Problem</translation>
     </message>
     </context>
 <context>

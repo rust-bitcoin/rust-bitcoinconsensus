@@ -70,10 +70,6 @@
         <translation>Šīs ir jūsu Bitcoin adreses, kuras izmantojamas maksājumu veikšanai. Vienmēr pārbaudiet summu un saņēmēja adresi pirms monētu nosūtīšanas.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>Šīs ir jūsu Bitcoin adreses, kuras izmantojamas maksājumu saņemšanai. Izmantojiet 'Izveidot jaunu saņemšanas adresi' pogu 'saņemt' cilnē, lai izveidotu jaunas adreses.</translation>
-    </message>
-    <message>
         <source>&amp;Copy Address</source>
         <translation>&amp;Kopēt adresi</translation>
     </message>
@@ -153,7 +149,7 @@
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>Lai veiktu šo darbību, nepieciešama jūsu maciņa slepenā frāze maciņa atšifrēšanai.</translation>
+        <translation>Lai veiktu šo darbību, nepieciešama jūsu maciņa slepenā frāze maciņa dekriptēšanai.</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
@@ -466,6 +462,10 @@
     </context>
 <context>
     <name>CreateWalletDialog</name>
+    <message>
+        <source>Wallet</source>
+        <translation>Maciņš</translation>
+    </message>
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -735,6 +735,9 @@
     </message>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    </context>
+<context>
     <name>PaymentServer</name>
     </context>
 <context>
@@ -829,10 +832,6 @@
         <translation>Bloku virkne</translation>
     </message>
     <message>
-        <source>Current number of blocks</source>
-        <translation>Pašreizējais bloku skaits</translation>
-    </message>
-    <message>
         <source>Last block time</source>
         <translation>Pēdējā bloka laiks</translation>
     </message>
@@ -915,8 +914,16 @@
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>QR Code</source>
-        <translation>QR Kods</translation>
+        <source>Amount:</source>
+        <translation>Daudzums:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>Ziņojums:</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Maciņš:</translation>
     </message>
     <message>
         <source>Copy &amp;URI</source>
@@ -930,23 +937,7 @@
         <source>&amp;Save Image...</source>
         <translation>&amp;Saglabāt Attēlu...</translation>
     </message>
-    <message>
-        <source>Address</source>
-        <translation>Adrese</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Daudzums</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Nosaukums</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Maciņš</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -1274,6 +1265,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Datus no tekošā ieliktņa eksportēt uz failu</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Kļūda</translation>
     </message>
     </context>
 <context>

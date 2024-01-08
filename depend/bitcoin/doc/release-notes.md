@@ -1,9 +1,9 @@
-0.20.2 Release Notes
+0.21.2 Release Notes
 ====================
 
-Bitcoin Core version 0.20.2 is now available from:
+Bitcoin Core version 0.21.2 is now available from:
 
-  <https://bitcoincore.org/bin/bitcoin-core-0.20.2/>
+  <https://bitcoincore.org/bin/bitcoin-core-0.21.2/>
 
 This minor release includes various bug fixes and performance
 improvements, as well as updated translations.
@@ -41,125 +41,69 @@ From Bitcoin Core 0.20.0 onwards, macOS versions earlier than 10.12 are no
 longer supported. Additionally, Bitcoin Core does not yet change appearance
 when macOS "dark mode" is activated.
 
-Known Bugs
-==========
 
-The process for generating the source code release ("tarball") has changed in an
-effort to make it more complete, however, there are a few regressions in
-this release:
-
-- The generated `configure` script is currently missing, and you will need to
-  install autotools and run `./autogen.sh` before you can run
-  `./configure`. This is the same as when checking out from git.
-
-- Instead of running `make` simply, you should instead run
-  `BITCOIN_GENBUILD_NO_GIT=1 make`.
-
-Notable changes
-===============
-
-Changes regarding misbehaving peers
------------------------------------
-
-Peers that misbehave (e.g. send us invalid blocks) are now referred to as
-discouraged nodes in log output, as they're not (and weren't) strictly banned:
-incoming connections are still allowed from them, but they're preferred for
-eviction.
-
-Furthermore, a few additional changes are introduced to how discouraged
-addresses are treated:
-
-- Discouraging an address does not time out automatically after 24 hours
-  (or the `-bantime` setting). Depending on traffic from other peers,
-  discouragement may time out at an indeterminate time.
-
-- Discouragement is not persisted over restarts.
-
-- There is no method to list discouraged addresses. They are not returned by
-  the `listbanned` RPC. That RPC also no longer reports the `ban_reason`
-  field, as `"manually added"` is the only remaining option.
-
-- Discouragement cannot be removed with the `setban remove` RPC command.
-  If you need to remove a discouragement, you can remove all discouragements by
-  stop-starting your node.
-
-Notification changes
---------------------
-
-`-walletnotify` notifications are now sent for wallet transactions that are
-removed from the mempool because they conflict with a new block. These
-notifications were sent previously before the v0.19 release, but had been
-broken since that release (bug
-[#18325](https://github.com/bitcoin/bitcoin/issues/18325)).
-
-PSBT changes
-------------
-
-PSBTs will contain both the non-witness utxo and the witness utxo for segwit
-inputs in order to restore compatibility with wallet software that are now
-requiring the full previous transaction for segwit inputs. The witness utxo
-is still provided to maintain compatibility with software which relied on its
-existence to determine whether an input was segwit.
-
-0.20.2 change log
+0.21.2 change log
 =================
 
 ### P2P protocol and network code
 
-- #19620 Add txids with non-standard inputs to reject filter (sdaftuar)
-- #20146 Send post-verack handshake messages at most once (MarcoFalke)
+- #21644 use NetPermissions::HasFlag() in CConnman::Bind() (jonatack)
+- #22569 Rate limit the processing of rumoured addresses (sipa)
 
 ### Wallet
 
-- #19740 Simplify and fix CWallet::SignTransaction (achow101)
+- #21907 Do not iterate a directory if having an error while accessing it (hebasto)
 
-### RPC and other APIs
+### RPC
 
-- #19836 Properly deserialize txs with witness before signing (MarcoFalke)
-- #20731 Add missing description of vout in getrawtransaction help text (benthecarman)
+- #19361 Reset scantxoutset progress before inferring descriptors (prusnak)
 
-### Build system
+### Build System
 
-- #20142 build: set minimum required Boost to 1.48.0 (fanquake)
-- #20298 use the new plistlib API (jonasschnelli)
-- #20880 gitian: Use custom MacOS code signing tool (achow101)
-- #22190 Use latest signapple commit (achow101)
+- #21932 depends: update Qt 5.9 source url (kittywhiskers)
+- #22017 Update Windows code signing certificate (achow101)
+- #22191 Use custom MacOS code signing tool (achow101)
+- #22713 Fix build with Boost 1.77.0 (sizeofvoid)
 
 ### Tests and QA
 
-- #19839 Set appveyor vm version to previous Visual Studio 2019 release. (sipsorcery)
-- #19842 Update the vcpkg checkout commit ID in appveyor config. (sipsorcery)
-- #20562 Test that a fully signed tx given to signrawtx is unchanged (achow101)
+- #20182 Build with --enable-werror by default, and document exceptions (hebasto)
+- #20535 Fix intermittent feature_taproot issue (MarcoFalke)
+- #21663 Fix macOS brew install command (hebasto)
+- #22279 add missing ECCVerifyHandle to base_encode_decode (apoelstra)
+- #22730 Run fuzzer task for the master branch only (hebasto)
+
+### GUI
+
+- #277 Do not use QClipboard::Selection on Windows and macOS. (hebasto)
+- #280 Remove user input from URI error message (prayank23)
+- #365 Draw "eye" sign at the beginning of watch-only addresses (hebasto)
 
 ### Miscellaneous
 
-- #19192 Extract net permissions doc (MarcoFalke)
-- #19777 Correct description for getblockstats's txs field (shesek)
-- #20080 Strip any trailing / in -datadir and -blocksdir paths (hebasto)
-- #20082 fixes read buffer to use min rather than max (EthanHeilman)
-- #20141 Avoid the use of abs64 in timedata (sipa)
-- #20756 Add missing field (permissions) to the getpeerinfo help (amitiuttarwar)
-- #20861 BIP 350: Implement Bech32m and use it for v1+ segwit addresses (sipa)
-- #22124 Update translations after closing 0.20.x on Transifex (hebasto)
-- #21471 fix bech32_encode calls in gen_key_io_test_vectors.py (sipa)
-- #22837 mention bech32m/BIP350 in doc/descriptors.md (sipa)
+- #22002 Fix crash when parsing command line with -noincludeconf=0 (MarcoFalke)
+- #22137 util: Properly handle -noincludeconf on command line (take 2) (MarcoFalke)
+
 
 Credits
 =======
 
 Thanks to everyone who directly contributed to this release:
 
-- Aaron Clauson
-- Amiti Uttarwar
 - Andrew Chow
-- Ethan Heilman
+- Andrew Poelstra
 - fanquake
 - Hennadii Stepanov
-- Jonas Schnelli
+- Jon Atack
+- Kittywhiskers Van Gogh
+- Luke Dashjr
 - MarcoFalke
-- Nadav Ivgi
+- Pavol Rusnak
 - Pieter Wuille
-- Suhas Daftuar
+- prayank23
+- Rafael Sadowski
+- W. J. van der Laan
+
 
 As well as to everyone that helped with translations on
 [Transifex](https://www.transifex.com/bitcoin/bitcoin/).

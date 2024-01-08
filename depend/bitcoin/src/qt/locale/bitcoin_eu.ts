@@ -70,10 +70,6 @@
         <translation>Hauek dira zuk dirua jaso dezaketen Bitcoin helbideak. Egiaztatu beti diru-kopurua eta dirua jasoko duen helbidea zuzen egon daitezen, txanponak bidali baino lehen.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.</source>
-        <translation>Hauek dira ordainketak jasotzeko zure Bitcoin helbideak. Jaso taulako 'Jasotzeko helbide berri bat sortu' botoia erabili helbide berri bat sortzeko.</translation>
-    </message>
-    <message>
         <source>&amp;Copy Address</source>
         <translation>&amp;Helbidea kopiatu</translation>
     </message>
@@ -399,7 +395,7 @@
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Sinatu mezuak Bitcoinen helbideekin, jabetza frogatzeko.</translation>
+        <translation>Sinatu mezuak Bitcoinen helbideekin, zure jabea zarela frogatzeko.</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
@@ -423,7 +419,7 @@
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation> Bidalketa-helbideen eta etiketen zerrenda erakutsi</translation>
+        <translation>Erakutsi bidalketa-helbideen eta etiketen zerrenda</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -433,10 +429,6 @@
         <source>&amp;Command-line options</source>
         <translation>&amp;Komando-lerroaren aukerak</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network</source>
-        <translation><numerusform>%n konexio aktibo Bitcoin sarera</numerusform><numerusform>%n konexio aktibo Bitcoin sarera</numerusform></translation>
-    </message>
     <message>
         <source>Indexing blocks on disk...</source>
         <translation>Blokeak diskoan indexatzen...</translation>
@@ -444,10 +436,6 @@
     <message>
         <source>Processing blocks on disk...</source>
         <translation>Blokeak diskoan prozesatzen...</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>Transakzioen historiako %n bloke prozesatuta.</numerusform><numerusform>Transakzioen historiako %n bloke prozesatuta.</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -508,6 +496,14 @@
     <message>
         <source>Close wallet</source>
         <translation>Diruzorroa itxi</translation>
+    </message>
+    <message>
+        <source>Close All Wallets...</source>
+        <translation>Diruzorro guztiak itxi...</translation>
+    </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Diruzorro guztiak itxi</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -574,8 +570,7 @@
     <message>
         <source>Type: %1
 </source>
-        <translation>Mota: %1
-</translation>
+        <translation>Mota: %1</translation>
     </message>
     <message>
         <source>Label: %1
@@ -599,11 +594,11 @@
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation>HD gakoaren sorrera &lt;b&gt;gaituta&lt;/b&gt; dago</translation>
+        <translation>HD gakoa sortzea &lt;b&gt;gaituta&lt;/b&gt; dago</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>HD gakoaren sorrera &lt;b&gt;desgaituta&lt;/b&gt; dago</translation>
+        <translation>HD gakoa sortzea &lt;b&gt;desgaituta&lt;/b&gt; dago</translation>
     </message>
     <message>
         <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
@@ -616,6 +611,10 @@
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Zorroa &lt;b&gt;enkriptatuta&lt;/b&gt; eta &lt;b&gt;blokeatuta&lt;/b&gt; dago une honetan</translation>
+    </message>
+    <message>
+        <source>Original message:</source>
+        <translation>Jatorrizko mezua:</translation>
     </message>
     </context>
 <context>
@@ -767,6 +766,10 @@
         <translation>Diruzorroa sortu</translation>
     </message>
     <message>
+        <source>Wallet</source>
+        <translation>Diru-zorroa</translation>
+    </message>
+    <message>
         <source>Wallet Name</source>
         <translation>Diruzorroaren izena</translation>
     </message>
@@ -775,14 +778,22 @@
         <translation>Diruzorroa enkriptatu</translation>
     </message>
     <message>
+        <source>Advanced Options</source>
+        <translation>Aukera aurreratuak</translation>
+    </message>
+    <message>
         <source>Disable Private Keys</source>
         <translation>Desgaitu gako pribatuak</translation>
+    </message>
+    <message>
+        <source>Descriptor Wallet</source>
+        <translation>Deskriptorearen zorroa</translation>
     </message>
     <message>
         <source>Create</source>
         <translation>Sortu</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -1095,6 +1106,21 @@
     </message>
     </context>
 <context>
+    <name>PSBTOperationsDialog</name>
+    <message>
+        <source>Copy to Clipboard</source>
+        <translation>Kopiatu arbelera</translation>
+    </message>
+    <message>
+        <source>Save...</source>
+        <translation>Gorde...</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Itxi</translation>
+    </message>
+    </context>
+<context>
     <name>PaymentServer</name>
     <message>
         <source>Payment request error</source>
@@ -1171,34 +1197,30 @@
         <source>Copy amount</source>
         <translation>zenbatekoaren kopia</translation>
     </message>
-</context>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Ezin da diruzorroa desblokeatu.</translation>
+    </message>
+    </context>
 <context>
     <name>ReceiveRequestDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>Kopurua:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>Mezua:</translation>
+    </message>
+    <message>
+        <source>Wallet:</source>
+        <translation>Diruzorroa:</translation>
+    </message>
     <message>
         <source>Copy &amp;Address</source>
         <translation>&amp;Helbidea kopiatu</translation>
     </message>
-    <message>
-        <source>Address</source>
-        <translation>Helbidea</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Kopurua</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Izendapen</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Mezua</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>Diru-zorroa</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -1650,10 +1672,18 @@
         <source>Close wallet</source>
         <translation>Diruzorroa itxi</translation>
     </message>
+    <message>
+        <source>Close all wallets</source>
+        <translation>Diruzorro guztiak itxi</translation>
+    </message>
     </context>
 <context>
     <name>WalletFrame</name>
-    </context>
+    <message>
+        <source>Create a new wallet</source>
+        <translation>Diruzorro berri bat sortu</translation>
+    </message>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -1674,6 +1704,10 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation>Uneko fitxategian datuak esportatu</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Akatsa</translation>
     </message>
     </context>
 <context>
