@@ -1,6 +1,7 @@
-# Unreleased
+## 0.102.0+22.1 - 2024-01-23
 
 * Stop testing on `s390x-unknow-linux-gnu` - we cannot currently get Core v22.2 to build on this target.
+* Vendor Bitcoin Core `v22.1`
 
 ## 0.101.1+0.21-final - 2024-01-13
 
