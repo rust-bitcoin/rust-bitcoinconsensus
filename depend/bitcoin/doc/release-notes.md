@@ -1,11 +1,11 @@
-0.21.2 Release Notes
-====================
+22.1 Release Notes
+==================
 
-Bitcoin Core version 0.21.2 is now available from:
+Bitcoin Core version 22.1 is now available from:
 
-  <https://bitcoincore.org/bin/bitcoin-core-0.21.2/>
+  <https://bitcoincore.org/bin/bitcoin-core-22.1/>
 
-This minor release includes various bug fixes and performance
+This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
@@ -21,7 +21,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes in some cases), then run the
-installer (on Windows) or just copy over `/Applications/Bitcoin-Qt` (on Mac)
+installer (on Windows) or just copy over `/Applications/Bitcoin-Qt` (on macOS)
 or `bitcoind`/`bitcoin-qt` (on Linux).
 
 Upgrading directly from a version of Bitcoin Core that has reached its EOL is
@@ -32,58 +32,74 @@ Compatibility
 ==============
 
 Bitcoin Core is supported and extensively tested on operating systems
-using the Linux kernel, macOS 10.12+, and Windows 7 and newer.  Bitcoin
+using the Linux kernel, macOS 10.14+, and Windows 7 and newer.  Bitcoin
 Core should also work on most other Unix-like systems but is not as
 frequently tested on them.  It is not recommended to use Bitcoin Core on
 unsupported systems.
 
-From Bitcoin Core 0.20.0 onwards, macOS versions earlier than 10.12 are no
-longer supported. Additionally, Bitcoin Core does not yet change appearance
-when macOS "dark mode" is activated.
+From Bitcoin Core 22.0 onwards, macOS versions earlier than 10.14 are no longer supported.
 
+Notable changes
+===============
 
-0.21.2 change log
-=================
+Updated settings
+----------------
 
-### P2P protocol and network code
+- In previous releases, the meaning of the command line option
+  `-persistmempool` (without a value provided) incorrectly disabled mempool
+  persistence.  `-persistmempool` is now treated like other boolean options to
+  mean `-persistmempool=1`. Passing `-persistmempool=0`, `-persistmempool=1`
+  and `-nopersistmempool` is unaffected. (#23061)
 
-- #21644 use NetPermissions::HasFlag() in CConnman::Bind() (jonatack)
-- #22569 Rate limit the processing of rumoured addresses (sipa)
+### P2P
+
+### RPC and other APIs
+
+- #25237 rpc: Capture UniValue by ref for rpcdoccheck
+- #25983 Prevent data race for pathHandlers
+- #26275 Fix crash on deriveaddresses when index is 2147483647 (2^31-1)
 
 ### Wallet
 
-- #21907 Do not iterate a directory if having an error while accessing it (hebasto)
+- #22781 wallet: fix the behavior of IsHDEnabled
+- #22949 fee: Round up fee calculation to avoid a lower than expected feerate
+- #23333 wallet: fix segfault by avoiding invalid default-ctored external_spk_managers entry
 
-### RPC
+### Build system
 
-- #19361 Reset scantxoutset progress before inferring descriptors (prusnak)
-
-### Build System
-
-- #21932 depends: update Qt 5.9 source url (kittywhiskers)
-- #22017 Update Windows code signing certificate (achow101)
-- #22191 Use custom MacOS code signing tool (achow101)
-- #22713 Fix build with Boost 1.77.0 (sizeofvoid)
-
-### Tests and QA
-
-- #20182 Build with --enable-werror by default, and document exceptions (hebasto)
-- #20535 Fix intermittent feature_taproot issue (MarcoFalke)
-- #21663 Fix macOS brew install command (hebasto)
-- #22279 add missing ECCVerifyHandle to base_encode_decode (apoelstra)
-- #22730 Run fuzzer task for the master branch only (hebasto)
+- #22820 build, qt: Fix typo in QtInputSupport check
+- #23045 build: Restrict check for CRC32C intrinsic to aarch64
+- #23148 build: Fix guix linker-loader path and add check_ELF_interpreter
+- #23314 build: explicitly disable libsecp256k1 openssl based tests
+- #23580 build: patch qt to explicitly define previously implicit header include
+- #24215 guix: ignore additional failing certvalidator test
+- #24256 build: Bump depends packages (zmq, libXau)
+- #25201 windeploy: Renewed windows code signing certificate
+- #25985 Revert "build: Use Homebrew's sqlite package if it is available"
+- #26633 depends: update qt 5.12 url to archive location
 
 ### GUI
 
-- #277 Do not use QClipboard::Selection on Windows and macOS. (hebasto)
-- #280 Remove user input from URI error message (prayank23)
-- #365 Draw "eye" sign at the beginning of watch-only addresses (hebasto)
+- #gui631 Disallow encryption of watchonly wallets
+- #gui680 Fixes MacOS 13 segfault by preventing certain notifications
+- #24498 qt: Avoid crash on startup if int specified in settings.json
+
+### Tests
+
+- #23716 test: replace hashlib.ripemd160 with an own implementation
+- #24239 test: fix ceildiv division by using integers
+
+### Utilities
+
+- #22390 system: skip trying to set the locale on NetBSD
+- #22895 don't call GetBlockPos in ReadBlockFromDisk without cs_main lock
+- #24104 fs: Make compatible with boost 1.78
 
 ### Miscellaneous
 
-- #22002 Fix crash when parsing command line with -noincludeconf=0 (MarcoFalke)
-- #22137 util: Properly handle -noincludeconf on command line (take 2) (MarcoFalke)
-
+- #23335 refactor: include a missing <limits> header in fs.cpp
+- #23504 ci: Replace soon EOL hirsute with jammy
+- #26321 Adjust .tx/config for new Transifex CLI
 
 Credits
 =======
@@ -91,19 +107,22 @@ Credits
 Thanks to everyone who directly contributed to this release:
 
 - Andrew Chow
-- Andrew Poelstra
-- fanquake
+- BlackcoinDev
+- Carl Dong
 - Hennadii Stepanov
+- Joan Karadimov
+- John Moffett
 - Jon Atack
 - Kittywhiskers Van Gogh
-- Luke Dashjr
-- MarcoFalke
-- Pavol Rusnak
+- Marco Falke
+- Martin Zumsande
+- Michael Ford
+- muxator
 - Pieter Wuille
-- prayank23
-- Rafael Sadowski
+- Ryan Ofsky
+- Saibato
+- Sebastian Falbesoner
 - W. J. van der Laan
-
 
 As well as to everyone that helped with translations on
 [Transifex](https://www.transifex.com/bitcoin/bitcoin/).

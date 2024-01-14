@@ -1,2 +1,2 @@
 # This file was automatically created by vendor-bitcoin-core.sh
-ec0a4ad67769109910e3685da9c56c1b9f42414e
+6fd35e2cb18d325221644a33b058c109aed3e767
