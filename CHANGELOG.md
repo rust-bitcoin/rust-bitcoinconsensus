@@ -1,4 +1,4 @@
-## 0.101.0+0.21-final - 2024-01-13
+## 0.101.1+0.21-final - 2024-01-13
 
 * Vendor Bitcoin Core `v0.21-final`
 
