@@ -7,19 +7,19 @@
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Ƙirƙiri sabon adireshi</translation>
+        <translation type="unfinished">Ƙirƙiri sabon adireshi</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation type="unfinished">Sabontawa</translation>
+        <translation type="unfinished">&amp;Sabontawa</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Kwafi adireshin da aka zaɓa a halin yanzu domin yin amfani dashi</translation>
+        <translation type="unfinished">Kwafi adireshin da aka zaɓa a halin yanzu domin yin amfani dashi</translation>
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Share adireshin da aka zaɓa a halin yanzu daga jerin </translation>
+        <translation type="unfinished">Share adireshin da aka zaɓa a halin yanzu daga jerin </translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
@@ -27,15 +27,15 @@
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Fitar da bayanan da ke cikin shafin na yanzu zuwa fayil</translation>
+        <translation type="unfinished">Fitar da bayanan da ke cikin shafin na yanzu zuwa fayil</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp; Fitarwa</translation>
+        <translation type="unfinished">&amp; Fitarwa</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;Sharewa</translation>
+        <translation type="unfinished">$Sharewa</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
@@ -60,14 +60,14 @@ zaka iya shiga ne kawai da adiresoshin 'na musamman' kawai.</translation>
     <name>QObject</name>
     <message numerus="yes">
         <source>%n second(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -105,7 +105,7 @@ zaka iya shiga ne kawai da adiresoshin 'na musamman' kawai.</translation>
     <name>BitcoinGUI</name>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -134,7 +134,7 @@ zaka iya shiga ne kawai da adiresoshin 'na musamman' kawai.</translation>
     <name>SendCoinsDialog</name>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -143,25 +143,8 @@ zaka iya shiga ne kawai da adiresoshin 'na musamman' kawai.</translation>
 <context>
     <name>TransactionDesc</name>
     <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
-    <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation>
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
-    </context>
-<context>
-    <name>TransactionTableModel</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>

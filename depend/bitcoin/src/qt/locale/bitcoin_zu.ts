@@ -2,20 +2,8 @@
 <context>
     <name>AddressBookPage</name>
     <message>
-        <source>&amp;New</source>
-        <translation type="unfinished">&amp;Okusha</translation>
-    </message>
-    <message>
-        <source>&amp;Copy</source>
-        <translation type="unfinished">&amp;Kopisha</translation>
-    </message>
-    <message>
-        <source>Receiving addresses</source>
-        <translation type="unfinished">Amakheli ukuthola</translation>
-    </message>
-    <message>
         <source>Comma separated file</source>
-        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation type="unfinished">Ifayela elehlukaniswe ngo khefana.</translation>
     </message>
     </context>
@@ -42,45 +30,52 @@
     </message>
     <message numerus="yes">
         <source>%n second(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s)</source>
-        <translation>
-            <numerusform>%n imizuzu</numerusform>
-            <numerusform>%n imizuzu</numerusform>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
         </translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
         <translation type="unfinished">
-            <numerusform>%n amahora</numerusform>
-            <numerusform>%n amahora</numerusform>
+            <numerusform />
+            <numerusform />
         </translation>
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
         <translation type="unfinished">
-            <numerusform>%n usuku</numerusform>
-            <numerusform>%nizinsuku</numerusform>
+            <numerusform />
+            <numerusform />
         </translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
         <translation type="unfinished">
-            <numerusform>%namaviki</numerusform>
-            <numerusform>%n amaviki</numerusform>
+            <numerusform />
+            <numerusform />
         </translation>
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
         <translation type="unfinished">
-            <numerusform>%n iminyaka</numerusform>
-            <numerusform>%n iminyaka</numerusform>
+            <numerusform />
+            <numerusform />
         </translation>
+    </message>
+    </context>
+<context>
+    <name>bitcoin-core</name>
+    <message>
+        <source>Error: Missing checksum</source>
+        <translation type="unfinished">Iphutha: iChecksum engekho</translation>
     </message>
     </context>
 <context>
@@ -115,7 +110,7 @@
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -156,10 +151,6 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>%1 GB of free space available</source>
-        <translation type="unfinished">%1 GB owesikhala otholakalayo</translation>
-    </message>
-    <message>
         <source>(of %1 GB needed)</source>
         <translation type="unfinished">(ku %1 GB odingakalayo)</translation>
     </message>
@@ -188,7 +179,7 @@
     </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -197,25 +188,8 @@
 <context>
     <name>TransactionDesc</name>
     <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
-    <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation>
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
-    </context>
-<context>
-    <name>TransactionTableModel</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -225,15 +199,8 @@
     <name>TransactionView</name>
     <message>
         <source>Comma separated file</source>
-        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
-        <translation type="unfinished">Ifayela elehlukaniswe nge khefu.</translation>
-    </message>
-    </context>
-<context>
-    <name>bitcoin-core</name>
-    <message>
-        <source>Error: Missing checksum</source>
-        <translation type="unfinished">Iphutha: iChecksum engekho</translation>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
+        <translation type="unfinished">Ifayela elehlukaniswe ngo khefana.</translation>
     </message>
     </context>
 </TS>

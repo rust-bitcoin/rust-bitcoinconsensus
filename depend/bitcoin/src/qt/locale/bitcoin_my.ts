@@ -7,7 +7,7 @@
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>လိပ်စာအသစ်ယူမယ်။</translation>
+        <translation type="unfinished">လိပ်စာအသစ်ယူမယ်။</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>လက်ရှိရွေးထားတဲ့ လိပ်စာကို clipboard ပေါ်တင်မယ်။</translation>
+        <translation type="unfinished">လက်ရှိရွေးထားတဲ့ လိပ်စာကို clipboard ပေါ်တင်မယ်။</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -27,7 +27,7 @@
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>လက်ရှိရွေးထားတဲ့ လိပ်စာကို ဖျက်မယ်။</translation>
+        <translation type="unfinished">လက်ရှိရွေးထားတဲ့ လိပ်စာကို ဖျက်မယ်။</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
@@ -35,15 +35,15 @@
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>လက်ရှိ tab မှာရှိတဲ့ဒေတာတွေကို ဖိုင်လ်မှာသိမ်းမယ်။</translation>
+        <translation type="unfinished">လက်ရှိ tab မှာရှိတဲ့ဒေတာတွေကို ဖိုင်လ်မှာသိမ်းမယ်။</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;ထုတ်ယူသိမ်းဆည်း</translation>
+        <translation type="unfinished">&amp;ထုတ်ယူသိမ်းဆည်း</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;ဖျက်</translation>
+        <translation type="unfinished">&amp;ဖျက်</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -85,13 +85,13 @@
     <name>QObject</name>
     <message numerus="yes">
         <source>%n second(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
         </translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
         </translation>
     </message>
@@ -124,25 +124,25 @@
     <name>BitcoinGUI</name>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
         </translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>အမှား</translation>
+        <translation type="unfinished">အမှား</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>သတိပေးချက်</translation>
+        <translation type="unfinished">သတိပေးချက်</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>အချက်အလက်</translation>
+        <translation type="unfinished">အချက်အလက်</translation>
     </message>
     <message>
         <source>Up to date</source>
-        <translation>နောက်ဆုံးပေါ်</translation>
+        <translation type="unfinished">နောက်ဆုံးပေါ်</translation>
     </message>
     <message>
         <source>Zoom</source>
@@ -182,7 +182,7 @@
     </message>
     <message>
         <source>Error</source>
-        <translation>အမှား</translation>
+        <translation type="unfinished">အမှား</translation>
     </message>
     </context>
 <context>
@@ -215,26 +215,20 @@
     <name>SendCoinsDialog</name>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
         </translation>
     </message>
     </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform />
-        </translation>
-    </message>
     <message>
         <source>Date</source>
         <translation type="unfinished">နေ့စွဲ</translation>
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
         </translation>
     </message>
@@ -248,12 +242,6 @@
     <message>
         <source>Label</source>
         <translation type="unfinished">တံဆိပ်</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform />
-        </translation>
     </message>
     </context>
 <context>
@@ -280,6 +268,13 @@
     </message>
     </context>
 <context>
+    <name>WalletFrame</name>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">အမှား</translation>
+    </message>
+    </context>
+<context>
     <name>WalletView</name>
     <message>
         <source>&amp;Export</source>
@@ -288,10 +283,6 @@
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation type="unfinished">လက်ရှိ tab မှာရှိတဲ့ဒေတာတွေကို ဖိုင်လ်မှာသိမ်းမယ်။</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="unfinished">အမှား</translation>
     </message>
     </context>
 </TS>

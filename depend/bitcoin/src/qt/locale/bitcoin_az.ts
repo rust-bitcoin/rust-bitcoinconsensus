@@ -7,7 +7,7 @@
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Yeni bir ünvan yaradın</translation>
+        <translation type="unfinished">Yeni bir ünvan yaradın</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Hazırki seçilmiş ünvanı sistem lövhəsinə kopyalayın</translation>
+        <translation type="unfinished">Hazırki seçilmiş ünvanı sistem lövhəsinə kopyalayın</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -27,7 +27,7 @@
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Hazırki seçilmiş ünvanı siyahıdan sil</translation>
+        <translation type="unfinished">Hazırki seçilmiş ünvanı siyahıdan sil</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
@@ -35,15 +35,15 @@
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Hazırki vərəqdəki verilənləri fayla ixrac edin</translation>
+        <translation type="unfinished">Hazırki vərəqdəki verilənləri fayla ixrac edin</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;İxrac</translation>
+        <translation type="unfinished">&amp;İxrac</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;Sil</translation>
+        <translation type="unfinished">&amp;Sil</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -93,7 +93,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Comma separated file</source>
-        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation type="unfinished">Vergüllə ayrılmış fayl</translation>
     </message>
     <message>
@@ -125,19 +125,19 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Şifrə İfadə Dialoqu</translation>
+        <translation type="unfinished">Şifrə İfadə Dialoqu</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>Şifrə ifadəsini daxil edin</translation>
+        <translation type="unfinished">Şifrə ifadəsini daxil edin</translation>
     </message>
     <message>
         <source>New passphrase</source>
-        <translation>Yeni şifrə ifadəsi</translation>
+        <translation type="unfinished">Yeni şifrə ifadəsi</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Şifrə ifadəsini təkrarlayın</translation>
+        <translation type="unfinished">Şifrə ifadəsini təkrarlayın</translation>
     </message>
     <message>
         <source>Show passphrase</source>
@@ -173,35 +173,35 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
-        <translation type="unfinished">Cüzdan şifrələndi.</translation>
+        <translation type="unfinished">Pulqabı şifrələndi.</translation>
     </message>
     <message>
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation type="unfinished">Cüzdan üçün yeni şifrəli sözü daxil edin.&lt;br/&gt;Lütfən &lt;b&gt;on və daha çox qarışıq simvollardan&lt;/b&gt; və ya &lt;b&gt;səkkiz və daha çox sayda sözdən&lt;/b&gt; ibarət şifrəli söz istifadə edin.</translation>
+        <translation type="unfinished">Pulqabı üçün yeni şifrəli sözü daxil edin.&lt;br/&gt;Lütfən &lt;b&gt;on və daha çox qarışıq simvollardan&lt;/b&gt; və ya &lt;b&gt;səkkiz və daha çox sayda sözdən&lt;/b&gt; ibarət şifrəli söz istifadə edin.</translation>
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase for the wallet.</source>
-        <translation type="unfinished">Cüzdan üçün köhnə şifrəli sözü və ardınca yeni şifrəli sözü daxil edin</translation>
+        <translation type="unfinished">Pulqabı üçün köhnə şifrəli sözü və yeni şifrəli sözü daxil edin</translation>
     </message>
     <message>
         <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Unutmayın ki, cüzdanınızın şifrələməsi bitcoinlərinizi kompüterinizə zərərli proqram tərəfindən oğurlanmaqdan tamamilə qoruya bilməz.</translation>
+        <translation type="unfinished">Unutmayın ki, pulqabınızın şifrələməsi bitcoinlərinizi kompüterinizə zərərli proqram tərəfindən oğurlanmaqdan tamamilə qoruya bilməz.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
-        <translation type="unfinished">Cüzdan şifrələnəcək</translation>
+        <translation type="unfinished">Pulqabı şifrələnəcək</translation>
     </message>
     <message>
         <source>Your wallet is about to be encrypted. </source>
-        <translation type="unfinished">Cüzdanınız şifrələnmək üzrədir.</translation>
+        <translation type="unfinished">Pulqabınız şifrələnmək üzrədir.</translation>
     </message>
     <message>
         <source>Your wallet is now encrypted. </source>
-        <translation type="unfinished">Cüzdanınız artıq şifrələnib.</translation>
+        <translation type="unfinished">Pulqabınız artıq şifrələnib.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation type="unfinished">VACİBDİR: Cüzdanınızın əvvəlki ehtiyyat nüsxələri yenicə yaradılan şifrələnmiş cüzdan ilə əvəz olunmalıdır. Təhlükəsizlik baxımından yeni şifrələnmiş cüzdanı işə salan kimi əvvəlki şifrəsi açılmış cüzdanın ehtiyyat nüsxələri qeyri-işlək olacaqdır.</translation>
+        <translation type="unfinished">VACİBDİR: Pulqabınızın əvvəlki ehtiyyat nüsxələri yenicə yaradılan şifrələnmiş cüzdan ilə əvəz olunmalıdır. Təhlükəsizlik baxımından yeni şifrələnmiş pulqabını işə salan kimi əvvəlki şifrəsi açılmış pulqabının ehtiyyat nüsxələri qeyri-işlək olacaqdır.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -261,6 +261,16 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
 <context>
     <name>QObject</name>
     <message>
+        <source>Do you want to reset settings to default values, or to abort without making changes?</source>
+        <extracomment>Explanatory text shown on startup when the settings file cannot be read. Prompts user to make a choice between resetting or aborting.</extracomment>
+        <translation type="unfinished">Siz ayarları dəyərləri ilkin dəyərlərinə sıfırlamaq istəyirsiniz, yoxsa dəyişiklik etmədən bu əməliyyatı ləğv etmək istəyirsiniz?</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. Check that settings file is writable, or try running with -nosettings.</source>
+        <extracomment>Explanatory text shown on startup when the settings file could not be written. Prompts user to check that we have the ability to write to the file. Explains that the user has the option of running without a settings file.</extracomment>
+        <translation type="unfinished">Ciddi xəta baş verdi. Ayarlar faylının yazılabilən olduğunu yoxlayın və ya -nonsettings (ayarlarsız) parametri ilə işə salın.</translation>
+    </message>
+    <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
         <translation type="unfinished">Xəta: Göstərilmiş verilənlər qovluğu "%1" mövcud deyil</translation>
     </message>
@@ -274,7 +284,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>%1 didn't yet exit safely…</source>
-        <translation type="unfinished">%1 hələ də təhlükəsiz bağlanmadı...</translation>
+        <translation type="unfinished">%1 hələ də təhlükəsiz bağlanmayıb...</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -282,14 +292,14 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message numerus="yes">
         <source>%n second(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -324,30 +334,65 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     </context>
 <context>
+    <name>bitcoin-core</name>
+    <message>
+        <source>Settings file could not be read</source>
+        <translation type="unfinished">Ayarlar faylı oxuna bilmədi</translation>
+    </message>
+    <message>
+        <source>Settings file could not be written</source>
+        <translation type="unfinished">Ayarlar faylı yazıla bilmədi</translation>
+    </message>
+    <message>
+        <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
+        <translation type="unfinished">Ödəniş təxmin edilmədi. Fallbackfee sıradan çıxarıldı. Bir neçə blok gözləyin və ya Fallbackfee-ni fəallaşdırın.</translation>
+    </message>
+    <message>
+        <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
+        <translation type="unfinished">Xəbərdarlıq: Gizli açarlar, sıradan çıxarılmış gizli açarlar ilə {%s} pulqabısında aşkarlandı.</translation>
+    </message>
+    <message>
+        <source>Cannot write to data directory '%s'; check permissions.</source>
+        <translation type="unfinished">'%s' verilənlər kateqoriyasına yazıla bilmir; icazələri yoxlayın.</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation type="unfinished">Yükləmə tamamlandı</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation type="unfinished">Yetərsiz balans</translation>
+    </message>
+    <message>
+        <source>The source code is available from %s.</source>
+        <translation type="unfinished">Mənbə kodu %s-dən əldə edilə bilər.</translation>
+    </message>
+    </context>
+<context>
     <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
-        <translation>&amp;İcmal</translation>
+        <translation type="unfinished">&amp;İcmal</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation>Cüzdanın əsas icmalı göstərilsin</translation>
+        <translation type="unfinished">Cüzdanın əsas icmalı göstərilsin</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
-        <translation>&amp;Tranzaksiyalar</translation>
+        <translation type="unfinished">&amp;Köçürmələr</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>Köçürmə tarixçəsinə baxış</translation>
+        <translation type="unfinished">Köçürmə tarixçəsinə baxış</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
-        <translation>Çı&amp;xış</translation>
+        <translation type="unfinished">Çı&amp;xış</translation>
     </message>
     <message>
         <source>Quit application</source>
-        <translation>Tətbiqdən çıxış</translation>
+        <translation type="unfinished">Tətbiqdən çıxış</translation>
     </message>
     <message>
         <source>&amp;About %1</source>
@@ -359,11 +404,11 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
-        <translation>&amp;Qt haqqında</translation>
+        <translation type="unfinished">&amp;Qt haqqında</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
-        <translation>Qt haqqında məlumatlar göstərilsin</translation>
+        <translation type="unfinished">Qt haqqında məlumatlar göstərilsin</translation>
     </message>
     <message>
         <source>Modify configuration options for %1</source>
@@ -374,8 +419,12 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
         <translation type="unfinished">Yeni cüzdan yaradın</translation>
     </message>
     <message>
+        <source>&amp;Minimize</source>
+        <translation type="unfinished">&amp;Yığın</translation>
+    </message>
+    <message>
         <source>Wallet:</source>
-        <translation type="unfinished">Cüzdan</translation>
+        <translation type="unfinished">Cüzdan:</translation>
     </message>
     <message>
         <source>Network activity disabled.</source>
@@ -388,23 +437,23 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Pulları Bitcoin ünvanına göndərin</translation>
+        <translation type="unfinished">Pulları Bitcoin ünvanına göndərin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
-        <translation>Cüzdanın ehtiyyat nüsxəsini başqa yerdə saxlayın</translation>
+        <translation type="unfinished">Cüzdanın ehtiyyat nüsxəsini başqa yerdə saxlayın</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Cüzdanın şifrələnməsi üçün istifadə olunan şifrəli sözü dəyişin</translation>
+        <translation type="unfinished">Cüzdanın şifrələnməsi üçün istifadə olunan şifrəli sözü dəyişin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
-        <translation>&amp;Göndərin</translation>
+        <translation type="unfinished">&amp;Göndərin</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
-        <translation>&amp;Qəbul edin</translation>
+        <translation type="unfinished">&amp;Qəbul edin</translation>
     </message>
     <message>
         <source>&amp;Options…</source>
@@ -416,7 +465,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Cüzdanınıza aid məxfi açarları şifrələyin</translation>
+        <translation type="unfinished">Cüzdanınıza aid məxfi açarları şifrələyin</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet…</source>
@@ -432,7 +481,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Bitcoin ünvanlarınızın sahibi olduğunuzu sübut etmək üçün ismarıcları imzalayın</translation>
+        <translation type="unfinished">Bitcoin ünvanlarınızın sahibi olduğunuzu sübut etmək üçün ismarıcları imzalayın</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
@@ -440,7 +489,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Göstərilmiş Bitcoin ünvanları ilə imzalandıqlarına əmin olmaq üçün ismarıcları doğrulayın</translation>
+        <translation type="unfinished">Göstərilmiş Bitcoin ünvanları ilə imzalandıqlarına əmin olmaq üçün ismarıcları doğrulayın</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -448,7 +497,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Open &amp;URI…</source>
-        <translation type="unfinished">&amp;URI-ni açın</translation>
+        <translation type="unfinished">&amp;URI-ni açın...</translation>
     </message>
     <message>
         <source>Close Wallet…</source>
@@ -464,19 +513,19 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>&amp;File</source>
-        <translation>&amp;Fayl</translation>
+        <translation type="unfinished">&amp;Fayl</translation>
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation>&amp;Tənzimləmələr</translation>
+        <translation type="unfinished">&amp;Tənzimləmələr</translation>
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation>&amp;Kömək</translation>
+        <translation type="unfinished">&amp;Kömək</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
-        <translation>Vərəq alətlər zolağı</translation>
+        <translation type="unfinished">Vərəq alətlər zolağı</translation>
     </message>
     <message>
         <source>Syncing Headers (%1%)…</source>
@@ -504,7 +553,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Ödəmə tələbi (QR-kodlar və Bitcoin URI-ləri yaradılır)^</translation>
+        <translation type="unfinished">Ödəmə tələbi (QR-kodlar və Bitcoin URI-ləri yaradılır):</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -512,7 +561,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation type="unfinished">İstifadə edilmiş </translation>
+        <translation type="unfinished">İstifadə edilmiş qəbuletmə ünvanlarının və etiketlərin siyahısını göstərmək</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -520,14 +569,14 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation>
-            <numerusform />
-            <numerusform />
+        <translation type="unfinished">
+            <numerusform>Köçürmə tarixçəsinin %n bloku işləndi</numerusform>
+            <numerusform>Köçürmə tarixçəsinin %n bloku işləndi.</numerusform>
         </translation>
     </message>
     <message>
         <source>%1 behind</source>
-        <translation>%1 geridə qaldı</translation>
+        <translation type="unfinished">%1 geridə qalır</translation>
     </message>
     <message>
         <source>Catching up…</source>
@@ -535,31 +584,35 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Sonuncu qəbul edilmiş blok %1 əvvəl yaradılıb.</translation>
+        <translation type="unfinished">Sonuncu qəbul edilmiş blok %1 əvvəl yaradılıb.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Bundan sonrakı köçürmələr hələlik görünməyəcək.</translation>
+        <translation type="unfinished">Bundan sonrakı köçürmələr hələlik görünməyəcək.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Xəta</translation>
+        <translation type="unfinished">Xəta</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Xəbərdarlıq</translation>
+        <translation type="unfinished">Xəbərdarlıq</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Məlumat</translation>
+        <translation type="unfinished">Məlumat</translation>
     </message>
     <message>
         <source>Up to date</source>
-        <translation>Eyniləşdirildi</translation>
+        <translation type="unfinished">Eyniləşdirildi</translation>
     </message>
     <message>
         <source>Load Partially Signed Bitcoin Transaction</source>
         <translation type="unfinished">Qismən imzalanmış Bitcoin köçürmələrini yükləyin</translation>
+    </message>
+    <message>
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation type="unfinished">PSBT-i &amp;mübadilə yaddaşından yükləyin...</translation>
     </message>
     <message>
         <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
@@ -637,12 +690,20 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
         <source>%1 client</source>
         <translation type="unfinished">%1 müştəri</translation>
     </message>
+    <message>
+        <source>&amp;Hide</source>
+        <translation type="unfinished">&amp;Gizlədin</translation>
+    </message>
+    <message>
+        <source>S&amp;how</source>
+        <translation type="unfinished">&amp;Göstərin</translation>
+    </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
+            <numerusform>Bitcoin şəbəkəsinə %n aktiv bağlantı.</numerusform>
+            <numerusform>Bitcoin şəbəkəsinə %n aktiv bağlantı.</numerusform>
         </translation>
     </message>
     <message>
@@ -700,7 +761,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     <message>
         <source>Label: %1
 </source>
-        <translation type="unfinished">Yarlıq: %1
+        <translation type="unfinished">Etiket: %1
 </translation>
     </message>
     <message>
@@ -711,11 +772,11 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Sent transaction</source>
-        <translation>Köçürməni göndərin</translation>
+        <translation type="unfinished">Göndərilmiş köçürmə</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
-        <translation>Daxil </translation>
+        <translation type="unfinished">Daxil olan köçürmə</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
@@ -723,7 +784,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation type="unfinished">HD açar yaradılması &lt;b&gt;söndürülüb</translation>
+        <translation type="unfinished">HD açar yaradılması &lt;b&gt;söndürülüb&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
@@ -731,11 +792,11 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Cüzdan &lt;b&gt;şifrələnib&lt;/b&gt; və hal-hazırda &lt;b&gt;kiliddən çıxarılıb&lt;/b&gt;</translation>
+        <translation type="unfinished">Cüzdan &lt;b&gt;şifrələnib&lt;/b&gt; və hal-hazırda &lt;b&gt;kiliddən çıxarılıb&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Cüzdan &lt;b&gt;şifrələnib&lt;/b&gt; və hal-hazırda &lt;b&gt;kiliddlənib&lt;/b&gt;</translation>
+        <translation type="unfinished">Cüzdan &lt;b&gt;şifrələnib&lt;/b&gt; və hal-hazırda &lt;b&gt;kiliddlənib&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Original message:</source>
@@ -801,7 +862,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Received with label</source>
-        <translation type="unfinished">Yarlıq ilə qəbul olundu</translation>
+        <translation type="unfinished">Etiket ilə alındı</translation>
     </message>
     <message>
         <source>Received with address</source>
@@ -809,7 +870,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation type="unfinished">TArix</translation>
+        <translation type="unfinished">Tarix</translation>
     </message>
     <message>
         <source>Confirmations</source>
@@ -834,6 +895,10 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     <message>
         <source>Copy &amp;amount</source>
         <translation type="unfinished">&amp;Məbləği kopyalayın</translation>
+    </message>
+    <message>
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation type="unfinished">Köçürmə &amp;İD-sini və çıxış indeksini kopyalayın</translation>
     </message>
     <message>
         <source>L&amp;ock unspent</source>
@@ -903,7 +968,13 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
 <context>
     <name>CreateWalletActivity</name>
     <message>
+        <source>Create Wallet</source>
+        <extracomment>Title of window indicating the progress of creation of a new wallet.</extracomment>
+        <translation type="unfinished">Cüzdan yaradın</translation>
+    </message>
+    <message>
         <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the create wallet progress window which indicates to the user which wallet is currently being created.</extracomment>
         <translation type="unfinished">&lt;b&gt;%1&lt;/b&gt; cüzdanı yaradılır...</translation>
     </message>
     <message>
@@ -912,11 +983,24 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Create wallet warning</source>
-        <translation type="unfinished">Cüzdan yaradılma xəbərdarlı\ı</translation>
+        <translation type="unfinished">Cüzdan yaradılma xəbərdarlığı</translation>
     </message>
     <message>
         <source>Can't list signers</source>
         <translation type="unfinished">İmzalaynları göstərmək mümkün deyil</translation>
+    </message>
+</context>
+<context>
+    <name>LoadWalletsActivity</name>
+    <message>
+        <source>Load Wallets</source>
+        <extracomment>Title of progress window which is displayed when wallets are being loaded.</extracomment>
+        <translation type="unfinished">Cüzdanları yükləyin</translation>
+    </message>
+    <message>
+        <source>Loading wallets…</source>
+        <extracomment>Descriptive text of the load wallets progress window which indicates to the user that wallets are currently being loaded.</extracomment>
+        <translation type="unfinished">Pulqabılar yüklənir...</translation>
     </message>
 </context>
 <context>
@@ -934,7 +1018,13 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
         <translation type="unfinished">standart cüzdan</translation>
     </message>
     <message>
+        <source>Open Wallet</source>
+        <extracomment>Title of window indicating the progress of opening of a wallet.</extracomment>
+        <translation type="unfinished">Cüzdanı açın</translation>
+    </message>
+    <message>
         <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the open wallet progress window which indicates to the user which wallet is currently being opened.</extracomment>
         <translation type="unfinished">&lt;b&gt;%1&lt;/b&gt; pulqabı açılır...</translation>
     </message>
 </context>
@@ -1005,11 +1095,11 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Use descriptors for scriptPubKey management</source>
-        <translation type="unfinished">Publik açar skripti (scriptPubKey) idarəetməsi üçün diskreptorlardan itifadə edin</translation>
+        <translation type="unfinished">Publik açar skripti (scriptPubKey) idarəetməsi üçün deskreptorlardan itifadə edin</translation>
     </message>
     <message>
         <source>Descriptor Wallet</source>
-        <translation type="unfinished">D</translation>
+        <translation type="unfinished">Deskriptor pulqabı</translation>
     </message>
     </context>
 <context>
@@ -1024,7 +1114,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Xəta</translation>
+        <translation type="unfinished">Xəta</translation>
     </message>
     <message>
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
@@ -1039,11 +1129,11 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
-        <translation>&amp;UPnP istifadə edən xəritə portu</translation>
+        <translation type="unfinished">&amp;UPnP istifadə edən xəritə portu</translation>
     </message>
     <message>
         <source>&amp;Window</source>
-        <translation>&amp;Pəncərə</translation>
+        <translation type="unfinished">&amp;Pəncərə</translation>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting %1.</source>
@@ -1071,6 +1161,11 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     <message>
         <source>Node window</source>
         <translation type="unfinished">Qovşaq pəncərəsi</translation>
+    </message>
+    <message>
+        <source>&amp;Copy address</source>
+        <extracomment>Context menu action to copy the address of a peer.</extracomment>
+        <translation type="unfinished">&amp;Ünvanı kopyalayın</translation>
     </message>
     </context>
 <context>
@@ -1174,7 +1269,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -1186,20 +1281,13 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
     <message>
         <source>Date</source>
         <translation type="unfinished">TArix</translation>
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -1218,13 +1306,6 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     <message>
         <source>Label</source>
         <translation type="unfinished">Etiket</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform />
-            <numerusform />
-        </translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1251,7 +1332,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Comma separated file</source>
-        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation type="unfinished">Vergüllə ayrılmış fayl</translation>
     </message>
     <message>
@@ -1281,7 +1362,11 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
         <source>Create a new wallet</source>
         <translation type="unfinished">Yeni cüzdan yaradın</translation>
     </message>
-</context>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">Xəta</translation>
+    </message>
+    </context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -1300,35 +1385,9 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
         <translation type="unfinished">Hazırki vərəqdəki verilənləri fayla ixrac edin</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation type="unfinished">Xəta</translation>
-    </message>
-    </context>
-<context>
-    <name>bitcoin-core</name>
-    <message>
-        <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
-        <translation type="unfinished">Ödəniş təxmin edilmədi. Fallbackfee sıradan çıxarıldı. Bir neçə blok gözləyin və ya Fallbackfee-ni fəallaşdırın.</translation>
-    </message>
-    <message>
-        <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
-        <translation type="unfinished">Xəbərdarlıq: Gizli açarlar, sıradan çıxarılmış gizli açarlar ilə {%s} pulqabısında aşkarlandı.</translation>
-    </message>
-    <message>
-        <source>Cannot write to data directory '%s'; check permissions.</source>
-        <translation type="unfinished">'%s' verilənlər kateqoriyasına yazıla bilmir; icazələri yoxlayın.</translation>
-    </message>
-    <message>
-        <source>Done loading</source>
-        <translation type="unfinished">Yükləmə tamamlandı</translation>
-    </message>
-    <message>
-        <source>Insufficient funds</source>
-        <translation type="unfinished">Yetərsiz balans</translation>
-    </message>
-    <message>
-        <source>The source code is available from %s.</source>
-        <translation type="unfinished">Mənbə kodu %s-dən əldə edilə bilər.</translation>
+        <source>Wallet Data</source>
+        <extracomment>Name of the wallet data file format.</extracomment>
+        <translation type="unfinished">Cüzdanı verilənləri</translation>
     </message>
     </context>
 </TS>
