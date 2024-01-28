@@ -4,7 +4,7 @@ version = 3
 
 [[package]]
 name = "bitcoinconsensus"
-version = "0.101.1+0.21-final"
+version = "0.102.0+22.1"
 dependencies = [
  "cc",
  "rustc-serialize",
