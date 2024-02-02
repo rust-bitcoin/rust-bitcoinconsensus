@@ -7,7 +7,7 @@
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>نیا پتہ تخلیق کریں</translation>
+        <translation type="unfinished">نیا پتہ تخلیق کریں</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>موجودہ چنے ہوئے پتے کو نقل کریں سسٹم کلپ بورڈ پر</translation>
+        <translation type="unfinished">موجودہ چنے ہوئے پتے کو نقل کریں سسٹم کلپ بورڈ پر</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -27,7 +27,7 @@
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>سلیکٹڈ پتے کو مٹائیں</translation>
+        <translation type="unfinished">سلیکٹڈ پتے کو مٹائیں</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
@@ -35,15 +35,15 @@
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>موجودہ ڈیٹا کو فائیل میں محفوظ کریں</translation>
+        <translation type="unfinished">موجودہ ڈیٹا کو فائیل میں محفوظ کریں</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>برآمد</translation>
+        <translation type="unfinished">برآمد</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>مٹا</translation>
+        <translation type="unfinished">مٹا</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -92,7 +92,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Comma separated file</source>
-        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation type="unfinished">کوما سے الگ فائل</translation>
     </message>
     <message>
@@ -124,19 +124,19 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>پاسفریج ڈائیلاگ</translation>
+        <translation type="unfinished">پاسفریج ڈائیلاگ</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>پاس فریز داخل کریں</translation>
+        <translation type="unfinished">پاس فریز داخل کریں</translation>
     </message>
     <message>
         <source>New passphrase</source>
-        <translation>نیا پاس فریز</translation>
+        <translation type="unfinished">نیا پاس فریز</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>نیا پاس فریز دہرائیں</translation>
+        <translation type="unfinished">نیا پاس فریز دہرائیں</translation>
     </message>
     <message>
         <source>Show passphrase</source>
@@ -264,6 +264,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>QObject</name>
     <message>
+        <source>Do you want to reset settings to default values, or to abort without making changes?</source>
+        <extracomment>Explanatory text shown on startup when the settings file cannot be read. Prompts user to make a choice between resetting or aborting.</extracomment>
+        <translation type="unfinished">کیا آپ ترتیبات کو ڈیفالٹ اقدار پر دوبارہ ترتیب دینا چاہتے ہیں، یا تبدیلیاں کیے بغیر اسقاط کرنا چاہتے ہیں؟</translation>
+    </message>
+    <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
         <translation type="unfinished">خرابی: مخصوص ڈیٹا ڈائریکٹری ""  %1 موجود نہیں ہے۔</translation>
     </message>
@@ -274,10 +279,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Error: %1</source>
         <translation type="unfinished">خرابی:%1</translation>
-    </message>
-    <message>
-        <source>Error initializing settings: %1</source>
-        <translation type="unfinished">ترتیبات کو شروع کرنے میں خرابی:%1</translation>
     </message>
     <message>
         <source>%1 didn't yet exit safely…</source>
@@ -301,22 +302,19 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Address Fetch</source>
+        <extracomment>Short-lived peer connection type that solicits known addresses from a peer.</extracomment>
         <translation type="unfinished">پتہ بازیافت کریں۔</translation>
-    </message>
-    <message>
-        <source>%1 ms</source>
-        <translation type="unfinished">ملی سیکنڈز %1</translation>
     </message>
     <message numerus="yes">
         <source>%n second(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -351,30 +349,37 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
+    <name>bitcoin-core</name>
+    <message>
+        <source>Insufficient funds</source>
+        <translation type="unfinished">ناکافی فنڈز</translation>
+    </message>
+    </context>
+<context>
     <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
-        <translation>اور جائزہ</translation>
+        <translation type="unfinished">اور جائزہ</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation>پرس کا عمومی جائزہ دکھائیں</translation>
+        <translation type="unfinished">پرس کا عمومی جائزہ دکھائیں</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
-        <translation>اور لین دین</translation>
+        <translation type="unfinished">اور لین دین</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>ٹرانزیکشن ہسٹری کو براؤز کریں</translation>
+        <translation type="unfinished">ٹرانزیکشن ہسٹری کو براؤز کریں</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
-        <translation>باہر نکلیں</translation>
+        <translation type="unfinished">باہر نکلیں</translation>
     </message>
     <message>
         <source>Quit application</source>
-        <translation>درخواست چھوڑ دیں</translation>
+        <translation type="unfinished">درخواست چھوڑ دیں</translation>
     </message>
     <message>
         <source>&amp;About %1</source>
@@ -386,11 +391,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>About &amp;Qt</source>
-        <translation>کے بارے میں &amp;Qt</translation>
+        <translation type="unfinished">کے بارے میں &amp;Qt</translation>
     </message>
     <message>
         <source>Show information about Qt</source>
-        <translation>Qt کے بارے میں معلومات دکھائیں</translation>
+        <translation type="unfinished">Qt کے بارے میں معلومات دکھائیں</translation>
     </message>
     <message>
         <source>Modify configuration options for %1</source>
@@ -415,35 +420,27 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>بٹ کوائن ایڈریس پر سکے بھیجیں</translation>
+        <translation type="unfinished">بٹ کوائن ایڈریس پر سکے بھیجیں</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
-        <translation>کسی دوسرے مقام پر بیک اپ والیٹ</translation>
+        <translation type="unfinished">کسی دوسرے مقام پر بیک اپ والیٹ</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>بٹوے کی خفیہ کاری کے لئے استعمال ہونے والا پاسفریز تبدیل کریں</translation>
+        <translation type="unfinished">بٹوے کی خفیہ کاری کے لئے استعمال ہونے والا پاسفریز تبدیل کریں</translation>
     </message>
     <message>
         <source>&amp;Send</source>
-        <translation>&amp;بھیجیں</translation>
+        <translation type="unfinished">&amp;بھیجیں</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
-        <translation>&amp;وصول کریں</translation>
+        <translation type="unfinished">&amp;وصول کریں</translation>
     </message>
     <message>
         <source>&amp;Options…</source>
         <translation type="unfinished">&amp;اختیارات…</translation>
-    </message>
-    <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;دکھانا چھپانا</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation>مین ونڈو دکھائیں یا چھپائیں</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet…</source>
@@ -463,7 +460,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>اپنے ویکیپیڈیا پتوں کے ساتھ پیغامات پر دستخط کریں تاکہ آپ ان کے مالک ہوں</translation>
+        <translation type="unfinished">اپنے ویکیپیڈیا پتوں کے ساتھ پیغامات پر دستخط کریں تاکہ آپ ان کے مالک ہوں</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
@@ -471,11 +468,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>پیغامات کی توثیق کریں تاکہ یہ یقینی بن سکے کہ ان پر بٹ کوائن کے مخصوص پتوں پر دستخط ہوئے ہیں</translation>
-    </message>
-    <message>
-        <source>Load PSBT from clipboard…</source>
-        <translation type="unfinished">کلپ بورڈ سے پی ایس بی ٹی لوڈ کریں…</translation>
+        <translation type="unfinished">پیغامات کی توثیق کریں تاکہ یہ یقینی بن سکے کہ ان پر بٹ کوائن کے مخصوص پتوں پر دستخط ہوئے ہیں</translation>
     </message>
     <message>
         <source>Open &amp;URI…</source>
@@ -495,19 +488,19 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>&amp;File</source>
-        <translation>اور فائل</translation>
+        <translation type="unfinished">اور فائل</translation>
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation>اور ترتیبات</translation>
+        <translation type="unfinished">اور ترتیبات</translation>
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation>اور مدد</translation>
+        <translation type="unfinished">اور مدد</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
-        <translation>ٹیبز ٹول بار</translation>
+        <translation type="unfinished">ٹیبز ٹول بار</translation>
     </message>
     <message>
         <source>Syncing Headers (%1%)…</source>
@@ -519,7 +512,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Indexing blocks on disk…</source>
-        <translation type="unfinished">ڈسک پر بلاکس کو ترتیب دینا</translation>
+        <translation type="unfinished">ڈسک پر بلاکس کو انڈیکس کرنا</translation>
     </message>
     <message>
         <source>Processing blocks on disk…</source>
@@ -551,42 +544,34 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>'%1'پیچھے</translation>
     </message>
     <message>
         <source>Catching up…</source>
         <translation type="unfinished">پکڑنا</translation>
     </message>
     <message>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>آخری موصول شدہ 1 '%1' پہلے تیار کیا گیا تھا۔</translation>
-    </message>
-    <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>اس کے بعد کی لین دین ابھی نظر نہیں آئے گی۔</translation>
+        <translation type="unfinished">اس کے بعد کی لین دین ابھی نظر نہیں آئے گی۔</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>نقص</translation>
+        <translation type="unfinished">نقص</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>انتباہ</translation>
+        <translation type="unfinished">انتباہ</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>معلومات</translation>
+        <translation type="unfinished">معلومات</translation>
     </message>
     <message>
         <source>Up to date</source>
-        <translation>سب سے نیا</translation>
+        <translation type="unfinished">سب سے نیا</translation>
     </message>
     <message>
         <source>Load Partially Signed Bitcoin Transaction</source>
@@ -634,7 +619,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">ممکنہ بٹ کوائن کمانڈ لائن اختیارات کے ساتھ فہرست حاصل کرنے کے لیے %1 مدد کا پیغام دکھائیں۔</translation>
+        <translation type="unfinished">ممکنہ بٹ کوائن کمانڈ لائن اختیارات کے ساتھ فہرست حاصل کرنے کے لیے 1%1 مدد کا پیغام دکھائیں۔</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -654,11 +639,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>&amp;Window</source>
-        <translation type="unfinished">اور ونڈو</translation>
-    </message>
-    <message>
-        <source>Minimize</source>
-        <translation type="unfinished">کم سے کم کرنا</translation>
+        <translation type="unfinished">براؤزر ونڈو</translation>
     </message>
     <message>
         <source>Zoom</source>
@@ -667,10 +648,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Main Window</source>
         <translation type="unfinished">مین ونڈو</translation>
-    </message>
-    <message>
-        <source>%1 client</source>
-        <translation type="unfinished">'%1'کلائنٹ</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network.</source>
@@ -705,22 +682,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">خرابی:%1</translation>
     </message>
     <message>
-        <source>Warning: %1</source>
-        <translation type="unfinished">1%1 انتباہ</translation>
-    </message>
-    <message>
-        <source>Date: %1
-</source>
-        <translation type="unfinished">1%1' تاریخ۔
-</translation>
-    </message>
-    <message>
-        <source>Amount: %1
-</source>
-        <translation type="unfinished">1%1' مقدار
-</translation>
-    </message>
-    <message>
         <source>Wallet: %1
 </source>
         <translation type="unfinished">1%1' والیٹ
@@ -741,20 +702,19 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Address: %1
 </source>
-        <translation type="unfinished">1%1' پتہ
-</translation>
+        <translation type="unfinished">1%1' پتہ</translation>
     </message>
     <message>
         <source>Sent transaction</source>
-        <translation>بھیجی گئی ٹرانزیکشن</translation>
+        <translation type="unfinished">بھیجی گئی ٹرانزیکشن</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
-        <translation>آنے والی ٹرانزیکشن</translation>
+        <translation type="unfinished">آنے والی ٹرانزیکشن</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation type="unfinished">درجہ بندی کا تعین کرنے والی ایچ۔ڈی کلیدی جنریشن &lt;b&gt;فعال&lt;/b&gt; ہے</translation>
+        <translation type="unfinished">درجہ بندی کا تعین کرنے والی چابی فعال ہے</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
@@ -762,7 +722,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation type="unfinished">نجی کلید &lt;b&gt;غیر فعال &lt;b/&gt;ہے۔</translation>
+        <translation type="unfinished">نجی کلید غیر فعال ہے۔</translation>
     </message>
     <message>
         <source>Original message:</source>
@@ -863,12 +823,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">کاپی اور رقم</translation>
     </message>
     <message>
-        <source>Copy transaction &amp;ID</source>
-        <translation type="unfinished">لین دین اور شناخت کی تفصیلات(ID) کاپی کریں۔</translation>
-    </message>
-    <message>
         <source>L&amp;ock unspent</source>
-        <translation type="unfinished">غیر خرچ شدہ آؤٹ پٹ بند کریں</translation>
+        <translation type="unfinished">غیر خرچ شدہ تالا</translation>
     </message>
     <message>
         <source>&amp;Unlock unspent</source>
@@ -899,10 +855,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">تبدیلی کاپی کریں</translation>
     </message>
     <message>
-        <source>(%1 locked)</source>
-        <translation type="unfinished">مقفل'%1</translation>
-    </message>
-    <message>
         <source>yes</source>
         <translation type="unfinished">جی ہاں</translation>
     </message>
@@ -915,27 +867,29 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">یہ لیبل سرخ ہو جاتا ہے اگر کوئی وصول کنندہ موجودہ کم سے کم مقرر کردہ حد سے کم رقم وصول کرتا ہے۔</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation type="unfinished">مختلف ہو سکتے ہیں%1 +/- ساتوشی فی ان پٹ۔</translation>
-    </message>
-    <message>
         <source>(no label)</source>
         <translation type="unfinished">(کوئی لیبل نہیں)</translation>
     </message>
     <message>
         <source>change from %1 (%2)</source>
-        <translation type="unfinished">%1 (%2)سے تبدیل کریں</translation>
+        <translation type="unfinished">1%1 (2%2)سے تبدیل کریں</translation>
     </message>
     <message>
         <source>(change)</source>
-        <translation type="unfinished">تبدیلی</translation>
+        <translation type="unfinished">تبدیل کریں</translation>
     </message>
 </context>
 <context>
     <name>CreateWalletActivity</name>
     <message>
+        <source>Create Wallet</source>
+        <extracomment>Title of window indicating the progress of creation of a new wallet.</extracomment>
+        <translation type="unfinished">والیٹ بنائیں</translation>
+    </message>
+    <message>
         <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
-        <translation type="unfinished">والیٹ بنانا &lt;b&gt; %1&lt;/b&gt;</translation>
+        <extracomment>Descriptive text of the create wallet progress window which indicates to the user which wallet is currently being created.</extracomment>
+        <translation type="unfinished">والیٹ بنانا &lt;b&gt;1 %1&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Create wallet failed</source>
@@ -954,7 +908,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <name>OpenWalletActivity</name>
     <message>
         <source>Open wallet failed</source>
-        <translation type="unfinished">والیٹ کھولنا ناکم ہو گیا</translation>
+        <translation type="unfinished">والیٹ کھولنا ناکام ہو گیا</translation>
     </message>
     <message>
         <source>Open wallet warning</source>
@@ -963,6 +917,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>default wallet</source>
         <translation type="unfinished">پہلے سے طے شدہ والیٹ</translation>
+    </message>
+    <message>
+        <source>Open Wallet</source>
+        <extracomment>Title of window indicating the progress of opening of a wallet.</extracomment>
+        <translation type="unfinished">والیٹ کھولیں</translation>
     </message>
     </context>
 <context>
@@ -1020,7 +979,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported, or an HD seed can be set, at a later time.</source>
-        <translation type="unfinished">ایک خالی والیٹ بنائیں۔ خالی والیٹ میں ابتدائی طور پر نجی چابیاں یا اسکرپٹ نہیں ہوتے ہیں۔ نجی چابیاں اور پتے درآمد کیے جا سکتے ہیں، یا بعد میں ایک HD بیج سیٹ کیا جا سکتا ہے۔</translation>
+        <translation type="unfinished">ایک خالی والیٹ ضبنائیں۔ خالی والیٹ میں ابتدائی طور پر نجی چابیاں یا اسکرپٹ نہیں ہوتے ہیں۔ نجی چابیاں اور پتے درآمد کیے جا سکتے ہیں، یا بعد میں ایک HD بیج سیٹ کیا جا سکتا ہے۔</translation>
     </message>
     <message>
         <source>Make Blank Wallet</source>
@@ -1060,11 +1019,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
-        <translation>ایڈریس میں ترمیم کریں۔</translation>
+        <translation type="unfinished">ایڈریس میں ترمیم کریں۔</translation>
     </message>
     <message>
         <source>&amp;Label</source>
-        <translation>چٹ</translation>
+        <translation type="unfinished">چٹ</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1076,7 +1035,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>&amp;Address</source>
-        <translation>پتہ</translation>
+        <translation type="unfinished">پتہ</translation>
     </message>
     <message>
         <source>New sending address</source>
@@ -1096,26 +1055,26 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>New key generation failed.</source>
-        <translation type="unfinished">نئی کلیدی نسل ناکام ہوگئی۔</translation>
+        <translation type="unfinished">نئی چابی بننا ناکام ہوگیا</translation>
     </message>
 </context>
 <context>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation>ایک نئی ڈیٹا ڈائرکٹری بنائی جائے گی۔</translation>
+        <translation type="unfinished">ایک نئی ڈیٹا ڈائرکٹری بنائی جائے گی۔</translation>
     </message>
     <message>
         <source>name</source>
-        <translation>نام</translation>
+        <translation type="unfinished">نام</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-        <translation>پاتھ پہلے سے موجود ہے، اور ڈائرکٹری نہیں ہے۔</translation>
+        <translation type="unfinished">پاتھ پہلے سے موجود ہے، اور ڈائرکٹری نہیں ہے۔</translation>
     </message>
     <message>
         <source>Cannot create data directory here.</source>
-        <translation>یہاں ڈیٹا ڈائرکٹری نہیں بن سکتی۔</translation>
+        <translation type="unfinished">یہاں ڈیٹا ڈائرکٹری نہیں بن سکتی۔</translation>
     </message>
 </context>
 <context>
@@ -1138,11 +1097,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Error</source>
-        <translation>نقص</translation>
+        <translation type="unfinished">نقص</translation>
     </message>
     <message>
         <source>Welcome</source>
-        <translation>خوش آمدید</translation>
+        <translation type="unfinished">خوش آمدید</translation>
     </message>
     <message>
         <source>Limit block chain storage to</source>
@@ -1162,11 +1121,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Use the default data directory</source>
-        <translation>پہلے سے طے شدہ ڈیٹا ڈائرکٹری استعمال کریں۔</translation>
+        <translation type="unfinished">پہلے سے طے شدہ ڈیٹا ڈائرکٹری استعمال کریں۔</translation>
     </message>
     <message>
         <source>Use a custom data directory:</source>
-        <translation>اپنی مرضی کے مطابق ڈیٹا ڈائرکٹری کا استعمال کریں:</translation>
+        <translation type="unfinished">اپنی مرضی کے مطابق ڈیٹا ڈائرکٹری کا استعمال کریں:</translation>
     </message>
 </context>
 <context>
@@ -1177,7 +1136,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>About %1</source>
-        <translation type="unfinished">تقریبآ %1</translation>
+        <translation type="unfinished">کے بارے میں 1%1</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1199,7 +1158,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation type="unfinished">ہو سکتا ہے حالیہ لین دین ابھی تک نظر نہ آئے، اور اس وجہ سے آپ کے والیٹ کا بیلنس غلط ہو سکتا ہے۔ یہ معلومات درست ہوں گی جب آپ کے والیٹ نے بٹ کوائن نیٹ ورک کے ساتھ مطابقت پذیری مکمل کر لی ہو، جیسا کہ ذیل میں تفصیل ہے۔</translation>
+        <translation type="unfinished">ہو سکتا ہے حالیہ لین دین ابھی تک نظر نہ آئے، اور اس وجہ سے آپ کے والیٹ کا بیلنس غلط ہو سکتا ہے۔ یہ معلومات درست ہوں گی جب آپ کے والیٹ نے بٹ کوائن نیٹ ورک کے ساتھ مطابقت پذیری مکمل کر لی ہے، جیسا کہ ذیل میں تفصیل ہے۔</translation>
     </message>
     <message>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -1248,16 +1207,21 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>URI:</source>
         <translation type="unfinished">URI</translation>
     </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <extracomment>Tooltip text for button that allows you to paste an address that is in your clipboard.</extracomment>
+        <translation type="unfinished">کلپ بورڈ سے پتہ چسپاں کریں۔</translation>
+    </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
         <source>Options</source>
-        <translation>اختیارات</translation>
+        <translation type="unfinished">اختیارات</translation>
     </message>
     <message>
         <source>&amp;Main</source>
-        <translation>اور مرکزی</translation>
+        <translation type="unfinished">&amp; مرکزی</translation>
     </message>
     <message>
         <source>Enabling pruning significantly reduces the disk space required to store transactions. All blocks are still fully validated. Reverting this setting requires re-downloading the entire blockchain.</source>
@@ -1289,15 +1253,15 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>کلائنٹ کے تمام اختیارات کو ڈیفالٹ پر دوبارہ ترتیب دیں۔</translation>
+        <translation type="unfinished">کلائنٹ کے تمام اختیارات کو ڈیفالٹ پر دوبارہ ترتیب دیں۔</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation>اور دوبارہ ترتیب دینے کے اختیارات</translation>
+        <translation type="unfinished">اور دوبارہ ترتیب دینے کے اختیارات</translation>
     </message>
     <message>
         <source>&amp;Network</source>
-        <translation>اور نیٹ ورک</translation>
+        <translation type="unfinished">اور نیٹ ورک</translation>
     </message>
     <message>
         <source>GB</source>
@@ -1325,7 +1289,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>&amp;Window</source>
-        <translation>براؤزر ونڈو</translation>
+        <translation type="unfinished">براؤزر ونڈو</translation>
     </message>
     <message>
         <source>Compiled without external signing support (required for external signing)</source>
@@ -1334,7 +1298,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>default</source>
-        <translation>پہلے سے طے شدہ</translation>
+        <translation type="unfinished">پہلے سے طے شدہ</translation>
     </message>
     <message>
         <source>none</source>
@@ -1342,7 +1306,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Confirm options reset</source>
-        <translation>اختیارات کو دوبارہ ترتیب دینے کی تصدیق کریں۔</translation>
+        <translation type="unfinished">اختیارات کو دوبارہ ترتیب دینے کی تصدیق کریں۔</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
@@ -1354,6 +1318,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Configuration options</source>
+        <extracomment>Window title text of pop-up box that allows opening up of configuration file.</extracomment>
         <translation type="unfinished">کنفیگریشن کے اختیارات</translation>
     </message>
     <message>
@@ -1366,18 +1331,18 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>فراہم کردہ پراکسی پتہ غلط ہے۔</translation>
+        <translation type="unfinished">فراہم کردہ پراکسی پتہ غلط ہے۔</translation>
     </message>
 </context>
 <context>
     <name>OverviewPage</name>
     <message>
         <source>Form</source>
-        <translation>فارم</translation>
+        <translation type="unfinished">فارم</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>ظاہر کی گئی معلومات پرانی ہو سکتی ہے۔ کنکشن قائم ہونے کے بعد آپ کا والیٹ خود بخود بٹ کوائن نیٹ ورک کے ساتھ ہم آہنگ ہوجاتا ہے، لیکن یہ عمل ابھی مکمل نہیں ہوا ہے۔</translation>
+        <translation type="unfinished">ظاہر کی گئی معلومات پرانی ہو سکتی ہے۔ کنکشن قائم ہونے کے بعد آپ کا والیٹ خود بخود بٹ کوائن نیٹ ورک کے ساتھ ہم آہنگ ہوجاتا ہے، لیکن یہ عمل ابھی مکمل نہیں ہوا ہے۔</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1389,7 +1354,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Your current spendable balance</source>
-        <translation>آپ کا موجودہ قابل خرچ بیلنس</translation>
+        <translation type="unfinished">آپ کا موجودہ قابل خرچ بیلنس</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -1397,15 +1362,15 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>کل ٹرانزیکشنز جن کی تصدیق ہونا باقی ہے، اور ابھی تک قابل خرچ بیلنس میں شمار نہیں ہوتے </translation>
+        <translation type="unfinished">کل ٹرانزیکشنز جن کی تصدیق ہونا باقی ہے، اور ابھی تک قابل خرچ بیلنس میں شمار نہیں ہوتے </translation>
     </message>
     <message>
         <source>Immature:</source>
-        <translation>خام</translation>
+        <translation type="unfinished">Immature</translation>
     </message>
     <message>
         <source>Mined balance that has not yet matured</source>
-        <translation>کان کنی کا توازن جو ابھی پختہ نہیں ہوا ہے۔</translation>
+        <translation type="unfinished">کان کنی کا توازن جو ابھی پختہ نہیں ہوا ہے۔</translation>
     </message>
     <message>
         <source>Balances</source>
@@ -1413,11 +1378,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Total:</source>
-        <translation>کل:</translation>
+        <translation type="unfinished">کل:</translation>
     </message>
     <message>
         <source>Your current total balance</source>
-        <translation>آپ کا کل موجودہ بیلنس</translation>
+        <translation type="unfinished">آپ کا کل موجودہ بیلنس</translation>
     </message>
     <message>
         <source>Your current balance in watch-only addresses</source>
@@ -1457,14 +1422,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Close</source>
         <translation type="unfinished">بند کریں</translation>
-    </message>
-    <message>
-        <source>Failed to load transaction: %1</source>
-        <translation type="unfinished">لین دین لوڈ کرنے میں ناکام:%1</translation>
-    </message>
-    <message>
-        <source>Failed to sign transaction: %1</source>
-        <translation type="unfinished">لین دین پر دستخط کرنے میں ناکام:%1</translation>
     </message>
     <message>
         <source>Could not sign any more inputs.</source>
@@ -1518,7 +1475,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     <message>
         <source>Ping</source>
         <extracomment>Title of Peers Table column which indicates the current latency of the connection with the peer.</extracomment>
-        <translation type="unfinished">پنگ</translation>
+        <translation type="unfinished">فریق</translation>
     </message>
     <message>
         <source>Peer</source>
@@ -1550,7 +1507,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <extracomment>Title of Peers Table column which states the network the peer connected through.</extracomment>
         <translation type="unfinished">نیٹ ورک</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -1570,15 +1527,15 @@ If you are receiving this error you should request the merchant provide a BIP21 
     <name>RPCConsole</name>
     <message>
         <source>&amp;Information</source>
-        <translation>اور معلومات</translation>
+        <translation type="unfinished">اور معلومات</translation>
     </message>
     <message>
         <source>Startup time</source>
-        <translation>آغاز کا وقت</translation>
+        <translation type="unfinished">آغاز کا وقت</translation>
     </message>
     <message>
         <source>Network</source>
-        <translation>نیٹ ورک</translation>
+        <translation type="unfinished">نیٹ ورک</translation>
     </message>
     <message>
         <source>Name</source>
@@ -1586,11 +1543,11 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
     <message>
         <source>Number of connections</source>
-        <translation>رابطوں کی تعداد</translation>
+        <translation type="unfinished">رابطوں کی تعداد</translation>
     </message>
     <message>
         <source>Block chain</source>
-        <translation>بلاک چین</translation>
+        <translation type="unfinished">بلاک چین</translation>
     </message>
     <message>
         <source>Current number of transactions</source>
@@ -1686,7 +1643,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
     <message>
         <source>Last block time</source>
-        <translation>آخری بلاک کا وقت</translation>
+        <translation type="unfinished">آخری بلاک کا وقت</translation>
     </message>
     <message>
         <source>Totals</source>
@@ -1694,7 +1651,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
     <message>
         <source>Clear console</source>
-        <translation>کنسول صاف کریں۔</translation>
+        <translation type="unfinished">کنسول صاف کریں۔</translation>
     </message>
     <message>
         <source>In:</source>
@@ -1703,6 +1660,11 @@ If you are receiving this error you should request the merchant provide a BIP21 
     <message>
         <source>Out:</source>
         <translation type="unfinished">باہر:</translation>
+    </message>
+    <message>
+        <source>&amp;Copy address</source>
+        <extracomment>Context menu action to copy the address of a peer.</extracomment>
+        <translation type="unfinished">ایڈریس کاپی کریں۔</translation>
     </message>
     <message>
         <source>&amp;Disconnect</source>
@@ -1745,7 +1707,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     <name>ReceiveCoinsDialog</name>
     <message>
         <source>&amp;Amount:</source>
-        <translation type="unfinished">اور رقم</translation>
+        <translation type="unfinished">اور لیبل</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
@@ -1862,7 +1824,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>سکے بھیجیں۔</translation>
+        <translation type="unfinished">سکے بھیجیں۔</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1930,7 +1892,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
-        <translation>ایک ساتھ متعدد وصول کنندگان کو بھیجیں۔</translation>
+        <translation type="unfinished">ایک ساتھ متعدد وصول کنندگان کو بھیجیں۔</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -1954,11 +1916,11 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
     <message>
         <source>Balance:</source>
-        <translation>بیلنس:</translation>
+        <translation type="unfinished">بیلنس:</translation>
     </message>
     <message>
         <source>Confirm the send action</source>
-        <translation>بھیجنے کی کارروائی کی تصدیق کریں۔</translation>
+        <translation type="unfinished">بھیجنے کی کارروائی کی تصدیق کریں۔</translation>
     </message>
     <message>
         <source>Copy quantity</source>
@@ -1993,20 +1955,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation type="unfinished">پہلے اپنے ہارڈویئر والیٹ کو جوڑیں۔</translation>
     </message>
     <message>
-        <source>Do you want to draft this transaction?</source>
-        <translation type="unfinished">کیا آپ اس لین دین کا مسودہ تیار کرنا چاہتے ہیں؟</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?</source>
-        <translation type="unfinished">کیا آپ واقعی بھیجنا چاہتے ہیں؟</translation>
-    </message>
-    <message>
         <source>To review recipient list click "Show Details…"</source>
         <translation type="unfinished">وصول کنندگان کی فہرست کا جائزہ لینے کے لیے "تفصیلات دکھائیں..." پر کلک کریں۔</translation>
-    </message>
-    <message>
-        <source>Sign and send</source>
-        <translation type="unfinished">دستخط کرکے بھیجیں۔</translation>
     </message>
     <message>
         <source>Sign failed</source>
@@ -2020,7 +1970,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     <message>
         <source>External signer failure</source>
         <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
-        <translation type="unfinished">بیرونی دستخط کنندہ کی ناکامی۔</translation>
+        <translation type="unfinished">بیرونی دستخط کی ناکامی۔</translation>
     </message>
     <message>
         <source>Save Transaction Data</source>
@@ -2036,6 +1986,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
     <message>
         <source>Please, review your transaction.</source>
+        <extracomment>Text to prompt a user to review the details of the transaction they are attempting to send.</extracomment>
         <translation type="unfinished">براہ کرم، اپنے لین دین کا جائزہ لیں۔</translation>
     </message>
     <message>
@@ -2049,10 +2000,6 @@ If you are receiving this error you should request the merchant provide a BIP21 
     <message>
         <source>Confirm send coins</source>
         <translation type="unfinished">سکے بھیجنے کی تصدیق کریں۔</translation>
-    </message>
-    <message>
-        <source>Confirm transaction proposal</source>
-        <translation type="unfinished">لین دین کی تجویز کی تصدیق کریں۔</translation>
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
@@ -2080,7 +2027,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -2099,7 +2046,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
     <message>
         <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
-        <translation type="unfinished">آپ نے تبدیلی کے لیے جو پتہ منتخب کیا ہے وہ اس والیٹ کا حصہ نہیں ہے۔ آپ کے والیٹ میں موجود کوئی بھی یا تمام فنڈز اس پتے پر بھیجے جا سکتے ہیں۔ کیا آپ کو یقین ہے؟</translation>
+        <translation type="unfinished">آپ نے تبدیلی کے لیے جو پتہ منتخب کیا ہے وہ اس والیٹ کا حصہ نہیں ہے۔ آپ کے والیٹ میں موجود کوئی بھی یا تمام فنڈز اس پتے پر بھیجے جا سکتے ہیں۔ کیا آپ یقین ہے؟</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2110,7 +2057,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     <name>SendCoinsEntry</name>
     <message>
         <source>&amp;Label:</source>
-        <translation>اور لیبل</translation>
+        <translation type="unfinished">اور لیبل</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2122,7 +2069,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>کلپ بورڈ سے پتہ چسپاں کریں۔</translation>
+        <translation type="unfinished">کلپ بورڈ سے پتہ چسپاں کریں۔</translation>
     </message>
     <message>
         <source>Remove this entry</source>
@@ -2165,7 +2112,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>Signatures - Sign / Verify a Message</source>
-        <translation>دستخط - ایک پیغام پر دستخط / تصدیق کریں۔</translation>
+        <translation type="unfinished">دستخط - ایک پیغام پر دستخط / تصدیق کریں۔</translation>
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
@@ -2181,15 +2128,15 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>کلپ بورڈ سے پتہ چسپاں کریں۔</translation>
+        <translation type="unfinished">کلپ بورڈ سے پتہ چسپاں کریں۔</translation>
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
-        <translation>وہ پیغام درج کریں جس پر آپ دستخط کرنا چاہتے ہیں۔</translation>
+        <translation type="unfinished">وہ پیغام درج کریں جس پر آپ دستخط کرنا چاہتے ہیں۔</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>دستخط</translation>
+        <translation type="unfinished">دستخط</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -2226,13 +2173,6 @@ If you are receiving this error you should request the merchant provide a BIP21 
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
     <message>
         <source>Date</source>
         <translation type="unfinished">تاریخ</translation>
@@ -2251,7 +2191,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -2283,13 +2223,6 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <source>Label</source>
         <translation type="unfinished">لیبل</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
     <message>
         <source>(no label)</source>
         <translation type="unfinished">(کوئی لیبل نہیں)</translation>
@@ -2315,7 +2248,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
     <message>
         <source>Comma separated file</source>
-        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation type="unfinished">کوما سے الگ فائل</translation>
     </message>
     <message>
@@ -2349,7 +2282,11 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <source>Create a new wallet</source>
         <translation type="unfinished">ایک نیا پرس بنائیں</translation>
     </message>
-</context>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">نقص</translation>
+    </message>
+    </context>
 <context>
     <name>WalletModel</name>
     <message>
@@ -2370,17 +2307,6 @@ If you are receiving this error you should request the merchant provide a BIP21 
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation type="unfinished">موجودہ ڈیٹا کو فائیل میں محفوظ کریں</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="unfinished">نقص</translation>
-    </message>
-    </context>
-<context>
-    <name>bitcoin-core</name>
-    <message>
-        <source>Insufficient funds</source>
-        <translation type="unfinished">ناکافی فنڈز</translation>
     </message>
     </context>
 </TS>

@@ -7,7 +7,7 @@
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>يېڭى ئادرېس قۇر</translation>
+        <translation type="unfinished">يېڭى ئادرېس قۇر</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>نۆۋەتتە تاللىغان ئادرېسنى سىستېما چاپلاش تاختىسىغا كۆچۈرىدۇ</translation>
+        <translation type="unfinished">نۆۋەتتە تاللىغان ئادرېسنى سىستېما چاپلاش تاختىسىغا كۆچۈرىدۇ</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -27,7 +27,7 @@
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>نۆۋەتتە تاللانغان ئادرېسنى تىزىمدىن ئۆچۈرىدۇ</translation>
+        <translation type="unfinished">نۆۋەتتە تاللانغان ئادرېسنى تىزىمدىن ئۆچۈرىدۇ</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
@@ -35,15 +35,15 @@
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>نۆۋەتتىكى بەتكۈچتىكى سانلىق مەلۇماتنى ھۆججەتكە چىقىرىدۇ</translation>
+        <translation type="unfinished">نۆۋەتتىكى بەتكۈچتىكى سانلىق مەلۇماتنى ھۆججەتكە چىقىرىدۇ</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>چىقار(&amp;E)</translation>
+        <translation type="unfinished">چىقار(&amp;E)</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>ئۆچۈر(&amp;D)</translation>
+        <translation type="unfinished">ئۆچۈر(&amp;D)</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -81,7 +81,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Comma separated file</source>
-        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation type="unfinished">ھۆججەت پەش بىلەن ئايرىلىدۇ</translation>
     </message>
     <message>
@@ -113,14 +113,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <name>QObject</name>
     <message numerus="yes">
         <source>%n second(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -158,14 +158,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <name>BitcoinGUI</name>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>خاتالىق</translation>
+        <translation type="unfinished">خاتالىق</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network.</source>
@@ -187,7 +187,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <name>EditAddressDialog</name>
     <message>
         <source>&amp;Label</source>
-        <translation>&amp;خەتكۈچ</translation>
+        <translation type="unfinished">&amp;خەتكۈچ</translation>
     </message>
     </context>
 <context>
@@ -202,7 +202,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Error</source>
-        <translation>خاتالىق</translation>
+        <translation type="unfinished">خاتالىق</translation>
     </message>
     </context>
 <context>
@@ -235,7 +235,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <name>SendCoinsDialog</name>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -248,15 +248,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>TransactionDesc</name>
     <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
-    <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -267,13 +260,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Label</source>
         <translation type="unfinished">بەلگە</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform />
-            <numerusform />
-        </translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -288,7 +274,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Comma separated file</source>
-        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation type="unfinished">ھۆججەت پەش بىلەن ئايرىلىدۇ</translation>
     </message>
     <message>
@@ -305,6 +291,13 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
+    <name>WalletFrame</name>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">خاتالىق</translation>
+    </message>
+    </context>
+<context>
     <name>WalletView</name>
     <message>
         <source>&amp;Export</source>
@@ -313,10 +306,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Export the data in the current tab to a file</source>
         <translation type="unfinished">نۆۋەتتىكى بەتكۈچتىكى سانلىق مەلۇماتنى ھۆججەتكە چىقىرىدۇ</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="unfinished">خاتالىق</translation>
     </message>
     </context>
 </TS>

@@ -7,7 +7,7 @@
     </message>
     <message>
         <source>Create a new address</source>
-        <translation>Gumawa ng bagong address</translation>
+        <translation type="unfinished">Gumawa ng bagong ♦address♦</translation>
     </message>
     <message>
         <source>&amp;New</source>
@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>I-copy ang pinipiling address sa kasalakuyan sa clipboard ng sistema</translation>
+        <translation type="unfinished">Kopyahin ang pinipiling ♦address♦ sa kasalakuyan sa ♦clipboard♦ ng sistema</translation>
     </message>
     <message>
         <source>C&amp;lose</source>
@@ -23,27 +23,31 @@
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Tanggalin ang kasalukuyang napiling address sa listahan.</translation>
+        <translation type="unfinished">Tanggalin ang kasalukuyang napiling ♦address♦ sa listahan</translation>
     </message>
     <message>
         <source>Enter address or label to search</source>
-        <translation type="unfinished">Ilagay ang address o tatak na hahanapin</translation>
+        <translation type="unfinished">Ilagay ang ♦address♦ o label na hahanapin</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>I-export ang datos sa kasalukuyang tab sa isang file</translation>
+        <translation type="unfinished">I-export ang datos sa kasalukuyang ♦tab♦ sa isang file</translation>
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;I-export</translation>
+        <translation type="unfinished">&amp;I-export</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation>&amp;Tanggalin</translation>
+        <translation type="unfinished">&amp;Tanggalin</translation>
+    </message>
+    <message>
+        <source>Choose the address to send coins to</source>
+        <translation type="unfinished">Piliin ang ♦address♦ kung saan ipapadala ang mga coin</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation type="unfinished">Piliin ang addres kung saan tatanggap ng coins</translation>
+        <translation type="unfinished">Piliin ang ♦address♦ kung saan tatanggap ng mga coin</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -59,12 +63,12 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Ito ang mga address mong Bitcoin para pagpapadala ng bayad. Palagi i-check mo ang amount at tinatanggap na address bagong magsesend ka ng mga coin.</translation>
+        <translation type="unfinished">Ito ang mga ♦address♦ ng ♦Bitcoin♦ mo para pagpapadala ng mga bayad. Palaging suriin mo ang halaga at address kung saan tatanggap bago magpadala ka ng mga ♦coin.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Ito ang mga address ng Bitcoin para sa pagtanggap ng mga baya. Gamitin ang 'Create new receiving address' na button sa receive tab para gumawa ng bagong mga address. Ang pag-sign ay posible lamang sa uri ng mga address na 'legacy'.</translation>
+        <translation type="unfinished">Ito ang mga address ng ♦Bitcoin♦ para sa pagtanggap ng mga baya. Gamitin ang 'Create new receiving address' na button sa receive tab para gumawa ng bagong mga address. Ang pag-sign ay posible lamang sa uri ng mga address na 'legacy'.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -72,7 +76,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Copy &amp;Label</source>
-        <translation type="unfinished">Kopyahin ang &amp;Tatak</translation>
+        <translation type="unfinished">Kopyahin ang &amp;♦Label♦</translation>
     </message>
     <message>
         <source>&amp;Edit</source>
@@ -80,12 +84,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Export Address List</source>
-        <translation type="unfinished">I-Export ang Listahan ng Address</translation>
+        <translation type="unfinished">I-Export ang Listahan ng ♦Address♦</translation>
     </message>
     <message>
         <source>Comma separated file</source>
-        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
-        <translation type="unfinished">Kuwir hiwalay na file</translation>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
+        <translation type="unfinished">Kuwit hiwalay na ♦file♦</translation>
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
@@ -101,7 +105,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
-        <translation type="unfinished">Tatak</translation>
+        <translation type="unfinished">♦Label♦</translation>
     </message>
     <message>
         <source>Address</source>
@@ -116,19 +120,19 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>♦Passphrase♦ na ♦Dialog♦</translation>
+        <translation type="unfinished">♦Passphrase♦ na ♦Dialog♦</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
-        <translation>Ilagay ang ♦passphrase♦</translation>
+        <translation type="unfinished">Ilagay ang ♦passphrase♦</translation>
     </message>
     <message>
         <source>New passphrase</source>
-        <translation>Bagong ♦passphrase♦</translation>
+        <translation type="unfinished">Bagong ♦passphrase♦</translation>
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>Ulitin ang bagong ♦passphrase♦</translation>
+        <translation type="unfinished">Ulitin ang bagong ♦passphrase♦</translation>
     </message>
     <message>
         <source>Show passphrase</source>
@@ -156,9 +160,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Babala: Kung i-encrypt mo ang pitaka mo at mawala ang iyong ♦passphrase♦, &lt;b&gt;
-MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
-</translation>
+        <translation type="unfinished">Babala: IKung i-encrypt mo ang iyong pitaka at mawawala ang ♦passphrase♦,  &lt;b&gt;MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -178,7 +180,7 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Tandaan na ang pag-encrypt sa iyong pitaka ay hindi ganap na maprotektahan ang mga ♦bitcoin♦ sa pagnanakaw ng ♦malware♦ na makakahawa sa iyong kompyuter.</translation>
+        <translation type="unfinished">Tandaan na ang pag-encrypt sa iyong pitaka ay hindi ganap na mapoprotektahan ang mga ♦bitcoin♦ sa pagnanakaw ng ♦malware♦ na makakahawa sa iyong kompyuter.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -194,7 +196,7 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation type="unfinished">MAHALAGA: Kahit anong dating mga ♦backup♦ na ginawa mo sa file ng pitaka mo ay dapat na mapalitan ng bagong gawang, na-encrypt na ♦file♦ ng pitaka. Para sa mga rason ng seguridad, dating mga ♦backup♦ sa hindi na-encrypt na ♦file♦ ng pitaka ay magiging walang silbi sa lalong madaling panahon na uumpisahan mong gamitin ang bago, na na-encrypt na pitaka.</translation>
+        <translation type="unfinished">MAHALAGA: Kahit anong dating mga ♦backup♦ na ginawa mo sa ♦file♦ ng pitaka mo ay dapat na mapalitan ng bagong gawang, na-encrypt na ♦file♦ ng pitaka. Para sa mga rason ng seguridad, dating mga ♦backup♦ sa hindi na-encrypt na ♦file♦ ng pitaka ay magiging walang silbi sa lalong madaling panahon na sisimulan mong gamitin ang bago, na na-encrypt na pitaka.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -258,12 +260,22 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
 <context>
     <name>QObject</name>
     <message>
+        <source>Do you want to reset settings to default values, or to abort without making changes?</source>
+        <extracomment>Explanatory text shown on startup when the settings file cannot be read. Prompts user to make a choice between resetting or aborting.</extracomment>
+        <translation type="unfinished">Gusto mo bang i-reset ang mga ♦setting♦ sa ♦default♦ na mga ♦value♦, o itigil na hindi gumagawa ng mga pagbabago?</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. Check that settings file is writable, or try running with -nosettings.</source>
+        <extracomment>Explanatory text shown on startup when the settings file could not be written. Prompts user to check that we have the ability to write to the file. Explains that the user has the option of running without a settings file.</extracomment>
+        <translation type="unfinished">Isang malubhang pagkakamali ang naganap. Suriin ang mga ♦setting♦ ng ♦file♦ na ♦writable♦, o subukan na patakbuhin sa ♦-nosettings♦.</translation>
+    </message>
+    <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
-        <translation type="unfinished">Pagkakamali: Natukoy na datos na ♦directory♦ "1%1" ay wala.</translation>
+        <translation type="unfinished">Pagkakamali: Ang natukoy na datos na ♦directory♦ "1%1" ay wala.</translation>
     </message>
     <message>
         <source>Error: Cannot parse configuration file: %1.</source>
-        <translation type="unfinished">Pagkakamali: Hindi ma-parse ang ♦configuration file♦: 1%1.</translation>
+        <translation type="unfinished">Pagkakamali: Hindi ma-parse ang ♦configuration file♦: %1.</translation>
     </message>
     <message>
         <source>Error: %1</source>
@@ -279,14 +291,14 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message numerus="yes">
         <source>%n second(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -321,46 +333,57 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     </context>
 <context>
+    <name>bitcoin-core</name>
+    <message>
+        <source>Settings file could not be read</source>
+        <translation type="unfinished">Ang mga ♦setting file♦ ay hindi mabasa</translation>
+    </message>
+    <message>
+        <source>Settings file could not be written</source>
+        <translation type="unfinished">Ang mga ♦settings file♦ ay hindi maisulat</translation>
+    </message>
+    </context>
+<context>
     <name>BitcoinGUI</name>
     <message>
         <source>&amp;Overview</source>
-        <translation>&amp;Pangkalahatang ideya</translation>
+        <translation type="unfinished">&amp;Pangkalahatang ideya</translation>
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation>Ipakita ang pangkalahatang ideya ng pitaka</translation>
+        <translation type="unfinished">Ipakita ang pangkalahatang ideya ng pitaka</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
-        <translation>&amp;Mga transaksyon</translation>
+        <translation type="unfinished">&amp;Mga transaksyon</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>Tignan ang kasaysayan ng transaksyon</translation>
+        <translation type="unfinished">Tignan ang kasaysayan ng transaksyon</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
-        <translation>♦E&amp;xit</translation>
+        <translation type="unfinished">♦E&amp;xit</translation>
     </message>
     <message>
         <source>Quit application</source>
-        <translation>Ihinto ang aplikasyon</translation>
+        <translation type="unfinished">Ihinto ang aplikasyon</translation>
     </message>
     <message>
         <source>&amp;About %1</source>
-        <translation type="unfinished">&amp;Tungkol sa %1</translation>
+        <translation type="unfinished">&amp;Tungkol sa 1%1</translation>
     </message>
     <message>
         <source>Show information about %1</source>
-        <translation type="unfinished">Ipakita ang impormasyon tungkol sa %1</translation>
+        <translation type="unfinished">Ipakita ang impormasyon tungkol sa 1%1</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
-        <translation>Tungkol sa &amp;♦Qt♦</translation>
+        <translation type="unfinished">Patungkol sa &amp;♦Qt♦</translation>
     </message>
     <message>
         <source>Modify configuration options for %1</source>
-        <translation type="unfinished">Baguhin ang mga pagpipilian sa ♦configuration♦ para sa %1</translation>
+        <translation type="unfinished">Baguhin ang mga pagpipilian sa ♦configuration♦ para sa 1%1</translation>
     </message>
     <message>
         <source>Create a new wallet</source>
@@ -376,48 +399,36 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
         <translation type="unfinished">Na-disable ang aktibidad ng ♦network♦</translation>
     </message>
     <message>
-        <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
-        <translation type="unfinished">Ang paghalili ay  &lt;b&gt;na-enable&lt;/b&gt;: %1</translation>
-    </message>
-    <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Magpadala ng mga ♦coin♦ sa ♦address♦ ng Bitcoin</translation>
+        <translation type="unfinished">Magpadala ng mga ♦coin♦ sa ♦address♦ ng Bitcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
-        <translation>I-backup ang pitaka sa ibang lokasyon</translation>
+        <translation type="unfinished">I-backup ang pitaka sa ibang lokasyon</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>Palitan ang ♦passphrase♦ na ginamit para sa pag-encrypt sa pitaka</translation>
+        <translation type="unfinished">Palitan ang ♦passphrase♦ na ginamit para sa pag-encrypt sa pitaka</translation>
     </message>
     <message>
         <source>&amp;Send</source>
-        <translation>&amp;Ipadala</translation>
+        <translation type="unfinished">&amp;Ipadala</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
-        <translation>&amp;Tumanggap</translation>
+        <translation type="unfinished">&amp;Tumanggap</translation>
     </message>
     <message>
         <source>&amp;Options…</source>
         <translation type="unfinished">&amp;Mga pagpipilian...</translation>
     </message>
     <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Ipakita / Itago</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation>Ipakita o itago ang pangunahing ♦Window♦</translation>
-    </message>
-    <message>
         <source>&amp;Encrypt Wallet…</source>
-        <translation type="unfinished">&amp;I-encrypt ang Pitaka</translation>
+        <translation type="unfinished">&amp;I-encrypt ang pitaka</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>I-encrypt ang mga pribadong mga susi na nabibilang sa iyong pitaka</translation>
+        <translation type="unfinished">I-encrypt ang mga pribadong mga susi na nabibilang sa iyong pitaka</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet…</source>
@@ -433,7 +444,7 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Tanda na mga mensahe sa mga ♦address♦ ng iyong ♦Bitcoin♦ para patunayan na pagmamay-ari mo sila</translation>
+        <translation type="unfinished">Tanda na mga mensahe sa mga ♦address♦ ng iyong ♦Bitcoin♦ para patunayan na pagmamay-ari mo sila</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
@@ -441,15 +452,11 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Patunayan ang mga mensahe para matiyak na sila ay napirmahan ng may tinukoy na mga ♦Bitcoin address♦</translation>
+        <translation type="unfinished">Patunayan ang mga mensahe para matiyak na sila ay napirmahan ng may tinukoy na mga ♦Bitcoin address♦</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
         <translation type="unfinished">&amp;I-load ang PSBT mula sa ♦file♦...</translation>
-    </message>
-    <message>
-        <source>Load PSBT from clipboard…</source>
-        <translation type="unfinished">I-load ang ♦PSBT♦ mula sa ♦clipboard♦...</translation>
     </message>
     <message>
         <source>Open &amp;URI…</source>
@@ -469,19 +476,19 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>&amp;File</source>
-        <translation>&amp;♦File♦</translation>
+        <translation type="unfinished">&amp;♦File♦</translation>
     </message>
     <message>
         <source>&amp;Settings</source>
-        <translation>Mga &amp;♦Setting♦</translation>
+        <translation type="unfinished">Mga &amp;♦Setting♦</translation>
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation>&amp;Tulong</translation>
+        <translation type="unfinished">&amp;Tulungan</translation>
     </message>
     <message>
         <source>Tabs toolbar</source>
-        <translation>♦Tabs toolbar♦</translation>
+        <translation type="unfinished">♦Tabs toolbar♦</translation>
     </message>
     <message>
         <source>Syncing Headers (%1%)…</source>
@@ -501,7 +508,7 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>Reindexing blocks on disk…</source>
-        <translation type="unfinished">Ni-rere-index ang mga bloke sa ♦disk♦</translation>
+        <translation type="unfinished">Ni-rereindex ang mga bloke sa ♦disk♦</translation>
     </message>
     <message>
         <source>Connecting to peers…</source>
@@ -513,7 +520,7 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation type="unfinished">Ipakita ang listahan ng nagamit na pagpapadalhan na mga ♦address♦ at mga tatak</translation>
+        <translation type="unfinished">Ipakita ang listahan ng mga nagamit na pagpapadalhan na mga ♦address♦ at mga tatak</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
@@ -525,14 +532,14 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
     </message>
     <message>
         <source>%1 behind</source>
-        <translation>%1 sa likod</translation>
+        <translation type="unfinished">%1 sa likod</translation>
     </message>
     <message>
         <source>Catching up…</source>
@@ -540,19 +547,23 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Ang huling natanggap na bloke ay nagawa %1kanina.</translation>
+        <translation type="unfinished">Ang huling natanggap na bloke ay nagawa %1kanina.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Ang mga transaksyon pagkatapos nito ay hindi pa muna makikita.</translation>
+        <translation type="unfinished">Ang mga transaksyon pagkatapos nito ay hindi pa muna makikita.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">Nagkamali</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Babala</translation>
+        <translation type="unfinished">Babala</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Impormasyon</translation>
+        <translation type="unfinished">Impormasyon</translation>
     </message>
     <message>
         <source>Load Partially Signed Bitcoin Transaction</source>
@@ -623,10 +634,6 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
         <translation type="unfinished">&amp;♦Window♦</translation>
     </message>
     <message>
-        <source>Minimize</source>
-        <translation type="unfinished">Bawasan</translation>
-    </message>
-    <message>
         <source>Zoom</source>
         <translation type="unfinished">I-zoom</translation>
     </message>
@@ -638,12 +645,16 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
         <source>%1 client</source>
         <translation type="unfinished">%1 na kliyente</translation>
     </message>
+    <message>
+        <source>&amp;Hide</source>
+        <translation type="unfinished">&amp;Itago</translation>
+    </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n aktibo na mga ♦connection(s)♦ sa ♦Bitcoin network♦.</numerusform>
-            <numerusform>%n na aktibong mga koneksyon sa ♦Bitcoin network♦</numerusform>
+            <numerusform />
+            <numerusform />
         </translation>
     </message>
     <message>
@@ -712,19 +723,19 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>Sent transaction</source>
-        <translation>Ipinadalang transaksyon</translation>
+        <translation type="unfinished">Ipinadalang transaksyon</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
-        <translation>Paparating na transaksyon</translation>
+        <translation type="unfinished">Paparating na transaksyon</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation type="unfinished">♦HD♦ na susi sa henerasyon ay &lt;b&gt;na-enable&lt;/b&gt;</translation>
+        <translation type="unfinished">♦HD key♦ na henerasyon ay &lt;b&gt;na-enable&lt;/b&gt;</translation>
     </message>
     <message>
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation type="unfinished">♦HD key generation♦ ay &lt;b&gt;na-disable&lt;/b&gt;</translation>
+        <translation type="unfinished">HD key na henerasyon ay &lt;b&gt;na-disabled&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
@@ -732,15 +743,15 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Ang pitaka ay &lt;b&gt;na-encrypt&lt;/b&gt; at kasalukuyang &lt;b&gt;na-unlock&lt;/b&gt;</translation>
+        <translation type="unfinished">Ang pitaka ay &lt;b&gt;na-encrypt&lt;/b&gt; at kasalukuyang &lt;b&gt;na-unlock&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Ang pitaka ay &lt;b&gt;na-encrypt&lt;/b&gt; at kasalukuyang &lt;b&gt;na-lock&lt;/b&gt;</translation>
+        <translation type="unfinished">Ang pitaka ay &lt;b&gt;na-encrypt&lt;/b&gt; at kasalukuyang &lt;b&gt;na-lock&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Original message:</source>
-        <translation type="unfinished">Orihinal na mensahe:</translation>
+        <translation type="unfinished">Orihinal na mensahe</translation>
     </message>
 </context>
 <context>
@@ -837,10 +848,6 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
         <translation type="unfinished">Kopyahin ang &amp;halaga</translation>
     </message>
     <message>
-        <source>Copy transaction &amp;ID</source>
-        <translation type="unfinished">Kopyahin ang transaksyon  ng &amp;♦ID♦</translation>
-    </message>
-    <message>
         <source>L&amp;ock unspent</source>
         <translation type="unfinished">&amp;I-lock ang hindi nagastos</translation>
     </message>
@@ -908,7 +915,13 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
 <context>
     <name>CreateWalletActivity</name>
     <message>
+        <source>Create Wallet</source>
+        <extracomment>Title of window indicating the progress of creation of a new wallet.</extracomment>
+        <translation type="unfinished">Gumawa ng pitaka</translation>
+    </message>
+    <message>
         <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the create wallet progress window which indicates to the user which wallet is currently being created.</extracomment>
         <translation type="unfinished">Paggawa ng Pitaka &lt;b&gt;%1&lt;/b&gt;…</translation>
     </message>
     <message>
@@ -939,7 +952,13 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
         <translation type="unfinished">pitaka na ♦default♦</translation>
     </message>
     <message>
+        <source>Open Wallet</source>
+        <extracomment>Title of window indicating the progress of opening of a wallet.</extracomment>
+        <translation type="unfinished">Buksan ang pitaka</translation>
+    </message>
+    <message>
         <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the open wallet progress window which indicates to the user which wallet is currently being opened.</extracomment>
         <translation type="unfinished">Pagbukas sa Pitaka &lt;b&gt;%1&lt;/b&gt;…</translation>
     </message>
 </context>
@@ -991,7 +1010,7 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>Advanced Options</source>
-        <translation type="unfinished">Mga Pagpipilian sa pagsulong</translation>
+        <translation type="unfinished">Mga pagpipilian sa pagsulong</translation>
     </message>
     <message>
         <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
@@ -1031,7 +1050,7 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>Compiled without sqlite support (required for descriptor wallets)</source>
-        <translation type="unfinished">Pinagsama-sama na walang suporta ng ♦sqlite♦ (kailangan para sa ♦descriptor♦ na pitaka)</translation>
+        <translation type="unfinished">Pinagsama-smaa na walang suporta ng ♦sqlite♦ (kailangan para sa ♦descriptot♦ na pitaka)</translation>
     </message>
     <message>
         <source>Compiled without external signing support (required for external signing)</source>
@@ -1043,11 +1062,11 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
-        <translation>I-edit ang ♦address♦</translation>
+        <translation type="unfinished">I-edit ang ♦address♦</translation>
     </message>
     <message>
         <source>&amp;Label</source>
-        <translation>&amp;Tatak</translation>
+        <translation type="unfinished">&amp;Tatak</translation>
     </message>
     <message>
         <source>The label associated with this address list entry</source>
@@ -1059,7 +1078,7 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>&amp;Address</source>
-        <translation>&amp;♦Address♦</translation>
+        <translation type="unfinished">&amp;♦Address♦</translation>
     </message>
     <message>
         <source>New sending address</source>
@@ -1098,23 +1117,23 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation>May bagong datos na ♦directory♦ ay magagawa.</translation>
+        <translation type="unfinished">May bagong datos na ♦directory♦ ay magagawa.</translation>
     </message>
     <message>
         <source>name</source>
-        <translation>pangalan</translation>
+        <translation type="unfinished">pangalan</translation>
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Ang ♦directory♦ ay mayroon na. Magdagdag ng%1kung balak mong gumawa ng bagong ♦directory♦ dito.</translation>
+        <translation type="unfinished">Ang ♦directory♦ ay mayroon na. Magdagdag ng%1kung balak mong gumawa ng bagong ♦directory♦ dito.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-        <translation>Ang ♦path♦ ay mayroon na, at hindi ♦directory♦.</translation>
+        <translation type="unfinished">Ang ♦path♦ ay mayroon na, at hindi ♦directory♦.</translation>
     </message>
     <message>
         <source>Cannot create data directory here.</source>
-        <translation>Hindi makakagawa ng datos na ♦directory♦ dito.</translation>
+        <translation type="unfinished">Hindi makakagawa ng datos na ♦directory♦ dito.</translation>
     </message>
 </context>
 <context>
@@ -1124,16 +1143,12 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
         <translation type="unfinished">♦Bitcoin♦</translation>
     </message>
     <message>
-        <source>%1 GB of free space available</source>
-        <translation type="unfinished">%1Mayroon ng ♦GB♦ ng libreng espasyo</translation>
-    </message>
-    <message>
         <source>(of %1 GB needed)</source>
         <translation type="unfinished">(ng %1♦GB♦ na kailangan)</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
-        <translation type="unfinished">Hindi bababa sa %1 ng ♦GB♦ na dato ay mailalagay sa ♦directory♦, at lalaki sa paglipas ng panahon.</translation>
+        <translation type="unfinished">Hindi bababa sa %1 ng ♦GB♦ na dato ay mai-instore sa ♦directory♦, at lalaki sa paglipas ng panahon.</translation>
     </message>
     <message numerus="yes">
         <source>(sufficient to restore backups %n day(s) old)</source>
@@ -1143,12 +1158,34 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
             <numerusform />
         </translation>
     </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">Nagkamali</translation>
+    </message>
+    <message>
+        <source>Welcome</source>
+        <translation type="unfinished">Maligayang Pagdating</translation>
+    </message>
     </context>
+<context>
+    <name>HelpMessageDialog</name>
+    <message>
+        <source>version</source>
+        <translation type="unfinished">bersyon</translation>
+    </message>
+    </context>
+<context>
+    <name>ShutdownWindow</name>
+    <message>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation type="unfinished">Huwag Patayin ang inyong kompyuter hanggang mawala ang window na ito.</translation>
+    </message>
+</context>
 <context>
     <name>OptionsDialog</name>
     <message>
         <source>&amp;Main</source>
-        <translation>&amp;♦Main♦</translation>
+        <translation type="unfinished">&amp;Pangunahin</translation>
     </message>
     <message>
         <source>&amp;Start %1 on system login</source>
@@ -1164,11 +1201,11 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation>Mga pagpipilian sa &amp;Pag-reset</translation>
+        <translation type="unfinished">Mga pagpipilian sa &amp;Pag-reset</translation>
     </message>
     <message>
         <source>&amp;Network</source>
-        <translation>&amp;♦Network♦</translation>
+        <translation type="unfinished">&amp;♦Network♦</translation>
     </message>
     <message>
         <source>Prune &amp;block storage to</source>
@@ -1192,7 +1229,7 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
-        <translation>♦Port♦ ng mapa gamit ang &amp;♦UPnP♦</translation>
+        <translation type="unfinished">♦Port♦ ng mapa gamit ang &amp;♦UPnP♦</translation>
     </message>
     <message>
         <source>Map port using NA&amp;T-PMP</source>
@@ -1208,12 +1245,16 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>&amp;Window</source>
-        <translation>&amp;♦Window♦</translation>
+        <translation type="unfinished">&amp;♦Window♦</translation>
     </message>
     <message>
         <source>Compiled without external signing support (required for external signing)</source>
         <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
         <translation type="unfinished">Pinagsama-sama na walang suporta ng ♦pag-pirma♦ (kailangan para sa panlabasna pagpirma)</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">Nagkamali</translation>
     </message>
     </context>
 <context>
@@ -1229,6 +1270,11 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     <message>
         <source>Node window</source>
         <translation type="unfinished">♦Node window♦</translation>
+    </message>
+    <message>
+        <source>&amp;Copy address</source>
+        <extracomment>Context menu action to copy the address of a peer.</extracomment>
+        <translation type="unfinished">&amp;Kopyahin ang ♦address♦</translation>
     </message>
     </context>
 <context>
@@ -1336,7 +1382,7 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -1348,20 +1394,13 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
     <message>
         <source>Date</source>
         <translation type="unfinished">Petsa</translation>
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation>
+        <translation type="unfinished">
             <numerusform />
             <numerusform />
         </translation>
@@ -1380,13 +1419,6 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     <message>
         <source>Label</source>
         <translation type="unfinished">♦Label♦</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform />
-            <numerusform />
-        </translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1413,7 +1445,7 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
     </message>
     <message>
         <source>Comma separated file</source>
-        <extracomment>Expanded name of the CSV file format. See https://en.wikipedia.org/wiki/Comma-separated_values</extracomment>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation type="unfinished">Comma hiwalay na file</translation>
     </message>
     <message>
@@ -1443,7 +1475,11 @@ MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN &lt;b&gt;!
         <source>Create a new wallet</source>
         <translation type="unfinished">Gumawa ng bagong pitaka</translation>
     </message>
-</context>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">Nagkamali</translation>
+    </message>
+    </context>
 <context>
     <name>WalletModel</name>
     <message>
