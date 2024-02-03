@@ -9,6 +9,7 @@ src/bitcoin-gui
 src/bitcoin-node
 src/bitcoin-tx
 src/bitcoin-util
+src/bitcoin-chainstate
 src/bitcoin-wallet
 src/test/fuzz/fuzz
 src/test/test_bitcoin
@@ -43,8 +44,6 @@ src/obj
 share/setup.nsi
 share/qt/Info.plist
 
-src/univalue/gen
-
 src/qt/*.moc
 src/qt/moc_*.cpp
 src/qt/forms/ui_*.h
@@ -76,7 +75,6 @@ src/qt/bitcoin-qt.includes
 *.log
 *.trs
 *.dmg
-*.iso
 
 *.json.h
 *.raw.h
@@ -150,3 +148,5 @@ osx_volname
 dist/
 
 /guix-build-*
+
+/ci/scratch/

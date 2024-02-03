@@ -1,9 +1,9 @@
-23.2 Release Notes
+24.2 Release Notes
 ==================
 
-Bitcoin Core version 23.2 is now available from:
+Bitcoin Core version 24.2 is now available from:
 
-  <https://bitcoincore.org/bin/bitcoin-core-23.2/>
+  <https://bitcoincore.org/bin/bitcoin-core-24.2/>
 
 This release includes various bug fixes and performance
 improvements, as well as updated translations.
@@ -37,36 +37,40 @@ Core should also work on most other Unix-like systems but is not as
 frequently tested on them.  It is not recommended to use Bitcoin Core on
 unsupported systems.
 
-### P2P
+### Fees
 
-- #26909 net: prevent peers.dat corruptions by only serializing once
-- #27608 p2p: Avoid prematurely clearing download state for other peers
-- #27610 Improve performance of p2p inv to send queues
+- #27622 Fee estimation: avoid serving stale fee estimate
 
-### Build system
+### RPC and other APIs
 
-- #25436 build: suppress array-bounds errors in libxkbcommon
-- #25763 bdb: disable Werror for format-security
-- #26944 depends: fix systemtap download URL
-- #27462 depends: fix compiling bdb with clang-16 on aarch64
+- #27727 rpc: Fix invalid bech32 address handling
+
+### Build System
+
+- #28097 depends: xcb-proto 1.15.2
+- #28543 build, macos: Fix qt package build with new Xcode 15 linker
+- #28571 depends: fix unusable memory_resource in macos qt build
+
+### CI
+
+- #27777 ci: Prune dangling images on RESTART_CI_DOCKER_BEFORE_RUN
+- #27834 ci: Nuke Android APK task, Use credits for tsan
+- #27844 ci: Use podman stop over podman kill
+- #27886 ci: Switch to amd64 container in "ARM" task
 
 ### Miscellaneous
-
-- #25444 ci: macOS task imrovements
-- #26388 ci: Use macos-ventura-xcode:14.1 image for "macOS native" task
-- #26924 refactor: Add missing includes to fix gcc-13 compile error
+- #28452 Do not use std::vector = {} to release memory
 
 Credits
 =======
 
 Thanks to everyone who directly contributed to this release:
 
-- Anthony Towns
+- Abubakar Sadiq Ismail
 - Hennadii Stepanov
-- MacroFake
-- Martin Zumsande
+- Marco Falke
 - Michael Ford
-- Suhas Daftuar
+- Pieter Wuille
 
 As well as to everyone that helped with translations on
 [Transifex](https://www.transifex.com/bitcoin/bitcoin/).

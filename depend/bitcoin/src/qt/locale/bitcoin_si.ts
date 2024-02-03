@@ -228,12 +228,25 @@
         <source>Internal error</source>
         <translation type="unfinished">අභ්‍යන්තර දෝෂයකි</translation>
     </message>
-    </context>
+    <message>
+        <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
+        <translation type="unfinished">අභ්‍යන්තර දෝෂයක් සිදු විය. %1 ආරක්ෂිතව ඉදිරියට යාමට උත්සාහ කරනු ඇත. මෙය පහත විස්තර කර ඇති පරිදි වාර්තා කළ හැකි අනපේක්ෂිත දෝෂයකි.</translation>
+    </message>
+</context>
 <context>
     <name>QObject</name>
     <message>
+        <source>Do you want to reset settings to default values, or to abort without making changes?</source>
+        <extracomment>Explanatory text shown on startup when the settings file cannot be read. Prompts user to make a choice between resetting or aborting.</extracomment>
+        <translation type="unfinished">ඔබට සැකසීම් පෙරනිමි අගයන් වෙත යළි පිහිටුවීමට අවශ්‍යද, නැතහොත් වෙනස්කම් සිදු නොකර නවතා දැමීමටද?</translation>
+    </message>
+    <message>
         <source>Error: %1</source>
         <translation type="unfinished">දෝෂය: %1</translation>
+    </message>
+    <message>
+        <source>%1 didn't yet exit safely…</source>
+        <translation type="unfinished">%1 තවමත් ආරක්ෂිතව පිටව ගොස් නැත ...</translation>
     </message>
     <message>
         <source>unknown</source>
@@ -289,6 +302,10 @@
 <context>
     <name>bitcoin-core</name>
     <message>
+        <source>Settings file could not be read</source>
+        <translation type="unfinished">සැකසීම් ගොනුව කියවිය නොහැක</translation>
+    </message>
+    <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s සංවර්ධකයින්</translation>
     </message>
@@ -299,6 +316,10 @@
     <message>
         <source>Error loading %s</source>
         <translation type="unfinished">%s පූරණය වීමේ දෝෂයකි</translation>
+    </message>
+    <message>
+        <source>Error: Unable to make a backup of your wallet</source>
+        <translation type="unfinished">දෝෂය: ඔබගේ පසුම්බිය ප්‍රතිස්ථාපනය කල නොහැකි විය.</translation>
     </message>
     <message>
         <source>Importing…</source>
@@ -326,6 +347,14 @@
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;දළ විශ්ලේෂණය</translation>
+    </message>
+    <message>
+        <source>Show general overview of wallet</source>
+        <translation type="unfinished">පසුම්බිය පිළිබඳ සාමාන්‍ය දළ විශ්ලේෂණය පෙන්වන්න</translation>
+    </message>
+    <message>
+        <source>&amp;Transactions</source>
+        <translation type="unfinished">&amp;ගනුදෙනු</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
@@ -461,15 +490,20 @@
     </message>
     <message>
         <source>Open Wallet</source>
-        <translation type="unfinished">පසුම්බිය බලන්න</translation>
+        <translation type="unfinished">පසුම්බිය විවෘත කරන්න</translation>
     </message>
     <message>
         <source>Open a wallet</source>
-        <translation type="unfinished">පසුම්බියක් බලන්න</translation>
+        <translation type="unfinished">පසුම්බියක් විවෘත කරන්න</translation>
     </message>
     <message>
         <source>Close wallet</source>
         <translation type="unfinished">පසුම්බිය වසන්න</translation>
+    </message>
+    <message>
+        <source>Restore Wallet…</source>
+        <extracomment>Name of the menu item that restores wallet from a backup file.</extracomment>
+        <translation type="unfinished">පසුම්බිය ප්‍රතිස්ථාපනය කිරීම</translation>
     </message>
     <message>
         <source>Close all wallets</source>
@@ -478,6 +512,21 @@
     <message>
         <source>default wallet</source>
         <translation type="unfinished">පෙරනිමි පසුම්බිය</translation>
+    </message>
+    <message>
+        <source>Wallet Data</source>
+        <extracomment>Name of the wallet data file format.</extracomment>
+        <translation type="unfinished">පසුම්බියේ දත්ත</translation>
+    </message>
+    <message>
+        <source>Restore Wallet</source>
+        <extracomment>Title of pop-up window shown when the user is attempting to restore a wallet.</extracomment>
+        <translation type="unfinished">පසුම්බිය ප්‍රතිස්ථාපනය කිරීම</translation>
+    </message>
+    <message>
+        <source>Wallet Name</source>
+        <extracomment>Label of the input field where the name of the wallet is entered.</extracomment>
+        <translation type="unfinished">පසුම්බියේ නම</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -631,7 +680,7 @@
     </message>
     <message>
         <source>(no label)</source>
-        <translation type="unfinished">(ලේබලයක් නැත)</translation>
+        <translation type="unfinished">(නම්පතක් නැත)</translation>
     </message>
     <message>
         <source>(change)</source>
@@ -658,6 +707,24 @@
         <translation type="unfinished">පසුම්බිය විවෘත කරන්න</translation>
     </message>
     </context>
+<context>
+    <name>RestoreWalletActivity</name>
+    <message>
+        <source>Restore Wallet</source>
+        <extracomment>Title of progress window which is displayed when wallets are being restored.</extracomment>
+        <translation type="unfinished">පසුම්බිය ප්‍රතිස්ථාපනය කිරීම</translation>
+    </message>
+    <message>
+        <source>Restore wallet failed</source>
+        <extracomment>Title of message box which is displayed when the wallet could not be restored.</extracomment>
+        <translation type="unfinished">පසුම්බිය ප්‍රතිස්ථාපනය කිරීම අසාර්ථකයි</translation>
+    </message>
+    <message>
+        <source>Restore wallet message</source>
+        <extracomment>Title of message box which is displayed when the wallet is successfully restored.</extracomment>
+        <translation type="unfinished">පසුම්බිය ප්‍රතිස්ථාපනය කිරීමේ පණිවිඩය </translation>
+    </message>
+</context>
 <context>
     <name>WalletController</name>
     <message>
@@ -735,6 +802,27 @@
     <message>
         <source>Bitcoin</source>
         <translation type="unfinished">බිට්කොයින්</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n GB of space available</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>(%n GB needed for full chain)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
     </message>
     <message numerus="yes">
         <source>(sufficient to restore backups %n day(s) old)</source>
@@ -895,6 +983,11 @@
 <context>
     <name>PeerTableModel</name>
     <message>
+        <source>Age</source>
+        <extracomment>Title of Peers Table column which indicates the duration (length of time) since the peer connection started.</extracomment>
+        <translation type="unfinished">වයස</translation>
+    </message>
+    <message>
         <source>Address</source>
         <extracomment>Title of Peers Table column which contains the IP/Onion/I2P address of the connected peer.</extracomment>
         <translation type="unfinished">ලිපිනය</translation>
@@ -910,7 +1003,7 @@
     <message>
         <source>&amp;Copy address</source>
         <extracomment>Context menu action to copy the address of a peer.</extracomment>
-        <translation type="unfinished">&amp;ලිපිනය පිටපත්</translation>
+        <translation type="unfinished">&amp;ලිපිනයෙහි පිටපතක්</translation>
     </message>
     <message>
         <source>To</source>
@@ -925,7 +1018,7 @@
     <name>ReceiveCoinsDialog</name>
     <message>
         <source>&amp;Copy address</source>
-        <translation type="unfinished">&amp;ලිපිනය පිටපත්</translation>
+        <translation type="unfinished">&amp;ලිපිනයෙහි පිටපතක්</translation>
     </message>
     </context>
 <context>
@@ -947,7 +1040,7 @@
     </message>
     <message>
         <source>Label</source>
-        <translation type="unfinished">ලේබලය</translation>
+        <translation type="unfinished">නම්පත</translation>
     </message>
     <message>
         <source>Message</source>
@@ -955,7 +1048,7 @@
     </message>
     <message>
         <source>(no label)</source>
-        <translation type="unfinished">(ලේබලයක් නැත)</translation>
+        <translation type="unfinished">(නම්පතක් නැත)</translation>
     </message>
     </context>
 <context>
@@ -1017,7 +1110,7 @@
     </message>
     <message>
         <source>(no label)</source>
-        <translation type="unfinished">(ලේබලයක් නැත)</translation>
+        <translation type="unfinished">(නම්පතක් නැත)</translation>
     </message>
 </context>
 <context>
@@ -1100,7 +1193,7 @@
     </message>
     <message>
         <source>Label</source>
-        <translation type="unfinished">ලේබලය</translation>
+        <translation type="unfinished">නම්පත</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -1108,7 +1201,7 @@
     </message>
     <message>
         <source>(no label)</source>
-        <translation type="unfinished">(ලේබලයක් නැත)</translation>
+        <translation type="unfinished">(නම්පතක් නැත)</translation>
     </message>
     <message>
         <source>Type of transaction.</source>
@@ -1143,7 +1236,7 @@
     </message>
     <message>
         <source>&amp;Copy address</source>
-        <translation type="unfinished">&amp;ලිපිනය පිටපත්</translation>
+        <translation type="unfinished">&amp;ලිපිනයෙහි පිටපතක්</translation>
     </message>
     <message>
         <source>Copy transaction &amp;ID</source>
@@ -1152,7 +1245,7 @@
     <message>
         <source>Comma separated file</source>
         <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
-        <translation type="unfinished">අල්පවිරාම වලින් වෙන්වූ ගොනුව</translation>
+        <translation type="unfinished">අල්පවිරාම යෙදූ ගොනුව</translation>
     </message>
     <message>
         <source>Date</source>
@@ -1164,7 +1257,7 @@
     </message>
     <message>
         <source>Label</source>
-        <translation type="unfinished">ලේබලය</translation>
+        <translation type="unfinished">නම්පත</translation>
     </message>
     <message>
         <source>Address</source>
@@ -1176,7 +1269,7 @@
     </message>
     <message>
         <source>Exporting Failed</source>
-        <translation type="unfinished">නිර්යාත වීමට අසමත් විය</translation>
+        <translation type="unfinished">නිර්යාතයට අසමත් විය</translation>
     </message>
     <message>
         <source>Exporting Successful</source>
@@ -1213,7 +1306,11 @@
     <name>WalletView</name>
     <message>
         <source>&amp;Export</source>
-        <translation type="unfinished">&amp;නිර්යාත කරන්න</translation>
+        <translation type="unfinished">&amp;නිර්යාතය</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation type="unfinished">වත්මන් පටියෙයි දත්ත ගොනුවකට නිර්යාත කරන්න</translation>
     </message>
     <message>
         <source>Backup Wallet</source>

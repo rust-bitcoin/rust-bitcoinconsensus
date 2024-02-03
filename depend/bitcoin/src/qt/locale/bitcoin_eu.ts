@@ -386,10 +386,6 @@ Sinatzea 'legacy' motako helbideekin soilik da posible</translation>
         <translation type="unfinished">Giltzak sortzeko ezgai</translation>
     </message>
     <message>
-        <source>Upgrading UTXO database</source>
-        <translation type="unfinished">UTXO datubasea hobetzen</translation>
-    </message>
-    <message>
         <source>Verifying blocks…</source>
         <translation type="unfinished">Blokeak egiaztatzen...</translation>
     </message>
@@ -681,6 +677,11 @@ Sinatzea 'legacy' motako helbideekin soilik da posible</translation>
         <translation type="unfinished">Ez dago diru-zorrorik eskura</translation>
     </message>
     <message>
+        <source>Wallet Name</source>
+        <extracomment>Label of the input field where the name of the wallet is entered.</extracomment>
+        <translation type="unfinished">Diruzorroaren izena</translation>
+    </message>
+    <message>
         <source>&amp;Window</source>
         <translation type="unfinished">&amp;Lehioa</translation>
     </message>
@@ -921,6 +922,11 @@ Sinatzea 'legacy' motako helbideekin soilik da posible</translation>
         <translation type="unfinished">Diruzorroa sortu</translation>
     </message>
     <message>
+        <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the create wallet progress window which indicates to the user which wallet is currently being created.</extracomment>
+        <translation type="unfinished">Diru-zorroa sortzen&lt;b&gt;%1&lt;/b&gt;...</translation>
+    </message>
+    <message>
         <source>Create wallet failed</source>
         <translation type="unfinished">Diruzorroa sortzen hutsegitea</translation>
     </message>
@@ -932,7 +938,7 @@ Sinatzea 'legacy' motako helbideekin soilik da posible</translation>
         <source>Can't list signers</source>
         <translation type="unfinished">Ezin dira sinatzaileak zerrendatu</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>LoadWalletsActivity</name>
     <message>
@@ -1085,9 +1091,26 @@ Sinatzea 'legacy' motako helbideekin soilik da posible</translation>
 </context>
 <context>
     <name>Intro</name>
-    <message>
-        <source>%1 GB of space available</source>
-        <translation type="unfinished">%1 GB-ko espazioa eskuragarri</translation>
+    <message numerus="yes">
+        <source>%n GB of space available</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>(%n GB needed for full chain)</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
     </message>
     <message numerus="yes">
         <source>(sufficient to restore backups %n day(s) old)</source>
@@ -1295,10 +1318,12 @@ Sinatzea 'legacy' motako helbideekin soilik da posible</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
+        <extracomment>Window title text of pop-up window shown when the user has chosen to reset options.</extracomment>
         <translation type="unfinished">Berretsi aukeren berrezarpena</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
+        <extracomment>Text explaining that the settings changed will not come into effect until the client is restarted.</extracomment>
         <translation type="unfinished">Bezeroa berrabiarazi behar da aldaketak aktibatzeko.</translation>
     </message>
     <message>
@@ -1906,10 +1931,6 @@ Sinatzea 'legacy' motako helbideekin soilik da posible</translation>
         <source>Message:</source>
         <translation type="unfinished">Mezua:</translation>
     </message>
-    <message>
-        <source>Pay To:</source>
-        <translation type="unfinished">Honi ordaindu:</translation>
-    </message>
     </context>
 <context>
     <name>SignVerifyMessageDialog</name>
@@ -1931,7 +1952,7 @@ Sinatzea 'legacy' motako helbideekin soilik da posible</translation>
     </message>
     <message>
         <source>Copy the current signature to the system clipboard</source>
-        <translation type="unfinished">Sinadura</translation>
+        <translation type="unfinished">Kopiatu oraingo sinadura sistemaren arbelera</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1970,14 +1991,17 @@ Sinatzea 'legacy' motako helbideekin soilik da posible</translation>
     <name>TransactionDesc</name>
     <message>
         <source>abandoned</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an abandoned transaction.</extracomment>
         <translation type="unfinished">abandonatuta</translation>
     </message>
     <message>
         <source>%1/unconfirmed</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
         <translation type="unfinished">%1/konfirmatu gabe</translation>
     </message>
     <message>
         <source>%1 confirmations</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in 6 or more blocks.</extracomment>
         <translation type="unfinished">%1 konfirmazio</translation>
     </message>
     <message>

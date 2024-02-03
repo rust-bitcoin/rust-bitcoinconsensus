@@ -39,11 +39,11 @@
     </message>
     <message>
         <source>&amp;Export</source>
-        <translation type="unfinished">&amp;Izvozi</translation>
+        <translation type="unfinished">&amp;Izvezite</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
-        <translation type="unfinished">Iz&amp;brišite</translation>
+        <translation type="unfinished">&amp;Izbrišite</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -323,12 +323,12 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     <message>
         <source>Full Relay</source>
         <extracomment>Peer connection type that relays all network information.</extracomment>
-        <translation type="unfinished">Potpuni relay</translation>
+        <translation type="unfinished">Potpuni prijenos</translation>
     </message>
     <message>
         <source>Block Relay</source>
         <extracomment>Peer connection type that relays network information about blocks and not transactions or addresses.</extracomment>
-        <translation type="unfinished">Blok relay</translation>
+        <translation type="unfinished">Blok prijenos</translation>
     </message>
     <message>
         <source>Manual</source>
@@ -465,10 +465,6 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
         <translation type="unfinished">Greška: Legacy novčanici podržavaju samo "legacy", "p2sh-segwit", i "bech32" tipove adresa</translation>
     </message>
     <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation type="unfinished">Greška: Neuspješno slušanje dolažećih veza (listen je izbacio grešku %s)</translation>
-    </message>
-    <message>
         <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
         <translation type="unfinished">Neuspješno procjenjivanje naknada. Fallbackfee je isključena. Pričekajte nekoliko blokova ili uključite -fallbackfee.</translation>
     </message>
@@ -490,7 +486,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>No dump file provided. To use createfromdump, -dumpfile=&lt;filename&gt; must be provided.</source>
-        <translation type="unfinished">Dumpfile nije pružen. Kako biste koristili createfromdump, -dumpfile=&lt;filename&gt; mora biti osiguran. </translation>
+        <translation type="unfinished">Dump datoteka nije automatski dostupna. Kako biste koristili createfromdump, -dumpfile=&lt;filename&gt; mora biti osiguran. </translation>
     </message>
     <message>
         <source>No dump file provided. To use dump, -dumpfile=&lt;filename&gt; must be provided.</source>
@@ -542,7 +538,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</source>
-        <translation type="unfinished">Ovo je najveća transakcijska naknada koju plaćate (uz normalnu naknadu) kako biste prioritizirali izbjegavanje djelomične potrošnje nad normalnom selekcijom sredstava.</translation>
+        <translation type="unfinished">Ovo je najveća transakcijska naknada koju plaćate (uz normalnu naknadu) kako biste prioritizirali izbjegavanje djelomične potrošnje nad uobičajenom selekcijom sredstava.</translation>
     </message>
     <message>
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
@@ -594,7 +590,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>A fatal internal error occurred, see debug.log for details</source>
-        <translation type="unfinished">Dogodila se koban greška, vidi detalje u debug.log.</translation>
+        <translation type="unfinished">Dogodila se kobna greška, vidi detalje u debug.log.</translation>
     </message>
     <message>
         <source>Cannot resolve -%s address: '%s'</source>
@@ -631,10 +627,6 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     <message>
         <source>Failed to rename invalid peers.dat file. Please move or delete it and try again.</source>
         <translation type="unfinished">Preimenovanje nevažeće peers.dat datoteke neuspješno. Molimo premjestite ili obrišite datoteku i pokušajte ponovno.</translation>
-    </message>
-    <message>
-        <source>Outbound connections restricted to Tor (-onlynet=onion) but the proxy for reaching the Tor network is not provided (no -proxy= and no -onion= given) or it is explicitly forbidden (-onion=0)</source>
-        <translation type="unfinished">Izlazni priključci ograničeni na Tor (-onlynet=onion) ali proxy za dohvaćanje Tor mreže nije pronađen (nema -proxy= niti -onion= ) ili je eksplicitno zabranjen (-onion=0)</translation>
     </message>
     <message>
         <source>Config setting for %s only applied on %s network when in [%s] section.</source>
@@ -711,10 +703,6 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     <message>
         <source>Error reading next record from wallet database</source>
         <translation type="unfinished">Greška pri očitavanju idućeg zapisa iz baza podataka novčanika</translation>
-    </message>
-    <message>
-        <source>Error upgrading chainstate database</source>
-        <translation type="unfinished">Greška kod ažuriranja baze stanja lanca</translation>
     </message>
     <message>
         <source>Error: Couldn't create cursor into database</source>
@@ -865,20 +853,12 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
         <translation type="unfinished">Nema dostupnih adresa</translation>
     </message>
     <message>
-        <source>No proxy server specified. Use -proxy=&lt;ip&gt; or -proxy=&lt;ip:port&gt;.</source>
-        <translation type="unfinished">Proxy server nije određen. Koristi -proxy=&lt;ip&gt; ili -proxy=&lt;ip:port&gt;.</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation type="unfinished">Nema dovoljno dostupnih datotečnih opisivača.</translation>
     </message>
     <message>
         <source>Prune cannot be configured with a negative value.</source>
         <translation type="unfinished">Obrezivanje (prune) ne može biti postavljeno na negativnu vrijednost.</translation>
-    </message>
-    <message>
-        <source>Prune mode is incompatible with -coinstatsindex.</source>
-        <translation type="unfinished">Pruning način nije kompatibilan s parametrom coinstatsindex.</translation>
     </message>
     <message>
         <source>Prune mode is incompatible with -txindex.</source>
@@ -910,7 +890,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>SQLiteDatabase: Failed to read database verification error: %s</source>
-        <translation type="unfinished">SQLiteDatabase: Neuspjeh u čitanju greške verifikacije baze podataka %s</translation>
+        <translation type="unfinished">SQLiteDatabase: Neuspješno čitanje greške verifikacije baze podataka %s</translation>
     </message>
     <message>
         <source>SQLiteDatabase: Unexpected application id. Expected %u, got %u</source>
@@ -1057,10 +1037,6 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
         <translation type="unfinished">Nepodržana kategorija zapisa %s=%s.</translation>
     </message>
     <message>
-        <source>Upgrading UTXO database</source>
-        <translation type="unfinished">Ažurira se UTXO baza</translation>
-    </message>
-    <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation type="unfinished">Komentar pod "Korisnički agent" (%s) sadrži nesigurne znakove.</translation>
     </message>
@@ -1121,7 +1097,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>Modify configuration options for %1</source>
-        <translation type="unfinished">Promijenite postavke za %1</translation>
+        <translation type="unfinished">Promijeni konfiguraciju opcija za %1</translation>
     </message>
     <message>
         <source>Create a new wallet</source>
@@ -1146,7 +1122,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Pošaljite novac na Bitcoin adresu</translation>
+        <translation type="unfinished">Pošaljite sredstva na Bitcoin adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -1162,11 +1138,11 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>&amp;Receive</source>
-        <translation type="unfinished">Pri&amp;mite</translation>
+        <translation type="unfinished">&amp;Primite</translation>
     </message>
     <message>
         <source>&amp;Options…</source>
-        <translation type="unfinished">&amp;Postavke</translation>
+        <translation type="unfinished">&amp;Opcije</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet…</source>
@@ -1202,7 +1178,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
-        <translation type="unfinished">&amp;Učitaj PSBT iz datoteke</translation>
+        <translation type="unfinished">&amp;Učitaj PSBT iz datoteke...</translation>
     </message>
     <message>
         <source>Open &amp;URI…</source>
@@ -1250,7 +1226,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>Processing blocks on disk…</source>
-        <translation type="unfinished">Procesuiranje blokova na disku...</translation>
+        <translation type="unfinished">Obrađivanje blokova na disku...</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk…</source>
@@ -1374,7 +1350,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>Mask the values in the Overview tab</source>
-        <translation type="unfinished">Sakrij vrijednost u Pregled tabu</translation>
+        <translation type="unfinished">Sakrij vrijednost u tabu Pregled </translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -1383,6 +1359,16 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     <message>
         <source>No wallets available</source>
         <translation type="unfinished">Nema dostupnih novčanika</translation>
+    </message>
+    <message>
+        <source>Wallet Data</source>
+        <extracomment>Name of the wallet data file format.</extracomment>
+        <translation type="unfinished">Podaci novčanika</translation>
+    </message>
+    <message>
+        <source>Wallet Name</source>
+        <extracomment>Label of the input field where the name of the wallet is entered.</extracomment>
+        <translation type="unfinished">Ime novčanika</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1460,7 +1446,8 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     <message>
         <source>Wallet: %1
 </source>
-        <translation type="unfinished">Novčanik: %1</translation>
+        <translation type="unfinished">Novčanik: %1
+</translation>
     </message>
     <message>
         <source>Type: %1
@@ -1612,7 +1599,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>L&amp;ock unspent</source>
-        <translation type="unfinished">Za&amp;ključaj nepotrošen input</translation>
+        <translation type="unfinished">&amp;Zaključaj nepotrošen input</translation>
     </message>
     <message>
         <source>&amp;Unlock unspent</source>
@@ -1699,7 +1686,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
         <source>Can't list signers</source>
         <translation type="unfinished">Nije moguće izlistati potpisnike</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>LoadWalletsActivity</name>
     <message>
@@ -1750,7 +1737,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled.</source>
-        <translation type="unfinished">Držanje novčanik zatvorenim predugo može rezultirati ponovnom sinkronizacijom cijelog lanca ako je obrezivanje uključeno.</translation>
+        <translation type="unfinished">Držanje novčanik zatvorenim predugo može rezultirati ponovnom sinkronizacijom cijelog lanca ako je uključen pruning (odbacivanje dijela podataka).</translation>
     </message>
     <message>
         <source>Close all wallets</source>
@@ -1825,7 +1812,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>Compiled without sqlite support (required for descriptor wallets)</source>
-        <translation type="unfinished">Kompajlirano bez sqlite potpore (potrebno za deskriptor novčanike)</translation>
+        <translation type="unfinished">Kompajlirano bez sqlite mogućnosti (potrebno za deskriptor novčanike)</translation>
     </message>
     <message>
         <source>Compiled without external signing support (required for external signing)</source>
@@ -1892,7 +1879,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation type="unfinished">Bit će stvorena nova podatkovna mapa.</translation>
+        <translation type="unfinished">Biti će stvorena nova podatkovna mapa.</translation>
     </message>
     <message>
         <source>name</source>
@@ -1913,17 +1900,29 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
 </context>
 <context>
     <name>Intro</name>
-    <message>
-        <source>%1 GB of space available</source>
-        <translation type="unfinished">Dostupno je %1 GB slobodnog prostora</translation>
+    <message numerus="yes">
+        <source>%n GB of space available</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+            <numerusform />
+        </translation>
     </message>
-    <message>
-        <source>(of %1 GB needed)</source>
-        <translation type="unfinished">(od potrebnih %1 GB)</translation>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation type="unfinished">
+            <numerusform>(od potrebnog prostora od %n GB)</numerusform>
+            <numerusform>(od potrebnog prostora od %n GB)</numerusform>
+            <numerusform>(od potrebnog %n GB)</numerusform>
+        </translation>
     </message>
-    <message>
-        <source>(%1 GB needed for full chain)</source>
-        <translation type="unfinished">(potrebno je %1 GB-a za cijeli lanac)</translation>
+    <message numerus="yes">
+        <source>(%n GB needed for full chain)</source>
+        <translation type="unfinished">
+            <numerusform>(potreban je %n GB za cijeli lanac)</numerusform>
+            <numerusform>(potrebna su %n GB-a za cijeli lanac)</numerusform>
+            <numerusform>(potrebno je %n GB-a za cijeli lanac)</numerusform>
+        </translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -1971,10 +1970,6 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
         <translation type="unfinished">Kako je ovo prvi put da je ova aplikacija pokrenuta, možete izabrati gdje će %1 spremati svoje podatke.</translation>
     </message>
     <message>
-        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation type="unfinished">Kada kliknete OK, %1 počet će preuzimati i procesirati cijeli lanac blokova (%2GB) počevši s najranijim transakcijama u %3 kad je %4 prvi put pokrenut.</translation>
-    </message>
-    <message>
         <source>Limit block chain storage to</source>
         <translation type="unfinished">Ograniči pohranu u blockchain na:</translation>
     </message>
@@ -1988,7 +1983,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
-        <translation type="unfinished">Ako odlučite ograničiti spremanje lanca blokova pomoću pruninga (obrezivanja), treba preuzeti i procesirati povijesne podatke. Bit će obrisani naknadno kako bi se smanjila količina zauzetog prostora na disku.</translation>
+        <translation type="unfinished">Ako odlučite ograničiti spremanje lanca blokova pomoću pruninga, treba preuzeti i procesirati povijesne podatke. Bit će obrisani naknadno kako bi se smanjila količina zauzetog prostora na disku.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -2075,7 +2070,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
         <source>Unknown. Syncing Headers (%1, %2%)…</source>
         <translation type="unfinished">Nepoznato. Sinkroniziranje zaglavlja blokova (%1, %2%)...</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -2092,7 +2087,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     <name>OptionsDialog</name>
     <message>
         <source>Options</source>
-        <translation type="unfinished">Postavke</translation>
+        <translation type="unfinished">Opcije</translation>
     </message>
     <message>
         <source>&amp;Main</source>
@@ -2108,7 +2103,7 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>Enabling pruning significantly reduces the disk space required to store transactions. All blocks are still fully validated. Reverting this setting requires re-downloading the entire blockchain.</source>
-        <translation type="unfinished">Omogućavanje odbacivanja dijela podataka smanjuje prostor na disku potreban za pohranu transakcija. Svi blokovi su još uvijek potpuno potvrđeni. Poništavanje ove postavke uzrokuje ponovno skidanje cijelog blockchaina.</translation>
+        <translation type="unfinished">Omogućavanje pruninga smanjuje prostor na disku potreban za pohranu transakcija. Svi blokovi su još uvijek potpuno potvrđeni. Poništavanje ove postavke uzrokuje ponovno skidanje cijelog blockchaina.</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -2140,11 +2135,11 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation type="unfinished">Nastavi sve postavke programa na početne vrijednosti.</translation>
+        <translation type="unfinished">Resetiraj sve opcije programa na početne vrijednosti.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
-        <translation type="unfinished">Po&amp;nastavi postavke</translation>
+        <translation type="unfinished">&amp;Resetiraj opcije</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -2367,10 +2362,6 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
         <translation type="unfinished">najbliže poklapanje "%1"</translation>
     </message>
     <message>
-        <source>Options set in this dialog are overridden by the command line or in the configuration file:</source>
-        <translation type="unfinished">Opcije postavljene u ovom dijalogu nadglašene su naredbenom linijom ili konfiguracijskom datotekom:</translation>
-    </message>
-    <message>
         <source>&amp;OK</source>
         <translation type="unfinished">&amp;U redu</translation>
     </message>
@@ -2393,20 +2384,23 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>Confirm options reset</source>
+        <extracomment>Window title text of pop-up window shown when the user has chosen to reset options.</extracomment>
         <translation type="unfinished">Potvrdite resetiranje opcija</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
+        <extracomment>Text explaining that the settings changed will not come into effect until the client is restarted.</extracomment>
         <translation type="unfinished">Potrebno je ponovno pokretanje klijenta kako bi se promjene aktivirale.</translation>
     </message>
     <message>
         <source>Client will be shut down. Do you want to proceed?</source>
+        <extracomment>Text asking the user to confirm if they would like to proceed with a client shutdown.</extracomment>
         <translation type="unfinished">Zatvorit će se klijent. Želite li nastaviti?</translation>
     </message>
     <message>
         <source>Configuration options</source>
         <extracomment>Window title text of pop-up box that allows opening up of configuration file.</extracomment>
-        <translation type="unfinished">Konfiguracijske postavke</translation>
+        <translation type="unfinished">Konfiguracijske opcije</translation>
     </message>
     <message>
         <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
@@ -2622,11 +2616,11 @@ Potpisivanje je moguće samo sa 'legacy' adresama. </translation>
     </message>
     <message>
         <source>Transaction is missing some information about inputs.</source>
-        <translation type="unfinished">Transakciji nedostaje informacije o inputima.</translation>
+        <translation type="unfinished">Transakciji nedostaje informacija o inputima.</translation>
     </message>
     <message>
         <source>Transaction still needs signature(s).</source>
-        <translation type="unfinished">Transakciji još uvijek treba potpis(e).</translation>
+        <translation type="unfinished">Transakcija još uvijek treba potpis(e).</translation>
     </message>
     <message>
         <source>(But no wallet is loaded.)</source>
@@ -2884,29 +2878,22 @@ Ako imate ovu grešku, od trgovca zatražite URI koji je kompatibilan sa BIP21.<
     </message>
     <message>
         <source>Whether we relay addresses to this peer.</source>
-        <extracomment>Tooltip text for the Address Relay field in the peer details area.</extracomment>
+        <extracomment>Tooltip text for the Address Relay field in the peer details area, which displays whether we relay addresses to this peer (Yes/No).</extracomment>
         <translation type="unfinished">Prenosimo li adrese ovom peer-u.</translation>
     </message>
     <message>
         <source>Address Relay</source>
+        <extracomment>Text title for the Address Relay field in the peer details area, which displays whether we relay addresses to this peer (Yes/No).</extracomment>
         <translation type="unfinished">Prijenos adresa</translation>
     </message>
     <message>
-        <source>Total number of addresses processed, excluding those dropped due to rate-limiting.</source>
-        <extracomment>Tooltip text for the Addresses Processed field in the peer details area.</extracomment>
-        <translation type="unfinished">Ukupan broj obrađenih adresa, osim onih koje su izbačene zbog ograničenja brzine.</translation>
-    </message>
-    <message>
         <source>Addresses Processed</source>
+        <extracomment>Text title for the Addresses Processed field in the peer details area, which displays the total number of addresses received from this peer that were processed (excludes addresses that were dropped due to rate-limiting).</extracomment>
         <translation type="unfinished">Obrađene adrese</translation>
     </message>
     <message>
-        <source>Total number of addresses dropped due to rate-limiting.</source>
-        <extracomment>Tooltip text for the Addresses Rate-Limited field in the peer details area.</extracomment>
-        <translation type="unfinished">Ukupan broj adresa izbačenih zbog ograničenja brzine.</translation>
-    </message>
-    <message>
         <source>Addresses Rate-Limited</source>
+        <extracomment>Text title for the Addresses Rate-Limited field in the peer details area, which displays the total number of addresses received from this peer that were dropped (not processed) due to rate-limiting.</extracomment>
         <translation type="unfinished">Adrese ograničene brzinom</translation>
     </message>
     <message>
@@ -2975,7 +2962,7 @@ Ako imate ovu grešku, od trgovca zatražite URI koji je kompatibilan sa BIP21.<
     </message>
     <message>
         <source>Elapsed time since a novel block passing initial validity checks was received from this peer.</source>
-        <translation type="unfinished">Vrijeme prošlo od primitka novog bloka koji je prošao osnovne provjere validnosti, a koji je primljen od ovog peera.</translation>
+        <translation type="unfinished">Vrijeme prošlo od kada je ovaj peer primio novi bloka koji je prošao osnovne provjere validnosti.</translation>
     </message>
     <message>
         <source>Last Block</source>
@@ -2984,7 +2971,7 @@ Ako imate ovu grešku, od trgovca zatražite URI koji je kompatibilan sa BIP21.<
     <message>
         <source>Elapsed time since a novel transaction accepted into our mempool was received from this peer.</source>
         <extracomment>Tooltip text for the Last Transaction field in the peer details area.</extracomment>
-        <translation type="unfinished">Vrijeme prošlo od prihvaćanje nove transakcije u naš mempool, a koju je prihvatio ovaj peer.</translation>
+        <translation type="unfinished">Vrijeme prošlo od kada je ovaj peer primio novu transakciju koja je prihvaćena u naš mempool.</translation>
     </message>
     <message>
         <source>Last Send</source>
@@ -3710,10 +3697,6 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
         <translation type="unfinished">Naknada veća od %1 smatra se apsurdno visokim naknadom.</translation>
     </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation type="unfinished">Zahtjev za plaćanje istekao.</translation>
-    </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
         <translation type="unfinished">
@@ -3794,28 +3777,12 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
         <translation type="unfinished">Poruka:</translation>
     </message>
     <message>
-        <source>This is an unauthenticated payment request.</source>
-        <translation type="unfinished">Ovo je neautenticiran zahtjev za plaćanje.</translation>
-    </message>
-    <message>
-        <source>This is an authenticated payment request.</source>
-        <translation type="unfinished">Ovo je autenticiran zahtjev za plaćanje.</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation type="unfinished">Unesite oznaku za ovu adresu kako bi ju dodali u vaš adresar</translation>
     </message>
     <message>
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
         <translation type="unfinished">Poruka koja je dodana uplati: URI koji će biti spremljen s transakcijom za referencu. Napomena: Ova poruka neće biti poslana preko Bitcoin mreže.</translation>
-    </message>
-    <message>
-        <source>Pay To:</source>
-        <translation type="unfinished">Primatelj plaćanja:</translation>
-    </message>
-    <message>
-        <source>Memo:</source>
-        <translation type="unfinished">Zapis:</translation>
     </message>
 </context>
 <context>
@@ -3987,30 +3954,22 @@ Napomena: Budući da se naknada računa po bajtu, naknada od "100 satošija po k
     <name>TransactionDesc</name>
     <message>
         <source>conflicted with a transaction with %1 confirmations</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an unconfirmed transaction that conflicts with a confirmed transaction.</extracomment>
         <translation type="unfinished">subokljen s transakcijom broja potvrde %1</translation>
     </message>
     <message>
-        <source>0/unconfirmed, %1</source>
-        <translation type="unfinished">0/nepotvrđeno, %1</translation>
-    </message>
-    <message>
-        <source>in memory pool</source>
-        <translation type="unfinished">u memorijskom bazenu</translation>
-    </message>
-    <message>
-        <source>not in memory pool</source>
-        <translation type="unfinished">nije u memorijskom bazenu</translation>
-    </message>
-    <message>
         <source>abandoned</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an abandoned transaction.</extracomment>
         <translation type="unfinished">napušteno</translation>
     </message>
     <message>
         <source>%1/unconfirmed</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
         <translation type="unfinished">%1/nepotvrđeno</translation>
     </message>
     <message>
         <source>%1 confirmations</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in 6 or more blocks.</extracomment>
         <translation type="unfinished">%1 potvrda</translation>
     </message>
     <message>
