@@ -9,7 +9,27 @@ repository = "https://github.com/rust-bitcoin/rust-bitcoinconsensus/"
 description = "Bitcoin's libbitcoinconsensus with Rust binding."
 keywords = [ "bitcoin", "bitcoinconsensus", "libbitcoinconsensus" ]
 readme = "README.md"
-exclude = ["/depend/bitcoin/.github/**", "/depend/bitcoin/.tx/**", "/depend/bitcoin/build-aux/**", "/depend/bitcoin/contrib/**", "/depend/bitcoin/depends/**", "/depend/bitcoin/doc/**", "/depend/bitcoin/share/**", "/depend/bitcoin/test/**", "/depend/bitcoin/src/bench/**", "/depend/bitcoin/src/config/**", "/depend/bitcoin/src/consensus/**", "/depend/bitcoin/src/leveldb/**", "/depend/bitcoin/src/policy/**", "/depend/bitcoin/src/qt/**", "/depend/bitcoin/src/rpc/**", "/depend/bitcoin/src/support/**", "/depend/bitcoin/src/test/**", "/depend/bitcoin/src/univalue/**", "/depend/bitcoin/src/wallet/**", "/depend/bitcoin/src/zmq/**"]
+exclude = [
+        "/depend/bitcoin/.github/**",
+        "/depend/bitcoin/.tx/**",
+        "/depend/bitcoin/build-aux/**",
+        "/depend/bitcoin/contrib/**",
+        "/depend/bitcoin/depends/**",
+        "/depend/bitcoin/doc/**",
+        "/depend/bitcoin/share/**",
+        "/depend/bitcoin/test/**",
+        "/depend/bitcoin/src/bench/**",
+        "/depend/bitcoin/src/config/**",
+        "/depend/bitcoin/src/leveldb/**",
+        "/depend/bitcoin/src/policy/**",
+        "/depend/bitcoin/src/qt/**",
+        "/depend/bitcoin/src/rpc/**",
+        "/depend/bitcoin/src/support/**",
+        "/depend/bitcoin/src/test/**",
+        "/depend/bitcoin/src/univalue/**",
+        "/depend/bitcoin/src/wallet/**",
+        "/depend/bitcoin/src/zmq/**"
+        ]
 build = "build.rs"
 edition = "2018"
 
