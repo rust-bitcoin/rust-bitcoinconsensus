@@ -20,7 +20,6 @@ exclude = [
         "/depend/bitcoin/test/**",
         "/depend/bitcoin/src/bench/**",
         "/depend/bitcoin/src/config/**",
-        "/depend/bitcoin/src/consensus/**",
         "/depend/bitcoin/src/leveldb/**",
         "/depend/bitcoin/src/policy/**",
         "/depend/bitcoin/src/qt/**",
