@@ -38,10 +38,6 @@ fn main() {
             .include("depend/bitcoin/src/secp256k1/include")
             .include("depend/bitcoin/src/secp256k1/src")
             .flag_if_supported("-Wno-unused-function") // some ecmult stuff is defined but not used upstream
-            // Bitcoin core defines libsecp to *not* use libgmp.
-            .define("USE_NUM_NONE", "1")
-            .define("USE_FIELD_INV_BUILTIN", "1")
-            .define("USE_SCALAR_INV_BUILTIN", "1")
             .define("ECMULT_WINDOW_SIZE", "15")
             .define("ECMULT_GEN_PREC_BITS", "4")
             .define("ENABLE_MODULE_SCHNORRSIG", "1")
