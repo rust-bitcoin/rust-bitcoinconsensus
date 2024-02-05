@@ -3,15 +3,15 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation type="unfinished">Haz clic derecho para editar la dirección o etiqueta</translation>
+        <translation type="unfinished">Haga clic con el botón derecho para editar la dirección o la etiqueta</translation>
     </message>
     <message>
         <source>Create a new address</source>
-        <translation type="unfinished">Crea una nueva dirección</translation>
+        <translation type="unfinished">Crear una nueva dirección</translation>
     </message>
     <message>
         <source>&amp;New</source>
-        <translation type="unfinished">&amp;Nuevo</translation>
+        <translation type="unfinished">Es nuevo</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -67,7 +67,7 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Estas son tus direcciones Bitcoin para enviar pagos. Comprueba siempre el importe y la dirección de recibo antes de transferir monedas.</translation>
+        <translation type="unfinished">Estas son tus direcciones Bitcoin para enviar pagos. Comprueba siempre el importe y la dirección de recepción antes de transferir monedas.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
@@ -165,7 +165,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Atención: Si cifras tu monedero y pierdes la contraseña, ¡&lt;b&gt;PERDERÁS TODOS TUS BITCOINS&lt;/b&gt;!</translation>
+        <translation type="unfinished">Atención: Si cifras tu monedero y pierdes la contraseña, &lt;b&gt;¡PERDERÁS TODOS TUS BITCOINS!&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -246,6 +246,10 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
 <context>
     <name>BitcoinApplication</name>
     <message>
+        <source>Settings file %1 might be corrupt or invalid.</source>
+        <translation type="unfinished">El archivo de configuración %1 puede estar corrupto o no ser válido.</translation>
+    </message>
+    <message>
         <source>Runaway exception</source>
         <translation type="unfinished">Excepción fuera de control</translation>
     </message>
@@ -272,7 +276,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     <message>
         <source>A fatal error occurred. Check that settings file is writable, or try running with -nosettings.</source>
         <extracomment>Explanatory text shown on startup when the settings file could not be written. Prompts user to check that we have the ability to write to the file. Explains that the user has the option of running without a settings file.</extracomment>
-        <translation type="unfinished">Un error fatal ha ocurrido. Comprueba que el archivo de configuración soporta escritura, o intenta correr de nuevo el programa con -nosettings</translation>
+        <translation type="unfinished">Un error fatal ha ocurrido. Comprueba que el archivo de configuración soporta escritura, o intenta ejecutar de nuevo el programa con -nosettings</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -386,7 +390,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     <message numerus="yes">
         <source>%n year(s)</source>
         <translation type="unfinished">
-            <numerusform>%n año</numerusform>
+            <numerusform>%n años</numerusform>
             <numerusform>%n años</numerusform>
         </translation>
     </message>
@@ -402,12 +406,16 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">El archivo de configuración no puede escribirse</translation>
     </message>
     <message>
+        <source>The %s developers</source>
+        <translation type="unfinished">Los desarrolladores de %s</translation>
+    </message>
+    <message>
         <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
         <translation type="unfinished">%s corrupto. Intenta utilizar la herramienta del monedero bitcoin-monedero para salvar o restaurar una copia de seguridad.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation type="unfinished">¡-maxtxfee tiene un valor muy elevado! Comisiones muy grandes podrían ser pagadas en una única transacción.</translation>
+        <translation type="unfinished">-maxtxfee tiene un valor muy elevado! Comisiones muy grandes podrían ser pagadas en una única transacción.</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet from version %i to version %i. Wallet version unchanged.</source>
@@ -419,7 +427,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Cannot upgrade a non HD split wallet from version %i to version %i without upgrading to support pre-split keypool. Please use version %i or no version specified.</source>
-        <translation type="unfinished">No se puede actualizar un monedero no dividido en HD de la versión  1%i a la versión 1%i sin actualizar para admitir el grupo de claves pre-dividido. Por favor, use la versión  1%i o ninguna versión especificada.</translation>
+        <translation type="unfinished">No se puede actualizar un monedero no dividido en HD de la versión %i a la versión %i sin actualizar para admitir el grupo de claves pre-dividido. Por favor, use la versión %i o ninguna versión especificada.</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
@@ -431,27 +439,23 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Error reading %s! Transaction data may be missing or incorrect. Rescanning wallet.</source>
-        <translation type="unfinished">¡Error de lectura %s! Los datos de la transacción pueden faltar o ser incorrectos. Reescaneo de la billetera.</translation>
+        <translation type="unfinished">¡Error de lectura %s! Los datos de la transacción pueden faltar o ser incorrectos. Reescaneo del monedero.</translation>
     </message>
     <message>
         <source>Error: Dumpfile format record is incorrect. Got "%s", expected "format".</source>
-        <translation type="unfinished">Error: el registro del formato del archivo de volcado es incorrecto. Se obtuvo "%s", del "formato" esperado.</translation>
+        <translation type="unfinished">Error: el registro del formato del archivo de volcado es incorrecto. Se obtuvo «%s», del «formato» esperado.</translation>
     </message>
     <message>
         <source>Error: Dumpfile identifier record is incorrect. Got "%s", expected "%s".</source>
-        <translation type="unfinished">Error: el registro del identificador del archivo de volcado es incorrecto. Se obtuvo   "%s" se esperaba "%s".</translation>
+        <translation type="unfinished">Error: el registro del identificador del archivo de volcado es incorrecto. Se obtuvo «%s» se esperaba «%s».</translation>
     </message>
     <message>
         <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Error: la versión del archivo volcado no es compatible. Esta versión de bitcoin-wallet solo admite archivos de volcado de la versión 1. Consiguió dumpfile con versión %s</translation>
+        <translation type="unfinished">Error: la versión del archivo volcado no es compatible. Esta versión de monedero bitcoin solo admite archivos de volcado de la versión 1. Consigue volcado de fichero con la versión %s</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
-        <translation type="unfinished">Error: Los monederos heredados solo admiten los tipos de dirección "legacy", "p2sh-segwit" y "bech32"</translation>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation type="unfinished">Error: la escucha para conexiones entrantes falló (la escucha devolvió el error %s)</translation>
+        <translation type="unfinished">Error: Los monederos heredados solo admiten los tipos de dirección «legacy», «p2sh-segwit» y «bech32»</translation>
     </message>
     <message>
         <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
@@ -467,11 +471,11 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Invalid or corrupt peers.dat (%s). If you believe this is a bug, please report it to %s. As a workaround, you can move the file (%s) out of the way (rename, move, or delete) to have a new one created on the next start.</source>
-        <translation type="unfinished">Peers.dat inválido o corrupto (%s). Si cree que se trata de un error, infórmelo a %s. Como alternativa, puedes mover el archivo (%s) (renombrarlo, moverlo o eliminarlo) para que se cree uno nuevo en el siguiente inicio.</translation>
+        <translation type="unfinished">Archivo peers.dat inválido o corrupto (%s). Si cree que se trata de un error, infórmelo a %s. Como alternativa, puedes mover el archivo (%s) (renombrarlo, moverlo o eliminarlo) para que se cree uno nuevo en el siguiente inicio.</translation>
     </message>
     <message>
         <source>More than one onion bind address is provided. Using %s for the automatically created Tor onion service.</source>
-        <translation type="unfinished">Se proporciona más de una dirección de ligar de cebolla. Utilizando %s para el servicio Tor cebolla creado automático.</translation>
+        <translation type="unfinished">Se proporciona más de una dirección de enlace onion. Utilizando %s para el servicio onion de Tor creado automáticamente.</translation>
     </message>
     <message>
         <source>No dump file provided. To use createfromdump, -dumpfile=&lt;filename&gt; must be provided.</source>
@@ -483,7 +487,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>No wallet file format provided. To use createfromdump, -format=&lt;format&gt; must be provided.</source>
-        <translation type="unfinished">Ningún archivo de billetera proveído. Para usar createfromdump, -format=&lt;format&gt;debe ser proveído.</translation>
+        <translation type="unfinished">Ningún archivo de formato monedero facilitado. Para usar createfromdump, -format=&lt;format&gt;debe ser facilitado.</translation>
     </message>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
@@ -496,6 +500,10 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
         <translation type="unfinished">La poda se ha configurado por debajo del mínimo de %d MiB. Por favor utiliza un valor mas alto.</translation>
+    </message>
+    <message>
+        <source>Prune mode is incompatible with -reindex-chainstate. Use full -reindex instead.</source>
+        <translation type="unfinished">El modo poda no es compatible con -reindex-chainstate. Haz uso de un -reindex completo en su lugar.</translation>
     </message>
     <message>
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
@@ -511,7 +519,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>The block index db contains a legacy 'txindex'. To clear the occupied disk space, run a full -reindex, otherwise ignore this error. This error message will not be displayed again.</source>
-        <translation type="unfinished">El índice de bloque db contiene un 'txindex' heredado. Para borrar el espacio de disco ocupado, ejecute un -reindex completo, de lo contrario ignore este error. Este mensaje de error no se volverá a mostrar.</translation>
+        <translation type="unfinished">El índice de bloque db contiene un «txindex» heredado. Para borrar el espacio de disco ocupado, ejecute un -reindex completo, de lo contrario ignore este error. Este mensaje de error no se volverá a mostrar.</translation>
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
@@ -519,7 +527,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>This error could occur if this wallet was not shutdown cleanly and was last loaded using a build with a newer version of Berkeley DB. If so, please use the software that last loaded this wallet</source>
-        <translation type="unfinished">Este error podría ocurrir si la billetera no fuese apagada correctamente y fuese cargada usando una compilación con una versión más nueva de Berkeley DB. Si es así, utilice el software que cargó por última vez en esta billetera.</translation>
+        <translation type="unfinished">Este error podría ocurrir si el monedero no fuese apagado correctamente y fuese cargado usando una compilación con una versión más nueva de Berkeley DB. Si es así, utilice el software que cargó por última vez este monedero.</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
@@ -527,7 +535,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</source>
-        <translation type="unfinished">Esta es la tarifa máxima que pagas (además de la tarifa normal) para priorizar la evasión del gasto parcial sobre la selección regular de monedas.</translation>
+        <translation type="unfinished">Esta es la comisión máxima que pagas (además de la comisión normal) para priorizar la evasión del gasto parcial sobre la selección regular de monedas.</translation>
     </message>
     <message>
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
@@ -547,11 +555,19 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Unknown wallet file format "%s" provided. Please provide one of "bdb" or "sqlite".</source>
-        <translation type="unfinished">Formato de monedero desconocido "%s" proporcionado. Por favor, proporcione uno de "bdb" o "sqlite".</translation>
+        <translation type="unfinished">Formato de monedero desconocido «%s» proporcionado. Por favor, proporcione uno de «bdb» o «sqlite».</translation>
+    </message>
+    <message>
+        <source>Unsupported chainstate database format found. Please restart with -reindex-chainstate. This will rebuild the chainstate database.</source>
+        <translation type="unfinished">Formato de la base de datos chainstate encontrado. Por favor reinicia con -reindex-chainstate. Esto reconstruirá la base de datos chainstate.</translation>
+    </message>
+    <message>
+        <source>Wallet created successfully. The legacy wallet type is being deprecated and support for creating and opening legacy wallets will be removed in the future.</source>
+        <translation type="unfinished">Monedero creado satisfactoriamente. El tipo de monedero «Legacy» está descontinuado y la asistencia para crear y abrir monederos «legacy» será eliminada en el futuro.</translation>
     </message>
     <message>
         <source>Warning: Dumpfile wallet format "%s" does not match command line specified format "%s".</source>
-        <translation type="unfinished">Aviso: el formato del monedero del archivo de volcado "%s" no coincide con el formato especificado en la línea de comandos "%s".</translation>
+        <translation type="unfinished">Aviso: el formato del monedero del archivo de volcado «%s» no coincide con el formato especificado en la línea de comandos «%s».</translation>
     </message>
     <message>
         <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
@@ -595,7 +611,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Cannot write to data directory '%s'; check permissions.</source>
-        <translation type="unfinished">Imposible escribir en el directorio «%s»; comprueba permisos.</translation>
+        <translation type="unfinished">No es posible escribir en el directorio «%s»; comprueba permisos.</translation>
     </message>
     <message>
         <source>The -txindex upgrade started by a previous version cannot be completed. Restart with the previous version or run a full -reindex.</source>
@@ -606,6 +622,22 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">solicitud %s de escucha en el puerto %u . Este puerto se considera "malo" y por lo tanto es poco probable que ningún par de Bitcoin Core se conecte a él. Ver doc/p2p-bad-ports.md para más detalles y una lista completa.</translation>
     </message>
     <message>
+        <source>-reindex-chainstate option is not compatible with -blockfilterindex. Please temporarily disable blockfilterindex while using -reindex-chainstate, or replace -reindex-chainstate with -reindex to fully rebuild all indexes.</source>
+        <translation type="unfinished">La opción -reindex-chainstate no es compatible con -blockfilterindex. Por favor, desactiva temporalmente blockfilterindex cuando uses -reindex-chainstate, o sustituye -reindex-chainstate por -reindex para reconstruir completamente todos los índices.</translation>
+    </message>
+    <message>
+        <source>-reindex-chainstate option is not compatible with -coinstatsindex. Please temporarily disable coinstatsindex while using -reindex-chainstate, or replace -reindex-chainstate with -reindex to fully rebuild all indexes.</source>
+        <translation type="unfinished">La opción -reindex-chainstate no es compatible con -coinstatsindex. Por favor, desactiva temporalmente coinstatsindex cuando uses -reindex-chainstate, o sustituye -reindex-chainstate por -reindex para reconstruir completamente todos los índices.</translation>
+    </message>
+    <message>
+        <source>-reindex-chainstate option is not compatible with -txindex. Please temporarily disable txindex while using -reindex-chainstate, or replace -reindex-chainstate with -reindex to fully rebuild all indexes.</source>
+        <translation type="unfinished">La opción -reindex-chainstate no es compatible con -txindex. Por favor, desactiva temporalmente txindex cuando uses -reindex-chainstate, o sustituye -reindex-chainstate por -reindex para reconstruir completamente todos los índices.</translation>
+    </message>
+    <message>
+        <source>Assumed-valid: last wallet synchronisation goes beyond available block data. You need to wait for the background validation chain to download more blocks.</source>
+        <translation type="unfinished">Asumido-válido: la última sincronización del monedero va más allá de los datos de bloques disponibles. Debes esperar a que se descarguen en segundo plano más bloques de la cadena de validación.</translation>
+    </message>
+    <message>
         <source>Cannot provide specific connections and have addrman find outgoing connections at the same time.</source>
         <translation type="unfinished">No se puede proporcionar conexiones específicas y hacer que addrman encuentre conexiones salientes al mismo tiempo.</translation>
     </message>
@@ -614,12 +646,64 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">Error de carga %s : Se está cargando el monedero del firmante externo sin que se haya compilado el soporte del firmante externo</translation>
     </message>
     <message>
-        <source>Failed to rename invalid peers.dat file. Please move or delete it and try again.</source>
-        <translation type="unfinished">No se ha podido cambiar el nombre del archivo peers.dat . Por favor, muévalo o bórrelo e inténtelo de nuevo.</translation>
+        <source>Error: Address book data in wallet cannot be identified to belong to migrated wallets</source>
+        <translation type="unfinished">Error: los datos de la libreta de direcciones en el monedero no se identifican como pertenecientes a monederos migrados</translation>
     </message>
     <message>
-        <source>Outbound connections restricted to Tor (-onlynet=onion) but the proxy for reaching the Tor network is not provided (no -proxy= and no -onion= given) or it is explicitly forbidden (-onion=0)</source>
-        <translation type="unfinished">Conexiones salientes restringidas a Tor (-onlynet=onion) pero no se proporciona el proxy para alcanzar la red Tor (no se da -proxy= ni -onion=) o está explícitamente prohibido (-onion=0)</translation>
+        <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>
+        <translation type="unfinished">Error: Se han creado descriptores duplicados durante la migración. Tu monedero puede estar dañado.</translation>
+    </message>
+    <message>
+        <source>Error: Transaction %s in wallet cannot be identified to belong to migrated wallets</source>
+        <translation type="unfinished">Error: La transacción %s del monedero no se puede identificar como perteneciente a monederos migrados</translation>
+    </message>
+    <message>
+        <source>Error: Unable to produce descriptors for this legacy wallet. Make sure the wallet is unlocked first</source>
+        <translation type="unfinished">Error: No se pueden producir descriptores para este monedero legacy. Asegúrate primero que el monedero está desbloqueado.</translation>
+    </message>
+    <message>
+        <source>Failed to rename invalid peers.dat file. Please move or delete it and try again.</source>
+        <translation type="unfinished">No se ha podido cambiar el nombre del archivo peers.dat . Por favor, muévalo o elimínelo e inténtelo de nuevo.</translation>
+    </message>
+    <message>
+        <source>Incompatible options: -dnsseed=1 was explicitly specified, but -onlynet forbids connections to IPv4/IPv6</source>
+        <translation type="unfinished">Opciones incompatibles: -dnsseed=1 se especificó explicitamente, pero  -onlynet impide conexiones a IPv4/IPv6</translation>
+    </message>
+    <message>
+        <source>Outbound connections restricted to Tor (-onlynet=onion) but the proxy for reaching the Tor network is explicitly forbidden: -onion=0</source>
+        <translation type="unfinished">Conexiones salientes restringidas a Tor (-onlynet=onion) pero el proxy para alcanzar la red Tor está explícitamente prohibido: -onion=0</translation>
+    </message>
+    <message>
+        <source>Outbound connections restricted to Tor (-onlynet=onion) but the proxy for reaching the Tor network is not provided: none of -proxy, -onion or -listenonion is given</source>
+        <translation type="unfinished">Conexiones salientes restringidas a Tor (-onlynet=onion) pero no se proporciona el proxy para alcanzar la red Tor: no se indica ninguna de las opciones -proxy, -onion, o -listenonion </translation>
+    </message>
+    <message>
+        <source>Unrecognized descriptor found. Loading wallet %s
+
+The wallet might had been created on a newer version.
+Please try running the latest software version.
+</source>
+        <translation type="unfinished">Se encontró un descriptor desconocido. Cargando monedero %s
+
+El monedero puede haber sido creado con una versión más nueva.
+Por favor intenta ejecutar la ultima versión del software.
+</translation>
+    </message>
+    <message>
+        <source>Unsupported category-specific logging level -loglevel=%s. Expected -loglevel=&lt;category&gt;:&lt;loglevel&gt;. Valid categories: %s. Valid loglevels: %s.</source>
+        <translation type="unfinished">Categoría especifica de nivel de registro no soportada  -loglevel=%s. Se espera -loglevel=&lt;category&gt;:&lt;loglevel&gt;. Categorías válidas: %s. Niveles de registro válidos: %s.</translation>
+    </message>
+    <message>
+        <source>
+Unable to cleanup failed migration</source>
+        <translation type="unfinished">
+No es posible limpiar la migración fallida</translation>
+    </message>
+    <message>
+        <source>
+Unable to restore backup of wallet.</source>
+        <translation type="unfinished">
+No es posible restaurar la copia de seguridad del monedero.</translation>
     </message>
     <message>
         <source>Config setting for %s only applied on %s network when in [%s] section.</source>
@@ -698,8 +782,12 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">Error al leer el siguiente registro de la base de datos del monedero</translation>
     </message>
     <message>
-        <source>Error upgrading chainstate database</source>
-        <translation type="unfinished">Error actualizando la base de datos chainstate</translation>
+        <source>Error: Could not add watchonly tx to watchonly wallet</source>
+        <translation type="unfinished">Error: No se puede añadir la transacción de observación al monedero de observación</translation>
+    </message>
+    <message>
+        <source>Error: Could not delete watchonly transactions</source>
+        <translation type="unfinished">Error: No se pueden eliminar las transacciones de observación</translation>
     </message>
     <message>
         <source>Error: Couldn't create cursor into database</source>
@@ -714,8 +802,12 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">Error: La suma de comprobación del archivo de volcado no coincide. Calculada%s, prevista%s</translation>
     </message>
     <message>
+        <source>Error: Failed to create new watchonly wallet</source>
+        <translation type="unfinished">Error: No se puede crear un monedero de observación</translation>
+    </message>
+    <message>
         <source>Error: Got key that was not hex: %s</source>
-        <translation type="unfinished">Error: Se recibió una llave que no es hex: %s</translation>
+        <translation type="unfinished">Error: Se recibió una clave que no es hex: %s</translation>
     </message>
     <message>
         <source>Error: Got value that was not hex: %s</source>
@@ -723,7 +815,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Error: Keypool ran out, please call keypoolrefill first</source>
-        <translation type="unfinished">Keypool se ha agotado, por favor, llama a keypoolrefill antes</translation>
+        <translation type="unfinished">Error: Keypool se ha agotado, por favor, invoca «keypoolrefill» primero</translation>
     </message>
     <message>
         <source>Error: Missing checksum</source>
@@ -734,12 +826,40 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">Error: No hay direcciones %s disponibles .</translation>
     </message>
     <message>
+        <source>Error: Not all watchonly txs could be deleted</source>
+        <translation type="unfinished">Error: No se pueden eliminar todas las transacciones de observación</translation>
+    </message>
+    <message>
+        <source>Error: This wallet already uses SQLite</source>
+        <translation type="unfinished">Error: Este monedero ya usa SQLite</translation>
+    </message>
+    <message>
+        <source>Error: This wallet is already a descriptor wallet</source>
+        <translation type="unfinished">Error: Este monedero ya es un monedero descriptor</translation>
+    </message>
+    <message>
+        <source>Error: Unable to begin reading all records in the database</source>
+        <translation type="unfinished">Error: No es posible comenzar a leer todos los registros en la base de datos</translation>
+    </message>
+    <message>
+        <source>Error: Unable to make a backup of your wallet</source>
+        <translation type="unfinished">Error: No es posible realizar la copia de seguridad de tu monedero</translation>
+    </message>
+    <message>
         <source>Error: Unable to parse version %u as a uint32_t</source>
         <translation type="unfinished">Error: No se ha podido analizar la versión %ucomo uint32_t</translation>
     </message>
     <message>
+        <source>Error: Unable to read all records in the database</source>
+        <translation type="unfinished">Error: No es posible leer todos los registros en la base de datos</translation>
+    </message>
+    <message>
+        <source>Error: Unable to remove watchonly address book data</source>
+        <translation type="unfinished">Error: No es posible eliminar los datos de la libreta de direcciones de observación</translation>
+    </message>
+    <message>
         <source>Error: Unable to write record to new wallet</source>
-        <translation type="unfinished">Error: No se pudo escribir el registro en la nueva billetera</translation>
+        <translation type="unfinished">Error: No se pudo escribir el registro en el nuevo monedero</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
@@ -818,12 +938,16 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">Máscara de red especificada en -whitelist: «%s» inválida</translation>
     </message>
     <message>
+        <source>Listening for incoming connections failed (listen returned error %s)</source>
+        <translation type="unfinished">La escucha para conexiones entrantes falló (la escucha devolvió el error %s)</translation>
+    </message>
+    <message>
         <source>Loading P2P addresses…</source>
         <translation type="unfinished">Cargando direcciones P2P...</translation>
     </message>
     <message>
         <source>Loading banlist…</source>
-        <translation type="unfinished">Cargando banlist...</translation>
+        <translation type="unfinished">Cargando lista de bloqueos...</translation>
     </message>
     <message>
         <source>Loading block index…</source>
@@ -850,20 +974,12 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">Sin direcciones disponibles</translation>
     </message>
     <message>
-        <source>No proxy server specified. Use -proxy=&lt;ip&gt; or -proxy=&lt;ip:port&gt;.</source>
-        <translation type="unfinished">No se ha especificado un servidor de proxy. Use -proxy=&lt;ip&gt;o -proxy=&lt;ip:port&gt;.</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation type="unfinished">No hay suficientes descriptores de archivo disponibles.</translation>
     </message>
     <message>
         <source>Prune cannot be configured with a negative value.</source>
         <translation type="unfinished">La poda no se puede configurar con un valor negativo.</translation>
-    </message>
-    <message>
-        <source>Prune mode is incompatible with -coinstatsindex.</source>
-        <translation type="unfinished">El modo de poda es incompatible con -txindex.</translation>
     </message>
     <message>
         <source>Prune mode is incompatible with -txindex.</source>
@@ -930,6 +1046,10 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">Iniciando procesos de red...</translation>
     </message>
     <message>
+        <source>The source code is available from %s.</source>
+        <translation type="unfinished">El código fuente esta disponible desde %s.</translation>
+    </message>
+    <message>
         <source>The specified config file %s does not exist</source>
         <translation type="unfinished">El archivo de configuración especificado %s no existe </translation>
     </message>
@@ -982,6 +1102,10 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">Transacción demasiado grande</translation>
     </message>
     <message>
+        <source>Unable to allocate memory for -maxsigcachesize: '%s' MiB</source>
+        <translation type="unfinished">No se ha podido reservar memoria para -maxsigcachesize: «%s» MiB</translation>
+    </message>
+    <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation type="unfinished">No es posible conectar con %s en este sistema (bind ha devuelto el error %s)</translation>
     </message>
@@ -994,12 +1118,16 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">No es posible crear el fichero PID «%s»: %s</translation>
     </message>
     <message>
+        <source>Unable to find UTXO for external input</source>
+        <translation type="unfinished">No se encuentra UTXO para entrada externa</translation>
+    </message>
+    <message>
         <source>Unable to generate initial keys</source>
         <translation type="unfinished">No es posible generar las claves iniciales</translation>
     </message>
     <message>
         <source>Unable to generate keys</source>
-        <translation type="unfinished">Imposible generar claves</translation>
+        <translation type="unfinished">No es posible generar claves</translation>
     </message>
     <message>
         <source>Unable to open %s for writing</source>
@@ -1007,11 +1135,15 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Unable to parse -maxuploadtarget: '%s'</source>
-        <translation type="unfinished">No se ha podido analizar -maxuploadtarget: '%s'</translation>
+        <translation type="unfinished">No se ha podido analizar -maxuploadtarget: «%s»</translation>
     </message>
     <message>
         <source>Unable to start HTTP server. See debug log for details.</source>
         <translation type="unfinished">No se ha podido iniciar el servidor HTTP. Ver registro de depuración para detalles.</translation>
+    </message>
+    <message>
+        <source>Unable to unload the wallet before migrating</source>
+        <translation type="unfinished">Fallo al descargar el monedero antes de la migración</translation>
     </message>
     <message>
         <source>Unknown -blockfilterindex value %s.</source>
@@ -1034,12 +1166,12 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">Nuevas reglas desconocidas activadas (versionbit %i)</translation>
     </message>
     <message>
-        <source>Unsupported logging category %s=%s.</source>
-        <translation type="unfinished">Categoría de registro no soportada %s=%s. </translation>
+        <source>Unsupported global logging level -loglevel=%s. Valid values: %s.</source>
+        <translation type="unfinished">Nivel de registro de depuración global -loglevel=%s no soportado. Valores válidos: %s.</translation>
     </message>
     <message>
-        <source>Upgrading UTXO database</source>
-        <translation type="unfinished">Actualizando la base de datos UTXO</translation>
+        <source>Unsupported logging category %s=%s.</source>
+        <translation type="unfinished">Categoría de registro no soportada %s=%s. </translation>
     </message>
     <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
@@ -1151,7 +1283,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet…</source>
-        <translation type="unfinished">&amp;Cifrar monedero</translation>
+        <translation type="unfinished">Cifrar &amp;monedero...</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
@@ -1171,7 +1303,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Firmar mensajes con sus direcciones Bitcoin para probar la propiedad</translation>
+        <translation type="unfinished">Firmar un mensaje para probar que eres dueño de esta dirección</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
@@ -1179,7 +1311,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Verificar un mensaje para comprobar que fue firmado con la dirección Bitcoin indicada</translation>
+        <translation type="unfinished">Verificar mensajes comprobando que están firmados con direcciones Bitcoin concretas</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -1235,7 +1367,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk…</source>
-        <translation type="unfinished">Reindexando bloques en disco</translation>
+        <translation type="unfinished">Reindexando bloques en disco...</translation>
     </message>
     <message>
         <source>Connecting to peers…</source>
@@ -1243,7 +1375,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation type="unfinished">Solicitar pagos (genera código QR y URL's de Bitcoin)</translation>
+        <translation type="unfinished">Solicitar pagos (genera código QR y URI's de Bitcoin)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1261,7 +1393,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <source>Processed %n block(s) of transaction history.</source>
         <translation type="unfinished">
             <numerusform>Procesado %n bloque del historial de transacciones.</numerusform>
-            <numerusform>Procesados %n bloques del historial de transacciones.</numerusform>
+            <numerusform>Procesado %n bloques del historial de transacciones.</numerusform>
         </translation>
     </message>
     <message>
@@ -1290,7 +1422,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Up to date</source>
-        <translation type="unfinished">Actualizado al dia </translation>
+        <translation type="unfinished">Actualizado al día </translation>
     </message>
     <message>
         <source>Load Partially Signed Bitcoin Transaction</source>
@@ -1302,31 +1434,27 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Cargar una transacción de Bitcoin parcialmente firmada desde el portapapeles</translation>
+        <translation type="unfinished">Cargar una transacción de Bitcoin parcialmente firmada desde el Portapapeles</translation>
     </message>
     <message>
         <source>Node window</source>
-        <translation type="unfinished">Ventana de nodo</translation>
-    </message>
-    <message>
-        <source>Open node debugging and diagnostic console</source>
-        <translation type="unfinished">Abrir consola de depuración y diagnóstico de nodo</translation>
+        <translation type="unfinished">Ventana del nodo</translation>
     </message>
     <message>
         <source>&amp;Sending addresses</source>
-        <translation type="unfinished">&amp;Direcciones de envío</translation>
+        <translation type="unfinished">Direcciones de &amp;envío</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses</source>
-        <translation type="unfinished">&amp;Direcciones de recepción</translation>
+        <translation type="unfinished">Direcciones de &amp;recepción</translation>
     </message>
     <message>
         <source>Open a bitcoin: URI</source>
-        <translation type="unfinished">Bitcoin: abrir URI</translation>
+        <translation type="unfinished">Abrir un bitcoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
-        <translation type="unfinished">Abrir monedero</translation>
+        <translation type="unfinished">Abrir Monedero</translation>
     </message>
     <message>
         <source>Open a wallet</source>
@@ -1335,6 +1463,16 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     <message>
         <source>Close wallet</source>
         <translation type="unfinished">Cerrar monedero</translation>
+    </message>
+    <message>
+        <source>Restore Wallet…</source>
+        <extracomment>Name of the menu item that restores wallet from a backup file.</extracomment>
+        <translation type="unfinished">Restaurar monedero…</translation>
+    </message>
+    <message>
+        <source>Restore a wallet from a backup file</source>
+        <extracomment>Status tip for Restore Wallet menu item</extracomment>
+        <translation type="unfinished">Restaurar monedero desde un archivo de respaldo</translation>
     </message>
     <message>
         <source>Close all wallets</source>
@@ -1350,7 +1488,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Mask the values in the Overview tab</source>
-        <translation type="unfinished">Esconder los valores de la ventana de previsualización</translation>
+        <translation type="unfinished">Ocultar los valores de la ventana de previsualización</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -1359,6 +1497,26 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     <message>
         <source>No wallets available</source>
         <translation type="unfinished">No hay monederos disponibles</translation>
+    </message>
+    <message>
+        <source>Wallet Data</source>
+        <extracomment>Name of the wallet data file format.</extracomment>
+        <translation type="unfinished">Datos del monedero </translation>
+    </message>
+    <message>
+        <source>Load Wallet Backup</source>
+        <extracomment>The title for Restore Wallet File Windows</extracomment>
+        <translation type="unfinished">Cargar copia de seguridad del monedero</translation>
+    </message>
+    <message>
+        <source>Restore Wallet</source>
+        <extracomment>Title of pop-up window shown when the user is attempting to restore a wallet.</extracomment>
+        <translation type="unfinished">Restaurar monedero</translation>
+    </message>
+    <message>
+        <source>Wallet Name</source>
+        <extracomment>Label of the input field where the name of the wallet is entered.</extracomment>
+        <translation type="unfinished">Nombre del monedero</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1388,8 +1546,8 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n conexión activa con la red de Bitcoin.</numerusform>
-            <numerusform>%n conexiónes activas con la red de Bitcoin.</numerusform>
+            <numerusform>%n conexión activa con la red Bitcoin.</numerusform>
+            <numerusform>%n conexiones activas con la red Bitcoin.</numerusform>
         </translation>
     </message>
     <message>
@@ -1411,6 +1569,10 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <source>Enable network activity</source>
         <extracomment>A context menu item. The network activity was disabled previously.</extracomment>
         <translation type="unfinished">Habilitar la actividad de la red</translation>
+    </message>
+    <message>
+        <source>Pre-syncing Headers (%1%)…</source>
+        <translation type="unfinished">Presincronizando cabeceras (%1%)...</translation>
     </message>
     <message>
         <source>Warning: %1</source>
@@ -1564,7 +1726,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>&amp;Copy address</source>
-        <translation type="unfinished">Copiar dirección</translation>
+        <translation type="unfinished">&amp;Copiar dirección</translation>
     </message>
     <message>
         <source>Copy &amp;label</source>
@@ -1663,6 +1825,10 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <source>Can't list signers</source>
         <translation type="unfinished">No se pueden enumerar los firmantes</translation>
     </message>
+    <message>
+        <source>Too many external signers found</source>
+        <translation type="unfinished">Se han encontrado demasiados firmantes externos</translation>
+    </message>
 </context>
 <context>
     <name>LoadWalletsActivity</name>
@@ -1694,12 +1860,40 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     <message>
         <source>Open Wallet</source>
         <extracomment>Title of window indicating the progress of opening of a wallet.</extracomment>
-        <translation type="unfinished">Abrir Monedero</translation>
+        <translation type="unfinished">Abrir monedero</translation>
     </message>
     <message>
         <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
         <extracomment>Descriptive text of the open wallet progress window which indicates to the user which wallet is currently being opened.</extracomment>
-        <translation type="unfinished">Abriendo Monedero &lt;b&gt;%1&lt;/b&gt;...</translation>
+        <translation type="unfinished">Abriendo monedero &lt;b&gt;%1&lt;/b&gt;...</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreWalletActivity</name>
+    <message>
+        <source>Restore Wallet</source>
+        <extracomment>Title of progress window which is displayed when wallets are being restored.</extracomment>
+        <translation type="unfinished">Restaurar monedero</translation>
+    </message>
+    <message>
+        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
+        <translation type="unfinished">Restaurando monedero &lt;b&gt;%1&lt;/b&gt;…</translation>
+    </message>
+    <message>
+        <source>Restore wallet failed</source>
+        <extracomment>Title of message box which is displayed when the wallet could not be restored.</extracomment>
+        <translation type="unfinished">Fallo al restaurar monedero</translation>
+    </message>
+    <message>
+        <source>Restore wallet warning</source>
+        <extracomment>Title of message box which is displayed when the wallet is restored with some warning.</extracomment>
+        <translation type="unfinished">Advertencia al restaurar monedero</translation>
+    </message>
+    <message>
+        <source>Restore wallet message</source>
+        <extracomment>Title of message box which is displayed when the wallet is successfully restored.</extracomment>
+        <translation type="unfinished">Mensaje al restaurar monedero</translation>
     </message>
 </context>
 <context>
@@ -1849,7 +2043,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>New key generation failed.</source>
-        <translation type="unfinished">La generación de la nueva clave fallo</translation>
+        <translation type="unfinished">Fallo en la generación de la nueva clave.</translation>
     </message>
 </context>
 <context>
@@ -1877,17 +2071,26 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
 </context>
 <context>
     <name>Intro</name>
-    <message>
-        <source>%1 GB of space available</source>
-        <translation type="unfinished">%1 GB de espacio disponible</translation>
+    <message numerus="yes">
+        <source>%n GB of space available</source>
+        <translation type="unfinished">
+            <numerusform>%n GB de espacio disponible</numerusform>
+            <numerusform>%n GB de espacio disponible</numerusform>
+        </translation>
     </message>
-    <message>
-        <source>(of %1 GB needed)</source>
-        <translation type="unfinished">(de %1 GB necesarios)</translation>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation type="unfinished">
+            <numerusform>(de %n GB necesario)</numerusform>
+            <numerusform>(de %n GB necesarios)</numerusform>
+        </translation>
     </message>
-    <message>
-        <source>(%1 GB needed for full chain)</source>
-        <translation type="unfinished">(%1 GB necesarios para la cadena completa)</translation>
+    <message numerus="yes">
+        <source>(%n GB needed for full chain)</source>
+        <translation type="unfinished">
+            <numerusform>(%n GB necesario para completar la cadena de bloques)</numerusform>
+            <numerusform>(%n GB necesarios para completar la cadena de bloques)</numerusform>
+        </translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -1930,10 +2133,6 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">Al ser esta la primera vez que se ejecuta el programa, puedes escoger donde %1 almacenará los datos.</translation>
     </message>
     <message>
-        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation type="unfinished">Cuando hagas clic en OK, %1 se iniciará la descarga y procesamiento de toda la %4 cadena de bloques (%2GB) empezando con las primeras transacciones en %3 cuando %4 fue inicialmente lanzado.</translation>
-    </message>
-    <message>
         <source>Limit block chain storage to</source>
         <translation type="unfinished">Limitar el almacenamiento de cadena de bloques a</translation>
     </message>
@@ -1947,7 +2146,11 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
-        <translation type="unfinished">Esta sincronización inicial es muy exigente y puede exponer problemas de hardware con su computadora que anteriormente habían pasado desapercibidos. Cada vez que ejecuta %1, continuará la descarga desde donde la dejó.</translation>
+        <translation type="unfinished">El primer proceso de sincronización consume muchos recursos, y es posible que puedan ocurrir problemas de hardware que anteriormente no hayas notado. Cada vez que ejecutes %1 automáticamente se reiniciará el proceso de sincronización desde el punto que lo dejaste anteriormente.</translation>
+    </message>
+    <message>
+        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2 GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
+        <translation type="unfinished">Cuando hagas clic en OK, %1 se iniciará la descarga y procesamiento de toda la cadena %4 de bloques (%2 GB) empezando con las primeras transacciones en %3 cuando %4 fue inicialmente lanzado.</translation>
     </message>
     <message>
         <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
@@ -2032,7 +2235,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Hide</source>
-        <translation type="unfinished">Ocultar </translation>
+        <translation type="unfinished">Ocultar</translation>
     </message>
     <message>
         <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
@@ -2041,6 +2244,10 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     <message>
         <source>Unknown. Syncing Headers (%1, %2%)…</source>
         <translation type="unfinished">Desconocido. Sincronizando cabeceras (%1, %2%)…</translation>
+    </message>
+    <message>
+        <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
+        <translation type="unfinished">Desconocido. Presincronizando cabeceras (%1, %2%)…</translation>
     </message>
 </context>
 <context>
@@ -2052,7 +2259,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     <message>
         <source>Paste address from clipboard</source>
         <extracomment>Tooltip text for button that allows you to paste an address that is in your clipboard.</extracomment>
-        <translation type="unfinished">Pega dirección desde portapapeles</translation>
+        <translation type="unfinished">Pegar dirección desde portapapeles</translation>
     </message>
 </context>
 <context>
@@ -2096,6 +2303,10 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
         <translation type="unfinished">Minimizar en vez de salir de la aplicación cuando la ventana está cerrada. Cuando se activa esta opción, la aplicación sólo se cerrará después de seleccionar Salir en el menú.</translation>
+    </message>
+    <message>
+        <source>Options set in this dialog are overridden by the command line:</source>
+        <translation type="unfinished">Las opciones establecidas en este diálogo serán invalidadas por la línea de comandos:</translation>
     </message>
     <message>
         <source>Open the %1 configuration file from the working directory.</source>
@@ -2207,7 +2418,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
-        <translation type="unfinished">Mapear el puerto usando &amp;UPnp</translation>
+        <translation type="unfinished">Mapear el puerto usando &amp;UPnP</translation>
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
@@ -2223,7 +2434,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Allow incomin&amp;g connections</source>
-        <translation type="unfinished">Permitir conexiones entrantes</translation>
+        <translation type="unfinished">&amp;Permitir conexiones entrantes</translation>
     </message>
     <message>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
@@ -2234,12 +2445,16 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
         <translation type="unfinished">&amp;Conectar a través del proxy SOCKS5 (proxy predeterminado):</translation>
     </message>
     <message>
+        <source>Proxy &amp;IP:</source>
+        <translation type="unfinished">&amp;IP proxy::</translation>
+    </message>
+    <message>
         <source>&amp;Port:</source>
         <translation type="unfinished">&amp;Puerto:</translation>
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
-        <translation type="unfinished">Puerto del proxy (por ejemplo, 9050)</translation>
+        <translation type="unfinished">Puerto del proxy (ej. 9050)</translation>
     </message>
     <message>
         <source>Used for reaching peers via:</source>
@@ -2255,7 +2470,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>&amp;Show tray icon</source>
-        <translation type="unfinished">Mostrar la bandeja del sistema.</translation>
+        <translation type="unfinished">Mostrar la &amp;bandeja del sistema.</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -2307,7 +2522,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
-        <translation type="unfinished">Usar proxy SOCKS&amp;5 para alcanzar nodos via servicios ocultos Tor:</translation>
+        <translation type="unfinished">Usar proxy SOCKS&amp;5 para alcanzar nodos vía servicios anónimos Tor:</translation>
     </message>
     <message>
         <source>Monospaced font in the Overview tab:</source>
@@ -2320,10 +2535,6 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     <message>
         <source>closest matching "%1"</source>
         <translation type="unfinished">coincidencia más aproximada «%1»</translation>
-    </message>
-    <message>
-        <source>Options set in this dialog are overridden by the command line or in the configuration file:</source>
-        <translation type="unfinished">Las opciones establecidas en este diálogo serán invalidadas por la línea de comandos:</translation>
     </message>
     <message>
         <source>&amp;Cancel</source>
@@ -2344,14 +2555,22 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
+        <extracomment>Window title text of pop-up window shown when the user has chosen to reset options.</extracomment>
         <translation type="unfinished">Confirmar restablecimiento de opciones</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
+        <extracomment>Text explaining that the settings changed will not come into effect until the client is restarted.</extracomment>
         <translation type="unfinished">Es necesario reiniciar el cliente para activar los cambios.</translation>
     </message>
     <message>
+        <source>Current settings will be backed up at "%1".</source>
+        <extracomment>Text explaining to the user that the client's current settings will be backed up at a specific location. %1 is a stand-in argument for the backup location's path.</extracomment>
+        <translation type="unfinished">Los ajustes actuales se guardarán en «%1».</translation>
+    </message>
+    <message>
         <source>Client will be shut down. Do you want to proceed?</source>
+        <extracomment>Text asking the user to confirm if they would like to proceed with a client shutdown.</extracomment>
         <translation type="unfinished">El cliente se cerrará. ¿Deseas continuar?</translation>
     </message>
     <message>
@@ -2386,6 +2605,13 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
 </context>
 <context>
+    <name>OptionsModel</name>
+    <message>
+        <source>Could not read setting "%1", %2.</source>
+        <translation type="unfinished">No se puede leer el ajuste «%1», %2.</translation>
+    </message>
+</context>
+<context>
     <name>OverviewPage</name>
     <message>
         <source>Form</source>
@@ -2393,7 +2619,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">La información mostrada puede estar desactualizada. Su billetera se sincroniza automáticamente con la red de Bitcoin después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
+        <translation type="unfinished">La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red de Bitcoin después de establecer una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2453,7 +2679,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
-        <translation type="unfinished">Modo de privacidad activado para la pestaña de visión general. Para desenmascarar los valores, desmarcar los valores de Configuración-&gt;Máscara.</translation>
+        <translation type="unfinished">Modo de privacidad activado para la pestaña de visión general. Para desenmascarar los valores, desmarcar los valores de Configuración-&gt;Enmascarar valores.</translation>
     </message>
 </context>
 <context>
@@ -2508,7 +2734,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Unknown error processing transaction.</source>
-        <translation type="unfinished">Error desconocido al procesar la transacción</translation>
+        <translation type="unfinished">Error desconocido al procesar la transacción.</translation>
     </message>
     <message>
         <source>Transaction broadcast successfully! Transaction ID: %1</source>
@@ -2541,7 +2767,7 @@ Firmar solo es posible con direcciones del tipo «Legacy».</translation>
     </message>
     <message>
         <source>Unable to calculate transaction fee or total transaction amount.</source>
-        <translation type="unfinished">No se ha podido calcular la comisión por transacción o la totalidad de la cantidad de la transacción.</translation>
+        <translation type="unfinished">No se ha podido calcular la comisión por transacción o la totalidad del importe de la transacción.</translation>
     </message>
     <message>
         <source>Pays transaction fee: </source>
@@ -2636,6 +2862,11 @@ Si recibe este error, debe solicitar al comerciante que le proporcione un URI co
         <translation type="unfinished">Pares</translation>
     </message>
     <message>
+        <source>Age</source>
+        <extracomment>Title of Peers Table column which indicates the duration (length of time) since the peer connection started.</extracomment>
+        <translation type="unfinished">Duración</translation>
+    </message>
+    <message>
         <source>Direction</source>
         <extracomment>Title of Peers Table column which indicates the direction the peer connection was initiated from.</extracomment>
         <translation type="unfinished">Sentido</translation>
@@ -2700,7 +2931,7 @@ Si recibe este error, debe solicitar al comerciante que le proporcione un URI co
     </message>
     <message>
         <source>Save QR Code</source>
-        <translation type="unfinished">Guardar Código QR</translation>
+        <translation type="unfinished">Guardar código QR</translation>
     </message>
     <message>
         <source>PNG Image</source>
@@ -2824,29 +3055,32 @@ Si recibe este error, debe solicitar al comerciante que le proporcione un URI co
     </message>
     <message>
         <source>Whether we relay addresses to this peer.</source>
-        <extracomment>Tooltip text for the Address Relay field in the peer details area.</extracomment>
+        <extracomment>Tooltip text for the Address Relay field in the peer details area, which displays whether we relay addresses to this peer (Yes/No).</extracomment>
         <translation type="unfinished">Si retransmitimos las direcciones a este par.</translation>
     </message>
     <message>
         <source>Address Relay</source>
+        <extracomment>Text title for the Address Relay field in the peer details area, which displays whether we relay addresses to this peer (Yes/No).</extracomment>
         <translation type="unfinished">Transmisión de la dirección</translation>
     </message>
     <message>
-        <source>Total number of addresses processed, excluding those dropped due to rate-limiting.</source>
-        <extracomment>Tooltip text for the Addresses Processed field in the peer details area.</extracomment>
-        <translation type="unfinished">Número total de direcciones procesadas, excluyendo las descartadas por limitación de comisión.</translation>
+        <source>The total number of addresses received from this peer that were processed (excludes addresses that were dropped due to rate-limiting).</source>
+        <extracomment>Tooltip text for the Addresses Processed field in the peer details area, which displays the total number of addresses received from this peer that were processed (excludes addresses that were dropped due to rate-limiting).</extracomment>
+        <translation type="unfinished">El número total de direcciones recibidas desde este par que han sido procesadas (excluyendo las direcciones que han sido desestimadas debido a la limitación de velocidad).</translation>
+    </message>
+    <message>
+        <source>The total number of addresses received from this peer that were dropped (not processed) due to rate-limiting.</source>
+        <extracomment>Tooltip text for the Addresses Rate-Limited field in the peer details area, which displays the total number of addresses received from this peer that were dropped (not processed) due to rate-limiting.</extracomment>
+        <translation type="unfinished">El número total de direcciones recibidas desde este par que han sido desestimadas (no procesadas) debido a la limitación de velocidad.</translation>
     </message>
     <message>
         <source>Addresses Processed</source>
+        <extracomment>Text title for the Addresses Processed field in the peer details area, which displays the total number of addresses received from this peer that were processed (excludes addresses that were dropped due to rate-limiting).</extracomment>
         <translation type="unfinished">Direcciones procesadas</translation>
     </message>
     <message>
-        <source>Total number of addresses dropped due to rate-limiting.</source>
-        <extracomment>Tooltip text for the Addresses Rate-Limited field in the peer details area.</extracomment>
-        <translation type="unfinished">Número total de direcciones descartadas por límite de tasa</translation>
-    </message>
-    <message>
         <source>Addresses Rate-Limited</source>
+        <extracomment>Text title for the Addresses Rate-Limited field in the peer details area, which displays the total number of addresses received from this peer that were dropped (not processed) due to rate-limiting.</extracomment>
         <translation type="unfinished">Direcciones con límite de ratio</translation>
     </message>
     <message>
@@ -2887,8 +3121,7 @@ Si recibe este error, debe solicitar al comerciante que le proporcione un URI co
     </message>
     <message>
         <source>The network protocol this peer is connected through: IPv4, IPv6, Onion, I2P, or CJDNS.</source>
-        <translation type="unfinished">El protocolo de red de este par está conectado a través de:
- IPv4, IPv6, Onion, I2P, o CJDNS.</translation>
+        <translation type="unfinished">El protocolo de red de este par está conectado a través de: IPv4, IPv6, Onion, I2P, o CJDNS.</translation>
     </message>
     <message>
         <source>Services</source>
@@ -2925,7 +3158,7 @@ Si recibe este error, debe solicitar al comerciante que le proporcione un URI co
     <message>
         <source>Elapsed time since a novel transaction accepted into our mempool was received from this peer.</source>
         <extracomment>Tooltip text for the Last Transaction field in the peer details area.</extracomment>
-        <translation type="unfinished">Tiempo transcurrido desde que se recibió de este par una nueva transacción aceptada en nuestro mempool.</translation>
+        <translation type="unfinished">Tiempo transcurrido desde que se recibió de este par una nueva transacción aceptada en nuestra piscina de memoria.</translation>
     </message>
     <message>
         <source>Last Send</source>
@@ -3264,7 +3497,7 @@ Escribe %5 para ver un resumen de los comandos disponibles. Para más informaci�
     </message>
     <message>
         <source>Copy &amp;Address</source>
-        <translation type="unfinished">Copiar &amp;Dirección</translation>
+        <translation type="unfinished">Copiar &amp;dirección</translation>
     </message>
     <message>
         <source>&amp;Verify</source>
@@ -3536,7 +3769,7 @@ Nota: Dado que la comisión se calcula por cada byte, una tasa de «100 satoshis
     </message>
     <message>
         <source>To review recipient list click "Show Details…"</source>
-        <translation type="unfinished">Para ver la lista de receptores haga clic en "Mostrar detalles"</translation>
+        <translation type="unfinished">Para ver la lista de receptores haga clic en «Mostrar detalles...»</translation>
     </message>
     <message>
         <source>Sign failed</source>
@@ -3645,10 +3878,6 @@ Nota: Dado que la comisión se calcula por cada byte, una tasa de «100 satoshis
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
         <translation type="unfinished">Una comisión mayor que %1 se considera como una comisión absurdamente alta.</translation>
     </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation type="unfinished">Solicitud de pago expirada</translation>
-    </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
         <translation type="unfinished">
@@ -3728,14 +3957,6 @@ Nota: Dado que la comisión se calcula por cada byte, una tasa de «100 satoshis
         <translation type="unfinished">Mensaje:</translation>
     </message>
     <message>
-        <source>This is an unauthenticated payment request.</source>
-        <translation type="unfinished">Esta es una solicitud de pago no autentificada.</translation>
-    </message>
-    <message>
-        <source>This is an authenticated payment request.</source>
-        <translation type="unfinished">Esta es una solicitud de pago autentificada.</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation type="unfinished">Introduce una etiqueta para esta dirección para añadirla a la lista de direcciones utilizadas</translation>
     </message>
@@ -3743,11 +3964,7 @@ Nota: Dado que la comisión se calcula por cada byte, una tasa de «100 satoshis
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
         <translation type="unfinished">Mensaje que se agrgará al URI de Bitcoin, el cuál será almacenado con la transacción para su referencia. Nota: Este mensaje no será enviado a través de la red de Bitcoin.</translation>
     </message>
-    <message>
-        <source>Pay To:</source>
-        <translation type="unfinished">Pagar a:</translation>
-    </message>
-    </context>
+</context>
 <context>
     <name>SendConfirmationDialog</name>
     <message>
@@ -3779,11 +3996,11 @@ Nota: Dado que la comisión se calcula por cada byte, una tasa de «100 satoshis
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation type="unfinished">Escoger dirección previamente usada</translation>
+        <translation type="unfinished">Escoger una dirección previamente usada</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation type="unfinished">Pega dirección desde portapapeles</translation>
+        <translation type="unfinished">Pegar dirección desde portapapeles</translation>
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
@@ -3917,30 +4134,32 @@ Nota: Dado que la comisión se calcula por cada byte, una tasa de «100 satoshis
     <name>TransactionDesc</name>
     <message>
         <source>conflicted with a transaction with %1 confirmations</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an unconfirmed transaction that conflicts with a confirmed transaction.</extracomment>
         <translation type="unfinished">Hay un conflicto con una transacción de %1 confirmaciones.</translation>
     </message>
     <message>
-        <source>0/unconfirmed, %1</source>
-        <translation type="unfinished">0/sin confirmar, %1</translation>
+        <source>0/unconfirmed, in memory pool</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an unconfirmed transaction that is in the memory pool.</extracomment>
+        <translation type="unfinished">0/sin confirmar, en la piscina de memoria</translation>
     </message>
     <message>
-        <source>in memory pool</source>
-        <translation type="unfinished">en la piscina de memoria</translation>
-    </message>
-    <message>
-        <source>not in memory pool</source>
-        <translation type="unfinished">no en la piscina de memoria</translation>
+        <source>0/unconfirmed, not in memory pool</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an unconfirmed transaction that is not in the memory pool.</extracomment>
+        <translation type="unfinished">0/sin confirmar, no en la piscina de memoria</translation>
     </message>
     <message>
         <source>abandoned</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an abandoned transaction.</extracomment>
         <translation type="unfinished">abandonada</translation>
     </message>
     <message>
         <source>%1/unconfirmed</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
         <translation type="unfinished">%1/sin confirmar</translation>
     </message>
     <message>
         <source>%1 confirmations</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in 6 or more blocks.</extracomment>
         <translation type="unfinished">%1 confirmaciones</translation>
     </message>
     <message>
@@ -3990,8 +4209,8 @@ Nota: Dado que la comisión se calcula por cada byte, una tasa de «100 satoshis
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
         <translation type="unfinished">
-            <numerusform>disponible en %n bloque más</numerusform>
-            <numerusform>disponible en %n bloques más</numerusform>
+            <numerusform>disponible en %n bloque</numerusform>
+            <numerusform>disponible en %n bloques</numerusform>
         </translation>
     </message>
     <message>
@@ -4150,7 +4369,7 @@ Nota: Dado que la comisión se calcula por cada byte, una tasa de «100 satoshis
     </message>
     <message>
         <source>Mined</source>
-        <translation type="unfinished">Minado </translation>
+        <translation type="unfinished">Minado</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -4273,7 +4492,7 @@ Nota: Dado que la comisión se calcula por cada byte, una tasa de «100 satoshis
     </message>
     <message>
         <source>Increase transaction &amp;fee</source>
-        <translation type="unfinished">&amp;Incrementar la comisión de transacción</translation>
+        <translation type="unfinished">&amp;Incrementar comisión de transacción</translation>
     </message>
     <message>
         <source>A&amp;bandon transaction</source>
@@ -4281,7 +4500,7 @@ Nota: Dado que la comisión se calcula por cada byte, una tasa de «100 satoshis
     </message>
     <message>
         <source>&amp;Edit address label</source>
-        <translation type="unfinished">Editar etiqueta de dirección</translation>
+        <translation type="unfinished">&amp;Editar etiqueta de dirección</translation>
     </message>
     <message>
         <source>Show in %1</source>
@@ -4358,7 +4577,7 @@ Vaya a Archivo&gt; Abrir monedero para cargar un monedero.
     </message>
     <message>
         <source>Create a new wallet</source>
-        <translation type="unfinished">Crear monedero nuevo</translation>
+        <translation type="unfinished">Crea un monedero nuevo</translation>
     </message>
     <message>
         <source>Unable to decode PSBT from clipboard (invalid base64)</source>
@@ -4378,7 +4597,7 @@ Vaya a Archivo&gt; Abrir monedero para cargar un monedero.
     </message>
     <message>
         <source>Unable to decode PSBT</source>
-        <translation type="unfinished">Imposible descodificar TBPF</translation>
+        <translation type="unfinished">No es posible descodificar TBPF</translation>
     </message>
 </context>
 <context>
@@ -4442,7 +4661,7 @@ Vaya a Archivo&gt; Abrir monedero para cargar un monedero.
     </message>
     <message>
         <source>default wallet</source>
-        <translation type="unfinished">Monedero predeterminado</translation>
+        <translation type="unfinished">monedero predeterminado</translation>
     </message>
 </context>
 <context>
@@ -4476,5 +4695,13 @@ Vaya a Archivo&gt; Abrir monedero para cargar un monedero.
         <source>Backup Successful</source>
         <translation type="unfinished">Se ha completado con éxito la copia de respaldo</translation>
     </message>
-    </context>
+    <message>
+        <source>The wallet data was successfully saved to %1.</source>
+        <translation type="unfinished">Los datos del monedero se han guardado con éxito en %1.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished">Cancelar</translation>
+    </message>
+</context>
 </TS>

@@ -242,6 +242,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>BitcoinApplication</name>
     <message>
+        <source>Settings file %1 might be corrupt or invalid.</source>
+        <translation type="unfinished">Το αρχείο Ρυθμίσεων %1 ενδέχεται να είναι κατεστραμμένο ή μη έγκυρο.</translation>
+    </message>
+    <message>
         <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
         <translation type="unfinished">Συνέβη ενα μοιραίο σφάλμα. %1 δε μπορεί να συνεχιστεί με ασφάλεια και θα σταματήσει</translation>
     </message>
@@ -343,36 +347,36 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message numerus="yes">
         <source>%n second(s)</source>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
+            <numerusform>%n δευτερόλεπτο(α)</numerusform>
+            <numerusform>%n δευτερόλεπτο(α)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n minute(s)</source>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
+            <numerusform>%n λεπτό</numerusform>
+            <numerusform>%n λεπτά</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
+            <numerusform>%n ώρα</numerusform>
+            <numerusform>%n ώρες</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
+            <numerusform>%n μέρα</numerusform>
+            <numerusform>%n μέρες</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
+            <numerusform>%n εβδομάδα</numerusform>
+            <numerusform>%n εβδομάδες</numerusform>
         </translation>
     </message>
     <message>
@@ -382,8 +386,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message numerus="yes">
         <source>%n year(s)</source>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
+            <numerusform>%n έτος</numerusform>
+            <numerusform>%n έτη</numerusform>
         </translation>
     </message>
     </context>
@@ -432,10 +436,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
         <translation type="unfinished">Σφάλμα: Η έκδοση του αρχείου dump δεν υποστηρίζεται. Αυτή η έκδοση του bitcoin-wallet υποστηρίζει αρχεία dump μόνο της έκδοσης 1. Δόθηκε αρχείο dump έκδοσης %s.</translation>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation type="unfinished">Σφάλμα: Η ακρόαση για εισερχόμενες συνδέσεις απέτυχε (ακούστε επιστραμμένο σφάλμα %s)</translation>
     </message>
     <message>
         <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
@@ -610,10 +610,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Σφάλμα ανάγνωσης από τη βάση δεδομένων, εκτελείται τερματισμός.</translation>
     </message>
     <message>
-        <source>Error upgrading chainstate database</source>
-        <translation type="unfinished">Σφάλμα κατά την αναβάθμιση της βάσης δεδομένων chainstate</translation>
-    </message>
-    <message>
         <source>Error: Disk space is low for %s</source>
         <translation type="unfinished">Σφάλμα: Ο χώρος στο δίσκο είναι χαμηλός για %s</translation>
     </message>
@@ -716,10 +712,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>No addresses available</source>
         <translation type="unfinished">Καμμία διαθέσιμη διεύθυνση</translation>
-    </message>
-    <message>
-        <source>No proxy server specified. Use -proxy=&lt;ip&gt; or -proxy=&lt;ip:port&gt;.</source>
-        <translation type="unfinished">Δεν ορίστηκε διακομιστής μεσολάβησης. Χρησιμοποιήστε -proxy=&lt;ip&gt; ή -proxy=&lt;ip:port&gt;.</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -882,10 +874,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Μη υποστηριζόμενη κατηγορία καταγραφής %s=%s.</translation>
     </message>
     <message>
-        <source>Upgrading UTXO database</source>
-        <translation type="unfinished">Αναβάθμιση της βάσης δεδομένων UTXO</translation>
-    </message>
-    <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation type="unfinished">Το σχόλιο του παράγοντα χρήστη (%s) περιέχει μη ασφαλείς χαρακτήρες.</translation>
     </message>
@@ -1023,7 +1011,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Ελέγξτε τα μηνύματα για να βεβαιωθείτε ότι υπογράφηκαν με τις καθορισμένες διευθύνσεις Bitcoin</translation>
+        <translation type="unfinished">Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Bitcoin</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -1104,8 +1092,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation type="unfinished">
-            <numerusform />
-            <numerusform />
+            <numerusform>Επεξεργάστηκε %n των μπλοκ του ιστορικού συναλλαγών.</numerusform>
+            <numerusform>Επεξεργάσθηκαν %n μπλοκ του ιστορικού συναλλαγών.</numerusform>
         </translation>
     </message>
     <message>
@@ -1185,6 +1173,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Κλείσιμο πορτοφολιού</translation>
     </message>
     <message>
+        <source>Restore Wallet…</source>
+        <extracomment>Name of the menu item that restores wallet from a backup file.</extracomment>
+        <translation type="unfinished">Επαναφορά Πορτοφολιού...</translation>
+    </message>
+    <message>
+        <source>Restore a wallet from a backup file</source>
+        <extracomment>Status tip for Restore Wallet menu item</extracomment>
+        <translation type="unfinished">Επαναφορά ενός πορτοφολιού από ένα αρχείο αντίγραφου ασφαλείας</translation>
+    </message>
+    <message>
         <source>Close all wallets</source>
         <translation type="unfinished">Κλείσιμο όλων των πορτοφολιών</translation>
     </message>
@@ -1207,6 +1205,26 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>No wallets available</source>
         <translation type="unfinished">Κανένα πορτοφόλι διαθέσιμο</translation>
+    </message>
+    <message>
+        <source>Wallet Data</source>
+        <extracomment>Name of the wallet data file format.</extracomment>
+        <translation type="unfinished">Δεδομένα πορτοφολιού</translation>
+    </message>
+    <message>
+        <source>Load Wallet Backup</source>
+        <extracomment>The title for Restore Wallet File Windows</extracomment>
+        <translation type="unfinished">Φόρτωση Αντίγραφου Ασφαλείας Πορτοφολιού</translation>
+    </message>
+    <message>
+        <source>Restore Wallet</source>
+        <extracomment>Title of pop-up window shown when the user is attempting to restore a wallet.</extracomment>
+        <translation type="unfinished">Επαναφορά Πορτοφολιού</translation>
+    </message>
+    <message>
+        <source>Wallet Name</source>
+        <extracomment>Label of the input field where the name of the wallet is entered.</extracomment>
+        <translation type="unfinished">Όνομα Πορτοφολιού</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1236,8 +1254,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
+            <numerusform>1%n  ενεργές συνδέσεις στο δίκτυο Bitcoin.</numerusform>
+            <numerusform>%n ενεργές συνδέσεις στο δίκτυο Bitcoin.</numerusform>
         </translation>
     </message>
     <message>
@@ -1519,7 +1537,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Can't list signers</source>
         <translation type="unfinished">Αδυναμία απαρίθμησης εγγεγραμμένων </translation>
     </message>
-</context>
+    </context>
 <context>
     <name>LoadWalletsActivity</name>
     <message>
@@ -1556,6 +1574,34 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
         <extracomment>Descriptive text of the open wallet progress window which indicates to the user which wallet is currently being opened.</extracomment>
         <translation type="unfinished">Άνοιγμα πορτοφολιού &lt;b&gt;%1&lt;/b&gt;...</translation>
+    </message>
+</context>
+<context>
+    <name>RestoreWalletActivity</name>
+    <message>
+        <source>Restore Wallet</source>
+        <extracomment>Title of progress window which is displayed when wallets are being restored.</extracomment>
+        <translation type="unfinished">Επαναφορά Πορτοφολιού</translation>
+    </message>
+    <message>
+        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
+        <translation type="unfinished">Επαναφορά Πορτοφολιού &lt;b&gt; %1 &lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Restore wallet failed</source>
+        <extracomment>Title of message box which is displayed when the wallet could not be restored.</extracomment>
+        <translation type="unfinished">Αποτυχία επαναφοράς πορτοφολιού</translation>
+    </message>
+    <message>
+        <source>Restore wallet warning</source>
+        <extracomment>Title of message box which is displayed when the wallet is restored with some warning.</extracomment>
+        <translation type="unfinished">Προειδοποίηση επαναφοράς πορτοφολιού</translation>
+    </message>
+    <message>
+        <source>Restore wallet message</source>
+        <extracomment>Title of message box which is displayed when the wallet is successfully restored.</extracomment>
+        <translation type="unfinished">Μύνημα επαναφοράς πορτοφολιού</translation>
     </message>
 </context>
 <context>
@@ -1733,13 +1779,26 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 </context>
 <context>
     <name>Intro</name>
-    <message>
-        <source>(of %1 GB needed)</source>
-        <translation type="unfinished">(από τα %1 GB που απαιτούνται)</translation>
+    <message numerus="yes">
+        <source>%n GB of space available</source>
+        <translation type="unfinished">
+            <numerusform>%nGB διαθέσιμου χώρου</numerusform>
+            <numerusform>%nGB διαθέσιμου χώρου</numerusform>
+        </translation>
     </message>
-    <message>
-        <source>(%1 GB needed for full chain)</source>
-        <translation type="unfinished">(%1 GB απαιτούνται για την πλήρη αλυσίδα)</translation>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation type="unfinished">
+            <numerusform>(από το %n GB που απαιτείται)</numerusform>
+            <numerusform>(από τα %n GB που απαιτούνται)</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <source>(%n GB needed for full chain)</source>
+        <translation type="unfinished">
+            <numerusform>(%n GB απαιτούνται για την πλήρη αλυσίδα)</numerusform>
+            <numerusform>(%n GB απαιτούνται για την πλήρη αλυσίδα)</numerusform>
+        </translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -1780,10 +1839,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Welcome to %1.</source>
         <translation type="unfinished">Καλωσήρθες στο %1.</translation>
-    </message>
-    <message>
-        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation type="unfinished">Όταν κάνετε κλικ στο OK, το %1 θα ξεκινήσει τη λήψη και την επεξεργασία της πλήρους αλυσίδας μπλοκ% 4 (%2GB) αρχίζοντας από τις πρώτες συναλλαγές στο %3 όταν αρχικά ξεκίνησε το %4.</translation>
     </message>
     <message>
         <source>Limit block chain storage to</source>
@@ -1894,7 +1949,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <source>Unknown. Syncing Headers (%1, %2%)…</source>
         <translation type="unfinished">Άγνωστο. Συγχρονισμός επικεφαλίδων (%1, %2%)...</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>OpenURIDialog</name>
     <message>
@@ -1926,6 +1981,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Έναρξη %1 στο σύστημα σύνδεσης</translation>
     </message>
     <message>
+        <source>Enabling pruning significantly reduces the disk space required to store transactions. All blocks are still fully validated. Reverting this setting requires re-downloading the entire blockchain.</source>
+        <translation type="unfinished">Η ενεργοποίηση του κλαδέματος μειώνει τον απαιτούμενο χώρο για την αποθήκευση συναλλαγών. Όλα τα μπλόκ είναι πλήρως επαληθευμένα. Η επαναφορά αυτής της ρύθμισης απαιτεί επανεγκατάσταση ολόκληρου του blockchain.</translation>
+    </message>
+    <message>
         <source>Size of &amp;database cache</source>
         <translation type="unfinished">Μέγεθος κρυφής μνήμης βάσης δεδομένων.</translation>
     </message>
@@ -1944,6 +2003,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
         <translation type="unfinished">Ελαχιστοποίηση αντί για έξοδο κατά το κλείσιμο του παραθύρου. Όταν αυτή η επιλογή είναι ενεργοποιημένη, η εφαρμογή θα κλείνει μόνο αν επιλεχθεί η Έξοδος στο μενού.</translation>
+    </message>
+    <message>
+        <source>Options set in this dialog are overridden by the command line:</source>
+        <translation type="unfinished">Οι επιλογές που έχουν οριστεί σε αυτό το παράθυρο διαλόγου παραβλέπονται από τη γραμμή εντολών</translation>
     </message>
     <message>
         <source>Open the %1 configuration file from the working directory.</source>
@@ -1991,6 +2054,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Π&amp;ορτοφόλι</translation>
     </message>
     <message>
+        <source>Whether to set subtract fee from amount as default or not.</source>
+        <extracomment>Tooltip text for Options window setting that sets subtracting the fee from a sending amount as default.</extracomment>
+        <translation type="unfinished">Να τεθεί ο φόρος αφαίρεσης από το ποσό στην προκαθορισμένη τιμή ή οχι. </translation>
+    </message>
+    <message>
         <source>Expert</source>
         <translation type="unfinished">Έμπειρος</translation>
     </message>
@@ -2005,6 +2073,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>&amp;Spend unconfirmed change</source>
         <translation type="unfinished">&amp;Ξόδεμα μη επικυρωμένων ρέστων</translation>
+    </message>
+    <message>
+        <source>Enable &amp;PSBT controls</source>
+        <extracomment>An options window setting to enable PSBT controls.</extracomment>
+        <translation type="unfinished">Ενεργοποίηση ελέγχων &amp;PSBT</translation>
     </message>
     <message>
         <source>External Signer (e.g. hardware wallet)</source>
@@ -2127,10 +2200,6 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">πλησιέστερη αντιστοίχιση "%1"</translation>
     </message>
     <message>
-        <source>Options set in this dialog are overridden by the command line or in the configuration file:</source>
-        <translation type="unfinished">Οι επιλογές που έχουν οριστεί σε αυτό το παράθυρο διαλόγου παραβλέπονται από τη γραμμή εντολών ή από το αρχείο διαμόρφωσης:</translation>
-    </message>
-    <message>
         <source>&amp;OK</source>
         <translation type="unfinished">&amp;ΟΚ</translation>
     </message>
@@ -2153,14 +2222,17 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Confirm options reset</source>
+        <extracomment>Window title text of pop-up window shown when the user has chosen to reset options.</extracomment>
         <translation type="unfinished">Επιβεβαίωση επαναφοράς επιλογών</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
+        <extracomment>Text explaining that the settings changed will not come into effect until the client is restarted.</extracomment>
         <translation type="unfinished">Χρειάζεται επανεκκίνηση του προγράμματος για να ενεργοποιηθούν οι αλλαγές.</translation>
     </message>
     <message>
         <source>Client will be shut down. Do you want to proceed?</source>
+        <extracomment>Text asking the user to confirm if they would like to proceed with a client shutdown.</extracomment>
         <translation type="unfinished">Ο πελάτης θα τερματιστεί. Θέλετε να συνεχίσετε?</translation>
     </message>
     <message>
@@ -2197,6 +2269,13 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>The supplied proxy address is invalid.</source>
         <translation type="unfinished">Δεν είναι έγκυρη η διεύθυνση διαμεσολαβητή</translation>
+    </message>
+</context>
+<context>
+    <name>OptionsModel</name>
+    <message>
+        <source>Could not read setting "%1", %2.</source>
+        <translation type="unfinished">Δεν μπορεί να διαβαστεί η ρύθμιση "%1", %2.</translation>
     </message>
 </context>
 <context>
@@ -2311,6 +2390,10 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <message>
         <source>Failed to sign transaction: %1</source>
         <translation type="unfinished">Αποτυχία εκπλήρωσης συναλλαγής: %1</translation>
+    </message>
+    <message>
+        <source>Cannot sign inputs while wallet is locked.</source>
+        <translation type="unfinished">Αδύνατη η υπογραφή εισδοχών ενώ το πορτοφόλι είναι κλειδωμένο</translation>
     </message>
     <message>
         <source>Could not sign any more inputs.</source>
@@ -2445,6 +2528,11 @@ ID Συναλλαγής: %1</translation>
         <source>Peer</source>
         <extracomment>Title of Peers Table column which contains a unique number used to identify a connection.</extracomment>
         <translation type="unfinished">Χρήστης</translation>
+    </message>
+    <message>
+        <source>Age</source>
+        <extracomment>Title of Peers Table column which indicates the duration (length of time) since the peer connection started.</extracomment>
+        <translation type="unfinished">Ηλικία</translation>
     </message>
     <message>
         <source>Direction</source>
@@ -2803,6 +2891,10 @@ ID Συναλλαγής: %1</translation>
     <message>
         <source>Executing command without any wallet</source>
         <translation type="unfinished">Εκτέλεση εντολής χωρίς πορτοφόλι</translation>
+    </message>
+    <message>
+        <source>Ctrl+I</source>
+        <translation type="unfinished">Ctrl+Ι </translation>
     </message>
     <message>
         <source>Executing command using "%1" wallet</source>
@@ -3346,10 +3438,6 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
         <translation type="unfinished">Ένα τέλος υψηλότερο από το %1 θεωρείται ένα παράλογο υψηλό έξοδο.</translation>
     </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation type="unfinished">Η αίτηση πληρωμής έληξε.</translation>
-    </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
         <translation type="unfinished">
@@ -3425,28 +3513,12 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Μήνυμα:</translation>
     </message>
     <message>
-        <source>This is an unauthenticated payment request.</source>
-        <translation type="unfinished">Πρόκειται για αίτημα πληρωμής χωρίς έλεγχο ταυτότητας.</translation>
-    </message>
-    <message>
-        <source>This is an authenticated payment request.</source>
-        <translation type="unfinished">Πρόκειται για ένα πιστοποιημένο αίτημα πληρωμής.</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation type="unfinished">Εισάγετε μία ετικέτα για αυτή την διεύθυνση για να προστεθεί στη λίστα με τις χρησιμοποιημένες διευθύνσεις</translation>
     </message>
     <message>
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
         <translation type="unfinished">Ένα μήνυμα που επισυνάφθηκε στο bitcoin: URI το οποίο θα αποθηκευτεί με τη συναλλαγή για αναφορά. Σημείωση: Αυτό το μήνυμα δεν θα σταλεί μέσω του δικτύου Bitcoin.</translation>
-    </message>
-    <message>
-        <source>Pay To:</source>
-        <translation type="unfinished">Πληρωμή σε:</translation>
-    </message>
-    <message>
-        <source>Memo:</source>
-        <translation type="unfinished">Σημείωση:</translation>
     </message>
 </context>
 <context>
@@ -3618,30 +3690,22 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
     <name>TransactionDesc</name>
     <message>
         <source>conflicted with a transaction with %1 confirmations</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an unconfirmed transaction that conflicts with a confirmed transaction.</extracomment>
         <translation type="unfinished">σε σύγκρουση με μια συναλλαγή με %1 επιβεβαιώσεις</translation>
     </message>
     <message>
-        <source>0/unconfirmed, %1</source>
-        <translation type="unfinished">0/ανεπιβεβαίωτο, %1</translation>
-    </message>
-    <message>
-        <source>in memory pool</source>
-        <translation type="unfinished">στην πισίνα μνήμης</translation>
-    </message>
-    <message>
-        <source>not in memory pool</source>
-        <translation type="unfinished">όχι στην πισίνα μνήμης</translation>
-    </message>
-    <message>
         <source>abandoned</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an abandoned transaction.</extracomment>
         <translation type="unfinished">εγκαταλελειμμένος</translation>
     </message>
     <message>
         <source>%1/unconfirmed</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
         <translation type="unfinished">%1/μη επιβεβαιωμένο</translation>
     </message>
     <message>
         <source>%1 confirmations</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in 6 or more blocks.</extracomment>
         <translation type="unfinished">%1 επιβεβαιώσεις</translation>
     </message>
     <message>

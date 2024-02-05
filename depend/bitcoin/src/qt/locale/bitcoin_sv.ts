@@ -251,7 +251,7 @@ Försök igen.</translation>
     </message>
     <message>
         <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
-        <translation type="unfinished">Ett internt fel har uppstått. 1%1 kommer försöka att fortsätta. Detta är en oväntad bugg som kan rapporteras enligt nedan beskrivning.</translation>
+        <translation type="unfinished">Ett internt fel har uppstått. %1 kommer försöka att fortsätta. Detta är en oväntad bugg som kan rapporteras enligt nedan beskrivning.</translation>
     </message>
 </context>
 <context>
@@ -396,10 +396,6 @@ Försök igen.</translation>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation type="unfinished">Fel vid läsning av %s! Alla nycklar lästes korrekt, men transaktionsdata eller poster i adressboken kanske saknas eller är felaktiga.</translation>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation type="unfinished">Fel: Avlyssning av inkommande anslutningar misslyckades (Avlyssningen returnerade felkod %s)</translation>
     </message>
     <message>
         <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
@@ -566,10 +562,6 @@ Försök igen.</translation>
         <translation type="unfinished">Fel vid läsning från databas, avslutar.</translation>
     </message>
     <message>
-        <source>Error upgrading chainstate database</source>
-        <translation type="unfinished">Fel vid uppgradering av blockdatabasen</translation>
-    </message>
-    <message>
         <source>Error: Disk space is low for %s</source>
         <translation type="unfinished">Fel: Diskutrymme är lågt för %s</translation>
     </message>
@@ -672,10 +664,6 @@ Försök igen.</translation>
     <message>
         <source>No addresses available</source>
         <translation type="unfinished">Inga adresser tillgängliga</translation>
-    </message>
-    <message>
-        <source>No proxy server specified. Use -proxy=&lt;ip&gt; or -proxy=&lt;ip:port&gt;.</source>
-        <translation type="unfinished">Ingen proxy-server vald. Använd -proxy=&lt;ip&gt; eller -proxy=&lt;ip:port&gt;.</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
@@ -836,10 +824,6 @@ Försök igen.</translation>
     <message>
         <source>Unsupported logging category %s=%s.</source>
         <translation type="unfinished">Saknar stöd för loggningskategori %s=%s.</translation>
-    </message>
-    <message>
-        <source>Upgrading UTXO database</source>
-        <translation type="unfinished">Uppgraderar UTXO-databasen</translation>
     </message>
     <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
@@ -1137,6 +1121,16 @@ Försök igen.</translation>
         <translation type="unfinished">Stäng plånboken</translation>
     </message>
     <message>
+        <source>Restore Wallet…</source>
+        <extracomment>Name of the menu item that restores wallet from a backup file.</extracomment>
+        <translation type="unfinished">Återställ Plånboken...</translation>
+    </message>
+    <message>
+        <source>Restore a wallet from a backup file</source>
+        <extracomment>Status tip for Restore Wallet menu item</extracomment>
+        <translation type="unfinished">Återställt en plånbok från en backup-fil</translation>
+    </message>
+    <message>
         <source>Close all wallets</source>
         <translation type="unfinished">Stäng alla plånböcker</translation>
     </message>
@@ -1159,6 +1153,21 @@ Försök igen.</translation>
     <message>
         <source>No wallets available</source>
         <translation type="unfinished">Inga plånböcker tillgängliga</translation>
+    </message>
+    <message>
+        <source>Wallet Data</source>
+        <extracomment>Name of the wallet data file format.</extracomment>
+        <translation type="unfinished">Plånboksdata</translation>
+    </message>
+    <message>
+        <source>Restore Wallet</source>
+        <extracomment>Title of pop-up window shown when the user is attempting to restore a wallet.</extracomment>
+        <translation type="unfinished">Återställ Plånbok</translation>
+    </message>
+    <message>
+        <source>Wallet Name</source>
+        <extracomment>Label of the input field where the name of the wallet is entered.</extracomment>
+        <translation type="unfinished">Namn på plånboken</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1454,7 +1463,7 @@ Försök igen.</translation>
         <source>Can't list signers</source>
         <translation type="unfinished">Kan inte lista signerare</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>LoadWalletsActivity</name>
     <message>
@@ -1493,6 +1502,24 @@ Försök igen.</translation>
         <translation type="unfinished">Öppnar Plånboken &lt;b&gt;%1&lt;/b&gt;...</translation>
     </message>
 </context>
+<context>
+    <name>RestoreWalletActivity</name>
+    <message>
+        <source>Restore Wallet</source>
+        <extracomment>Title of progress window which is displayed when wallets are being restored.</extracomment>
+        <translation type="unfinished">Återställ Plånbok</translation>
+    </message>
+    <message>
+        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
+        <translation type="unfinished">Återskapar Plånboken &lt;b&gt;%1&lt;/b&gt;…</translation>
+    </message>
+    <message>
+        <source>Restore wallet failed</source>
+        <extracomment>Title of message box which is displayed when the wallet could not be restored.</extracomment>
+        <translation type="unfinished">Det gick inte att återställa plånboken</translation>
+    </message>
+    </context>
 <context>
     <name>WalletController</name>
     <message>
@@ -1643,17 +1670,26 @@ Försök igen.</translation>
 </context>
 <context>
     <name>Intro</name>
-    <message>
-        <source>%1 GB of space available</source>
-        <translation type="unfinished">%1GB lagringsplats tillgängligt</translation>
+    <message numerus="yes">
+        <source>%n GB of space available</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
     </message>
-    <message>
-        <source>(of %1 GB needed)</source>
-        <translation type="unfinished">(av %1 GB krävs)</translation>
+    <message numerus="yes">
+        <source>(of %n GB needed)</source>
+        <translation type="unfinished">
+            <numerusform>(av %n GB behövs)</numerusform>
+            <numerusform>(av de %n GB som behövs)</numerusform>
+        </translation>
     </message>
-    <message>
-        <source>(%1 GB needed for full chain)</source>
-        <translation type="unfinished">(%1 GB behövs för hela kedjan)</translation>
+    <message numerus="yes">
+        <source>(%n GB needed for full chain)</source>
+        <translation type="unfinished">
+            <numerusform>(%n GB behövs för hela kedjan)</numerusform>
+            <numerusform>(%n GB behövs för hela kedjan)</numerusform>
+        </translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -1698,10 +1734,6 @@ Försök igen.</translation>
     <message>
         <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
         <translation type="unfinished">Eftersom detta är första gången som programmet startas får du välja var %1 skall lagra sina data.</translation>
-    </message>
-    <message>
-        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation type="unfinished">När du trycker OK kommer %1 att börja ladda ner och bearbeta den fullständiga %4-blockkedjan (%2 GB), med början vid de första transaktionerna %3 när %4 först lanserades.</translation>
     </message>
     <message>
         <source>Limit block chain storage to</source>
@@ -1963,6 +1995,10 @@ Försök igen.</translation>
         <translation type="unfinished">Visa ikonen i systemfältet.</translation>
     </message>
     <message>
+        <source>&amp;Show tray icon</source>
+        <translation type="unfinished">&amp;Visa ikon i systemfältet</translation>
+    </message>
+    <message>
         <source>Show only a tray icon after minimizing the window.</source>
         <translation type="unfinished">Visa endast en systemfältsikon vid minimering.</translation>
     </message>
@@ -2003,10 +2039,6 @@ Försök igen.</translation>
         <translation type="unfinished">Anslut till Bitcoin-nätverket genom en separat SOCKS5-proxy för onion-tjänster genom Tor.</translation>
     </message>
     <message>
-        <source>Options set in this dialog are overridden by the command line or in the configuration file:</source>
-        <translation type="unfinished">Alternativ som anges i denna dialog åsidosätts av kommandoraden eller i konfigurationsfilen:</translation>
-    </message>
-    <message>
         <source>&amp;Cancel</source>
         <translation type="unfinished">&amp;Avbryt</translation>
     </message>
@@ -2020,14 +2052,17 @@ Försök igen.</translation>
     </message>
     <message>
         <source>Confirm options reset</source>
+        <extracomment>Window title text of pop-up window shown when the user has chosen to reset options.</extracomment>
         <translation type="unfinished">Bekräfta att alternativen ska återställs</translation>
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
+        <extracomment>Text explaining that the settings changed will not come into effect until the client is restarted.</extracomment>
         <translation type="unfinished">Klientomstart är nödvändig för att aktivera ändringarna.</translation>
     </message>
     <message>
         <source>Client will be shut down. Do you want to proceed?</source>
+        <extracomment>Text asking the user to confirm if they would like to proceed with a client shutdown.</extracomment>
         <translation type="unfinished">Programmet kommer att stängas. Vill du fortsätta?</translation>
     </message>
     <message>
@@ -2272,6 +2307,11 @@ Försök igen.</translation>
         <source>User Agent</source>
         <extracomment>Title of Peers Table column which contains the peer's User Agent string.</extracomment>
         <translation type="unfinished">Användaragent</translation>
+    </message>
+    <message>
+        <source>Age</source>
+        <extracomment>Title of Peers Table column which indicates the duration (length of time) since the peer connection started.</extracomment>
+        <translation type="unfinished">Ålder</translation>
     </message>
     <message>
         <source>Direction</source>
@@ -3072,10 +3112,6 @@ Försök igen.</translation>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
         <translation type="unfinished">En avgift högre än %1 anses vara en absurd hög avgift.</translation>
     </message>
-    <message>
-        <source>Payment request expired.</source>
-        <translation type="unfinished">Betalningsbegäran löpte ut.</translation>
-    </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
         <translation type="unfinished">
@@ -3155,28 +3191,12 @@ Försök igen.</translation>
         <translation type="unfinished">Meddelande:</translation>
     </message>
     <message>
-        <source>This is an unauthenticated payment request.</source>
-        <translation type="unfinished">Detta är en oautentiserad betalningsbegäran.</translation>
-    </message>
-    <message>
-        <source>This is an authenticated payment request.</source>
-        <translation type="unfinished">Detta är en autentiserad betalningsbegäran.</translation>
-    </message>
-    <message>
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation type="unfinished">Ange en etikett för denna adress för att lägga till den i listan med använda adresser</translation>
     </message>
     <message>
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
         <translation type="unfinished">Ett meddelande som bifogades bitcoin: -URIn och som sparas med transaktionen som referens. Obs: Meddelandet sänds inte över Bitcoin-nätverket.</translation>
-    </message>
-    <message>
-        <source>Pay To:</source>
-        <translation type="unfinished">Betala till:</translation>
-    </message>
-    <message>
-        <source>Memo:</source>
-        <translation type="unfinished">PM:</translation>
     </message>
 </context>
 <context>
@@ -3344,30 +3364,22 @@ Försök igen.</translation>
     <name>TransactionDesc</name>
     <message>
         <source>conflicted with a transaction with %1 confirmations</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an unconfirmed transaction that conflicts with a confirmed transaction.</extracomment>
         <translation type="unfinished">konflikt med en transaktion med %1 bekräftelser</translation>
     </message>
     <message>
-        <source>0/unconfirmed, %1</source>
-        <translation type="unfinished">0/obekräftade, %1</translation>
-    </message>
-    <message>
-        <source>in memory pool</source>
-        <translation type="unfinished">i minnespoolen</translation>
-    </message>
-    <message>
-        <source>not in memory pool</source>
-        <translation type="unfinished">ej i minnespoolen</translation>
-    </message>
-    <message>
         <source>abandoned</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an abandoned transaction.</extracomment>
         <translation type="unfinished">övergiven</translation>
     </message>
     <message>
         <source>%1/unconfirmed</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
         <translation type="unfinished">%1/obekräftade</translation>
     </message>
     <message>
         <source>%1 confirmations</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in 6 or more blocks.</extracomment>
         <translation type="unfinished">%1 bekräftelser</translation>
     </message>
     <message>
