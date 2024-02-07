@@ -1,3 +1,7 @@
+## 0.105.0+25.1 - 2024-03-08
+
+* Vendor Bitcoin Core `v25.1`
+
 ## 0.104.0+24.2 - 2024-03-03
 
 * Vendor Bitcoin Core `v24.2`
