@@ -251,10 +251,6 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
         <source>Amount</source>
         <translation type="unfinished">Cantidade</translation>
     </message>
-    <message>
-        <source>Internal</source>
-        <translation type="unfinished">Interno</translation>
-    </message>
     <message numerus="yes">
         <source>%n second(s)</source>
         <translation type="unfinished">

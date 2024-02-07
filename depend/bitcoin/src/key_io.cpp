@@ -107,7 +107,7 @@ CTxDestination DecodeDestination(const std::string& str, const CChainParams& par
                 std::equal(script_prefix.begin(), script_prefix.end(), data.begin())) ||
             (data.size() >= pubkey_prefix.size() &&
                 std::equal(pubkey_prefix.begin(), pubkey_prefix.end(), data.begin()))) {
-            error_str = "Invalid length for Base58 address";
+            error_str = "Invalid length for Base58 address (P2PKH or P2SH)";
         } else {
             error_str = "Invalid or unsupported Base58-encoded address.";
         }
@@ -117,7 +117,7 @@ CTxDestination DecodeDestination(const std::string& str, const CChainParams& par
         if (!DecodeBase58(str, data, 100)) {
             error_str = "Invalid or unsupported Segwit (Bech32) or Base58 encoding.";
         } else {
-            error_str = "Invalid checksum or length of Base58 address";
+            error_str = "Invalid checksum or length of Base58 address (P2PKH or P2SH)";
         }
         return CNoDestination();
     }
@@ -131,7 +131,7 @@ CTxDestination DecodeDestination(const std::string& str, const CChainParams& par
         }
         // Bech32 decoding
         if (dec.hrp != params.Bech32HRP()) {
-            error_str = "Invalid prefix for Bech32 address";
+            error_str = strprintf("Invalid or unsupported prefix for Segwit (Bech32) address (expected %s, got %s).", params.Bech32HRP(), dec.hrp);
             return CNoDestination();
         }
         int version = dec.data[0]; // The first 5 bit symbol is the witness version (0-16)
