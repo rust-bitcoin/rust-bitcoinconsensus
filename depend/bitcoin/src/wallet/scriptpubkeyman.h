@@ -5,10 +5,12 @@
 #ifndef BITCOIN_WALLET_SCRIPTPUBKEYMAN_H
 #define BITCOIN_WALLET_SCRIPTPUBKEYMAN_H
 
+#include <addresstype.h>
+#include <logging.h>
 #include <psbt.h>
 #include <script/descriptor.h>
+#include <script/script.h>
 #include <script/signingprovider.h>
-#include <script/standard.h>
 #include <util/error.h>
 #include <util/message.h>
 #include <util/result.h>
@@ -27,6 +29,8 @@ enum class OutputType;
 struct bilingual_str;
 
 namespace wallet {
+struct MigrationData;
+
 // Wallet storage things that ScriptPubKeyMans need in order to be able to store things to the wallet database.
 // It provides access to things that are part of the entire wallet and not specific to a ScriptPubKeyMan such as
 // wallet flags, wallet version, encryption keys, encryption status, and the database itself. This allows a
@@ -119,20 +123,14 @@ public:
     template<typename Stream>
     void Serialize(Stream& s) const
     {
-        int nVersion = s.GetVersion();
-        if (!(s.GetType() & SER_GETHASH)) {
-            s << nVersion;
-        }
+        s << int{259900}; // Unused field, writes the highest client version ever written
         s << nTime << vchPubKey << fInternal << m_pre_split;
     }
 
     template<typename Stream>
     void Unserialize(Stream& s)
     {
-        int nVersion = s.GetVersion();
-        if (!(s.GetType() & SER_GETHASH)) {
-            s >> nVersion;
-        }
+        s >> int{}; // Discard unused field
         s >> nTime >> vchPubKey;
         try {
             s >> fInternal;
@@ -246,9 +244,10 @@ public:
     virtual std::unordered_set<CScript, SaltedSipHasher> GetScriptPubKeys() const { return {}; };
 
     /** Prepends the wallet name in logging output to ease debugging in multi-wallet use cases */
-    template<typename... Params>
-    void WalletLogPrintf(std::string fmt, Params... parameters) const {
-        LogPrintf(("%s " + fmt).c_str(), m_storage.GetDisplayName(), parameters...);
+    template <typename... Params>
+    void WalletLogPrintf(const char* fmt, Params... parameters) const
+    {
+        LogPrintf(("%s " + std::string{fmt}).c_str(), m_storage.GetDisplayName(), parameters...);
     };
 
     /** Watch-only address added */
@@ -256,6 +255,9 @@ public:
 
     /** Keypool has new keys */
     boost::signals2::signal<void ()> NotifyCanGetAddressesChanged;
+
+    /** Birth time changed */
+    boost::signals2::signal<void (const ScriptPubKeyMan* spkm, int64_t new_birth_time)> NotifyFirstKeyTimeChanged;
 };
 
 /** OutputTypes supported by the LegacyScriptPubKeyMan */
@@ -664,6 +666,18 @@ public:
 
     void UpgradeDescriptorCache();
 };
+
+/** struct containing information needed for migrating legacy wallets to descriptor wallets */
+struct MigrationData
+{
+    CExtKey master_key;
+    std::vector<std::pair<std::string, int64_t>> watch_descs;
+    std::vector<std::pair<std::string, int64_t>> solvable_descs;
+    std::vector<std::unique_ptr<DescriptorScriptPubKeyMan>> desc_spkms;
+    std::shared_ptr<CWallet> watchonly_wallet{nullptr};
+    std::shared_ptr<CWallet> solvable_wallet{nullptr};
+};
+
 } // namespace wallet
 
 #endif // BITCOIN_WALLET_SCRIPTPUBKEYMAN_H
