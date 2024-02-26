@@ -17,7 +17,7 @@ mod types;
 
 use core::fmt;
 
-use crate::types::c_uint;
+use crate::types::{c_int64, c_uchar, c_uint};
 
 /// Do not enable any verification.
 pub const VERIFY_NONE: c_uint = 0;
@@ -33,8 +33,10 @@ pub const VERIFY_CHECKLOCKTIMEVERIFY: c_uint = 1 << 9;
 pub const VERIFY_CHECKSEQUENCEVERIFY: c_uint = 1 << 10;
 /// Enable WITNESS (BIP141).
 pub const VERIFY_WITNESS: c_uint = 1 << 11;
+/// Enable TAPROOT (BIPs 341 & 342)
+pub const VERIFY_TAPROOT: c_uint = 1 << 17;
 
-pub const VERIFY_ALL: c_uint = VERIFY_P2SH
+pub const VERIFY_ALL_PRE_TAPROOT: c_uint = VERIFY_P2SH
     | VERIFY_DERSIG
     | VERIFY_NULLDUMMY
     | VERIFY_CHECKLOCKTIMEVERIFY
@@ -59,6 +61,9 @@ pub fn height_to_flags(height: u32) -> u32 {
     }
     if height >= 481824 {
         flag |= VERIFY_NULLDUMMY | VERIFY_WITNESS
+    }
+    if height > 709632 {
+        flag |= VERIFY_TAPROOT
     }
 
     flag
@@ -101,12 +106,19 @@ pub fn version() -> u32 { unsafe { ffi::bitcoinconsensus_version() as u32 } }
 /// **Note** since the spent amount will only be checked for Segwit transactions and the above
 /// example is not segwit, `verify` will succeed with any amount.
 pub fn verify(
+    // The script_pubkey of the output we are spending (e.g. `TxOut::script_pubkey.as_bytes()`).
     spent_output: &[u8],
-    amount: u64,
-    spending_transaction: &[u8],
+    amount: u64, // The amount of the output is spending (e.g. `TxOut::value`)
+    spending_transaction: &[u8], // Create using `tx.serialize().as_slice()`
+    spent_outputs: Option<&[Utxo]>, // None for pre-taproot.
     input_index: usize,
 ) -> Result<(), Error> {
-    verify_with_flags(spent_output, amount, spending_transaction, input_index, VERIFY_ALL)
+    let flags = match spent_outputs {
+        Some(_) => VERIFY_ALL_PRE_TAPROOT | VERIFY_TAPROOT,
+        None => VERIFY_ALL_PRE_TAPROOT,
+    };
+
+    verify_with_flags(spent_output, amount, spending_transaction, spent_outputs, input_index, flags)
 }
 
 /// Same as verify but with flags that turn past soft fork features on or off.
@@ -114,33 +126,69 @@ pub fn verify_with_flags(
     spent_output_script: &[u8],
     amount: u64,
     spending_transaction: &[u8],
+    spent_outputs: Option<&[Utxo]>,
     input_index: usize,
     flags: u32,
 ) -> Result<(), Error> {
-    unsafe {
-        let mut error = Error::ERR_SCRIPT;
+    match spent_outputs {
+        Some(spent_outputs) => unsafe {
+            let mut error = Error::ERR_SCRIPT;
 
-        let ret = ffi::bitcoinconsensus_verify_script_with_amount(
-            spent_output_script.as_ptr(),
-            spent_output_script.len() as c_uint,
-            amount,
-            spending_transaction.as_ptr(),
-            spending_transaction.len() as c_uint,
-            input_index as c_uint,
-            flags as c_uint,
-            &mut error,
-        );
-        if ret != 1 {
-            Err(error)
-        } else {
-            Ok(())
-        }
+            let ret = ffi::bitcoinconsensus_verify_script_with_spent_outputs(
+                spent_output_script.as_ptr(),
+                spent_output_script.len() as c_uint,
+                amount,
+                spending_transaction.as_ptr(),
+                spending_transaction.len() as c_uint,
+                spent_outputs.as_ptr() as *const c_uchar,
+                spent_outputs.len() as c_uint,
+                input_index as c_uint,
+                flags as c_uint,
+                &mut error,
+            );
+            if ret != 1 {
+                Err(error)
+            } else {
+                Ok(())
+            }
+        },
+        None => unsafe {
+            let mut error = Error::ERR_SCRIPT;
+
+            let ret = ffi::bitcoinconsensus_verify_script_with_amount(
+                spent_output_script.as_ptr(),
+                spent_output_script.len() as c_uint,
+                amount,
+                spending_transaction.as_ptr(),
+                spending_transaction.len() as c_uint,
+                input_index as c_uint,
+                flags as c_uint,
+                &mut error,
+            );
+            if ret != 1 {
+                Err(error)
+            } else {
+                Ok(())
+            }
+        },
     }
 }
 
+/// Mimics the Bitcoin Core UTXO typedef (bitcoinconsenus.h)
+// This is the TxOut data for utxos being spent, i.e., previous outputs.
+#[repr(C)]
+pub struct Utxo {
+    /// Pointer to the scriptPubkey bytes.
+    pub script_pubkey: *const c_uchar,
+    /// The length of the scriptPubkey.
+    pub script_pubkey_len: c_uint,
+    /// The value in sats.
+    pub value: c_int64,
+}
+
 pub mod ffi {
-    use crate::types::{c_int, c_uchar, c_uint};
-    use crate::Error;
+    use super::*;
+    use crate::types::c_int;
 
     extern "C" {
         /// Returns `libbitcoinconsensus` version.
@@ -148,12 +196,31 @@ pub mod ffi {
 
         /// Verifies that the transaction input correctly spends the previous
         /// output, considering any additional constraints specified by flags.
+        ///
+        /// This function does not verify Taproot inputs.
         pub fn bitcoinconsensus_verify_script_with_amount(
             script_pubkey: *const c_uchar,
             script_pubkeylen: c_uint,
             amount: u64,
             tx_to: *const c_uchar,
             tx_tolen: c_uint,
+            n_in: c_uint,
+            flags: c_uint,
+            err: *mut Error,
+        ) -> c_int;
+
+        /// Verifies that the transaction input correctly spends the previous
+        /// output, considering any additional constraints specified by flags.
+        ///
+        /// This function verifies Taproot inputs.
+        pub fn bitcoinconsensus_verify_script_with_spent_outputs(
+            script_pubkey: *const c_uchar,
+            script_pubkeylen: c_uint,
+            amount: u64,
+            tx_to: *const c_uchar,
+            tx_tolen: c_uint,
+            spent_outputs: *const c_uchar,
+            num_spent_outputs: c_uint,
             n_in: c_uint,
             flags: c_uint,
             err: *mut Error,
@@ -171,7 +238,7 @@ pub mod ffi {
 #[repr(C)]
 pub enum Error {
     /// Default value, passed to `libbitcoinconsensus` as a return parameter.
-    ERR_SCRIPT = 0,
+    ERR_SCRIPT = 0, // This is ERR_OK in Bitcoin Core.
     /// An invalid index for `txTo`.
     ERR_TX_INDEX,
     /// `txToLen` did not match with the size of `txTo`.
@@ -182,6 +249,10 @@ pub enum Error {
     ERR_AMOUNT_REQUIRED,
     /// Script verification `flags` are invalid (i.e. not part of the libconsensus interface).
     ERR_INVALID_FLAGS,
+    /// Verifying Taproot input requires previous outputs.
+    ERR_SPENT_OUTPUTS_REQUIRED,
+    /// Taproot outputs don't match.
+    ERR_SPENT_OUTPUTS_MISMATCH,
 }
 
 impl fmt::Display for Error {
@@ -195,6 +266,8 @@ impl fmt::Display for Error {
             ERR_TX_DESERIALIZE => "an error deserializing txTo",
             ERR_AMOUNT_REQUIRED => "input amount is required if WITNESS is used",
             ERR_INVALID_FLAGS => "script verification flags are invalid",
+            ERR_SPENT_OUTPUTS_REQUIRED => "verifying taproot input requires previous outputs",
+            ERR_SPENT_OUTPUTS_MISMATCH => "taproot outputs don't match",
         };
         f.write_str(s)
     }
@@ -206,8 +279,14 @@ impl std::error::Error for Error {
         use self::Error::*;
 
         match *self {
-            ERR_SCRIPT | ERR_TX_INDEX | ERR_TX_SIZE_MISMATCH | ERR_TX_DESERIALIZE
-            | ERR_AMOUNT_REQUIRED | ERR_INVALID_FLAGS => None,
+            ERR_SCRIPT
+            | ERR_TX_INDEX
+            | ERR_TX_SIZE_MISMATCH
+            | ERR_TX_DESERIALIZE
+            | ERR_AMOUNT_REQUIRED
+            | ERR_INVALID_FLAGS
+            | ERR_SPENT_OUTPUTS_REQUIRED
+            | ERR_SPENT_OUTPUTS_MISMATCH => None,
         }
     }
 }
@@ -268,10 +347,13 @@ mod tests {
             spent.from_hex().unwrap().as_slice(),
             amount,
             spending.from_hex().unwrap().as_slice(),
+            None,
             input,
         )
     }
 
     #[test]
-    fn invalid_flags_test() { verify_with_flags(&[], 0, &[], 0, VERIFY_ALL + 1).unwrap_err(); }
+    fn invalid_flags_test() {
+        verify_with_flags(&[], 0, &[], None, 0, VERIFY_ALL_PRE_TAPROOT + 1).unwrap_err();
+    }
 }
