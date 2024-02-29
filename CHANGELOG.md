@@ -1,3 +1,8 @@
+## 0.105.0+26.0 - 2024-02-01
+
+* Vendor Bitcoin Core `v26.0`
+* Add new Taproot verification API
+
 ## 0.105.0+25.1 - 2024-02-08
 
 * Vendor Bitcoin Core `v25.1`

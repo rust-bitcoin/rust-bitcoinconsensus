@@ -1,7 +1,7 @@
 [package]
 name = "bitcoinconsensus"
 # The first part is the crate version, the second informational part is the Bitcoin Core version.
-version = "0.105.0+25.1"
+version = "0.106.0+26.0"
 authors = ["Tamas Blummer <tamas.blummer@gmail.com>"]
 license = "Apache-2.0"
 homepage = "https://github.com/rust-bitcoin/rust-bitcoinconsensus/"
