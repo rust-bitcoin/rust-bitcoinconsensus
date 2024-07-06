@@ -42,7 +42,9 @@ fn main() {
             .define("ECMULT_GEN_PREC_BITS", "4")
             .define("ENABLE_MODULE_SCHNORRSIG", "1")
             .define("ENABLE_MODULE_EXTRAKEYS", "1")
-            // Technically libconsensus doesn't require the recovery feautre, but `pubkey.cpp` does.
+            // Technically libconsensus doesn't require the ellswift and recovery features, but
+            // `pubkey.cpp` does.
+            .define("ENABLE_MODULE_ELLSWIFT", "1")
             .define("ENABLE_MODULE_RECOVERY", "1")
             .file("depend/bitcoin/src/secp256k1/src/precomputed_ecmult_gen.c")
             .file("depend/bitcoin/src/secp256k1/src/precomputed_ecmult.c")
