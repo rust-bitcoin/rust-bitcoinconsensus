@@ -14,7 +14,7 @@ This also simplifies cross-compiling the consensus library e.g., for a mobile ap
 `libbitcoinconsensus` refers to code from another library [secp256k1](https://github.com/bitcoin-core/secp256k1).
 A snapshot of that library is also included in the Bitcoin sources, therefore it could be baked into `libbitcoinconsensus`.
 A typical Bitcoin enabled application will however want to access further secp256k1 functions.
-The project [rust-secp256k1](https://github.com/rust-bitcoin/rust-secp256k1) offers a cargo build and Rust bindings, therefore we depend on that instead of compiling the Bitcoin embedded sources into `libbitcoinconsensus`q.
+The project [rust-secp256k1](https://github.com/rust-bitcoin/rust-secp256k1) offers a cargo build and Rust bindings, therefore we depend on that instead of compiling the Bitcoin embedded sources into `libbitcoinconsensus`.
 This introduces a risk, since a difference between the two secp256k1 sources could break consensus with Bitcoin.
 
 
