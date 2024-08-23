@@ -70,24 +70,30 @@ fn main() {
     } else if tool.is_like_clang() || tool.is_like_gnu() {
         consensus_config.flag("-std=c++17").flag("-Wno-unused-parameter");
     }
+    
+    consensus_config.cpp(true);
+    if cfg!(feature = "risczero-enable"){
+        consensus_config.no_default_flags(true)
+        .flag_if_supported("-march=rv32i")
+        .flag_if_supported("mabi=ilp32");    
+        println!("compile after cpp=true: {:?}", consensus_config.get_compiler());
+    }
 
-    consensus_config
-        .cpp(true)
-        .include("depend/bitcoin/src")
-        .include("depend/bitcoin/src/secp256k1/include")
-        .file("depend/bitcoin/src/util/strencodings.cpp")
-        .file("depend/bitcoin/src/uint256.cpp")
-        .file("depend/bitcoin/src/pubkey.cpp")
-        .file("depend/bitcoin/src/hash.cpp")
-        .file("depend/bitcoin/src/primitives/transaction.cpp")
-        .file("depend/bitcoin/src/crypto/ripemd160.cpp")
-        .file("depend/bitcoin/src/crypto/sha1.cpp")
-        .file("depend/bitcoin/src/crypto/sha256.cpp")
-        .file("depend/bitcoin/src/crypto/sha512.cpp")
-        .file("depend/bitcoin/src/crypto/hmac_sha512.cpp")
-        .file("depend/bitcoin/src/script/bitcoinconsensus.cpp")
-        .file("depend/bitcoin/src/script/interpreter.cpp")
-        .file("depend/bitcoin/src/script/script.cpp")
-        .file("depend/bitcoin/src/script/script_error.cpp")
-        .compile("libbitcoinconsensus.a");
+    consensus_config.include("depend/bitcoin/src")
+    .include("depend/bitcoin/src/secp256k1/include")
+    .file("depend/bitcoin/src/util/strencodings.cpp")
+    .file("depend/bitcoin/src/uint256.cpp")
+    .file("depend/bitcoin/src/pubkey.cpp")
+    .file("depend/bitcoin/src/hash.cpp")
+    .file("depend/bitcoin/src/primitives/transaction.cpp")
+    .file("depend/bitcoin/src/crypto/ripemd160.cpp")
+    .file("depend/bitcoin/src/crypto/sha1.cpp")
+    .file("depend/bitcoin/src/crypto/sha256.cpp")
+    .file("depend/bitcoin/src/crypto/sha512.cpp")
+    .file("depend/bitcoin/src/crypto/hmac_sha512.cpp")
+    .file("depend/bitcoin/src/script/bitcoinconsensus.cpp")
+    .file("depend/bitcoin/src/script/interpreter.cpp")
+    .file("depend/bitcoin/src/script/script.cpp")
+    .file("depend/bitcoin/src/script/script_error.cpp")
+    .compile("libbitcoinconsensus.a");
 }
