@@ -37,6 +37,7 @@ edition = "2018"
 default = ["std"]
 std = []
 external-secp = []
+risczero-enable = []
 
 [dependencies]
 

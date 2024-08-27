@@ -270,6 +270,15 @@ const Out& AsBase(const In& x)
     FORMATTER_METHODS_PARAMS(cls, obj, paramcls, paramobj)
 
 // clang-format off
+#ifdef RISCZERO
+template <typename Stream> inline void Serialize(Stream& s, int a) { ser_writedata32(s, a); }
+template <typename Stream> inline void Serialize(Stream& s, unsigned int a) { ser_writedata32(s, a); }
+template <typename Stream> inline void Unserialize(Stream& s, int& a) { a = ser_readdata32(s); }
+template <typename Stream> inline void Unserialize(Stream& s, unsigned int& a) { a = ser_readdata32(s); }
+#endif
+// clang-format on
+
+// clang-format off
 #ifndef CHAR_EQUALS_INT8
 template <typename Stream> void Serialize(Stream&, char) = delete; // char serialization forbidden. Use uint8_t or int8_t
 #endif
