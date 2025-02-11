@@ -17,6 +17,15 @@ A typical Bitcoin enabled application will however want to access further secp25
 The project [rust-secp256k1](https://github.com/rust-bitcoin/rust-secp256k1) offers a cargo build and Rust bindings, therefore we depend on that instead of compiling the Bitcoin embedded sources into `libbitcoinconsensus`.
 This introduces a risk, since a difference between the two secp256k1 sources could break consensus with Bitcoin.
 
+## Status
+
+The `libbitcoinconsensus` library was [deprecated in Bitcoin Core v27](https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-27.0.md#libbitcoinconsensus).
+
+> In the future, libbitcoinkernel will provide a much more useful API that is aware of the UTXO set, and therefore be able to fully validate transactions and blocks.
+
+And was [removed in Bitcoin Core v28](https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-28.0.md#libbitcoinconsensus-removal).
+
+As such this library will not likely see many updates i.e., **this crate is in maintenance mode**.
 
 ## Version numbers
 
